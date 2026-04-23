@@ -1,0 +1,26 @@
+{
+  "company_name": "Sample Holdings",
+  "stock_code": "1234",
+  "article_theme": "What investors should watch in the next earnings cycle",
+  "target_query": "Sample Holdings analysis",
+  "reader_level": "mixed",
+  "integrated_memo": "Insert consolidated research memo here.",
+  "key_drivers": [
+    "Recurring revenue growth",
+    "Margin improvement in the core segment"
+  ],
+  "risk_factors": [
+    "Demand slowdown",
+    "Input cost pressure"
+  ],
+  "watch_points": [
+    "Quarterly margin trend",
+    "Order backlog movement"
+  ],
+  "related_articles": [
+    {
+      "title": "Sector overview article",
+      "url": "https://example.com/sector-overview"
+    }
+  ]
+}

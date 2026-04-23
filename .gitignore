@@ -1,0 +1,23 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local environment
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+logs/
+
+# Generated archives
+*.zip
+*.tar
+*.gz
+
+# Temporary files
+tmp/
+temp/
+*.tmp
