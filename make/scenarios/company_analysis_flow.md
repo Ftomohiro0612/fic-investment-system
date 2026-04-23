@@ -32,7 +32,10 @@ Generate a company analysis article using Make and externalized prompts stored i
 Keep Make responsible for orchestration, not for storing long prompt logic.
 
 ## Recommended First GitHub-Loaded Files
-To avoid increasing Make complexity too quickly, start by loading only these files from GitHub:
+To avoid increasing Make complexity too quickly, start by loading only this compiled file from GitHub:
+- `prompts/article/company_analysis_article_compiled.md`
+
+This compiled file should be kept in sync whenever these source files change:
 - `prompts/article/company_analysis_article_main.md`
 - `prompts/article/company_analysis_article_intro_rules.md`
 - `prompts/article/company_analysis_article_output_rules.md`
