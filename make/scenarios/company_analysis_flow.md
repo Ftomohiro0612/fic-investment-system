@@ -14,13 +14,15 @@ Generate a company analysis article using Make and externalized prompts stored i
 
 ## Prompt Components
 - Main article instruction
+- Article intro rules
+- Article output rules
 - Intro rules
 - Summary rules
 - Internal link rules
 - Output format rules
 
 ## Planned Improvements
-- Separate intro, summary, body, and CTA prompts
+- Separate article intro, summary, body, CTA, and output prompts
 - Add SEO review step before publish
 - Add internal link suggestion step
 - Add output validation step
@@ -28,3 +30,13 @@ Generate a company analysis article using Make and externalized prompts stored i
 
 ## Operational Principle
 Keep Make responsible for orchestration, not for storing long prompt logic.
+
+## Recommended First GitHub-Loaded Files
+To avoid increasing Make complexity too quickly, start by loading only these files from GitHub:
+- `prompts/article/company_analysis_article_main.md`
+- `prompts/article/company_analysis_article_intro_rules.md`
+- `prompts/article/company_analysis_article_output_rules.md`
+
+After the article generation path is stable, consider loading:
+- `prompts/article/company_analysis_memo_main.md`
+- `prompts/article/company_analysis_pdf_summary.md`
