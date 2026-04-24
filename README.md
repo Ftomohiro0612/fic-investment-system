@@ -22,6 +22,10 @@ This repository manages the content system and site improvement workflow for fic
 - `seo/`: keyword strategy, templates, and audit notes
 - `docs/`: roadmap and operational documents
 
+## Reference Notes
+- `seo/geo/geo_optimization_notes.md`: GEO operating principles for answer engines and AI summaries
+- `seo/keyword-strategy/search_intent_notes.md`: search-intent notes for article structure
+
 ## First Working Rule
 Prioritize high-impact improvements that are safe, reversible, and easy to operate.
 
