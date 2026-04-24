@@ -436,6 +436,7 @@ article mark {
   overflow-wrap: anywhere;
   min-height: 4.2em;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
