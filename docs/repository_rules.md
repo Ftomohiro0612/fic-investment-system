@@ -24,6 +24,12 @@ Keep this repository easy to operate, safe to change, and useful for both humans
 - Put the conclusion early in investment articles
 - Design internal links to guide the next best read for the user
 
+## GEO Rules
+- Optimize for answer-engine extractability without reducing analytical depth
+- Make key entities, drivers, and investor conclusions explicit early
+- Keep visible FAQ answers and schema answers aligned
+- Separate confirmed facts from estimates clearly
+
 ## Documentation Rules
 - Update roadmap when priorities materially change
 - Add major structural decisions to the change log
