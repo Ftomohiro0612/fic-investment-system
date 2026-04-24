@@ -566,21 +566,62 @@ article mark {
 @media (max-width: 767px) {
   .fic-upcoming-cards {
     grid-template-columns: 1fr;
-    gap: 16px;
-    padding: 16px;
+    gap: 14px;
+    padding: 14px;
+  }
+
+  .fic-upcoming-box {
+    margin: 24px 0;
+    border-radius: 14px;
+  }
+
+  .fic-upcoming-box .fic-upcoming-heading {
+    padding: 16px 18px;
+    font-size: 1.05em;
+  }
+
+  .fic-upcoming-box .fic-upcoming-description {
+    padding: 14px 18px 4px;
+    font-size: 0.96em;
+    line-height: 1.7;
+  }
+
+  .fic-upcoming-card {
+    border-radius: 16px;
   }
 
   .fic-upcoming-card-inner {
-    padding: 22px 18px 18px;
+    padding: 16px;
+    text-align: left;
   }
 
   .fic-upcoming-card-company {
-    font-size: 1.45rem;
+    justify-content: flex-start;
+    text-align: left;
+    font-size: 1.2rem;
+    line-height: 1.4;
     min-height: auto;
+    margin-bottom: 6px;
   }
 
   .fic-upcoming-card-code {
-    font-size: 1rem;
+    font-size: 0.95rem;
+    margin-bottom: 14px;
+    text-align: left;
+  }
+
+  .fic-upcoming-card-date {
+    min-width: 0;
+    padding: 7px 12px;
+    margin-bottom: 12px;
+    font-size: 0.88rem;
+  }
+
+  .fic-upcoming-card .fic-status {
+    min-height: 46px;
+    padding: 10px 14px;
+    border-radius: 12px;
+    font-size: 0.95rem;
   }
 
   .fic-upcoming-more {
