@@ -6,6 +6,7 @@ Make から以下の実データが別途注入される前提で記事を作成
 - 業種
 - セクター
 - 証券コード
+- 記事生成日（YYYY-MM-DD）
 - 統合分析メモ
 - 先行指標の最新検索結果
 
@@ -541,16 +542,25 @@ disclaimerの直後に以下を順番に出力すること：
     "name": "FIC投資研究所",
     "url": "https://fic-investment.biz"
   },
-  "datePublished": "[今日の日付をYYYY-MM-DD形式で記載]",
-  "dateModified": "[今日の日付をYYYY-MM-DD形式で記載]",
+  "datePublished": "[Makeから渡される記事生成日をYYYY-MM-DD形式でそのまま転記]",
+  "dateModified": "[Makeから渡される記事生成日をYYYY-MM-DD形式でそのまま転記]",
   "keywords": "[KEYWORDS===で出力したキーワードをそのまま転記]"
 }
 </script>
 
 【出力ルール】
+出力は必ず以下のJSON形式のみで返してください。
 JSON以外のテキスト（前置き、解説、コードブロック記法```json等）は一切含めないでください。
+出力の1文字目は必ず「{」から始めてください。
+
+{
+  "article_title": "企業名を含む投資家向けの魅力的なタイトル",
+  "slug": "英語ハイフン区切りのスラッグ（企業名と証券コードを含む）",
+  "keywords": "SEO用キーワードをカンマ区切りで5個",
+  "article_body": "<article>記事HTML全文</article>"
+}
 
 注意：
-- article_body内の文字列は必ずJSONエスケープする
-- HTMLタグを正しくエスケープしてJSON文字列として有効にする
-- 「次に読むべき記事」セクションは含めない
+- article_body内の文字列は必ずJSONエスケープ（ダブルクォートは\\\"、改行は\\n）してください
+- HTMLタグを正しくエスケープしてJSON文字列として有効にしてください
+- 「次に読むべき記事」セクションは含めないでください
