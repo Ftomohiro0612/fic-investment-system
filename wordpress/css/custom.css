@@ -441,6 +441,17 @@ article mark {
   text-align: center;
 }
 
+.fic-upcoming-card-company {
+  display: block;
+}
+
+.fic-upcoming-card-code {
+  display: block;
+  margin-top: 6px;
+  font-size: 0.9em;
+  color: #555555;
+}
+
 .fic-upcoming-card-status {
   margin-top: 10px;
 }
@@ -616,6 +627,10 @@ article mark {
     min-height: auto;
     margin-bottom: 0;
     flex: 1;
+  }
+
+  .fic-upcoming-card-code {
+    display: none;
   }
 
   .fic-upcoming-card-date {
