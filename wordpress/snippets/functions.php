@@ -203,7 +203,6 @@ function fic_get_post_by_stock_code_in_slug($stock_code) {
 function fic_get_earnings_status_data($stock_code, $scheduled_date) {
     $post = fic_get_post_by_stock_code_in_slug($stock_code);
 
-    $today = current_time('Y-m-d');
     $scheduled_ts = strtotime($scheduled_date . ' 15:00:00');
     $modified_ts = null;
 
@@ -215,11 +214,6 @@ function fic_get_earnings_status_data($stock_code, $scheduled_date) {
     $label  = '🔜 更新予定';
     $url    = $post ? get_permalink($post->ID) : '';
 
-    if ($today === $scheduled_date) {
-        $status = 'today';
-        $label  = '🔥 本日決算';
-    }
-
     if ($post && $modified_ts >= $scheduled_ts) {
         $status = 'done';
         $label  = '✅ 公開済み';
@@ -227,7 +221,7 @@ function fic_get_earnings_status_data($stock_code, $scheduled_date) {
 
     if (!$post) {
         $status = 'missing';
-        $label  = '記事未作成';
+        $label  = '記事作成予定';
     }
 
     return [
@@ -245,14 +239,13 @@ function fic_render_status_badge($status_data) {
 
     $class_map = [
         'done'    => 'fic-status-done',
-        'today'   => 'fic-status-today',
         'pending' => 'fic-status-pending',
         'missing' => 'fic-status-missing',
     ];
 
     $class = isset($class_map[$status]) ? $class_map[$status] : 'fic-status-missing';
 
-    if (!empty($url) && $status !== 'today') {
+    if (!empty($url)) {
         return '<a class="fic-status ' . esc_attr($class) . '" href="' . esc_url($url) . '">' . esc_html($label) . '</a>';
     }
 
