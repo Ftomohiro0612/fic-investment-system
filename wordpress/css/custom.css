@@ -405,6 +405,12 @@ article mark {
   text-align: center;
 }
 
+.fic-upcoming-card-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .fic-upcoming-card-date {
   display: inline-flex;
   align-items: center;
@@ -420,12 +426,12 @@ article mark {
   line-height: 1;
 }
 
-.fic-upcoming-card-company {
+.fic-upcoming-card-title {
   font-size: 1.55rem;
   font-weight: 700;
   color: #1f1f23;
   line-height: 1.35;
-  margin-bottom: 8px;
+  margin-bottom: 24px;
   word-break: break-word;
   overflow-wrap: anywhere;
   min-height: 4.2em;
@@ -433,12 +439,6 @@ article mark {
   align-items: center;
   justify-content: center;
   text-align: center;
-}
-
-.fic-upcoming-card-code {
-  font-size: 1.1rem;
-  color: #7a7a7a;
-  margin-bottom: 24px;
 }
 
 .fic-upcoming-card-status {
@@ -547,7 +547,7 @@ article mark {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .fic-upcoming-card-company {
+  .fic-upcoming-card-title {
     font-size: 1.4rem;
   }
 }
@@ -557,7 +557,7 @@ article mark {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .fic-upcoming-card-company {
+  .fic-upcoming-card-title {
     font-size: 1.3rem;
     min-height: 3.8em;
   }
@@ -566,7 +566,7 @@ article mark {
 @media (max-width: 767px) {
   .fic-upcoming-cards {
     grid-template-columns: 1fr;
-    gap: 14px;
+    gap: 10px;
     padding: 14px;
   }
 
@@ -587,41 +587,57 @@ article mark {
   }
 
   .fic-upcoming-card {
-    border-radius: 16px;
+    border-radius: 12px;
+    box-shadow: none;
   }
 
   .fic-upcoming-card-inner {
-    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 14px;
     text-align: left;
   }
 
-  .fic-upcoming-card-company {
+  .fic-upcoming-card-main {
+    flex: 1;
+    min-width: 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .fic-upcoming-card-title {
+    text-align: left;
     justify-content: flex-start;
-    text-align: left;
-    font-size: 1.2rem;
-    line-height: 1.4;
+    font-size: 0.97rem;
+    line-height: 1.35;
     min-height: auto;
-    margin-bottom: 6px;
-  }
-
-  .fic-upcoming-card-code {
-    font-size: 0.95rem;
-    margin-bottom: 14px;
-    text-align: left;
+    margin-bottom: 0;
+    flex: 1;
   }
 
   .fic-upcoming-card-date {
-    min-width: 0;
-    padding: 7px 12px;
-    margin-bottom: 12px;
-    font-size: 0.88rem;
+    min-width: 54px;
+    padding: 6px 8px;
+    margin-bottom: 0;
+    font-size: 0.8rem;
+    flex-shrink: 0;
+  }
+
+  .fic-upcoming-card-status {
+    margin-top: 0;
+    flex-shrink: 0;
   }
 
   .fic-upcoming-card .fic-status {
-    min-height: 46px;
-    padding: 10px 14px;
-    border-radius: 12px;
-    font-size: 0.95rem;
+    width: auto;
+    min-height: 36px;
+    padding: 7px 10px;
+    border-radius: 10px;
+    font-size: 0.82rem;
+    white-space: nowrap;
   }
 
   .fic-upcoming-more {
