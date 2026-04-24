@@ -323,11 +323,13 @@ function fic_render_upcoming_earnings_list($limit = 8) {
         echo '<div class="fic-upcoming-card-inner">';
 
         echo '<div class="fic-upcoming-card-date">' . esc_html($date_label) . '</div>';
-        echo '<div class="fic-upcoming-card-company">' . esc_html($item['company']) . '</div>';
-        echo '<div class="fic-upcoming-card-code">（' . esc_html($item['code']) . '）</div>';
+        echo '<div class="fic-upcoming-card-main">';
+        echo '<div class="fic-upcoming-card-title">' . esc_html($item['company']) . '（' . esc_html($item['code']) . '）</div>';
 
         echo '<div class="fic-upcoming-card-status">';
         echo fic_render_status_badge($status_data);
+        echo '</div>';
+
         echo '</div>';
 
         echo '</div>';
