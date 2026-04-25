@@ -427,7 +427,7 @@ article mark {
 }
 
 .fic-upcoming-card-title {
-  font-size: 1.55rem;
+  font-size: 1.34rem;
   font-weight: 700;
   color: #1f1f23;
   line-height: 1.35;
@@ -449,7 +449,7 @@ article mark {
 .fic-upcoming-card-code {
   display: block;
   margin-top: 6px;
-  font-size: 0.9em;
+  font-size: 0.8em;
   color: #555555;
 }
 
@@ -560,7 +560,7 @@ article mark {
   }
 
   .fic-upcoming-card-title {
-    font-size: 1.4rem;
+    font-size: 1.22rem;
   }
 }
 
@@ -570,7 +570,7 @@ article mark {
   }
 
   .fic-upcoming-card-title {
-    font-size: 1.3rem;
+    font-size: 1.12rem;
     min-height: 3.8em;
   }
 }
