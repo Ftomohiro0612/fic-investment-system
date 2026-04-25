@@ -1,36 +1,36 @@
 # FIC Investment System
 
-This repository manages the content system and site improvement workflow for fic-investment.biz.
+このリポジトリは、`fic-investment.biz` のコンテンツ運用と改善フローを管理するためのものです。
 
-## Scope
-- Prompt management for article generation
-- Make automation documentation
-- WordPress theme and snippet improvements
-- SEO optimization workflow
+## 管理対象
+- 記事生成プロンプトの管理
+- Make シナリオと自動化フローの整理
+- WordPress テーマ・スニペット・CSS の改善
+- SEO / GEO 改善の運用メモ
 
-## Main Goals
-1. Improve SEO performance
-2. Make article introductions clearer and more search-friendly
-3. Improve internal linking and article structure
-4. Externalize and modularize prompts used in Make
-5. Keep WordPress customizations maintainable
+## 主な目的
+1. SEO パフォーマンスの改善
+2. 記事導入と要約の分かりやすさ向上
+3. 内部リンクと記事構造の改善
+4. Make で使うプロンプトの外部化・モジュール化
+5. WordPress カスタマイズの保守性向上
 
-## Main Directories
-- `prompts/`: article generation prompts and SEO writing rules
-- `make/`: Make scenario docs, inputs, outputs, and blueprints
-- `wordpress/`: theme notes, snippets, CSS, and deployment notes
-- `seo/`: keyword strategy, templates, and audit notes
-- `docs/`: roadmap and operational documents
+## 主なディレクトリ
+- `prompts/`: 記事生成プロンプト、SEO / GEO 用ルール
+- `make/`: Make シナリオのメモ、入出力整理、ブループリント
+- `wordpress/`: テーマメモ、スニペット、CSS、反映メモ
+- `seo/`: キーワード戦略、テンプレート、監査メモ
+- `docs/`: ロードマップや運用ルール
 
-## Reference Notes
-- `seo/geo/geo_optimization_notes.md`: GEO operating principles for answer engines and AI summaries
-- `seo/keyword-strategy/search_intent_notes.md`: search-intent notes for article structure
+## 参照メモ
+- `seo/geo/geo_optimization_notes.md`: AI 要約・回答エンジンを意識した GEO 運用方針
+- `seo/keyword-strategy/search_intent_notes.md`: 記事構造に反映する検索意図メモ
 
-## First Working Rule
-Prioritize high-impact improvements that are safe, reversible, and easy to operate.
+## 最初の作業ルール
+影響が大きく、戻しやすく、運用しやすい改善を優先すること。
 
-## Current Initial Focus
-1. SEO-friendly introductions
-2. Two-layer article structure for beginner and advanced readers
-3. Internal link optimization
-4. Prompt modularization for Make
+## 現在の重点テーマ
+1. SEO を意識した導入改善
+2. 初心者向け入口と分析深度を両立する二層構造
+3. 内部リンク最適化
+4. Make 用プロンプトのモジュール化
