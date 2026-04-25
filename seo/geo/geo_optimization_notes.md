@@ -1,195 +1,196 @@
-# GEO Optimization Notes
+# GEO 最適化メモ
 
-## Purpose
-This document defines how fic-investment.biz should improve GEO (Generative Engine Optimization) alongside traditional SEO.
+## 目的
+この文書は、`fic-investment.biz` が従来の SEO に加えて GEO（Generative Engine Optimization）をどう改善するかを定義するものです。
 
-GEO here means making articles easier for AI systems, search assistants, and answer engines to:
-- identify the main conclusion quickly
-- extract reliable facts and relationships
-- quote or summarize the article accurately
-- understand why the article is authoritative for investor use cases
+ここでいう GEO とは、AI システム、検索アシスタント、回答エンジンが記事について次のことをしやすくすることを指します。
+- 主結論をすばやく把握する
+- 信頼できる事実と関係性を抽出する
+- 記事内容を正確に引用・要約する
+- 投資家向けの文脈で、なぜその記事に権威性があるかを理解する
 
-## Core Principle
-Do not make articles shallow for GEO.
+## 中心原則
+GEO のために記事を浅くしないこと。
 
-The goal is to preserve analytical depth while making the structure easier for both readers and answer engines to understand.
+目標は、分析の深さを保ったまま、読者にも回答エンジンにも理解しやすい構造へ整えることです。
 
-## GEO Priority Areas
-1. Put the conclusion early
-2. State what the company earns from and what variables matter
-3. Make entity relationships explicit
-4. Separate confirmed facts from estimates
-5. Use current numbers with clear provenance
-6. Add FAQ-style direct answers for likely investor questions
-7. Show the analysis basis and primary sources clearly
+## GEO の重点領域
+1. 結論を早く出す
+2. その会社が何で稼ぎ、どの変数が重要かを明示する
+3. エンティティ同士の関係を分かりやすくする
+4. 確認済み事実と推定値を分ける
+5. 出典と時点が明確な現在値を使う
+6. 投資家が検索しそうな問いに FAQ 形式で答える
+7. 分析根拠と一次情報を分かりやすく示す
 
-## What Answer Engines Need
-Answer engines tend to perform better when an article includes:
-- a short early summary of the main thesis
-- a short extractable answer box that can stand alone as the article's direct response
-- clear named entities such as company names, segments, products, customers, competitors, and macro drivers
-- strong causal wording such as "X drives Y because Z"
-- short direct answers before deeper explanation
-- a visible statement of what materials the analysis is based on
-- structured tables that pair metrics with meaning
-- a visible list of primary sources actually used
-- consistent terminology across summary, body, FAQ, and schema
+## 回答エンジンが拾いやすい記事の条件
+回答エンジンは、次の要素がある記事を比較的扱いやすい傾向があります。
+- 冒頭近くに短い主張要約がある
+- 記事全体の直接回答として切り出せる短い回答ボックスがある
+- 会社名、事業セグメント、製品、顧客、競合、マクロ要因などの固有名詞が明確
+- `X が Y を動かすのは Z だから` のような因果表現が強い
+- 深い説明の前に、短い直接回答がある
+- 何の資料を根拠に分析しているかが見える
+- 数値と意味が対になった表がある
+- 実際に使った一次情報の一覧が見える
+- 要約、本文、FAQ、schema で用語がぶれない
 
-## Required GEO Structure For Company Analysis
+## 企業分析記事で必須にしたい GEO 構造
 
-### 1. One-Line Summary
-- Must appear at the top
-- Must explain what variables determine earnings
-- Should be specific enough that it can stand alone in an AI summary
+### 1. 1行サマリー
+- 記事の最上部に置く
+- 何の変数で利益が決まるかを説明する
+- AI 要約の中でも単独で意味が通る具体性を持たせる
 
-Example pattern:
-- "Company X is a business whose earnings are driven by A, B, and C"
+例:
+- `Company X is a business whose earnings are driven by A, B, and C`
 
-### 2. Definition Lead
-- Immediately after the one-line summary
-- Explain what the article will clarify and why it matters
-- Keep it short and concrete
+### 2. 定義リード
+- 1行サマリーの直後に置く
+- この記事が何を明らかにするか、なぜ重要かを短く説明する
+- 抽象論ではなく具体的に書く
 
-### 3. Summary Box
-- Tell the reader what they will learn
-- Use 2 to 3 bullets only
-- Prefer investor questions over generic overview bullets
+### 3. サマリーボックス
+- 読者が何を学べるかを示す
+- 箇条書きは 2〜3 個に絞る
+- 一般的な企業紹介より、投資家の疑問に寄せる
 
-### 4. Answer Box
-- Add a short "この記事の結論" block near the top
-- Keep it to 3 to 5 short lines
-- It should answer:
-  - what drives earnings
-  - what investors should watch next
-  - what would push the case up or down
-- This block should be easy for an answer engine to extract on its own
+### 4. 結論ボックス
+- 冒頭近くに短い `この記事の結論` ブロックを置く
+- 3〜5 行程度に収める
+- ここでは次の3点に答える
+  - 何が利益を動かすか
+  - 投資家は次に何を見るべきか
+  - 何が上振れ・下振れ要因になるか
+- このブロック単体で回答エンジンに抜かれても意味が通るようにする
 
-### 5. Analysis Basis Block
-- Add a short visible block near the top that states what the analysis is based on
-- Prefer a simple factual format such as:
-  - disclosed earnings materials
-  - medium-term plan
-  - integrated report
-  - latest market or macro indicators where relevant
-- Keep it short; this is for trust and provenance, not a long disclaimer
+### 5. 分析根拠ブロック
+- 冒頭近くに、何を根拠に分析しているかを短く示す
+- 例:
+  - 決算説明資料
+  - 中期経営計画
+  - 統合報告書
+  - 必要に応じて最新の市場・マクロ指標
+- 長い免責ではなく、信頼性と出典の土台を示すための短いブロックにする
 
-### 6. Early Entity Framing
-- Identify the key segments, customers, and demand drivers early
-- Name real entities whenever the source material supports it
-- Prefer explicit relationships such as:
-  - "WM serves affluent households"
-  - "WS revenue depends on institutional trading activity"
-  - "IM revenue rises with AUM growth"
+### 6. 早い段階でのエンティティ整理
+- 主要セグメント、顧客、需要ドライバーを早い段階で示す
+- 資料が許す限り、実在のエンティティ名を出す
+- 次のように関係が読み取れる表現を優先する
+  - `WM serves affluent households`
+  - `WS revenue depends on institutional trading activity`
+  - `IM revenue rises with AUM growth`
 
-### 7. FAQ Section
-- Include 3 direct investor-style questions
-- Answers must start with the conclusion in the first sentence
-- FAQ wording should reflect realistic search and answer-engine prompts
+### 7. FAQ セクション
+- 投資家がそのまま検索しそうな質問を 3 問程度置く
+- 回答は最初の1文で結論を言い切る
+- 質問文は、検索クエリや回答エンジンの問いかけに近い自然な形にする
 
-### 8. References Section
-- Add a visible "参照資料" section near the end of the article
-- List only sources actually used in the article
-- Prefer first-party IR materials and official statistics first
-- This section helps both reader trust and answer-engine grounding
+### 8. 参照資料セクション
+- 記事の後半に `参照資料` セクションを置く
+- 実際に使った資料だけを列挙する
+- まず IR の一次情報、次に公的統計を優先する
+- これは読者の信頼性だけでなく、回答エンジンの grounding にも役立つ
 
-## GEO Writing Rules
+## GEO 向けライティングルール
 
-### Put the short answer first
-- The first useful paragraph should answer the likely query, not introduce the company in generic terms
-- Avoid long scene-setting intros
+### まず短い答えを出す
+- 最初の有用な段落で、想定クエリへの答えを返す
+- 一般的な会社紹介から入らない
+- 長い前置きで空気を作る書き方は避ける
 
-### Prefer explicit causality
-- Use phrasing that makes relationships easy to extract
-- Good:
-  - "Higher AUM increases management fees because fees are charged on assets under management"
-- Weak:
-  - "AUM is important for the business"
+### 因果を明示する
+- 関係が抜き出しやすい文にする
+- 良い例:
+  - `Higher AUM increases management fees because fees are charged on assets under management`
+- 弱い例:
+  - `AUM is important for the business`
 
-### Prefer named entities over vague categories
-- Good:
-  - "regional banks such as Hyakugo Bank and Sanin Godo Bank"
-- Weak:
-  - "financial partners"
+### 曖昧なカテゴリより固有名詞
+- 良い例:
+  - `regional banks such as Hyakugo Bank and Sanin Godo Bank`
+- 弱い例:
+  - `financial partners`
 
-### Distinguish facts from estimates
-- If a value is estimated, mark it clearly
-- Do not let estimates read like disclosed facts
-- This is important for both reader trust and AI citation quality
+### 事実と推定を分ける
+- 推定値は必ず推定と分かる形で示す
+- 推定が会社開示の事実に見える書き方は避ける
+- これは読者の trust だけでなく、AI が誤引用しないためにも重要
 
-### Keep terminology consistent
-- Use the same label across:
-  - one-line summary
-  - section headers
-  - tables
+### 用語を統一する
+- 次の場所で同じラベルを使う
+  - 1行サマリー
+  - 見出し
+  - 表
   - FAQ
   - schema
-- Example:
-  - do not alternate between "wealth", "retail", and "client assets" unless the distinctions are deliberate
+- たとえば、明確な意図がない限り `wealth` `retail` `client assets` を混在させない
 
-## GEO Table Guidance
-Use tables when they make extraction easier, not just for decoration.
+## GEO 向け表の考え方
+表は装飾のためではなく、抜き出しやすくするために使う。
 
-High-value GEO tables:
-- performance trend
-- segment breakdown with customers
-- driver formula table
-- leading indicator table
-- scenario table
-- risk table
+価値が高い表:
+- 業績推移表
+- セグメント別内訳と主要顧客
+- ドライバーの数式分解表
+- 先行指標表
+- シナリオ表
+- リスク表
 
-Each table should make the relationship between metric and meaning obvious.
+どの表も、`数値` と `意味` の関係が一目で分かるようにする。
 
-Good table columns:
-- metric
-- current level
-- recent change
-- why it matters
-- impact on revenue or profit
+望ましい列の例:
+- 指標
+- 現在水準
+- 直近変化
+- なぜ重要か
+- 売上または利益への影響
 
-## GEO-Sensitive Content Patterns
+## GEO 上、強い書き方と弱い書き方
 
-### Strong patterns
-- "The key question for investors is..."
-- "Revenue rises when..."
-- "The most important indicator is..."
-- "This matters because..."
-- "The company benefits when..."
+### 強いパターン
+- `The key question for investors is...`
+- `Revenue rises when...`
+- `The most important indicator is...`
+- `This matters because...`
+- `The company benefits when...`
 
-### Weak patterns
-- generic company introductions
-- long history sections near the top
-- unexplained jargon in the intro
-- tables with numbers but no interpretation
+### 弱いパターン
+- 一般的すぎる会社紹介
+- 記事冒頭の長い沿革説明
+- 導入での説明なし専門用語
+- 数字だけ並んでいて意味がない表
 
-## Source and Freshness Rules
-- Prefer first-party IR sources whenever available
-- If the article uses current macro or market indicators, include the current level and direction of change
-- For market or macro values that move daily, same-month values are usually sufficient if same-day values are unavailable
-- In those cases, state the time anchor explicitly such as "as of April 2026" or "as of April 24, 2026" rather than implying a real-time quote
-- Make sure the latest value used in the body also appears in the leading indicator table
-- If a number is old or uncertain, say so clearly rather than implying freshness
+## 出典と鮮度のルール
+- 可能な限り IR の一次情報を優先する
+- 最新のマクロ・市場指標を使う場合は、水準と方向感をセットで書く
+- 株価、金利、指数、為替のように毎日動く値は、同日値がなくても同月内の十分新しい値なら許容する
+- その場合は、`2026年4月時点` `2026年4月下旬時点` `2026年4月24日時点` のように時点を明示する
+- 当日値でないのに `現在` `足元` だけでリアルタイムのように見せない
+- 本文で使った最新値は、先行指標テーブルにも反映させる
+- 数値が古い、または不確かな場合は、鮮度が高いように見せず明示する
 
-## GEO and Schema
-- FAQPage schema should match the visible FAQ exactly
-- Article schema headline should match the actual article title
-- Article schema description should match the one-line summary in substance
-- Dates must use the actual generation or publication date, not a guessed date
+## GEO と schema の整合
+- FAQPage schema は、表示されている FAQ と完全一致させる
+- Article schema の headline は実際の記事タイトルと一致させる
+- Article schema の description は、1行サマリーと内容面で一致させる
+- 日付は推測ではなく、実際の生成日または公開日を使う
 
-## GEO Review Checklist
-Before publishing, confirm:
-- Can the first screen explain what drives earnings?
-- Is there a short answer box that could be quoted on its own?
-- Can an AI system identify the top 3 drivers quickly?
-- Is the analysis basis visible near the top?
-- Are the core entities explicitly named?
-- Are direct answers available for likely investor questions?
-- Are facts and estimates clearly separated?
-- Are the most important current indicators easy to extract?
-- Are the primary sources visible at the end?
+## GEO 公開前チェックリスト
+公開前に次を確認する。
+- 1画面目で「何が利益を動かすか」が説明できているか
+- 単独で引用できる短い結論ボックスがあるか
+- AI が上位3つのドライバーをすぐ特定できるか
+- 分析根拠が冒頭近くで見えるか
+- 主要エンティティが明示されているか
+- 投資家向けの直接回答が FAQ にあるか
+- 事実と推定が分かれているか
+- 重要な現在指標が抜き出しやすいか
+- 記事末尾に一次情報が見えるか
 
-## Current GEO Focus For This Repository
-1. Improve top-of-article answers
-2. Improve FAQ quality
-3. Improve consistency between body and schema
-4. Improve extractability of leading indicators
-5. Improve internal links that move readers from beginner context to deeper analysis
+## このリポジトリで今重点的に見る GEO 項目
+1. 記事冒頭の答え方の改善
+2. FAQ の質向上
+3. 本文と schema の整合性向上
+4. 先行指標の抽出しやすさ改善
+5. 初学者向け記事から深掘り記事への内部リンク改善
