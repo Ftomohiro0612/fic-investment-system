@@ -21,14 +21,18 @@ The goal is to preserve analytical depth while making the structure easier for b
 4. Separate confirmed facts from estimates
 5. Use current numbers with clear provenance
 6. Add FAQ-style direct answers for likely investor questions
+7. Show the analysis basis and primary sources clearly
 
 ## What Answer Engines Need
 Answer engines tend to perform better when an article includes:
 - a short early summary of the main thesis
+- a short extractable answer box that can stand alone as the article's direct response
 - clear named entities such as company names, segments, products, customers, competitors, and macro drivers
 - strong causal wording such as "X drives Y because Z"
 - short direct answers before deeper explanation
+- a visible statement of what materials the analysis is based on
 - structured tables that pair metrics with meaning
+- a visible list of primary sources actually used
 - consistent terminology across summary, body, FAQ, and schema
 
 ## Required GEO Structure For Company Analysis
@@ -51,7 +55,25 @@ Example pattern:
 - Use 2 to 3 bullets only
 - Prefer investor questions over generic overview bullets
 
-### 4. Early Entity Framing
+### 4. Answer Box
+- Add a short "この記事の結論" block near the top
+- Keep it to 3 to 5 short lines
+- It should answer:
+  - what drives earnings
+  - what investors should watch next
+  - what would push the case up or down
+- This block should be easy for an answer engine to extract on its own
+
+### 5. Analysis Basis Block
+- Add a short visible block near the top that states what the analysis is based on
+- Prefer a simple factual format such as:
+  - disclosed earnings materials
+  - medium-term plan
+  - integrated report
+  - latest market or macro indicators where relevant
+- Keep it short; this is for trust and provenance, not a long disclaimer
+
+### 6. Early Entity Framing
 - Identify the key segments, customers, and demand drivers early
 - Name real entities whenever the source material supports it
 - Prefer explicit relationships such as:
@@ -59,10 +81,16 @@ Example pattern:
   - "WS revenue depends on institutional trading activity"
   - "IM revenue rises with AUM growth"
 
-### 5. FAQ Section
+### 7. FAQ Section
 - Include 3 direct investor-style questions
 - Answers must start with the conclusion in the first sentence
 - FAQ wording should reflect realistic search and answer-engine prompts
+
+### 8. References Section
+- Add a visible "参照資料" section near the end of the article
+- List only sources actually used in the article
+- Prefer first-party IR materials and official statistics first
+- This section helps both reader trust and answer-engine grounding
 
 ## GEO Writing Rules
 
@@ -136,6 +164,8 @@ Good table columns:
 ## Source and Freshness Rules
 - Prefer first-party IR sources whenever available
 - If the article uses current macro or market indicators, include the current level and direction of change
+- For market or macro values that move daily, same-month values are usually sufficient if same-day values are unavailable
+- In those cases, state the time anchor explicitly such as "as of April 2026" or "as of April 24, 2026" rather than implying a real-time quote
 - Make sure the latest value used in the body also appears in the leading indicator table
 - If a number is old or uncertain, say so clearly rather than implying freshness
 
@@ -148,11 +178,14 @@ Good table columns:
 ## GEO Review Checklist
 Before publishing, confirm:
 - Can the first screen explain what drives earnings?
+- Is there a short answer box that could be quoted on its own?
 - Can an AI system identify the top 3 drivers quickly?
+- Is the analysis basis visible near the top?
 - Are the core entities explicitly named?
 - Are direct answers available for likely investor questions?
 - Are facts and estimates clearly separated?
 - Are the most important current indicators easy to extract?
+- Are the primary sources visible at the end?
 
 ## Current GEO Focus For This Repository
 1. Improve top-of-article answers
