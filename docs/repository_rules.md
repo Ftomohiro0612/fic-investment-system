@@ -1,35 +1,38 @@
-# Repository Rules
+# リポジトリ運用ルール
 
-## Purpose
-Keep this repository easy to operate, safe to change, and useful for both humans and coding agents.
+## 目的
+このリポジトリを、運用しやすく、安全に変更でき、人にもコーディングエージェントにも分かりやすい状態で保つこと。
 
-## General Rules
-- Prefer small, reversible changes
-- Document why a change is needed, not only what changed
-- Keep source-of-truth prompt logic in repository files, not embedded in Make
-- Avoid duplicating the same rule across multiple prompt files
+## 全体ルール
+- 小さく、戻しやすい変更を優先する
+- 何を変えたかだけでなく、なぜ変える必要があったかも残す
+- プロンプトの正本は Make 直書きではなく、原則としてリポジトリ内ファイルで管理する
+- 同じルールを複数のプロンプトに重複記載しすぎない
 
-## Prompt Rules
-- Separate article logic from SEO rules
-- Keep intro, summary, and output format independently editable
-- Add new prompt files only when they represent a reusable responsibility
+## プロンプト運用ルール
+- 記事ロジックと SEO / GEO ルールは分けて管理する
+- 導入、要約、出力形式はできるだけ独立して編集できる形にする
+- 新しいプロンプトファイルは、再利用価値のある責務がある場合にだけ増やす
 
-## WordPress Rules
-- Document target templates before modifying snippets
-- Prefer reusable snippets over one-off post-level fixes
-- Keep presentation concerns in CSS and structure concerns in PHP or template logic
+## WordPress 運用ルール
+- スニペットを触る前に、対象テンプレートや表示箇所を明確にする
+- 単発の投稿個別修正より、再利用できるスニペットを優先する
+- 見た目は CSS、構造は PHP / テンプレートロジックで管理する
 
-## SEO Rules
-- Prioritize search intent alignment over cosmetic wording changes
-- Put the conclusion early in investment articles
-- Design internal links to guide the next best read for the user
+## SEO ルール
+- 表現の見た目より、検索意図への一致を優先する
+- 投資記事では結論を早めに出す
+- 内部リンクは、次に読むべき記事へ自然に導く設計にする
 
-## GEO Rules
-- Optimize for answer-engine extractability without reducing analytical depth
-- Make key entities, drivers, and investor conclusions explicit early
-- Keep visible FAQ answers and schema answers aligned
-- Separate confirmed facts from estimates clearly
+## GEO ルール
+- 分析の深さを落とさずに、AI や回答エンジンが抜き出しやすい構造にする
+- 重要なエンティティ、業績ドライバー、投資家向け結論を早い段階で明示する
+- 記事冒頭には、記事全体の直接回答として機能する短い結論ブロックを置く
+- 分析根拠と参照資料の性質を、冒頭近くで分かるようにする
+- 信頼性や抽出性が大きく上がるなら、見える形の「参照資料」セクションを置く
+- 表示上の FAQ と schema 内の FAQ は一致させる
+- 確認できた事実と推定値は明確に分ける
 
-## Documentation Rules
-- Update roadmap when priorities materially change
-- Add major structural decisions to the change log
+## ドキュメント運用ルール
+- 優先順位が大きく変わったらロードマップを更新する
+- 大きな構造変更や運用判断は change log に残す
