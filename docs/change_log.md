@@ -1,5 +1,9 @@
 # Change Log
 
+## 2026-04-26
+- Added externalized industry analysis article prompt at `prompts/article/industry_analysis_article_main.md`
+- Updated the industry analysis article prompt to align with SEO/GEO guidance, including early conclusion structure, FAQ fit, source visibility, and time-stamped market indicators
+
 ## 2026-04-24
 - Created repository foundation files for prompt, Make, WordPress, SEO, and docs structure
 - Added initial README and AGENTS instructions
