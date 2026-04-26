@@ -9,6 +9,7 @@
 - Tightened the trend-list prompt to prefer listed Japanese companies in `key_companies`, avoid `価格転嫁` for policy/FX themes, and forbid closing summaries in output
 - Finalized the scenario-1 trend-list prompt with stricter upstream handling for duplicate-risk themes and weaker use of `売上成長` / `需給逼迫` on slowdown-driven topics
 - Added explicit forced-duplicate and narrowed `要確認` rules so same-company same-event themes are classified as duplicate upstream
+- Updated the industry trend-list prompt to reference `{{34.existing_titles_clean}}` for deduplicated existing-article titles from Make
 - Tightened the industry trend validation prompt to delete weak duplicate themes more aggressively and constrain `affected_industries`
 - Further tightened the industry trend validation prompt to drop most `C` themes, handle mixed-impact themes more strictly, and enforce `driver_type` alignment
 - Locked duplicate themes so they cannot be promoted back from `C`, improved driver-type handling for FX/rates/supply-chain themes, and kept `key_companies` focused on listed Japanese companies
