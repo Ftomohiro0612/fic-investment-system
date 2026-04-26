@@ -167,26 +167,62 @@
 【追加出力：先行指標検索クエリ】
 メモ作成後、以下の形式で先行指標の現在値を取得するための
 検索クエリを5本出力してください。
-- クエリは短く簡潔にすること（5〜7語以内）
-- 指標名のみをシンプルに検索すること
-- 例：「SCFI current level」「Baltic Dry Index latest」
-  「BOJ policy rate current」「USD JPY latest」
 
-条件：
-- メモの「7. 観察すべき先行指標」で挙げた指標の
-  最新数値・直近の変化を取得できるクエリにすること
-- current / latest / statistics / index level /
-  recent figures などを含むクエリを優先すること
-- 政策金利・為替・物価・市場価格等の基本指標は
-  必ずクエリに含めること
-- 恩恵企業・逆風企業の直近決算数値や
-  為替・原料費感応度を取得できるクエリを優先すること
-- 一般的すぎるクエリ（例：「Japan economy latest」）は避け、
-  指標名を具体的に指定すること
-  （例：「BOJ policy rate current」「USD JPY latest」）
+【クエリ設計の考え方】
+このクエリ群の目的は、個社IRの代替ではなく、
+記事執筆時点の「市場全体」と「業界中間指標」の最新状況を
+補完することです。
+個社の決算説明資料・統合報告書・中期経営計画で確認できる内容は、
+このクエリ群で無理に重複取得しなくてよいです。
+
+【クエリ構成（必須）】
+5本は以下の優先順位で構成すること。
+1. 市場価格・マクロ指標：2本
+2. 業界需給・業界価格指標：2〜3本
+3. 個社補完クエリ：0〜1本（必要な場合のみ）
+
+個社補完クエリは必須ではない。
+個社IRで十分に確認できている場合は、5本すべてを市場・業界指標で構成してよい。
+
+【市場価格・マクロ指標クエリのルール】
+- 原油、為替、金利、政策、運賃、物価などの市場全体指標を対象にすること
+- 指標名を具体的に入れること
+- current / latest / index level / recent figures / statistics を優先して使うこと
+- 例：
+  WTI crude oil current level
+  USD JPY latest
+  BOJ policy rate current
+
+【業界需給・業界価格指標クエリのルール】
+- ナフサ価格、エチレンスプレッド、運賃指数、稼働率、受注残、CAPEX計画など、
+  市場全体指標から個社業績に接続する中間変数を優先すること
+- 記事の因果構造で実際に使う指標だけを選ぶこと
+- 例：
+  Japan naphtha CFR latest
+  Japan ethylene cracker operating rate
+  BOJ tankan capex latest
+  SCFI current level
+
+【個社補完クエリのルール】
+- 個社IR・決算資料・統合報告書・中計で確認しきれない場合のみ出力すること
+- 出す場合は1本まで
+- 企業名 + IR系語 + テーマ語 の組み合わせにすること
+- IR系語は以下を優先すること：
+  IR / results / presentation / integrated report / business risks / segment
+- sensitivity / impact / earnings だけで終わる抽象的なクエリは禁止
+- 例：
+  ENEOS business risks crude oil price
+  Sumitomo Chemical naphtha presentation
+
+【共通ルール】
+- クエリは短く簡潔にすること（原則3〜7語）
+- 指標名や企業名を具体的に指定すること
+- 一般的すぎるクエリは禁止
+  例：Japan economy latest
 - ダブルクォートで囲まないこと
 - 年号を含めないこと
 - 1行1クエリにすること
+- 検索結果から一次情報や主要ソースに到達しやすい表現を優先すること
 
 【重要：出力の終わり方】
 メモ本文が長くなっても、必ず最後に以下の形式で終了すること。ディスクレーマーや補足は含めないこと。
