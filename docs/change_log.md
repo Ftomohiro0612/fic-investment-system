@@ -6,6 +6,7 @@
 - Added GitHub-managed mirrors for the industry trend-list generation prompt and the trend validation/formatting prompt
 - Added a GitHub-managed mirror for the upstream industry news search-query generation prompt at `prompts/search/industry_news_query_generation_main.md`
 - Tightened the industry trend validation prompt to delete weak duplicate themes more aggressively and constrain `affected_industries`
+- Further tightened the industry trend validation prompt to drop most `C` themes, handle mixed-impact themes more strictly, and enforce `driver_type` alignment
 - Refined the memo prompt's leading-indicator query rules to prioritize market and industry indicators over redundant company-IR lookups
 - Tightened the memo prompt ending rules to forbid disclaimers or extra notes before `SPLIT_HERE`
 - Updated the industry analysis article prompt to align with SEO/GEO guidance, including early conclusion structure, FAQ fit, source visibility, and time-stamped market indicators
