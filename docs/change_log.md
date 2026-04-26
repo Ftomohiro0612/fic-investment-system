@@ -4,6 +4,7 @@
 - Added externalized industry analysis article prompt at `prompts/article/industry_analysis_article_main.md`
 - Added a GitHub-managed mirror of the current Make-direct industry analysis memo prompt at `prompts/article/industry_analysis_memo_main.md`
 - Refined the memo prompt's leading-indicator query rules to prioritize market and industry indicators over redundant company-IR lookups
+- Tightened the memo prompt ending rules to forbid disclaimers or extra notes before `SPLIT_HERE`
 - Updated the industry analysis article prompt to align with SEO/GEO guidance, including early conclusion structure, FAQ fit, source visibility, and time-stamped market indicators
 - Added `make/scenarios/industry_analysis_flow.md` to document the recommended Make integration for the externalized industry analysis article prompt
 - Adjusted the industry analysis article prompt to be instruction-only so Make can append runtime fields in the same pattern as the company analysis flow
