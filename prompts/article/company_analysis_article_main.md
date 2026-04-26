@@ -424,7 +424,9 @@
   </div>
 - ここだけ読んでも「何で稼ぐ会社か」「次の決算で何を見るべきか」「上振れ要因・下振れ要因」が分かる形にすること
 - AIや検索結果で抜粋されても意味が通る、自己完結した文章にすること
-■ この記事でわかること（3点以内、summary-boxで冒頭に配置）
+■ この記事でわかること（3点以内、takeaways-boxで冒頭に配置）
+- `<div class="takeaways-box">` で囲み、`この記事の結論` より軽い導線ボックスとして出力すること
+- `この記事の結論` と同じ見た目にしないこと
 ■ 分析根拠（冒頭に短く配置）
 - `この記事でわかること` の直後に、分析の根拠を2〜3文で明示すること
 - 使った資料種別のうち、実際に参照したものだけを書くこと
@@ -507,7 +509,7 @@
 - <br>タグは禁止
 - HTMLコメントは含めない
 - summary-box内の見出しは<h2>を使わず、<p>に<strong>を組み合わせる
-- 使用可能なCSSクラス：summary-box, table-wrapper, author-credit, disclaimer
+- 使用可能なCSSクラス：summary-box, takeaways-box, table-wrapper, author-credit, disclaimer
 - 表は<table>タグで作成し、<div class="table-wrapper">でラップしてください
 ・FAQセクションは<div class="faq-section">で囲むこと
 ・スキーマはdisclaimerの直後に配置すること

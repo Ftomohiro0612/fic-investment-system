@@ -28,6 +28,7 @@ JSON以外のテキスト、前置き、コードブロック記法は一切含�
 
 ## 使用可能な主なCSSクラス
 - `summary-box`
+- `takeaways-box`
 - `table-wrapper`
 - `author-credit`
 - `disclaimer`

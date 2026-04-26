@@ -189,9 +189,10 @@
 ■ この記事でわかること
 - 3点以内
 - 一般論ではなく、投資家の疑問にそのまま答える内容にすること
-- 必ず `<div class="summary-box">` で囲むこと
+- 必ず `<div class="takeaways-box">` で囲むこと
 - 見出しは `<p><strong>この記事でわかること</strong></p>` の形式にすること
 - 項目は `<ul><li>...</li></ul>` で 2〜3 個に絞ること
+- `この記事の結論` と同じ見た目にせず、より軽い導線ボックスとして出力すること
 
 ■ 分析根拠
 - 冒頭近くに短く置くこと
@@ -300,7 +301,7 @@
 - HTMLコメントは含めない
 - summary-box 内の見出しは `<h2>` を使わず `<p>` に `<strong>` を組み合わせる
 - 使用可能なCSSクラス：
-  summary-box, table-wrapper, author-credit, disclaimer
+  summary-box, takeaways-box, table-wrapper, author-credit, disclaimer
 - 表は `<table>` タグで作成し `<div class="table-wrapper">` でラップすること
 - 記事本文中に一次情報への引用リンクを最低3つ含めること
 - 引用形式：`<a href="[URL]" target="_blank" rel="noopener">[出典名]</a>`
