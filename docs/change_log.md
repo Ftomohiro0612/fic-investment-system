@@ -7,6 +7,7 @@
 - Added a GitHub-managed mirror for the upstream industry news search-query generation prompt at `prompts/search/industry_news_query_generation_main.md`
 - Strengthened the industry trend-list generation prompt so duplicate risk, distant macro spillovers, and driver-type mismatches are handled earlier upstream
 - Tightened the trend-list prompt to prefer listed Japanese companies in `key_companies`, avoid `価格転嫁` for policy/FX themes, and forbid closing summaries in output
+- Finalized the scenario-1 trend-list prompt with stricter upstream handling for duplicate-risk themes and weaker use of `売上成長` / `需給逼迫` on slowdown-driven topics
 - Tightened the industry trend validation prompt to delete weak duplicate themes more aggressively and constrain `affected_industries`
 - Further tightened the industry trend validation prompt to drop most `C` themes, handle mixed-impact themes more strictly, and enforce `driver_type` alignment
 - Locked duplicate themes so they cannot be promoted back from `C`, improved driver-type handling for FX/rates/supply-chain themes, and kept `key_companies` focused on listed Japanese companies
