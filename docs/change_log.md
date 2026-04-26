@@ -11,6 +11,7 @@
 - Tightened company-name normalization and raised the deletion bar for macro themes whose impact on Japanese companies is too indirect
 - Tightened `affected_industries` formatting and raised the deletion bar for weak `B` themes without clear first-order impact on Japanese companies
 - Further refined driver-type correction for risk-normalization and demand-slowdown themes, and made mixed-impact themes easier to drop when the article axis is too diffuse
+- Finalized `prompts/article/industry_analysis_trend_validation_main.md` by reverting to the best-performing validated version from `6cfa97d` after later tightening proved too aggressive
 - Refined the memo prompt's leading-indicator query rules to prioritize market and industry indicators over redundant company-IR lookups
 - Tightened the memo prompt ending rules to forbid disclaimers or extra notes before `SPLIT_HERE`
 - Updated the industry analysis article prompt to align with SEO/GEO guidance, including early conclusion structure, FAQ fit, source visibility, and time-stamped market indicators
