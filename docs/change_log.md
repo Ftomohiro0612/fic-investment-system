@@ -5,6 +5,7 @@
 - Added a GitHub-managed mirror of the current Make-direct industry analysis memo prompt at `prompts/article/industry_analysis_memo_main.md`
 - Added GitHub-managed mirrors for the industry trend-list generation prompt and the trend validation/formatting prompt
 - Added a GitHub-managed mirror for the upstream industry news search-query generation prompt at `prompts/search/industry_news_query_generation_main.md`
+- Strengthened the industry trend-list generation prompt so duplicate risk, distant macro spillovers, and driver-type mismatches are handled earlier upstream
 - Tightened the industry trend validation prompt to delete weak duplicate themes more aggressively and constrain `affected_industries`
 - Further tightened the industry trend validation prompt to drop most `C` themes, handle mixed-impact themes more strictly, and enforce `driver_type` alignment
 - Locked duplicate themes so they cannot be promoted back from `C`, improved driver-type handling for FX/rates/supply-chain themes, and kept `key_companies` focused on listed Japanese companies
