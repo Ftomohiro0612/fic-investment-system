@@ -110,6 +110,35 @@
   color: var(--ey-text);
 }
 
+.takeaways-box {
+  background-color: #fffef8;
+  border: 1px solid var(--ey-soft-border);
+  border-left: 4px solid #e6c75a;
+  border-radius: 0;
+  padding: 18px 22px;
+  margin: 24px 0 32px;
+  box-shadow: none;
+}
+
+.takeaways-box p:first-child {
+  font-size: 1em;
+  font-weight: 700;
+  margin: 0 0 12px;
+  color: var(--ey-black);
+  letter-spacing: 0.01em;
+}
+
+.takeaways-box ul {
+  margin: 0;
+  padding-left: 1.2em;
+}
+
+.takeaways-box li {
+  margin-bottom: 8px;
+  line-height: 1.75;
+  color: var(--ey-text);
+}
+
 .formula-box {
   background-color: #fffdf2;
   border: 1px solid var(--ey-border);

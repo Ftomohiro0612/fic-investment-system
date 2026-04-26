@@ -21,6 +21,7 @@
 - Tightened the memo prompt ending rules to forbid disclaimers or extra notes before `SPLIT_HERE`
 - Updated the industry analysis article prompt to align with SEO/GEO guidance, including early conclusion structure, FAQ fit, source visibility, and time-stamped market indicators
 - Split `この記事でわかること` into a lighter `takeaways-box` for both industry and company article prompts so it is visually distinct from the stronger `この記事の結論` summary box
+- Added `takeaways-box` styling to `wordpress/css/custom.css` so article takeaways render with a lighter visual weight than the main conclusion box
 - Added `make/scenarios/industry_analysis_flow.md` to document the recommended Make integration for the externalized industry analysis article prompt
 - Adjusted the industry analysis article prompt to be instruction-only so Make can append runtime fields in the same pattern as the company analysis flow
 - Tightened the industry analysis article prompt after a live run to stabilize summary-box structure, restrict `<mark>` placement, reduce over-assertive hypothesis wording, and require `keywords` in Article schema
