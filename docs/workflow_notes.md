@@ -24,3 +24,4 @@ join(map(16.array; "0"); decodeURL("%0A"))
 - Do not assume module references from memory; verify the actual Make mapping before advising changes.
 - Keep GitHub prompt mirrors aligned with real Make references when a prompt depends on module outputs.
 - Treat the article generation module as GitHub-read, not Make direct text.
+- The Make scenario `X投稿文章自動作成（業界分析）` should use `prompts/social/x_post_industry_analysis_main.md` as the managed prompt source text.

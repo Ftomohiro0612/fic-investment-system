@@ -28,6 +28,7 @@
 - Tightened the industry analysis article prompt after a live run to stabilize summary-box structure, restrict `<mark>` placement, reduce over-assertive hypothesis wording, and require `keywords` in Article schema
 - Updated the memo prompt to explicitly treat scenario-1 fields as provisional, keep reverse-windfall themes from forcing weak benefit names, and prefer internally consistent numeric series
 - Updated the article prompt to allow `直接恩恵：該当なし` on reverse themes, prefer first-order/source-backed company selection over weak carryover from the memo, enforce more consistent numeric series, and fix Article schema `keywords` to string format
+- Added `prompts/social/x_post_industry_analysis_main.md` as the managed final prompt for the industry-analysis X post generator, preserving the old version's stopping power while reducing stiffness and over-explanation
 
 ## 2026-04-24
 - Created repository foundation files for prompt, Make, WordPress, SEO, and docs structure
