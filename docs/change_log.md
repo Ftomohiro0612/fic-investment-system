@@ -33,6 +33,7 @@
 - Finalized the industry X-post prompt by reverting to the better-performing balanced version from `3f78b0b`, which preserved stronger stopping power while staying natural enough for X
 - Restored a single fixed hashtag on industry X posts by requiring `#日本株` at the end of each post
 - Tightened `post3` in the industry X-post prompt so the causal chain ends on a single company, sector, or outcome without adding a second axis
+- Further tightened the industry X-post prompt so `post3` does not cram both upside and downside into one post and `post4` keeps to a single question without stacking extra angles
 
 ## 2026-04-24
 - Created repository foundation files for prompt, Make, WordPress, SEO, and docs structure
