@@ -35,3 +35,4 @@
 - Added SEO introduction rules with two-layer article guidance
 - Added initial Make flow and field definitions
 - Added initial roadmap and repository rules
+- 2026-04-27: `docs/about_page_final.md` と `docs/editorial_policy_final.md` を更新し、公認会計士としての視点とAI活用・公開前確認の文言を整備。あわせて `docs/sidebar_profile_text_final.md` を追加。
