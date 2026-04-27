@@ -36,6 +36,7 @@
 - Further tightened the industry X-post prompt so `post3` does not cram both upside and downside into one post and `post4` keeps to a single question without stacking extra angles
 - Nudged the industry X-post prompt back toward the stronger old style for `post3` and `post4`, emphasizing purer causal chains and stronger number-led questions
 - Further strengthened industry `post4` to prefer a single number-led hook and shorter fragment-style follow-up instead of explanatory phrasing
+- Moved industry `post4` even closer to the older high-performing style: single number hook, `この数字、意味わかりますか？`, then up to two short fragments before the CTA
 - Added `prompts/social/x_post_company_analysis_main.md` as the managed final prompt for the company-analysis X post generator, aligned with the stronger stop-scroll structure used for industry-analysis posts while tailoring output to company-specific drivers
 - Reworked `prompts/social/x_post_company_analysis_main.md` to be old-prompt-first: stronger reverse-angle openings, sharper numeric contrast, and tighter company-specific risk/driver framing
 
