@@ -24,4 +24,40 @@ join(map(16.array; "0"); decodeURL("%0A"))
 - Do not assume module references from memory; verify the actual Make mapping before advising changes.
 - Keep GitHub prompt mirrors aligned with real Make references when a prompt depends on module outputs.
 - Treat the article generation module as GitHub-read, not Make direct text.
-- The Make scenario `XæŠ•ç¨¿æ–‡ç« è‡ªå‹•ä½œæˆï¼ˆæ¥­ç•Œåˆ†æï¼‰` should use `prompts/social/x_post_industry_analysis_main.md` as the managed prompt source text.
+- The Make scenario `XæŠ•ç¨¿æ–E« è‡ªå‹•ä½œæEEˆæ¥­ç•ŒåEæï¼‰` should use `prompts/social/x_post_industry_analysis_main.md` as the managed prompt source text.
+
+
+## Company Analysis Prompt Notes
+
+- prompts/article/company_analysis_article_main.md and prompts/article/company_analysis_memo_main.md now include explicit rules to prevent fiscal-period label mixups.
+- Treat labels such as 2025”N“x, FY2025, 2025”N3ŒŠú, and 2026”N3ŒŠú only after confirming the actual covered period.
+- Do not mix these concepts without an explicit label:
+  - full-year results
+  - standalone quarter results
+  - quarter-end composition ratios
+  - local-currency year-over-year growth rates
+- Do not restate quarter-end composition ratios as if they were full-year composition ratios.
+- Do not generalize a single quarter gross margin or operating margin into a permanent profit formula such as gprofits are determined by gross margin times sales growth.h
+- When explaining profit structure, check SG&A ratio, FX, product mix, regional mix, and non-operating items instead of reducing everything to one variable.
+- Future logistics-center schedules, capacity-expansion claims, floor-area multiples, and similar project facts should only be stated definitively when confirmed in company primary materials.
+- Third-party market forecasts must retain source identity, publication timing, and forecast target year; do not cite them only as external materials.
+- If prompt rules are updated on main, mirror the operational implication in docs/workflow_notes.md in the same change set.
+## Earnings Schedule UI Notes
+
+- The earnings schedule status UI is shared conceptually between:
+  - the top-page upcoming cards
+  - the `/earnings-schedule/` table page
+- Status badges are rendered by `wordpress/snippets/functions.php` via `fic_render_status_badge()`.
+- The rendered badge HTML now assumes:
+  - `<span class="fic-status-icon" aria-hidden="true"></span>`
+  - `<span class="fic-status-label">...</span>`
+- Do not reintroduce emoji directly into the status label strings such as `?` or `??`.
+  - Icons are now handled visually by CSS.
+  - Reintroducing emoji will cause duplicate icon rendering on the top-page cards.
+- Badge styling is handled in `wordpress/css/custom.css`.
+  - `.fic-upcoming-card .fic-status` covers the top-page card style.
+  - `.fic-earnings-table .fic-status` covers the table-page style.
+- If the earnings schedule page looks plain again in the future, first check whether:
+  - `fic_render_status_badge()` is still outputting the `fic-status-icon` and `fic-status-label` spans
+  - the status label strings remain plain text (`ŒöŠJÏ‚İ`, `XV—\’è`, `‹L–ì¬—\’è`)
+  - the CSS selectors for both `.fic-upcoming-card` and `.fic-earnings-table` are still present
