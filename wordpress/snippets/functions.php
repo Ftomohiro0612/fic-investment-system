@@ -244,12 +244,13 @@ function fic_render_status_badge($status_data) {
     ];
 
     $class = isset($class_map[$status]) ? $class_map[$status] : 'fic-status-missing';
+    $inner = '<span class="fic-status-icon" aria-hidden="true"></span><span class="fic-status-label">' . esc_html($label) . '</span>';
 
     if (!empty($url)) {
-        return '<a class="fic-status ' . esc_attr($class) . '" href="' . esc_url($url) . '">' . esc_html($label) . '</a>';
+        return '<a class="fic-status ' . esc_attr($class) . '" href="' . esc_url($url) . '">' . $inner . '</a>';
     }
 
-    return '<span class="fic-status ' . esc_attr($class) . '">' . esc_html($label) . '</span>';
+    return '<span class="fic-status ' . esc_attr($class) . '">' . $inner . '</span>';
 }
 
 function fic_render_earnings_schedule_table() {

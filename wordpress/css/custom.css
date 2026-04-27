@@ -490,6 +490,7 @@ article mark {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 10px;
   width: 100%;
   min-height: 58px;
   padding: 14px 18px;
@@ -499,14 +500,49 @@ article mark {
   text-decoration: none !important;
   border: 2px solid transparent;
   box-sizing: border-box;
-  transition: all 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, border-color 0.2s ease;
   background-image: none !important;
+  box-shadow: 0 10px 24px rgba(17, 24, 39, 0.07);
+}
+
+.fic-upcoming-card .fic-status:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 30px rgba(17, 24, 39, 0.11);
+}
+
+.fic-upcoming-card .fic-status-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  flex-shrink: 0;
+  font-size: 0.92rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.fic-upcoming-card .fic-status-label {
+  display: inline-flex;
+  align-items: center;
+  line-height: 1;
+  letter-spacing: 0.01em;
 }
 
 .fic-upcoming-card .fic-status-done {
-  background: #eefaf2;
+  background: linear-gradient(180deg, #f3fdf7 0%, #e8f8ef 100%);
   color: #1f9d55 !important;
   border-color: #7ed6a3;
+}
+
+.fic-upcoming-card .fic-status-done .fic-status-icon {
+  background: #34c97b;
+  color: #ffffff;
+}
+
+.fic-upcoming-card .fic-status-done .fic-status-icon::before {
+  content: "\2713";
 }
 
 .fic-upcoming-card .fic-status-done:hover {
@@ -514,9 +550,18 @@ article mark {
 }
 
 .fic-upcoming-card .fic-status-pending {
-  background: #f5f0ff;
+  background: linear-gradient(180deg, #faf7ff 0%, #f1eaff 100%);
   color: #6d4aff !important;
   border-color: #b9a7ff;
+}
+
+.fic-upcoming-card .fic-status-pending .fic-status-icon {
+  background: #7c5cff;
+  color: #ffffff;
+}
+
+.fic-upcoming-card .fic-status-pending .fic-status-icon::before {
+  content: "\2192";
 }
 
 .fic-upcoming-card .fic-status-pending:hover {
@@ -524,9 +569,18 @@ article mark {
 }
 
 .fic-upcoming-card .fic-status-missing {
-  background: #ffffff;
+  background: linear-gradient(180deg, #ffffff 0%, #f5f7fa 100%);
   color: #333333 !important;
   border-color: #bfc5cf;
+}
+
+.fic-upcoming-card .fic-status-missing .fic-status-icon {
+  background: #e7ebf1;
+  color: #596273;
+}
+
+.fic-upcoming-card .fic-status-missing .fic-status-icon::before {
+  content: "+";
 }
 
 .fic-upcoming-card .fic-status-missing:hover {
@@ -679,10 +733,17 @@ article mark {
   .fic-upcoming-card .fic-status {
     width: auto;
     min-height: 36px;
-    padding: 7px 10px;
-    border-radius: 10px;
+    gap: 8px;
+    padding: 8px 12px;
+    border-radius: 12px;
     font-size: 0.82rem;
     white-space: nowrap;
+  }
+
+  .fic-upcoming-card .fic-status-icon {
+    width: 22px;
+    height: 22px;
+    font-size: 0.74rem;
   }
 
   .fic-upcoming-more {
