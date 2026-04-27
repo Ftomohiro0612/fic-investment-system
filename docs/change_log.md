@@ -40,6 +40,7 @@
 - Added `prompts/social/x_post_company_analysis_main.md` as the managed final prompt for the company-analysis X post generator, aligned with the stronger stop-scroll structure used for industry-analysis posts while tailoring output to company-specific drivers
 - Reworked `prompts/social/x_post_company_analysis_main.md` to be old-prompt-first: stronger reverse-angle openings, sharper numeric contrast, and tighter company-specific risk/driver framing
 - Pushed the company-analysis X-post prompt further toward the original high-performing style by preferring `会社名＝〇〇ではない` openings, downside-led causal chains, and single-number question hooks
+- Moved company-analysis posts even closer to the original best-performing style by making `post2` prefer same-definition short numeric contrasts and reinforcing the classic `post4` single-number hook pattern
 
 ## 2026-04-24
 - Created repository foundation files for prompt, Make, WordPress, SEO, and docs structure
