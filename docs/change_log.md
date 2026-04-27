@@ -41,6 +41,7 @@
 - Reworked `prompts/social/x_post_company_analysis_main.md` to be old-prompt-first: stronger reverse-angle openings, sharper numeric contrast, and tighter company-specific risk/driver framing
 - Pushed the company-analysis X-post prompt further toward the original high-performing style by preferring `会社名＝〇〇ではない` openings, downside-led causal chains, and single-number question hooks
 - Moved company-analysis posts even closer to the original best-performing style by making `post2` prefer same-definition short numeric contrasts and reinforcing the classic `post4` single-number hook pattern
+- Finalized the company-analysis X-post prompt by requiring `#日本株` plus a company-name hashtag so posts remain attributable even when the company name is less prominent in the body
 
 ## 2026-04-24
 - Created repository foundation files for prompt, Make, WordPress, SEO, and docs structure
