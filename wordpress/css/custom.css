@@ -486,7 +486,8 @@ article mark {
   margin-top: 10px;
 }
 
-.fic-upcoming-card .fic-status {
+.fic-upcoming-card .fic-status,
+.fic-earnings-table .fic-status {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -505,12 +506,14 @@ article mark {
   box-shadow: 0 10px 24px rgba(17, 24, 39, 0.07);
 }
 
-.fic-upcoming-card .fic-status:hover {
+.fic-upcoming-card .fic-status:hover,
+.fic-earnings-table .fic-status:hover {
   transform: translateY(-1px);
   box-shadow: 0 14px 30px rgba(17, 24, 39, 0.11);
 }
 
-.fic-upcoming-card .fic-status-icon {
+.fic-upcoming-card .fic-status-icon,
+.fic-earnings-table .fic-status-icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -523,68 +526,137 @@ article mark {
   letter-spacing: -0.01em;
 }
 
-.fic-upcoming-card .fic-status-label {
+.fic-upcoming-card .fic-status-label,
+.fic-earnings-table .fic-status-label {
   display: inline-flex;
   align-items: center;
   line-height: 1;
   letter-spacing: 0.01em;
 }
 
-.fic-upcoming-card .fic-status-done {
+.fic-upcoming-card .fic-status-done,
+.fic-earnings-table .fic-status-done {
   background: linear-gradient(180deg, #f3fdf7 0%, #e8f8ef 100%);
   color: #1f9d55 !important;
   border-color: #7ed6a3;
 }
 
-.fic-upcoming-card .fic-status-done .fic-status-icon {
+.fic-upcoming-card .fic-status-done .fic-status-icon,
+.fic-earnings-table .fic-status-done .fic-status-icon {
   background: #34c97b;
   color: #ffffff;
 }
 
-.fic-upcoming-card .fic-status-done .fic-status-icon::before {
+.fic-upcoming-card .fic-status-done .fic-status-icon::before,
+.fic-earnings-table .fic-status-done .fic-status-icon::before {
   content: "\2713";
 }
 
-.fic-upcoming-card .fic-status-done:hover {
+.fic-upcoming-card .fic-status-done:hover,
+.fic-earnings-table .fic-status-done:hover {
   background: #e4f6eb;
 }
 
-.fic-upcoming-card .fic-status-pending {
+.fic-upcoming-card .fic-status-pending,
+.fic-earnings-table .fic-status-pending {
   background: linear-gradient(180deg, #faf7ff 0%, #f1eaff 100%);
   color: #6d4aff !important;
   border-color: #b9a7ff;
 }
 
-.fic-upcoming-card .fic-status-pending .fic-status-icon {
+.fic-upcoming-card .fic-status-pending .fic-status-icon,
+.fic-earnings-table .fic-status-pending .fic-status-icon {
   background: #7c5cff;
   color: #ffffff;
 }
 
-.fic-upcoming-card .fic-status-pending .fic-status-icon::before {
+.fic-upcoming-card .fic-status-pending .fic-status-icon::before,
+.fic-earnings-table .fic-status-pending .fic-status-icon::before {
   content: "\2192";
 }
 
-.fic-upcoming-card .fic-status-pending:hover {
+.fic-upcoming-card .fic-status-pending:hover,
+.fic-earnings-table .fic-status-pending:hover {
   background: #efe8ff;
 }
 
-.fic-upcoming-card .fic-status-missing {
+.fic-upcoming-card .fic-status-missing,
+.fic-earnings-table .fic-status-missing {
   background: linear-gradient(180deg, #ffffff 0%, #f5f7fa 100%);
   color: #333333 !important;
   border-color: #bfc5cf;
 }
 
-.fic-upcoming-card .fic-status-missing .fic-status-icon {
+.fic-upcoming-card .fic-status-missing .fic-status-icon,
+.fic-earnings-table .fic-status-missing .fic-status-icon {
   background: #e7ebf1;
   color: #596273;
 }
 
-.fic-upcoming-card .fic-status-missing .fic-status-icon::before {
+.fic-upcoming-card .fic-status-missing .fic-status-icon::before,
+.fic-earnings-table .fic-status-missing .fic-status-icon::before {
   content: "+";
 }
 
-.fic-upcoming-card .fic-status-missing:hover {
+.fic-upcoming-card .fic-status-missing:hover,
+.fic-earnings-table .fic-status-missing:hover {
   background: #f8f8f8;
+}
+
+.fic-earnings-table-wrap {
+  margin-top: 28px;
+  border: 1px solid #ece6db;
+  border-radius: 24px;
+  overflow: hidden;
+  background: #fffdf9;
+  box-shadow: 0 24px 50px rgba(17, 24, 39, 0.06);
+}
+
+.fic-earnings-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.fic-earnings-table thead th {
+  background: linear-gradient(180deg, #24242a 0%, #1f1f24 100%);
+  color: #ffffff;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  border-bottom: 4px solid #ffd33d;
+}
+
+.fic-earnings-table tbody td {
+  background: #fffdf9;
+}
+
+.fic-earnings-table tbody tr:nth-child(even) td {
+  background: #fffaf2;
+}
+
+.fic-earnings-table tbody tr:hover td {
+  background: #fff6e8;
+}
+
+.fic-earnings-table td:last-child,
+.fic-earnings-table th:last-child {
+  text-align: center;
+}
+
+.fic-earnings-table .fic-status {
+  width: auto;
+  min-height: 46px;
+  padding: 10px 16px;
+  border-radius: 15px;
+  font-size: 0.96rem;
+  white-space: nowrap;
+  box-shadow: 0 8px 20px rgba(17, 24, 39, 0.05);
+}
+
+.fic-earnings-table .fic-status-icon {
+  width: 24px;
+  height: 24px;
+  font-size: 0.8rem;
 }
 
 .fic-upcoming-card .fic-status-today {

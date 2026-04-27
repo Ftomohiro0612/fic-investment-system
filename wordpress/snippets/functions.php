@@ -211,12 +211,12 @@ function fic_get_earnings_status_data($stock_code, $scheduled_date) {
     }
 
     $status = 'pending';
-    $label  = '🔜 更新予定';
+    $label  = '更新予定';
     $url    = $post ? get_permalink($post->ID) : '';
 
     if ($post && $modified_ts >= $scheduled_ts) {
         $status = 'done';
-        $label  = '✅ 公開済み';
+        $label  = '公開済み';
     }
 
     if (!$post) {
