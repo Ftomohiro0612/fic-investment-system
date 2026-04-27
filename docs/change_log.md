@@ -34,6 +34,7 @@
 - Restored a single fixed hashtag on industry X posts by requiring `#日本株` at the end of each post
 - Tightened `post3` in the industry X-post prompt so the causal chain ends on a single company, sector, or outcome without adding a second axis
 - Further tightened the industry X-post prompt so `post3` does not cram both upside and downside into one post and `post4` keeps to a single question without stacking extra angles
+- Added `prompts/social/x_post_company_analysis_main.md` as the managed final prompt for the company-analysis X post generator, aligned with the stronger stop-scroll structure used for industry-analysis posts while tailoring output to company-specific drivers
 
 ## 2026-04-24
 - Created repository foundation files for prompt, Make, WordPress, SEO, and docs structure
