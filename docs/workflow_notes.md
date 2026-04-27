@@ -31,6 +31,7 @@ join(map(16.array; "0"); decodeURL("%0A"))
 
 - prompts/article/company_analysis_article_main.md and prompts/article/company_analysis_memo_main.md now include explicit rules to prevent fiscal-period label mixups.
 - Treat labels such as 2025年度, FY2025, 2025年3月期, and 2026年3月期 only after confirming the actual covered period.
+- Explicitly note the common trap: 2025年度 is often 2025年4月?2026年3月, which means 2026年3月期, not 2025年3月期.
 - Do not mix these concepts without an explicit label:
   - full-year results
   - standalone quarter results
