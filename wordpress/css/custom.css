@@ -840,24 +840,21 @@ article mark {
 
   .fic-earnings-mobile-cards {
     display: grid;
-    gap: 14px;
-    padding: 14px;
+    gap: 0;
+    padding: 0 14px 14px;
   }
 
   .fic-earnings-mobile-card {
-    border: 1px solid #ece3d5;
-    border-radius: 18px;
-    overflow: hidden;
+    border-bottom: 1px solid #e7ddcf;
     background: #fffdf9;
-    box-shadow: 0 10px 28px rgba(17, 24, 39, 0.05);
   }
 
   .fic-earnings-mobile-card-row {
     display: grid;
-    grid-template-columns: 88px minmax(0, 1fr);
+    grid-template-columns: 72px minmax(0, 1fr);
     align-items: center;
-    gap: 14px;
-    padding: 14px 16px;
+    gap: 10px;
+    padding: 12px 10px;
     border-bottom: 1px dashed #eee3d4;
   }
 
@@ -865,9 +862,16 @@ article mark {
     border-bottom: none;
   }
 
+  .fic-earnings-mobile-card-row-company {
+    grid-template-columns: 72px minmax(0, 1fr);
+    padding-top: 16px;
+    padding-bottom: 12px;
+    background: #fff9ef;
+  }
+
   .fic-earnings-mobile-label {
     color: #6d5b46;
-    font-size: 0.84rem;
+    font-size: 0.8rem;
     font-weight: 800;
     letter-spacing: 0.02em;
   }
@@ -875,7 +879,7 @@ article mark {
   .fic-earnings-mobile-value {
     min-width: 0;
     color: #2a2a2e;
-    font-size: 0.98rem;
+    font-size: 0.96rem;
     text-align: left;
     word-break: break-word;
   }
@@ -891,10 +895,11 @@ article mark {
   }
 
   .fic-earnings-mobile-card .fic-status {
-    min-height: 42px;
-    padding: 8px 12px;
-    font-size: 0.9rem;
-    white-space: normal;
+    min-height: 38px;
+    padding: 6px 10px;
+    font-size: 0.86rem;
+    white-space: nowrap;
+    box-shadow: none;
   }
 }
 
