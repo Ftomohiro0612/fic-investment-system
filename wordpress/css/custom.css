@@ -612,7 +612,7 @@ article mark {
   box-shadow: 0 24px 50px rgba(17, 24, 39, 0.06);
 }
 
-.fic-earnings-mobile-cards {
+.fic-earnings-mobile-list {
   display: none;
 }
 
@@ -838,66 +838,60 @@ article mark {
     display: none;
   }
 
-  .fic-earnings-mobile-cards {
-    display: grid;
-    gap: 0;
+  .fic-earnings-mobile-list {
+    display: block;
     padding: 0 14px 14px;
   }
 
-  .fic-earnings-mobile-card {
+  .fic-earnings-mobile-list-head,
+  .fic-earnings-mobile-list-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1.6fr) 64px 72px auto;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .fic-earnings-mobile-list-head {
+    padding: 10px 10px 8px;
+    color: #6d5b46;
+    font-size: 0.74rem;
+    font-weight: 800;
+    letter-spacing: 0.03em;
     border-bottom: 1px solid #e7ddcf;
+  }
+
+  .fic-earnings-mobile-list-row {
+    padding: 12px 10px;
+    border-bottom: 1px solid #eee3d4;
     background: #fffdf9;
   }
 
-  .fic-earnings-mobile-card-row {
-    display: grid;
-    grid-template-columns: 72px minmax(0, 1fr);
-    align-items: center;
-    gap: 10px;
-    padding: 12px 10px;
-    border-bottom: 1px dashed #eee3d4;
-  }
-
-  .fic-earnings-mobile-card-row:last-child {
+  .fic-earnings-mobile-list-row:last-child {
     border-bottom: none;
   }
 
-  .fic-earnings-mobile-card-row-company {
-    grid-template-columns: 72px minmax(0, 1fr);
-    padding-top: 16px;
-    padding-bottom: 12px;
-    background: #fff9ef;
-  }
-
-  .fic-earnings-mobile-label {
-    color: #6d5b46;
-    font-size: 0.8rem;
-    font-weight: 800;
-    letter-spacing: 0.02em;
-  }
-
-  .fic-earnings-mobile-value {
+  .fic-earnings-mobile-cell {
     min-width: 0;
     color: #2a2a2e;
-    font-size: 0.96rem;
+    font-size: 0.92rem;
     text-align: left;
     word-break: break-word;
   }
 
   .fic-earnings-mobile-company {
-    font-size: 1rem;
+    font-size: 0.96rem;
     font-weight: 700;
   }
 
-  .fic-earnings-mobile-card-row-status .fic-earnings-mobile-value {
+  .fic-earnings-mobile-status {
     display: flex;
     justify-content: flex-start;
   }
 
-  .fic-earnings-mobile-card .fic-status {
-    min-height: 38px;
-    padding: 6px 10px;
-    font-size: 0.86rem;
+  .fic-earnings-mobile-list .fic-status {
+    min-height: 34px;
+    padding: 5px 9px;
+    font-size: 0.8rem;
     white-space: nowrap;
     box-shadow: none;
   }
