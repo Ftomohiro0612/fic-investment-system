@@ -325,11 +325,6 @@ function fic_render_earnings_schedule_table() {
     echo '<span class="fic-earnings-summary-pill">更新予定 ' . esc_html((string) $counts['pending']) . '件</span>';
     echo '<span class="fic-earnings-summary-pill">記事作成予定 ' . esc_html((string) $counts['missing']) . '件</span>';
     echo '</div>';
-    echo '<div class="fic-earnings-table-legend" aria-label="状態の凡例">';
-    echo fic_render_status_badge(['status' => 'done', 'label' => '公開済み', 'url' => '']);
-    echo fic_render_status_badge(['status' => 'pending', 'label' => '更新予定', 'url' => '']);
-    echo fic_render_status_badge(['status' => 'missing', 'label' => '記事作成予定', 'url' => '']);
-    echo '</div>';
     echo '</div>';
     echo '<table class="fic-earnings-table">';
     echo '<thead><tr>';
