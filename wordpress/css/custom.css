@@ -612,6 +612,65 @@ article mark {
   box-shadow: 0 24px 50px rgba(17, 24, 39, 0.06);
 }
 
+.fic-earnings-table-header {
+  padding: 24px 24px 18px;
+  border-bottom: 1px solid #efe7da;
+  background:
+    radial-gradient(circle at top right, rgba(255, 211, 61, 0.18), transparent 32%),
+    linear-gradient(180deg, #fffefb 0%, #fff9f1 100%);
+}
+
+.fic-earnings-table-heading {
+  display: grid;
+  gap: 6px;
+}
+
+.fic-earnings-table-eyebrow,
+.fic-earnings-table-period,
+.fic-earnings-table-note {
+  margin: 0;
+}
+
+.fic-earnings-table-eyebrow {
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: #8a5a00;
+}
+
+.fic-earnings-table-period {
+  font-size: 1.18rem;
+  font-weight: 800;
+  color: #1f1f24;
+}
+
+.fic-earnings-table-note {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #64584b;
+}
+
+.fic-earnings-table-summary,
+.fic-earnings-table-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.fic-earnings-summary-pill {
+  display: inline-flex;
+  align-items: center;
+  min-height: 38px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: #fff;
+  border: 1px solid #eadfce;
+  color: #43362a;
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
 .fic-earnings-table {
   width: 100%;
   border-collapse: separate;
@@ -624,10 +683,17 @@ article mark {
   font-weight: 800;
   letter-spacing: 0.01em;
   border-bottom: 4px solid #ffd33d;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  padding: 16px 18px;
 }
 
 .fic-earnings-table tbody td {
   background: #fffdf9;
+  padding: 16px 18px;
+  border-bottom: 1px solid #efe7da;
+  vertical-align: middle;
 }
 
 .fic-earnings-table tbody tr:nth-child(even) td {
@@ -641,6 +707,19 @@ article mark {
 .fic-earnings-table td:last-child,
 .fic-earnings-table th:last-child {
   text-align: center;
+}
+
+.fic-earnings-table td:nth-child(2),
+.fic-earnings-table th:nth-child(2) {
+  width: 96px;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.fic-earnings-table td:nth-child(3),
+.fic-earnings-table th:nth-child(3) {
+  width: 132px;
+  white-space: nowrap;
 }
 
 .fic-earnings-table .fic-status {
@@ -657,6 +736,18 @@ article mark {
   width: 24px;
   height: 24px;
   font-size: 0.8rem;
+}
+
+.fic-earnings-row-done td:first-child {
+  border-left: 4px solid #2ea66b;
+}
+
+.fic-earnings-row-pending td:first-child {
+  border-left: 4px solid #d7a000;
+}
+
+.fic-earnings-row-missing td:first-child {
+  border-left: 4px solid #a7a7a7;
 }
 
 .fic-upcoming-card .fic-status-today {
@@ -727,6 +818,76 @@ article mark {
   .fic-upcoming-card-title {
     font-size: 1.12rem;
     min-height: 3.8em;
+  }
+}
+
+@media (max-width: 820px) {
+  .fic-earnings-table-header {
+    padding: 20px 18px 16px;
+  }
+
+  .fic-earnings-table-period {
+    font-size: 1.05rem;
+  }
+
+  .fic-earnings-table {
+    display: block;
+  }
+
+  .fic-earnings-table thead {
+    display: none;
+  }
+
+  .fic-earnings-table tbody,
+  .fic-earnings-table tr,
+  .fic-earnings-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .fic-earnings-table tbody {
+    padding: 14px;
+  }
+
+  .fic-earnings-table tbody tr {
+    margin-bottom: 14px;
+    border: 1px solid #ece3d5;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 28px rgba(17, 24, 39, 0.05);
+  }
+
+  .fic-earnings-table tbody tr:last-child {
+    margin-bottom: 0;
+  }
+
+  .fic-earnings-table tbody td {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    padding: 12px 14px;
+    border-bottom: 1px dashed #eee3d4;
+  }
+
+  .fic-earnings-table tbody td:last-child {
+    border-bottom: none;
+    text-align: left;
+  }
+
+  .fic-earnings-table tbody td::before {
+    content: attr(data-label);
+    flex: 0 0 72px;
+    color: #6d5b46;
+    font-size: 0.84rem;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+  }
+
+  .fic-earnings-table .fic-status {
+    min-height: 42px;
+    padding: 8px 14px;
+    font-size: 0.92rem;
   }
 }
 

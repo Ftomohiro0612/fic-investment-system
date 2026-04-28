@@ -253,6 +253,52 @@ function fic_render_status_badge($status_data) {
     return '<span class="fic-status ' . esc_attr($class) . '">' . $inner . '</span>';
 }
 
+function fic_get_earnings_schedule_period_label($schedule) {
+    if (empty($schedule)) {
+        return '';
+    }
+
+    $dates = array_column($schedule, 'date');
+    sort($dates);
+
+    $first_ts = strtotime(reset($dates));
+    $last_ts  = strtotime(end($dates));
+
+    if (!$first_ts || !$last_ts) {
+        return '';
+    }
+
+    $first_year  = date_i18n('Y', $first_ts);
+    $last_year   = date_i18n('Y', $last_ts);
+    $first_month = date_i18n('n', $first_ts);
+    $last_month  = date_i18n('n', $last_ts);
+
+    if ($first_year === $last_year) {
+        return sprintf('%s年%s月〜%s月', $first_year, $first_month, $last_month);
+    }
+
+    return sprintf('%s年%s月〜%s年%s月', $first_year, $first_month, $last_year, $last_month);
+}
+
+function fic_get_earnings_status_counts($schedule) {
+    $counts = [
+        'done'    => 0,
+        'pending' => 0,
+        'missing' => 0,
+    ];
+
+    foreach ($schedule as $item) {
+        $status_data = fic_get_earnings_status_data($item['code'], $item['date']);
+        $status      = $status_data['status'];
+
+        if (isset($counts[$status])) {
+            $counts[$status]++;
+        }
+    }
+
+    return $counts;
+}
+
 function fic_render_earnings_schedule_table() {
     $schedule = fic_get_earnings_schedule();
 
@@ -260,8 +306,31 @@ function fic_render_earnings_schedule_table() {
         return strcmp($a['date'], $b['date']);
     });
 
+    $period_label = fic_get_earnings_schedule_period_label($schedule);
+    $counts       = fic_get_earnings_status_counts($schedule);
+
     ob_start();
     echo '<div class="fic-earnings-table-wrap">';
+    echo '<div class="fic-earnings-table-header">';
+    echo '<div class="fic-earnings-table-heading">';
+    echo '<p class="fic-earnings-table-eyebrow">決算分析スケジュール一覧（随時更新）</p>';
+    if ($period_label !== '') {
+        echo '<p class="fic-earnings-table-period">対象期間：' . esc_html($period_label) . '</p>';
+    }
+    echo '<p class="fic-earnings-table-note">状態表記は「公開済み」「更新予定」「記事作成予定」の3種類で統一しています。</p>';
+    echo '</div>';
+    echo '<div class="fic-earnings-table-summary">';
+    echo '<span class="fic-earnings-summary-pill">全' . esc_html((string) count($schedule)) . '件</span>';
+    echo '<span class="fic-earnings-summary-pill">公開済み ' . esc_html((string) $counts['done']) . '件</span>';
+    echo '<span class="fic-earnings-summary-pill">更新予定 ' . esc_html((string) $counts['pending']) . '件</span>';
+    echo '<span class="fic-earnings-summary-pill">記事作成予定 ' . esc_html((string) $counts['missing']) . '件</span>';
+    echo '</div>';
+    echo '<div class="fic-earnings-table-legend" aria-label="状態の凡例">';
+    echo fic_render_status_badge(['status' => 'done', 'label' => '公開済み', 'url' => '']);
+    echo fic_render_status_badge(['status' => 'pending', 'label' => '更新予定', 'url' => '']);
+    echo fic_render_status_badge(['status' => 'missing', 'label' => '記事作成予定', 'url' => '']);
+    echo '</div>';
+    echo '</div>';
     echo '<table class="fic-earnings-table">';
     echo '<thead><tr>';
     echo '<th>企業名</th>';
@@ -272,12 +341,13 @@ function fic_render_earnings_schedule_table() {
 
     foreach ($schedule as $item) {
         $status_data = fic_get_earnings_status_data($item['code'], $item['date']);
+        $row_class   = 'fic-earnings-row fic-earnings-row-' . $status_data['status'];
 
-        echo '<tr>';
-        echo '<td>' . esc_html($item['company']) . '</td>';
-        echo '<td>' . esc_html($item['code']) . '</td>';
-        echo '<td>' . esc_html(date_i18n('Y/n/j', strtotime($item['date']))) . '</td>';
-        echo '<td>' . fic_render_status_badge($status_data) . '</td>';
+        echo '<tr class="' . esc_attr($row_class) . '">';
+        echo '<td data-label="企業名">' . esc_html($item['company']) . '</td>';
+        echo '<td data-label="コード">' . esc_html($item['code']) . '</td>';
+        echo '<td data-label="決算日">' . esc_html(date_i18n('Y/n/j', strtotime($item['date']))) . '</td>';
+        echo '<td data-label="状況">' . fic_render_status_badge($status_data) . '</td>';
         echo '</tr>';
     }
 
