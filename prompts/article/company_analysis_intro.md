@@ -5,8 +5,8 @@ Make the article immediately useful to search users while preserving analytical 
 
 ## Required Structure
 1. First paragraph: clear conclusion or framing judgment
-2. Second paragraph: what this article will explain
-3. Third paragraph: short summary bullets or compact key points
+2. Second paragraph: define what the company is in one sentence, then state what this article will explain
+3. Third paragraph: short summary bullets or compact key points, but omit them if they only repeat the prior conclusion
 4. Fourth paragraph: transition to detailed analysis
 
 ## Two-Layer Intent
