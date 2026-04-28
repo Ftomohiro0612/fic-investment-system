@@ -862,32 +862,34 @@ article mark {
     background: transparent;
   }
 
-  .fic-earnings-mobile-list-head,
   .fic-earnings-mobile-list-row {
-    display: grid;
-    grid-template-columns: minmax(0, 1.6fr) 64px 72px auto;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .fic-earnings-mobile-list-head {
-    padding: 10px 12px 8px;
-    color: #6d5b46;
-    font-size: 0.74rem;
-    font-weight: 800;
-    letter-spacing: 0.03em;
-    border-bottom: 1px solid #e7ddcf;
-    background: #fff9ef;
-  }
-
-  .fic-earnings-mobile-list-row {
-    padding: 12px;
+    padding: 14px 12px;
     border-bottom: 1px solid #eee3d4;
     background: transparent;
   }
 
   .fic-earnings-mobile-list-row:last-child {
     border-bottom: none;
+  }
+
+  .fic-earnings-mobile-main {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: start;
+    gap: 12px;
+  }
+
+  .fic-earnings-mobile-meta {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    margin-top: 12px;
+  }
+
+  .fic-earnings-mobile-company-block,
+  .fic-earnings-mobile-status-block,
+  .fic-earnings-mobile-meta-item {
+    min-width: 0;
   }
 
   .fic-earnings-mobile-cell {
@@ -898,9 +900,18 @@ article mark {
     word-break: break-word;
   }
 
+  .fic-earnings-mobile-label {
+    margin-bottom: 6px;
+    color: #6d5b46;
+    font-size: 0.74rem;
+    font-weight: 800;
+    letter-spacing: 0.03em;
+  }
+
   .fic-earnings-mobile-company {
     font-size: 0.96rem;
     font-weight: 700;
+    line-height: 1.45;
   }
 
   .fic-earnings-mobile-status {
@@ -917,6 +928,11 @@ article mark {
 
   .fic-earnings-mobile-list-row .fic-status {
     border-radius: 999px;
+  }
+
+  .fic-earnings-mobile-code,
+  .fic-earnings-mobile-date {
+    font-variant-numeric: tabular-nums;
   }
 }
 

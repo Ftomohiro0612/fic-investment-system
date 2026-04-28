@@ -256,22 +256,32 @@ function fic_render_status_badge($status_data) {
 function fic_render_earnings_schedule_mobile_cards($schedule) {
     ob_start();
     echo '<div class="fic-earnings-mobile-list">';
-    echo '<div class="fic-earnings-mobile-list-head">';
-    echo '<div>企業名</div>';
-    echo '<div>コード</div>';
-    echo '<div>決算日</div>';
-    echo '<div>状況</div>';
-    echo '</div>';
 
     foreach ($schedule as $item) {
         $status_data = fic_get_earnings_status_data($item['code'], $item['date']);
         $row_class   = 'fic-earnings-mobile-list-row fic-earnings-row-' . $status_data['status'];
 
         echo '<div class="' . esc_attr($row_class) . '">';
+        echo '<div class="fic-earnings-mobile-main">';
+        echo '<div class="fic-earnings-mobile-company-block">';
+        echo '<div class="fic-earnings-mobile-label">企業名</div>';
         echo '<div class="fic-earnings-mobile-cell fic-earnings-mobile-company">' . esc_html($item['company']) . '</div>';
-        echo '<div class="fic-earnings-mobile-cell fic-earnings-mobile-code">' . esc_html($item['code']) . '</div>';
-        echo '<div class="fic-earnings-mobile-cell fic-earnings-mobile-date">' . esc_html(date_i18n('n/j', strtotime($item['date']))) . '</div>';
+        echo '</div>';
+        echo '<div class="fic-earnings-mobile-status-block">';
+        echo '<div class="fic-earnings-mobile-label">状況</div>';
         echo '<div class="fic-earnings-mobile-cell fic-earnings-mobile-status">' . fic_render_status_badge($status_data) . '</div>';
+        echo '</div>';
+        echo '</div>';
+        echo '<div class="fic-earnings-mobile-meta">';
+        echo '<div class="fic-earnings-mobile-meta-item">';
+        echo '<div class="fic-earnings-mobile-label">コード</div>';
+        echo '<div class="fic-earnings-mobile-cell fic-earnings-mobile-code">' . esc_html($item['code']) . '</div>';
+        echo '</div>';
+        echo '<div class="fic-earnings-mobile-meta-item">';
+        echo '<div class="fic-earnings-mobile-label">決算日</div>';
+        echo '<div class="fic-earnings-mobile-cell fic-earnings-mobile-date">' . esc_html(date_i18n('n/j', strtotime($item['date']))) . '</div>';
+        echo '</div>';
+        echo '</div>';
         echo '</div>';
     }
 
