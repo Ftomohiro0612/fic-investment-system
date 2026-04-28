@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 require get_template_directory().'/lib/assets/plugin-update-checker/plugin-update-checker.php';
 use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
@@ -123,6 +123,7 @@ function fic_get_earnings_schedule() {
         ['company' => '西日本旅客鉄道', 'code' => '9021', 'date' => '2026-04-30'],
         ['company' => '商船三井', 'code' => '9104', 'date' => '2026-04-30'],
         ['company' => '東京エレクトロン', 'code' => '8035', 'date' => '2026-04-30'],
+        ['company' => '東京電力ホールディングス', 'code' => '9501', 'date' => '2026-04-30'],
         ['company' => '関西電力', 'code' => '9503', 'date' => '2026-04-30'],
         ['company' => 'DMG森精機', 'code' => '6141', 'date' => '2026-05-01'],
         ['company' => 'エムスリー', 'code' => '2413', 'date' => '2026-05-01'],
@@ -162,8 +163,10 @@ function fic_get_earnings_schedule() {
         ['company' => '三井住友フィナンシャルグループ', 'code' => '8316', 'date' => '2026-05-13'],
         ['company' => 'バンダイナムコホールディングス', 'code' => '7832', 'date' => '2026-05-13'],
         ['company' => '栗本鐵工所', 'code' => '5602', 'date' => '2026-05-14'],
+        ['company' => 'ホンダ', 'code' => '7267', 'date' => '2026-05-14'],
         ['company' => '三和ホールディングス', 'code' => '5929', 'date' => '2026-05-14'],
         ['company' => '鹿島', 'code' => '1812', 'date' => '2026-05-14'],
+        ['company' => '上組', 'code' => '9364', 'date' => '2026-05-14'],
         ['company' => 'ニトリホールディングス', 'code' => '9843', 'date' => '2026-05-14'],
         ['company' => '三菱UFJフィナンシャル・グループ', 'code' => '8306', 'date' => '2026-05-15'],
         ['company' => '王子ホールディングス', 'code' => '3861', 'date' => '2026-05-15'],
