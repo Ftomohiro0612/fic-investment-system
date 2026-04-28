@@ -862,12 +862,11 @@ article mark {
   }
 
   .fic-earnings-table tbody td {
-    display: grid;
-    grid-template-columns: 72px minmax(0, 1fr);
-    align-items: center;
-    column-gap: 14px;
-    row-gap: 6px;
-    padding: 12px 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 14px 16px;
     border-bottom: 1px dashed #eee3d4;
   }
 
@@ -882,10 +881,6 @@ article mark {
     font-size: 0.84rem;
     font-weight: 800;
     letter-spacing: 0.02em;
-  }
-
-  .fic-earnings-table tbody td[data-label="企業名"] {
-    grid-template-columns: 72px minmax(0, 1fr);
   }
 
   .fic-earnings-table tbody td[data-label="状況"] .fic-status {
