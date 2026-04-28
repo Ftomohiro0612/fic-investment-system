@@ -840,7 +840,10 @@ article mark {
 
   .fic-earnings-mobile-list {
     display: block;
-    padding: 0 14px 14px;
+    margin: 0 14px 14px;
+    padding: 0;
+    border-top: 1px solid #e7ddcf;
+    background: transparent;
   }
 
   .fic-earnings-mobile-list-head,
@@ -852,18 +855,19 @@ article mark {
   }
 
   .fic-earnings-mobile-list-head {
-    padding: 10px 10px 8px;
+    padding: 10px 12px 8px;
     color: #6d5b46;
     font-size: 0.74rem;
     font-weight: 800;
     letter-spacing: 0.03em;
     border-bottom: 1px solid #e7ddcf;
+    background: #fff9ef;
   }
 
   .fic-earnings-mobile-list-row {
-    padding: 12px 10px;
+    padding: 12px;
     border-bottom: 1px solid #eee3d4;
-    background: #fffdf9;
+    background: transparent;
   }
 
   .fic-earnings-mobile-list-row:last-child {
@@ -894,6 +898,10 @@ article mark {
     font-size: 0.8rem;
     white-space: nowrap;
     box-shadow: none;
+  }
+
+  .fic-earnings-mobile-list-row .fic-status {
+    border-radius: 999px;
   }
 }
 

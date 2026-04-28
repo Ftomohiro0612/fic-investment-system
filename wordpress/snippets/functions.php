@@ -267,12 +267,12 @@ function fic_render_earnings_schedule_mobile_cards($schedule) {
         $status_data = fic_get_earnings_status_data($item['code'], $item['date']);
         $row_class   = 'fic-earnings-mobile-list-row fic-earnings-row-' . $status_data['status'];
 
-        echo '<article class="' . esc_attr($row_class) . '">';
+        echo '<div class="' . esc_attr($row_class) . '">';
         echo '<div class="fic-earnings-mobile-cell fic-earnings-mobile-company">' . esc_html($item['company']) . '</div>';
         echo '<div class="fic-earnings-mobile-cell fic-earnings-mobile-code">' . esc_html($item['code']) . '</div>';
         echo '<div class="fic-earnings-mobile-cell fic-earnings-mobile-date">' . esc_html(date_i18n('n/j', strtotime($item['date']))) . '</div>';
         echo '<div class="fic-earnings-mobile-cell fic-earnings-mobile-status">' . fic_render_status_badge($status_data) . '</div>';
-        echo '</article>';
+        echo '</div>';
     }
 
     echo '</div>';
