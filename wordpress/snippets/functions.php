@@ -253,6 +253,41 @@ function fic_render_status_badge($status_data) {
     return '<span class="fic-status ' . esc_attr($class) . '">' . $inner . '</span>';
 }
 
+function fic_render_earnings_schedule_mobile_cards($schedule) {
+    ob_start();
+    echo '<div class="fic-earnings-mobile-cards">';
+
+    foreach ($schedule as $item) {
+        $status_data = fic_get_earnings_status_data($item['code'], $item['date']);
+        $row_class   = 'fic-earnings-mobile-card fic-earnings-row-' . $status_data['status'];
+
+        echo '<article class="' . esc_attr($row_class) . '">';
+        echo '<div class="fic-earnings-mobile-card-row fic-earnings-mobile-card-row-company">';
+        echo '<div class="fic-earnings-mobile-label">企業名</div>';
+        echo '<div class="fic-earnings-mobile-value fic-earnings-mobile-company">' . esc_html($item['company']) . '</div>';
+        echo '</div>';
+
+        echo '<div class="fic-earnings-mobile-card-row">';
+        echo '<div class="fic-earnings-mobile-label">コード</div>';
+        echo '<div class="fic-earnings-mobile-value">' . esc_html($item['code']) . '</div>';
+        echo '</div>';
+
+        echo '<div class="fic-earnings-mobile-card-row">';
+        echo '<div class="fic-earnings-mobile-label">決算日</div>';
+        echo '<div class="fic-earnings-mobile-value">' . esc_html(date_i18n('Y/n/j', strtotime($item['date']))) . '</div>';
+        echo '</div>';
+
+        echo '<div class="fic-earnings-mobile-card-row fic-earnings-mobile-card-row-status">';
+        echo '<div class="fic-earnings-mobile-label">状況</div>';
+        echo '<div class="fic-earnings-mobile-value">' . fic_render_status_badge($status_data) . '</div>';
+        echo '</div>';
+        echo '</article>';
+    }
+
+    echo '</div>';
+    return ob_get_clean();
+}
+
 function fic_get_earnings_schedule_period_label($schedule) {
     if (empty($schedule)) {
         return '';
@@ -347,6 +382,7 @@ function fic_render_earnings_schedule_table() {
     }
 
     echo '</tbody></table></div>';
+    echo fic_render_earnings_schedule_mobile_cards($schedule);
     return ob_get_clean();
 }
 
@@ -411,66 +447,6 @@ function fic_earnings_schedule_table_shortcode() {
     return fic_render_earnings_schedule_table();
 }
 add_shortcode('earnings_schedule_table', 'fic_earnings_schedule_table_shortcode');
-
-function fic_output_earnings_schedule_mobile_override_css() {
-    echo '<style id="fic-earnings-schedule-mobile-override">
-@media (max-width: 820px) {
-  .fic-earnings-table-wrap .fic-earnings-table,
-  .fic-earnings-table-wrap .fic-earnings-table tbody,
-  .fic-earnings-table-wrap .fic-earnings-table tr,
-  .fic-earnings-table-wrap .fic-earnings-table td {
-    display: block !important;
-    width: 100% !important;
-  }
-
-  .fic-earnings-table-wrap .fic-earnings-table thead {
-    display: none !important;
-  }
-
-  .fic-earnings-table-wrap .fic-earnings-table tbody {
-    padding: 14px !important;
-  }
-
-  .fic-earnings-table-wrap .fic-earnings-table tbody tr {
-    margin-bottom: 14px !important;
-    border: 1px solid #ece3d5 !important;
-    border-radius: 18px !important;
-    overflow: hidden !important;
-    box-shadow: 0 10px 28px rgba(17, 24, 39, 0.05) !important;
-  }
-
-  .fic-earnings-table-wrap .fic-earnings-table tbody td {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: flex-start !important;
-    justify-content: flex-start !important;
-    gap: 8px !important;
-    padding: 14px 16px !important;
-    border-bottom: 1px dashed #eee3d4 !important;
-    text-align: left !important;
-  }
-
-  .fic-earnings-table-wrap .fic-earnings-table tbody td:last-child {
-    border-bottom: none !important;
-  }
-
-  .fic-earnings-table-wrap .fic-earnings-table tbody td::before {
-    content: attr(data-label) !important;
-    display: block !important;
-    color: #6d5b46 !important;
-    font-size: 0.84rem !important;
-    font-weight: 800 !important;
-    letter-spacing: 0.02em !important;
-  }
-
-  .fic-earnings-table-wrap .fic-earnings-table tbody td .fic-status {
-    justify-content: flex-start !important;
-    white-space: normal !important;
-  }
-}
-</style>';
-}
-add_action('wp_head', 'fic_output_earnings_schedule_mobile_override_css', 99);
 
 function fic_upcoming_earnings_shortcode($atts) {
     $atts = shortcode_atts([
