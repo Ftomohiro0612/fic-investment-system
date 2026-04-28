@@ -20,8 +20,11 @@ Help readers quickly understand the investment relevance before reading the full
 - Do not rewrite `2025年度` as `2025年3月期`; if needed, clarify the exact fiscal period based on the source material and the company's fiscal year-end month
 - If the source uses `billion yen` or `JPY B`, convert to Japanese `億円` only after multiplying by 10; never output `1,128.6億円` when the source is `1,128.6 billion yen`
 - Do not call product/category breakdowns `セグメント` unless they match the company's official reporting segments
+- If the company has official segments and also inner breakdowns within them, preserve that hierarchy instead of flattening both into sibling `セグメント`
 - If a profit jump includes one-off items such as impairment reversals, financial income, or divestiture gains, do not summarize it as purely structural improvement
 - If using historical or regional numbers from an integrated report, do not present them as the latest actuals when newer earnings materials exist
+- If a percentage refers to an internal mix such as a product-use mix, do not restate it as a whole-company revenue mix without keeping the denominator explicit
+- If a market share or market-size figure is company-estimated, keep `会社推定` or `自社推定` attached at first mention
 
 ## Reader Intent
 - Make the block useful for skimming readers
