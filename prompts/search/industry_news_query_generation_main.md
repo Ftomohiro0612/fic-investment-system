@@ -7,6 +7,9 @@
 ① 最優先：【今日の最新ニュース】に登場したトピックをそのままクエリ化すること。
   ニュースに登場した固有名詞・事象・指標は必ずクエリに含めること。
   （例：ニュースに「Iran ceasefire oil」とあれば→ 「Iran ceasefire crude oil impact」をクエリ化）
+  ただし、ニュース見出しやスニペットに含まれる強い語を、確認なしに増幅しないこと。
+  war / invasion / freeze / cancellation / shutdown などは、ニュース本文・一次情報で明示される場合だけ使う。
+  不確かな場合は Middle East tensions / geopolitical risk / supply concern のように丸めること。
 
 ② 次点：①で埋まらない役割を以下の役割分担で補完すること。
   ニュースに登場していないトピックは汎用的なクエリで補完する。
@@ -47,6 +50,9 @@
 FRB / ECB / BOJ / inflation / recession /
 interest rate / monetary policy / GDP
 などを含むクエリを優先してください。
+政策金利・インフレ見通し・中央銀行会合など、時点が重要なテーマでは
+official statement / outlook / statistics / policy decision を優先してください。
+単なる利上げ観測ニュースだけを狙うクエリは避けてください。
 
 ■ 地政学・安全保障 × 2
 戦争・紛争・制裁・航路disruption・
@@ -100,6 +106,10 @@ regulatory change / election / bank crisis
 - 各クエリは具体的かつ簡潔に（3〜7語）
 - 今まさに起きていることを反映した時事的なクエリにすること
   （汎用的・教科書的なクエリは禁止）
+- ただし政策金利・CPI・中央銀行見通しなどでは、時事ニュースよりも公式声明・公式統計・見通し資料へ到達しやすい語を優先すること
+- PDF本文を読めない検索運用を前提に、report だけに寄せすぎず statement / statistics / press release / summary / data table を優先すること
+- 投資テーマに対象月・会合時点・政策決定時点が含まれる場合は、その時点と整合する latest/current クエリにすること
+- 古い利上げ観測や別会合のニュースを拾いやすい曖昧なクエリは禁止
 - クエリにダブルクォート（"）を一切含めないこと
 - 年号（2023、2024、2025、2026等）を含めないこと
   （代わりに latest / recent / current を使うこと）
