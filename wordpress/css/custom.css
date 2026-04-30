@@ -140,20 +140,30 @@
 }
 
 .beginner-box {
-  background-color: #fafafa;
-  border: 1px solid var(--ey-soft-border);
-  border-left: 5px solid var(--ey-yellow);
+  background-color: #f4f8fb;
+  border: 1px solid #d7e5ed;
+  border-left: 5px solid #4f8fbf;
   border-radius: 0;
-  padding: 18px 22px;
+  padding: 20px 24px;
   margin: 24px 0 30px;
   box-shadow: none;
 }
 
 .beginner-box p:first-child {
-  font-size: 1em;
+  display: inline-block;
+  background-color: #e6f0f6;
+  border: 1px solid #c8dce8;
+  color: #24566f;
+  font-size: 0.95em;
   font-weight: 700;
-  margin: 0 0 12px;
-  color: var(--ey-black);
+  line-height: 1.45;
+  margin: 0 0 14px;
+  padding: 4px 10px;
+  letter-spacing: 0.01em;
+}
+
+.beginner-box p:not(:first-child) {
+  color: #26363f;
 }
 
 .beginner-box p:last-child {
