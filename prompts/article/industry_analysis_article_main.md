@@ -177,8 +177,18 @@
 </div>
 - 合計150トークン以内に収めること
 
+■ まずざっくり言うと
+- 定義リードの直後、summary-box の前に必ず `<div class="beginner-box">` で配置すること
+- 見出しは `<p><strong>まずざっくり言うと</strong></p>` とすること
+- 投資初心者にも伝わるように、難しい政策・業界テーマを2〜3文でかみ砕くこと
+- 「なぜそのテーマが企業業績に関係するのか」を、日常的な言葉で説明すること
+- 専門用語は初出だけ短く補足してよい
+  例：NIM（銀行の貸出金利と預金金利の差）、価格転嫁（上がったコストを販売価格に上乗せすること）
+- summary-box の結論を先取りしすぎず、読者が次の結論ブロックを理解しやすくなる入口にとどめること
+- このブロック内では `<mark>` を使わないこと
+
 ■ この記事の結論
-- 1行サマリー・定義リードの直後に summary-box で配置すること
+- 1行サマリー・定義リード・beginner-box の直後に summary-box で配置すること
 - 3〜5行で、次の3点に答えること
   - 何が起きているか
   - どこに恩恵・逆風が出るか
@@ -301,7 +311,7 @@
 - HTMLコメントは含めない
 - summary-box 内の見出しは `<h2>` を使わず `<p>` に `<strong>` を組み合わせる
 - 使用可能なCSSクラス：
-  summary-box, table-wrapper, author-credit, disclaimer
+  summary-box, beginner-box, table-wrapper, author-credit, disclaimer
 - 表は `<table>` タグで作成し `<div class="table-wrapper">` でラップすること
 - 記事本文中に一次情報への引用リンクを最低3つ含めること
 - 引用形式：`<a href="[URL]" target="_blank" rel="noopener">[出典名]</a>`

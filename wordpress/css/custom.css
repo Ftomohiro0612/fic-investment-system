@@ -139,6 +139,27 @@
   color: var(--ey-text);
 }
 
+.beginner-box {
+  background-color: #fafafa;
+  border: 1px solid var(--ey-soft-border);
+  border-left: 5px solid var(--ey-yellow);
+  border-radius: 0;
+  padding: 18px 22px;
+  margin: 24px 0 30px;
+  box-shadow: none;
+}
+
+.beginner-box p:first-child {
+  font-size: 1em;
+  font-weight: 700;
+  margin: 0 0 12px;
+  color: var(--ey-black);
+}
+
+.beginner-box p:last-child {
+  margin-bottom: 0;
+}
+
 .formula-box {
   background-color: #fffdf2;
   border: 1px solid var(--ey-border);

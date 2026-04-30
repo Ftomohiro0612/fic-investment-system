@@ -562,6 +562,18 @@
 ・definition-lead は「会社定義」と「本記事で何を見るか」のどちらか不足している役割だけを補い、
   1行サマリーの言い換えや重複説明をしないこと
 ・合計150トークン以内に収めること
+■ まずざっくり言うと（beginner-box）
+- definition-lead の直後、summary-box の前に必ず配置すること
+- 形式：
+  <div class="beginner-box">
+  <p><strong>まずざっくり言うと</strong></p>
+  <p>[この会社が何を売り、どの需要や指標が業績に効くのかを、投資初心者にも分かる言葉で2〜3文で説明]</p>
+  </div>
+- 「何の会社か」「なぜその事業が売上・利益に関係するのか」を、専門用語に頼らず説明すること
+- 専門用語は初出だけ短く補足してよい
+  例：受注残（すでに注文を受けたが、まだ売上になっていない案件）、価格転嫁（上がったコストを販売価格に上乗せすること）
+- summary-box の結論を先取りしすぎず、読者が次の結論ブロックを理解しやすくなる入口にとどめること
+- このブロック内では `<mark>` を使わないこと
 ■ この記事の結論（summary-boxで冒頭に配置）
 - `この記事でわかること` の前に、短い結論ブロックを必ず置くこと
 - 形式：
@@ -573,7 +585,7 @@
 - AIや検索結果で抜粋されても意味が通る、自己完結した文章にすること
 ■ この記事でわかること（takeaways-box）
 - 原則として takeaways-box は出力しないこと
-- 冒頭は `1行サマリー → definition-lead → summary-box` を基本形とし、
+- 冒頭は `1行サマリー → definition-lead → beginner-box → summary-box` を基本形とし、
   takeaways-box は重複しやすいため通常は省略すること
 - 特別な理由があり takeaways-box を出す場合のみ、3点以内に絞り、
   `この記事の結論` の言い換えではなく「この記事を読むと何がわかるか」に限定すること
@@ -662,7 +674,7 @@
 - <br>タグは禁止
 - HTMLコメントは含めない
 - summary-box内の見出しは<h2>を使わず、<p>に<strong>を組み合わせる
-- 使用可能なCSSクラス：summary-box, takeaways-box, table-wrapper, author-credit, disclaimer
+- 使用可能なCSSクラス：summary-box, beginner-box, takeaways-box, table-wrapper, author-credit, disclaimer
 - 表は<table>タグで作成し、<div class="table-wrapper">でラップしてください
 ・FAQセクションは<div class="faq-section">で囲むこと
 ・スキーマはdisclaimerの直後に配置すること
