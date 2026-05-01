@@ -1172,3 +1172,85 @@ article mark {
     min-width: auto;
   }
 }
+
+.fic-related-companies {
+  margin: 34px 0 30px;
+  padding: 22px 24px;
+  border: 1px solid #eadfbf;
+  border-left: 6px solid #ffd400;
+  border-radius: 10px;
+  background: #fffaf0;
+  box-shadow: 0 10px 24px rgba(32, 32, 32, 0.06);
+}
+
+.fic-related-companies p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 14px;
+  color: #1f1f23;
+  font-size: 1.08em;
+  line-height: 1.4;
+}
+
+.fic-related-companies p::before {
+  content: "↗";
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #ffd400;
+  color: #1f1f23;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.fic-related-companies ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.fic-related-companies li {
+  margin: 0;
+  padding: 0;
+}
+
+.fic-related-companies a {
+  display: flex;
+  align-items: center;
+  min-height: 46px;
+  padding: 11px 14px;
+  border: 1px solid #e6e1d4;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #1f5f9f;
+  font-weight: 700;
+  line-height: 1.35;
+  text-decoration: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.fic-related-companies a:hover {
+  border-color: #ffd400;
+  box-shadow: 0 8px 18px rgba(32, 32, 32, 0.08);
+  color: #123f70;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 767px) {
+  .fic-related-companies {
+    margin: 28px 0 24px;
+    padding: 18px 16px;
+    border-radius: 8px;
+  }
+
+  .fic-related-companies ul {
+    grid-template-columns: 1fr;
+  }
+}
