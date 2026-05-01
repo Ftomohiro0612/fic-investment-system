@@ -818,6 +818,66 @@ function fic_output_breadcrumb_json_ld() {
 }
 add_action('wp_head', 'fic_output_breadcrumb_json_ld', 30);
 
+function fic_output_eeat_json_ld() {
+    if (!is_singular('post')) {
+        return;
+    }
+
+    $site_url = home_url('/');
+    $organization_id = trailingslashit($site_url) . '#organization';
+    $editorial_team_id = trailingslashit($site_url) . '#editorial-team';
+
+    $schema = [
+        '@context' => 'https://schema.org',
+        '@graph' => [
+            [
+                '@type' => 'Organization',
+                '@id' => $organization_id,
+                'name' => get_bloginfo('name'),
+                'url' => $site_url,
+                'description' => '決算説明資料、中期経営計画、統合報告書などの開示資料をもとに、ファンダメンタルズをベースとした企業分析を行う投資研究サイトです。',
+                'knowsAbout' => [
+                    '企業分析',
+                    '決算分析',
+                    '財務分析',
+                    'ファンダメンタルズ分析',
+                    '日本株',
+                    '上場企業の開示資料',
+                ],
+            ],
+            [
+                '@type' => 'Organization',
+                '@id' => $editorial_team_id,
+                'name' => get_bloginfo('name') . ' 編集部',
+                'url' => $site_url,
+                'parentOrganization' => [
+                    '@id' => $organization_id,
+                ],
+                'description' => 'AIを活用して整理した企業分析コンテンツを、公開前にFIC投資研究所が内容確認・編集しています。',
+                'knowsAbout' => [
+                    '公認会計士による財務・会計観点の確認',
+                    '決算説明資料の読解',
+                    '中期経営計画の分析',
+                    '統合報告書の分析',
+                    '投資リスクの整理',
+                ],
+                'hasCredential' => [
+                    [
+                        '@type' => 'EducationalOccupationalCredential',
+                        'credentialCategory' => 'professional certification',
+                        'name' => '公認会計士による確認体制',
+                    ],
+                ],
+            ],
+        ],
+    ];
+
+    echo "\n<script type=\"application/ld+json\" class=\"fic-eeat-json-ld\">";
+    echo wp_json_encode($schema, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
+    echo "</script>\n";
+}
+add_action('wp_head', 'fic_output_eeat_json_ld', 31);
+
 function fic_link_peer_company_names_in_html_fragment($html, $company_map) {
     return preg_replace_callback(
         '/(<t[hd][^>]*>)(.*?)(<\/t[hd]>)/us',
