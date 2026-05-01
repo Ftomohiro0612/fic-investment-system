@@ -630,6 +630,144 @@ function fic_link_peer_companies_in_comparison_section($content) {
 }
 add_filter('the_content', 'fic_link_peer_companies_in_comparison_section', 20);
 
+function fic_get_stock_code_from_post($post = null) {
+    if (!$post) {
+        $post = get_post();
+    }
+
+    if (!$post || empty($post->post_name)) {
+        return '';
+    }
+
+    if (preg_match('/([0-9]{4})/', $post->post_name, $matches)) {
+        return $matches[1];
+    }
+
+    return '';
+}
+
+function fic_company_name_by_code_map() {
+    $map = [];
+
+    foreach (fic_get_earnings_schedule() as $item) {
+        $map[$item['code']] = $item['company'];
+    }
+
+    foreach (fic_company_code_map_manual() as $company_name => $code) {
+        if (!isset($map[$code])) {
+            $map[$code] = $company_name;
+        }
+    }
+
+    return $map;
+}
+
+function fic_related_company_code_groups() {
+    $trading = ['8001', '8058', '8031', '8002', '8053', '8015', '2768'];
+    $rail    = ['9020', '9021', '9022', '9005', '9044'];
+    $shipping = ['9104', '9101', '9107'];
+    $power   = ['9501', '9502', '9503', '9506', '9508'];
+    $semiconductor_equipment = ['6146', '6857', '6920', '8035', '7735', '7729', '6141'];
+    $financial = ['8473', '8604', '8316', '8306', '8411', '8591'];
+    $construction = ['1801', '1802', '1803', '1812'];
+    $real_estate = ['8801', '8802', '3498', '9301'];
+
+    $groups = [];
+    foreach ([$trading, $rail, $shipping, $power, $semiconductor_equipment, $financial, $construction, $real_estate] as $group) {
+        foreach ($group as $code) {
+            $groups[$code] = array_values(array_diff($group, [$code]));
+        }
+    }
+
+    return $groups;
+}
+
+function fic_render_related_company_links($current_code, $limit = 6) {
+    $groups = fic_related_company_code_groups();
+    if (!isset($groups[$current_code])) {
+        return '';
+    }
+
+    $name_map = fic_company_name_by_code_map();
+    $items = [];
+
+    foreach ($groups[$current_code] as $related_code) {
+        $linked_post = fic_get_post_by_stock_code_in_slug($related_code);
+        if (!$linked_post) {
+            continue;
+        }
+
+        $company_name = isset($name_map[$related_code])
+            ? $name_map[$related_code]
+            : fic_normalize_company_name_for_map($linked_post->post_title);
+
+        if ($company_name === '') {
+            $company_name = $linked_post->post_title;
+        }
+
+        $items[] = [
+            'name' => $company_name,
+            'code' => $related_code,
+            'url'  => get_permalink($linked_post->ID),
+        ];
+
+        if (count($items) >= $limit) {
+            break;
+        }
+    }
+
+    if (empty($items)) {
+        return '';
+    }
+
+    ob_start();
+    echo '<div class="fic-related-companies">';
+    echo '<p><strong>関連銘柄分析</strong></p>';
+    echo '<ul>';
+    foreach ($items as $item) {
+        echo '<li><a href="' . esc_url($item['url']) . '">' . esc_html($item['name']) . '（' . esc_html($item['code']) . '）</a></li>';
+    }
+    echo '</ul>';
+    echo '</div>';
+
+    return ob_get_clean();
+}
+
+function fic_insert_related_company_links($content) {
+    if (!is_singular('post')) {
+        return $content;
+    }
+
+    if (strpos($content, 'fic-related-companies') !== false) {
+        return $content;
+    }
+
+    $current_code = fic_get_stock_code_from_post();
+    if ($current_code === '') {
+        return $content;
+    }
+
+    $related_links = fic_render_related_company_links($current_code);
+    if ($related_links === '') {
+        return $content;
+    }
+
+    $pattern = '/(<h2[^>]*>.*?参照資料.*?<\/h2>)/us';
+    if (preg_match($pattern, $content)) {
+        return preg_replace_callback(
+            $pattern,
+            function ($matches) use ($related_links) {
+                return $related_links . $matches[1];
+            },
+            $content,
+            1
+        );
+    }
+
+    return $content . $related_links;
+}
+add_filter('the_content', 'fic_insert_related_company_links', 22);
+
 function fic_link_peer_company_names_in_html_fragment($html, $company_map) {
     return preg_replace_callback(
         '/(<t[hd][^>]*>)(.*?)(<\/t[hd]>)/us',
