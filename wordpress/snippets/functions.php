@@ -752,7 +752,7 @@ function fic_insert_related_company_links($content) {
         return $content;
     }
 
-    $pattern = '/(<h2[^>]*>.*?参照資料.*?<\/h2>)/us';
+    $pattern = '/(<h2\b[^>]*>(?:(?!<\/h2>).)*参照資料(?:(?!<\/h2>).)*<\/h2>)/us';
     if (preg_match($pattern, $content)) {
         return preg_replace_callback(
             $pattern,
