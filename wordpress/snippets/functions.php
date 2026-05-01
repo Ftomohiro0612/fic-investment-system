@@ -400,8 +400,41 @@ function fic_render_upcoming_earnings_list($limit = 8) {
         return $item['date'] >= $past_limit;
     });
 
-    usort($filtered, function($a, $b) {
-        return strcmp($a['date'], $b['date']);
+    $filtered = array_values($filtered);
+    foreach ($filtered as $index => $item) {
+        $filtered[$index]['_original_index'] = $index;
+    }
+
+    usort($filtered, function($a, $b) use ($today) {
+        $a_is_today = $a['date'] === $today;
+        $b_is_today = $b['date'] === $today;
+
+        if ($a_is_today && !$b_is_today) {
+            return -1;
+        }
+
+        if (!$a_is_today && $b_is_today) {
+            return 1;
+        }
+
+        $a_is_future = $a['date'] > $today;
+        $b_is_future = $b['date'] > $today;
+
+        if ($a_is_future && !$b_is_future) {
+            return -1;
+        }
+
+        if (!$a_is_future && $b_is_future) {
+            return 1;
+        }
+
+        if ($a_is_future && $b_is_future) {
+            $date_compare = strcmp($a['date'], $b['date']);
+            return $date_compare !== 0 ? $date_compare : ($a['_original_index'] <=> $b['_original_index']);
+        }
+
+        $date_compare = strcmp($b['date'], $a['date']);
+        return $date_compare !== 0 ? $date_compare : ($a['_original_index'] <=> $b['_original_index']);
     });
 
     $filtered = array_slice($filtered, 0, $limit);
