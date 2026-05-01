@@ -815,6 +815,8 @@ function fic_output_breadcrumb_json_ld() {
     echo "\n<script type=\"application/ld+json\" class=\"fic-breadcrumb-json-ld\">";
     echo wp_json_encode($schema, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
     echo "</script>\n";
+
+    fic_output_eeat_json_ld();
 }
 add_action('wp_head', 'fic_output_breadcrumb_json_ld', 30);
 
@@ -876,7 +878,6 @@ function fic_output_eeat_json_ld() {
     echo wp_json_encode($schema, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
     echo "</script>\n";
 }
-add_action('wp_head', 'fic_output_eeat_json_ld', 31);
 
 function fic_link_peer_company_names_in_html_fragment($html, $company_map) {
     return preg_replace_callback(
