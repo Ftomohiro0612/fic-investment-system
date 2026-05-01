@@ -519,6 +519,13 @@ function fic_company_code_map_manual() {
         '野村HD' => '8604',
         '三井住友FG' => '8316',
         '三菱UFJFG' => '8306',
+        '伊藤忠商事' => '8001',
+        '三菱商事' => '8058',
+        '三井物産' => '8031',
+        '住友商事' => '8053',
+        '丸紅' => '8002',
+        '豊田通商' => '8015',
+        '双日' => '2768',
     ];
 }
 
@@ -526,14 +533,20 @@ function fic_normalize_company_name_for_map($title) {
     $title = wp_strip_all_tags($title);
     $title = html_entity_decode($title, ENT_QUOTES | ENT_HTML5, 'UTF-8');
 
+    $title = preg_replace('/【最新版】/u', '', $title);
+    $title = preg_replace('/\[最新版\]/u', '', $title);
+
+    if (preg_match('/^(.+?)[（(]\d{4}[)）]/u', $title, $matches)) {
+        return trim($matches[1]);
+    }
+
     $title = preg_replace('/（\d{4}）/u', '', $title);
     $title = preg_replace('/\(\d{4}\)/u', '', $title);
     $title = preg_replace('/の企業分析.*/u', '', $title);
     $title = preg_replace('/企業分析.*/u', '', $title);
     $title = preg_replace('/の分析.*/u', '', $title);
     $title = preg_replace('/分析.*/u', '', $title);
-    $title = preg_replace('/【最新版】/u', '', $title);
-    $title = preg_replace('/\[最新版\]/u', '', $title);
+    $title = preg_replace('/の(利益|売上|業績|収益|株価|決算|ビジネスモデル|成長|将来性).*/u', '', $title);
 
     return trim($title);
 }
