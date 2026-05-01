@@ -391,6 +391,105 @@ article mark {
   border-bottom: 3px solid #ffd500 !important;
 }
 
+#sidebar .widget_search {
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 2px 12px rgba(31, 31, 35, 0.06);
+}
+
+#sidebar .widget_search .widget-title,
+#sidebar .widget_search h2,
+#sidebar .widget_search h3,
+#sidebar .widget_search h4 {
+  background: #1f1f23 !important;
+  border-bottom: 3px solid var(--ey-yellow) !important;
+  color: #ffffff !important;
+  font-size: 1.02em;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 0;
+  padding: 14px 18px;
+}
+
+#sidebar .widget_search form,
+#sidebar .widget_search .search-form,
+#sidebar .widget_search #searchform {
+  display: flex;
+  gap: 10px;
+  align-items: stretch;
+  padding: 16px;
+}
+
+#sidebar .widget_search input[type="search"],
+#sidebar .widget_search input[type="text"],
+#sidebar .widget_search #s {
+  flex: 1 1 auto;
+  min-width: 0;
+  height: 44px;
+  border: 1px solid #d8d8d8;
+  border-radius: 0;
+  background: #ffffff;
+  color: var(--ey-text);
+  font-size: 15px;
+  line-height: 1.4;
+  padding: 0 12px;
+  box-shadow: none;
+}
+
+#sidebar .widget_search input[type="search"]:focus,
+#sidebar .widget_search input[type="text"]:focus,
+#sidebar .widget_search #s:focus {
+  border-color: var(--ey-black);
+  outline: 2px solid rgba(255, 213, 0, 0.35);
+  outline-offset: 0;
+}
+
+#sidebar .widget_search button,
+#sidebar .widget_search input[type="submit"],
+#sidebar .widget_search .search-submit,
+#sidebar .widget_search #searchsubmit {
+  flex: 0 0 auto;
+  min-width: 86px;
+  height: 44px;
+  border: 1px solid var(--ey-yellow) !important;
+  border-radius: 0;
+  background: var(--ey-yellow) !important;
+  color: var(--ey-black) !important;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1;
+  padding: 0 18px;
+  cursor: pointer;
+  box-shadow: none;
+  transition: background-color 0.18s ease, border-color 0.18s ease;
+}
+
+#sidebar .widget_search button:hover,
+#sidebar .widget_search input[type="submit"]:hover,
+#sidebar .widget_search .search-submit:hover,
+#sidebar .widget_search #searchsubmit:hover {
+  border-color: var(--ey-black) !important;
+  background: var(--ey-black) !important;
+  color: #ffffff !important;
+}
+
+@media (max-width: 767px) {
+  #sidebar .widget_search form,
+  #sidebar .widget_search .search-form,
+  #sidebar .widget_search #searchform {
+    gap: 8px;
+    padding: 14px;
+  }
+
+  #sidebar .widget_search button,
+  #sidebar .widget_search input[type="submit"],
+  #sidebar .widget_search .search-submit,
+  #sidebar .widget_search #searchsubmit {
+    min-width: 78px;
+    padding: 0 14px;
+  }
+}
+
 .fic-update-box {
   position: relative;
   background: #ffffff;
