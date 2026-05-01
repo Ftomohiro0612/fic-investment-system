@@ -500,22 +500,57 @@ article mark {
 
 .fic-update-box {
   position: relative;
-  background: #ffffff;
-  border: 1px solid #e5e5e5;
-  border-left: 4px solid #ffe600;
-  padding: 20px 20px 18px;
-  margin: 28px 0;
+  background: #f8fafc;
+  border: 1px solid #d8e2ef;
+  border-left: 5px solid #1f4e79;
+  border-radius: 10px;
+  padding: 22px 24px 22px;
+  margin: 30px 0;
+  box-shadow: 0 10px 26px rgba(31, 78, 121, 0.08);
 }
 
 .fic-update-label {
-  position: absolute;
-  top: -10px;
-  left: 20px;
-  background: #1f1f23;
-  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  background: #1f4e79;
+  color: #ffffff;
   font-size: 11px;
   font-weight: 700;
-  padding: 4px 10px;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  padding: 7px 11px;
+  border-radius: 999px;
+  margin-bottom: 12px;
+}
+
+.fic-update-title {
+  color: #1f1f23;
+  font-size: 1.12em;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 6px;
+}
+
+.fic-update-content p {
+  color: #3f4b5f;
+  line-height: 1.8;
+  margin: 0 0 12px;
+}
+
+.fic-update-link {
+  display: inline-flex;
+  align-items: center;
+  color: #1f5f99 !important;
+  font-weight: 700;
+  text-decoration: none !important;
+  border-bottom: 2px solid rgba(31, 95, 153, 0.24);
+  transition: color 0.18s ease, border-color 0.18s ease;
+}
+
+.fic-update-link:hover {
+  color: #1f1f23 !important;
+  border-color: #1f1f23;
 }
 
 .fic-upcoming-box {

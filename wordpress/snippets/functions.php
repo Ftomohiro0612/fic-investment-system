@@ -646,6 +646,227 @@ function fic_get_stock_code_from_post($post = null) {
     return '';
 }
 
+function fic_old_company_analysis_category_name() {
+    return '企業別分析（古い記事）';
+}
+
+function fic_is_post_in_category_name($post_id, $category_name) {
+    if (!$post_id || $category_name === '') {
+        return false;
+    }
+
+    $categories = get_the_category($post_id);
+    if (empty($categories)) {
+        return false;
+    }
+
+    foreach ($categories as $category) {
+        if ($category->name === $category_name) {
+            return true;
+        }
+    }
+
+    return false;
+}
+
+function fic_is_old_company_analysis_post($post_id = null) {
+    if (!$post_id) {
+        $post_id = get_queried_object_id();
+    }
+
+    return fic_is_post_in_category_name($post_id, fic_old_company_analysis_category_name());
+}
+
+function fic_get_stock_code_from_post_context($post = null) {
+    if (!$post) {
+        $post = get_post();
+    }
+
+    if (!$post) {
+        return '';
+    }
+
+    $stock_code = fic_get_stock_code_from_post($post);
+    if ($stock_code !== '') {
+        return $stock_code;
+    }
+
+    foreach ([$post->post_title, $post->post_content] as $text) {
+        if (preg_match('/([0-9]{4})/u', (string) $text, $matches)) {
+            return $matches[1];
+        }
+    }
+
+    return '';
+}
+
+function fic_get_latest_company_analysis_post_for_old_post($post_id = null) {
+    global $wpdb;
+
+    if (!$post_id) {
+        $post_id = get_queried_object_id();
+    }
+
+    if (!$post_id || !fic_is_old_company_analysis_post($post_id)) {
+        return null;
+    }
+
+    static $cache = [];
+    if (array_key_exists($post_id, $cache)) {
+        return $cache[$post_id];
+    }
+
+    $current_post = get_post($post_id);
+    $stock_code = fic_get_stock_code_from_post_context($current_post);
+    if ($stock_code === '') {
+        $cache[$post_id] = null;
+        return null;
+    }
+
+    $post_ids = $wpdb->get_col(
+        $wpdb->prepare(
+            "
+            SELECT ID
+            FROM {$wpdb->posts}
+            WHERE post_type = 'post'
+              AND post_status = 'publish'
+              AND post_name LIKE %s
+            ORDER BY post_date DESC
+            LIMIT 10
+            ",
+            '%' . $wpdb->esc_like($stock_code) . '%'
+        )
+    );
+
+    foreach ($post_ids as $candidate_id) {
+        $candidate_id = (int) $candidate_id;
+
+        if ($candidate_id === (int) $post_id) {
+            continue;
+        }
+
+        if (fic_is_old_company_analysis_post($candidate_id)) {
+            continue;
+        }
+
+        $candidate = get_post($candidate_id);
+        if ($candidate) {
+            $cache[$post_id] = $candidate;
+            return $candidate;
+        }
+    }
+
+    $cache[$post_id] = null;
+    return null;
+}
+
+function fic_render_old_article_update_box($latest_post) {
+    if (!$latest_post) {
+        return '';
+    }
+
+    $stock_code = fic_get_stock_code_from_post_context($latest_post);
+    $company_name = fic_normalize_company_name_for_map($latest_post->post_title);
+
+    if ($company_name === '') {
+        $company_name = $latest_post->post_title;
+    }
+
+    $link_label = '【最新版】' . $company_name;
+    if ($stock_code !== '') {
+        $link_label .= '（' . $stock_code . '）';
+    }
+    $link_label .= 'の企業分析を見る →';
+
+    ob_start();
+    echo '<div class="fic-update-box">';
+    echo '<div class="fic-update-label">LATEST</div>';
+    echo '<div class="fic-update-content">';
+    echo '<div class="fic-update-title">最新版の分析はこちら</div>';
+    echo '<p>本記事は過去の分析です。最新の決算を反映した分析記事をご覧ください。</p>';
+    echo '<a href="' . esc_url(get_permalink($latest_post->ID)) . '" class="fic-update-link">' . esc_html($link_label) . '</a>';
+    echo '</div>';
+    echo '</div>';
+
+    return ob_get_clean();
+}
+
+function fic_insert_old_article_update_box($content) {
+    if (!is_singular('post')) {
+        return $content;
+    }
+
+    if (strpos($content, 'fic-update-box') !== false) {
+        return $content;
+    }
+
+    $post_id = get_queried_object_id();
+    $latest_post = fic_get_latest_company_analysis_post_for_old_post($post_id);
+    if (!$latest_post) {
+        return $content;
+    }
+
+    return fic_render_old_article_update_box($latest_post) . $content;
+}
+add_filter('the_content', 'fic_insert_old_article_update_box', 8);
+
+function fic_rank_math_old_article_robots($robots) {
+    if (!is_singular('post') || !fic_get_latest_company_analysis_post_for_old_post()) {
+        return $robots;
+    }
+
+    $robots['index'] = 'noindex';
+    $robots['follow'] = 'follow';
+
+    return $robots;
+}
+add_filter('rank_math/frontend/robots', 'fic_rank_math_old_article_robots', 20);
+
+function fic_rank_math_old_article_canonical($canonical) {
+    if (!is_singular('post')) {
+        return $canonical;
+    }
+
+    $latest_post = fic_get_latest_company_analysis_post_for_old_post();
+    if (!$latest_post) {
+        return $canonical;
+    }
+
+    return get_permalink($latest_post->ID);
+}
+add_filter('rank_math/frontend/canonical', 'fic_rank_math_old_article_canonical', 20);
+
+function fic_wp_robots_old_article_noindex($robots) {
+    if (!is_singular('post') || !fic_get_latest_company_analysis_post_for_old_post()) {
+        return $robots;
+    }
+
+    unset($robots['index']);
+    $robots['noindex'] = true;
+    $robots['follow'] = true;
+
+    return $robots;
+}
+add_filter('wp_robots', 'fic_wp_robots_old_article_noindex', 20);
+
+function fic_output_old_article_canonical_fallback() {
+    if (!is_singular('post')) {
+        return;
+    }
+
+    if (defined('RANK_MATH_VERSION') || class_exists('RankMath')) {
+        return;
+    }
+
+    $latest_post = fic_get_latest_company_analysis_post_for_old_post();
+    if (!$latest_post) {
+        return;
+    }
+
+    echo "\n<link rel=\"canonical\" href=\"" . esc_url(get_permalink($latest_post->ID)) . "\" class=\"fic-old-article-canonical\" />\n";
+}
+add_action('wp_head', 'fic_output_old_article_canonical_fallback', 1);
+
 function fic_company_name_by_code_map() {
     $map = [];
 
