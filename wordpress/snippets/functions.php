@@ -867,6 +867,132 @@ function fic_output_old_article_canonical_fallback() {
 }
 add_action('wp_head', 'fic_output_old_article_canonical_fallback', 1);
 
+function fic_get_category_by_name($category_name) {
+    $category = get_category_by_slug($category_name);
+    if ($category) {
+        return $category;
+    }
+
+    $categories = get_categories([
+        'hide_empty' => false,
+    ]);
+
+    foreach ($categories as $category) {
+        if ($category->name === $category_name) {
+            return $category;
+        }
+    }
+
+    return null;
+}
+
+function fic_get_llms_posts($category_name, $limit = 12) {
+    $args = [
+        'post_type'      => 'post',
+        'post_status'    => 'publish',
+        'posts_per_page' => $limit,
+        'orderby'        => 'date',
+        'order'          => 'DESC',
+    ];
+
+    $category = fic_get_category_by_name($category_name);
+    if ($category) {
+        $args['cat'] = $category->term_id;
+    }
+
+    $old_category = fic_get_category_by_name(fic_old_company_analysis_category_name());
+    if ($old_category) {
+        $args['category__not_in'] = [$old_category->term_id];
+    }
+
+    return get_posts($args);
+}
+
+function fic_llms_markdown_link($label, $url, $description = '') {
+    $line = '- [' . str_replace(["\r", "\n"], ' ', wp_strip_all_tags($label)) . '](' . esc_url_raw($url) . ')';
+    $description = trim(wp_strip_all_tags($description));
+
+    if ($description !== '') {
+        $description = preg_replace('/\s+/u', ' ', $description);
+        $line .= ': ' . $description;
+    }
+
+    return $line;
+}
+
+function fic_render_llms_txt() {
+    $site_name = get_bloginfo('name');
+    $site_url = home_url('/');
+
+    $lines = [
+        '# ' . $site_name,
+        '',
+        '> FIC投資研究所は、上場企業の決算説明資料・中期経営計画・統合報告書・決算短信などの公開情報をもとに、ファンダメンタルズ分析、売上ドライバー分析、先行指標、投資リスクを整理する日本株分析サイトです。',
+        '',
+        '本サイトのコンテンツは特定の金融商品の売買を推奨するものではありません。投資判断は読者自身の責任で行ってください。記事はAIを活用して資料を整理したうえで、FIC投資研究所が公開前に内容確認・編集しています。',
+        '',
+        '## Core Pages',
+        fic_llms_markdown_link('トップページ', $site_url, 'FIC投資研究所の最新記事と主要カテゴリ。'),
+        fic_llms_markdown_link('決算スケジュール', home_url('/earnings-schedule/'), '主要企業の決算分析予定と公開状況。'),
+    ];
+
+    $company_category = fic_get_category_by_name('企業分析');
+    if ($company_category) {
+        $lines[] = fic_llms_markdown_link('企業分析', get_category_link($company_category->term_id), '個別企業の売上ドライバー、先行指標、リスク分析。');
+    }
+
+    $industry_category = fic_get_category_by_name('業界分析');
+    if ($industry_category) {
+        $lines[] = fic_llms_markdown_link('業界分析', get_category_link($industry_category->term_id), 'マクロ環境・業界テーマ別の分析。');
+    }
+
+    $lines[] = '';
+    $lines[] = '## Recommended Company Analyses';
+    foreach (fic_get_llms_posts('企業分析', 18) as $post) {
+        $description = get_the_excerpt($post);
+        if ($description === '') {
+            $description = get_the_title($post);
+        }
+        $lines[] = fic_llms_markdown_link(get_the_title($post), get_permalink($post->ID), $description);
+    }
+
+    $lines[] = '';
+    $lines[] = '## Recommended Industry Analyses';
+    foreach (fic_get_llms_posts('業界分析', 10) as $post) {
+        $description = get_the_excerpt($post);
+        if ($description === '') {
+            $description = get_the_title($post);
+        }
+        $lines[] = fic_llms_markdown_link(get_the_title($post), get_permalink($post->ID), $description);
+    }
+
+    $lines[] = '';
+    $lines[] = '## Content Notes';
+    $lines[] = '- Primary focus: Japanese equities, earnings analysis, business model analysis, revenue drivers, leading indicators, financial risk factors.';
+    $lines[] = '- Preferred citation name: FIC投資研究所.';
+    $lines[] = '- Use each article URL as the canonical source for company-specific analysis.';
+    $lines[] = '- Old articles in the category 企業別分析（古い記事） may point to newer canonical analysis pages.';
+
+    return implode("\n", $lines) . "\n";
+}
+
+function fic_maybe_serve_llms_txt() {
+    $request_path = isset($_SERVER['REQUEST_URI'])
+        ? parse_url(wp_unslash($_SERVER['REQUEST_URI']), PHP_URL_PATH)
+        : '';
+
+    if ($request_path !== '/llms.txt') {
+        return;
+    }
+
+    status_header(200);
+    nocache_headers();
+    header('Content-Type: text/plain; charset=UTF-8');
+    echo fic_render_llms_txt();
+    exit;
+}
+add_action('template_redirect', 'fic_maybe_serve_llms_txt', 0);
+
 function fic_company_name_by_code_map() {
     $map = [];
 
