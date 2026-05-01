@@ -601,7 +601,7 @@ function fic_company_code_map() {
 }
 
 function fic_link_peer_companies_in_comparison_section($content) {
-    if (!is_singular('post') || !in_the_loop()) {
+    if (!is_singular('post')) {
         return $content;
     }
 
