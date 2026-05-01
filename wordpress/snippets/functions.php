@@ -606,16 +606,13 @@ function fic_link_peer_companies_in_comparison_section($content) {
     }
 
     $company_map = fic_company_code_map();
-    $debug_enabled = isset($_GET['fic_peer_debug']);
 
-    $replaced_count = 0;
     $linked_content = preg_replace_callback(
         '/(<h2[^>]*>.*?同業他社.*?<\/h2>.*?<table[^>]*>)(.*?)(<\/table>)/us',
-        function ($matches) use ($company_map, &$replaced_count) {
+        function ($matches) use ($company_map) {
             $table_open = $matches[1];
             $table_body = $matches[2];
             $table_close = $matches[3];
-            $replaced_count++;
 
             $linked_body = fic_link_peer_company_names_in_html_fragment($table_body, $company_map);
 
@@ -627,10 +624,6 @@ function fic_link_peer_companies_in_comparison_section($content) {
 
     if ($linked_content === null) {
         $linked_content = $content;
-    }
-
-    if ($debug_enabled) {
-        $linked_content .= "\n<!-- fic-peer-debug: filter=active matched_tables=" . esc_html((string) $replaced_count) . " -->";
     }
 
     return $linked_content;
