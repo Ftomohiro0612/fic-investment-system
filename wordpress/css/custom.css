@@ -414,16 +414,25 @@ article mark {
 #sidebar .widget_search form,
 #sidebar .widget_search .search-form,
 #sidebar .widget_search #searchform {
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
   gap: 10px;
   align-items: stretch;
   padding: 16px;
 }
 
+#sidebar .widget_search label {
+  display: block;
+  min-width: 0;
+  margin: 0;
+  font-size: 0;
+  line-height: 0;
+}
+
 #sidebar .widget_search input[type="search"],
 #sidebar .widget_search input[type="text"],
 #sidebar .widget_search #s {
-  flex: 1 1 auto;
+  width: 100%;
   min-width: 0;
   height: 44px;
   border: 1px solid #d8d8d8;
@@ -448,7 +457,6 @@ article mark {
 #sidebar .widget_search input[type="submit"],
 #sidebar .widget_search .search-submit,
 #sidebar .widget_search #searchsubmit {
-  flex: 0 0 auto;
   min-width: 86px;
   height: 44px;
   border: 1px solid var(--ey-yellow) !important;
