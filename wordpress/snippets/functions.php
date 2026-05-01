@@ -723,6 +723,7 @@ function fic_render_related_company_links($current_code, $limit = 6) {
     ob_start();
     echo '<div class="fic-related-companies">';
     echo '<p><strong>関連銘柄分析</strong></p>';
+    echo '<div class="fic-related-companies-description">同じ業界・テーマで比較しやすい分析記事です。</div>';
     echo '<ul>';
     foreach ($items as $item) {
         echo '<li><a href="' . esc_url($item['url']) . '">' . esc_html($item['name']) . '（' . esc_html($item['code']) . '）</a></li>';
