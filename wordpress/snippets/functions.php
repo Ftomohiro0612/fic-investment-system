@@ -605,178 +605,91 @@ function fic_link_peer_companies_in_comparison_section($content) {
         return $content;
     }
 
-    if (!class_exists('DOMDocument')) {
-        return $content;
-    }
-
-    libxml_use_internal_errors(true);
-
-    $dom = new DOMDocument();
-
-    $html = mb_convert_encoding(
-        '<div id="fic-wrap">' . $content . '</div>',
-        'HTML-ENTITIES',
-        'UTF-8'
-    );
-
-    $loaded = $dom->loadHTML($html, LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD);
-    if (!$loaded) {
-        return $content;
-    }
-
-    $xpath = new DOMXPath($dom);
     $company_map = fic_company_code_map();
 
-    $tables = $xpath->query('//table');
-    if (!$tables || $tables->length === 0) {
-        return $content;
-    }
+    return preg_replace_callback(
+        '/(<h2[^>]*>.*?同業他社.*?<\/h2>.*?<table[^>]*>)(.*?)(<\/table>)/us',
+        function ($matches) use ($company_map) {
+            $table_open = $matches[1];
+            $table_body = $matches[2];
+            $table_close = $matches[3];
 
-    foreach ($tables as $table) {
-        $rows = $xpath->query('.//tr', $table);
-        if (!$rows || $rows->length === 0) {
-            continue;
-        }
+            $linked_body = fic_link_peer_company_names_in_html_fragment($table_body, $company_map);
 
-        $header_cells = $xpath->query('./th | ./td', $rows->item(0));
-        if (!$header_cells || $header_cells->length === 0) {
-            continue;
-        }
-
-        $header_texts = [];
-        foreach ($header_cells as $idx => $cell) {
-            $header_texts[$idx] = trim(preg_replace('/\s+/u', '', $cell->textContent));
-        }
-
-        $target_mode = null;
-        $target_columns = [];
-
-        foreach ($header_texts as $idx => $header_text) {
-            if (mb_strpos($header_text, '企業例') !== false) {
-                $target_mode = 'company_example_column';
-                $target_columns[] = $idx;
-            }
-        }
-
-        if ($target_mode === null && isset($header_texts[0])) {
-            if ($header_texts[0] === '企業名') {
-                $target_mode = 'comparison_first_column';
-                $target_columns[] = 0;
-            }
-        }
-
-        if ($target_mode === null && isset($header_texts[0])) {
-            if (in_array($header_texts[0], ['比較項目', '比較軸'], true)) {
-                $target_mode = 'comparison_header_row';
-                for ($i = 1; $i < count($header_texts); $i++) {
-                    $target_columns[] = $i;
-                }
-            }
-        }
-
-        if ($target_mode === null || empty($target_columns)) {
-            continue;
-        }
-
-        foreach ($rows as $row_index => $row) {
-            $cells = $xpath->query('./th | ./td', $row);
-            if (!$cells || $cells->length === 0) {
-                continue;
-            }
-
-            if ($target_mode === 'comparison_header_row' && $row_index !== 0) {
-                continue;
-            }
-
-            if ($target_mode === 'comparison_first_column' && $row_index === 0) {
-                continue;
-            }
-
-            if ($target_mode === 'company_example_column' && $row_index === 0) {
-                continue;
-            }
-
-            foreach ($target_columns as $col_index) {
-                if ($col_index >= $cells->length) {
-                    continue;
-                }
-
-                $cell = $cells->item($col_index);
-                if (!$cell) {
-                    continue;
-                }
-
-                if ($xpath->query('.//a', $cell)->length > 0) {
-                    continue;
-                }
-
-                $text = trim($cell->textContent);
-                if ($text === '') {
-                    continue;
-                }
-
-                $replaced = preg_replace_callback(
-                    '/([^、,・\/／\n\r]+?)\s*[（(]([0-9]{4})[)）]/u',
-                    function ($matches) {
-                        $company_name = trim($matches[1]);
-                        $stock_code   = trim($matches[2]);
-                        $label        = $company_name . '（' . $stock_code . '）';
-
-                        $linked_post = fic_get_post_by_stock_code_in_slug($stock_code);
-
-                        if ($linked_post && get_the_ID() !== $linked_post->ID) {
-                            return '<a href="' . esc_url(get_permalink($linked_post->ID)) . '" class="fic-peer-link">' . esc_html($label) . '</a>';
-                        }
-
-                        return esc_html($label);
-                    },
-                    $text
-                );
-
-                if ($replaced !== null && $replaced !== $text) {
-                    while ($cell->firstChild) {
-                        $cell->removeChild($cell->firstChild);
-                    }
-
-                    $fragment = $dom->createDocumentFragment();
-                    @$fragment->appendXML(mb_convert_encoding($replaced, 'HTML-ENTITIES', 'UTF-8'));
-                    $cell->appendChild($fragment);
-                    continue;
-                }
-
-                $company_name = preg_replace('/\s*[（(].*?[)）]/u', '', $text);
-                $company_name = trim($company_name);
-
-                if (isset($company_map[$company_name])) {
-                    $stock_code  = $company_map[$company_name];
-                    $linked_post = fic_get_post_by_stock_code_in_slug($stock_code);
-
-                    if ($linked_post && get_the_ID() !== $linked_post->ID) {
-                        while ($cell->firstChild) {
-                            $cell->removeChild($cell->firstChild);
-                        }
-
-                        $a = $dom->createElement('a', $text);
-                        $a->setAttribute('href', get_permalink($linked_post->ID));
-                        $a->setAttribute('class', 'fic-peer-link');
-
-                        $cell->appendChild($a);
-                    }
-                }
-            }
-        }
-    }
-
-    $wrapper = $dom->getElementById('fic-wrap');
-    if (!$wrapper) {
-        return $content;
-    }
-
-    $new_html = '';
-    foreach ($wrapper->childNodes as $child) {
-        $new_html .= $dom->saveHTML($child);
-    }
-
-    return $new_html;
+            return $table_open . $linked_body . $table_close;
+        },
+        $content,
+        1
+    );
 }
 add_filter('the_content', 'fic_link_peer_companies_in_comparison_section', 20);
+
+function fic_link_peer_company_names_in_html_fragment($html, $company_map) {
+    return preg_replace_callback(
+        '/(<t[hd][^>]*>)(.*?)(<\/t[hd]>)/us',
+        function ($matches) use ($company_map) {
+            $open = $matches[1];
+            $inner = $matches[2];
+            $close = $matches[3];
+
+            if (stripos($inner, '<a ') !== false) {
+                return $matches[0];
+            }
+
+            $plain_text = trim(wp_strip_all_tags($inner));
+            if ($plain_text === '') {
+                return $matches[0];
+            }
+
+            $linked_inner = fic_link_peer_company_text($plain_text, $company_map);
+            if ($linked_inner === esc_html($plain_text)) {
+                return $matches[0];
+            }
+
+            return $open . $linked_inner . $close;
+        },
+        $html
+    );
+}
+
+function fic_link_peer_company_text($text, $company_map) {
+    $current_id = get_the_ID();
+    if (!$current_id) {
+        $current_id = get_queried_object_id();
+    }
+
+    $with_code = preg_replace_callback(
+        '/([^、,・\/／\n\r]+?)\s*[（(]([0-9]{4})[)）]/u',
+        function ($matches) use ($current_id) {
+            $company_name = trim($matches[1]);
+            $stock_code   = trim($matches[2]);
+            $label        = $company_name . '（' . $stock_code . '）';
+            $linked_post  = fic_get_post_by_stock_code_in_slug($stock_code);
+
+            if ($linked_post && (int) $current_id !== (int) $linked_post->ID) {
+                return '<a href="' . esc_url(get_permalink($linked_post->ID)) . '" class="fic-peer-link">' . esc_html($label) . '</a>';
+            }
+
+            return esc_html($label);
+        },
+        $text
+    );
+
+    if ($with_code !== null && $with_code !== $text) {
+        return $with_code;
+    }
+
+    $company_name = preg_replace('/\s*[（(].*?[)）]/u', '', $text);
+    $company_name = trim($company_name);
+
+    if (!isset($company_map[$company_name])) {
+        return esc_html($text);
+    }
+
+    $linked_post = fic_get_post_by_stock_code_in_slug($company_map[$company_name]);
+    if (!$linked_post || (int) $current_id === (int) $linked_post->ID) {
+        return esc_html($text);
+    }
+
+    return '<a href="' . esc_url(get_permalink($linked_post->ID)) . '" class="fic-peer-link">' . esc_html($text) . '</a>';
+}
