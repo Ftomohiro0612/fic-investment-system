@@ -769,6 +769,55 @@ function fic_insert_related_company_links($content) {
 }
 add_filter('the_content', 'fic_insert_related_company_links', 22);
 
+function fic_output_breadcrumb_json_ld() {
+    if (!is_singular('post')) {
+        return;
+    }
+
+    $post_id = get_queried_object_id();
+    if (!$post_id) {
+        return;
+    }
+
+    $items = [
+        [
+            '@type' => 'ListItem',
+            'position' => 1,
+            'name' => get_bloginfo('name'),
+            'item' => home_url('/'),
+        ],
+    ];
+
+    $categories = get_the_category($post_id);
+    if (!empty($categories)) {
+        $primary_category = $categories[0];
+        $items[] = [
+            '@type' => 'ListItem',
+            'position' => 2,
+            'name' => $primary_category->name,
+            'item' => get_category_link($primary_category->term_id),
+        ];
+    }
+
+    $items[] = [
+        '@type' => 'ListItem',
+        'position' => count($items) + 1,
+        'name' => get_the_title($post_id),
+        'item' => get_permalink($post_id),
+    ];
+
+    $schema = [
+        '@context' => 'https://schema.org',
+        '@type' => 'BreadcrumbList',
+        'itemListElement' => $items,
+    ];
+
+    echo "\n<script type=\"application/ld+json\" class=\"fic-breadcrumb-json-ld\">";
+    echo wp_json_encode($schema, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
+    echo "</script>\n";
+}
+add_action('wp_head', 'fic_output_breadcrumb_json_ld', 30);
+
 function fic_link_peer_company_names_in_html_fragment($html, $company_map) {
     return preg_replace_callback(
         '/(<t[hd][^>]*>)(.*?)(<\/t[hd]>)/us',
