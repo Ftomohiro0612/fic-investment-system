@@ -1296,3 +1296,28 @@ article mark {
     grid-template-columns: 1fr;
   }
 }
+
+/* 画像キャプション（figcaption）強化 */
+.article-image {
+  margin: 24px 0;
+  text-align: center;
+}
+
+.article-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* ← ここが本体 */
+.article-image figcaption {
+  margin-top: 10px;
+  padding: 8px 12px;
+  font-size: 0.85em;
+  color: #555;
+  background: #f5f5f5;
+  border-left: 4px solid #ccc;
+  border-radius: 4px;
+  line-height: 1.6;
+  text-align: left;
+}
