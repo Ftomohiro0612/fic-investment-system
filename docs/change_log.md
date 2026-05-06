@@ -56,6 +56,7 @@
 - Standardized future article openings around a fixed `30秒要約` `summary-box` for both company and industry analysis articles, with item labels optimized for quick reader scanning and answer-engine extraction
 - Tightened article title, description, and citation guidance so future Make outputs use shorter SEO-oriented titles and link/date-backed reference lists
 - Applied selected SEO/GEO audit improvements: stronger About/editorial policy signals, live `llms.txt`, tag archive `noindex, follow`, and Article schema `about`/`citation` guidance for future outputs
+- Added a Diver footer gap fix to remove the large blank area caused by the theme container's viewport-height minimum
 
 ## 2026-04-24
 - Created repository foundation files for prompt, Make, WordPress, SEO, and docs structure

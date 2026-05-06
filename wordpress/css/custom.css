@@ -1321,3 +1321,12 @@ article mark {
   line-height: 1.6;
   text-align: left;
 }
+
+/* Diver theme footer gap fix */
+#container {
+  min-height: auto !important;
+}
+
+#footer {
+  margin-top: 0 !important;
+}
