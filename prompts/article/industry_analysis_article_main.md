@@ -416,7 +416,8 @@
 - FAQPage schema は表示されている FAQ と完全一致させること
 - Article schema の headline は実際の記事タイトルと一致させること
 - Article schema の description は1行サマリーと内容面で一致させること
-- 日付は推測せず、Make から渡される実際の生成日または公開日を使うこと
+- 日付は推測せず、Make から渡される WordPress 公開日・更新日を使うこと
+- 記事生成日しか渡されていない場合は暫定値として使ってよいが、WordPress公開後にサイト側スニペットで実際の公開日・更新日に補正される前提とする
 - Article schema に `keywords` を含め、`KEYWORDS===` の出力内容と一致させること
 - Article schema の `keywords` は、配列ではなく `KEYWORDS===` と同じ内容の文字列として出力すること
 

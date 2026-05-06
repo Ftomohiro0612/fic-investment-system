@@ -1172,35 +1172,45 @@ add_action('wp_head', 'fic_output_breadcrumb_json_ld', 30);
  *
  * Diverテーマはheader.php側でwp_headより前にSEO/OGPを出すため、
  * wp_head内だけでは重複を取り切れない。フロントHTML全体を受け、
- * head要素内のRank Mathより前にあるDiver OGP、description、canonicalだけを掃除する。
+ * head要素内のRank Mathより前にあるDiver OGP、description、canonicalを掃除する。
+ * あわせて本文内のArticle JSON-LDをWordPress側の公開日・更新日・著者・画像に揃える。
  */
-function fic_start_rank_math_document_cleanup_buffer() {
+function fic_start_seo_document_cleanup_buffer() {
     if (is_admin() || wp_doing_ajax() || !defined('RANK_MATH_VERSION')) {
         return;
     }
 
     ob_start();
-    $GLOBALS['fic_rank_math_document_cleanup_buffer_level'] = ob_get_level();
+    $GLOBALS['fic_seo_document_cleanup_buffer_level'] = ob_get_level();
 }
-add_action('template_redirect', 'fic_start_rank_math_document_cleanup_buffer', 0);
+add_action('template_redirect', 'fic_start_seo_document_cleanup_buffer', 0);
 
-function fic_flush_rank_math_document_cleanup_buffer() {
-    if (empty($GLOBALS['fic_rank_math_document_cleanup_buffer_level'])) {
+function fic_flush_seo_document_cleanup_buffer() {
+    if (empty($GLOBALS['fic_seo_document_cleanup_buffer_level'])) {
         return;
     }
 
-    $buffer_level = (int) $GLOBALS['fic_rank_math_document_cleanup_buffer_level'];
+    $buffer_level = (int) $GLOBALS['fic_seo_document_cleanup_buffer_level'];
     if (ob_get_level() < $buffer_level) {
-        unset($GLOBALS['fic_rank_math_document_cleanup_buffer_level']);
+        unset($GLOBALS['fic_seo_document_cleanup_buffer_level']);
         return;
     }
 
     $html = ob_get_clean();
-    unset($GLOBALS['fic_rank_math_document_cleanup_buffer_level']);
+    unset($GLOBALS['fic_seo_document_cleanup_buffer_level']);
 
-    echo fic_cleanup_duplicate_theme_seo_document($html);
+    $html = fic_cleanup_duplicate_theme_seo_document($html);
+
+    if (is_singular('post')) {
+        $post_id = get_queried_object_id();
+        if ($post_id) {
+            $html = fic_normalize_article_json_ld_document($html, $post_id);
+        }
+    }
+
+    echo $html;
 }
-add_action('shutdown', 'fic_flush_rank_math_document_cleanup_buffer', 0);
+add_action('shutdown', 'fic_flush_seo_document_cleanup_buffer', 0);
 
 function fic_cleanup_duplicate_theme_seo_document($html) {
     if (strpos($html, 'Search Engine Optimization by Rank Math') === false || stripos($html, '</head>') === false) {
@@ -1246,6 +1256,51 @@ function fic_cleanup_duplicate_theme_seo_head($matches) {
     );
 
     return $before_rank_math . $rank_math_and_after;
+}
+
+function fic_normalize_article_json_ld_document($html, $post_id) {
+    if (strpos($html, '"@type": "Article"') === false && strpos($html, '"@type":"Article"') === false) {
+        return $html;
+    }
+
+    return preg_replace_callback(
+        '/<script\s+type=["\']application\/ld\+json["\'][^>]*>\s*(\{[\s\S]*?\})\s*<\/script>/i',
+        function ($matches) use ($post_id) {
+            $schema = json_decode(trim($matches[1]), true);
+            if (!is_array($schema) || (($schema['@type'] ?? '') !== 'Article')) {
+                return $matches[0];
+            }
+
+            $schema['datePublished'] = get_the_date(DATE_W3C, $post_id);
+            $schema['dateModified'] = get_the_modified_date(DATE_W3C, $post_id);
+            $schema['author'] = [
+                '@type' => 'Organization',
+                '@id' => home_url('/#editorial-team'),
+                'name' => get_bloginfo('name') . ' 編集部',
+                'url' => home_url('/about/'),
+            ];
+            $schema['publisher'] = [
+                '@type' => 'Organization',
+                '@id' => home_url('/#organization'),
+                'name' => get_bloginfo('name'),
+                'url' => home_url('/'),
+            ];
+            $schema['mainEntityOfPage'] = [
+                '@type' => 'WebPage',
+                '@id' => get_permalink($post_id),
+            ];
+
+            if (has_post_thumbnail($post_id)) {
+                $image_url = get_the_post_thumbnail_url($post_id, 'full');
+                if ($image_url) {
+                    $schema['image'] = [$image_url];
+                }
+            }
+
+            return '<script type="application/ld+json">' . wp_json_encode($schema, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES) . '</script>';
+        },
+        $html
+    );
 }
 
 function fic_output_eeat_json_ld() {

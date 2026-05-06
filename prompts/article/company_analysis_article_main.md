@@ -846,8 +846,8 @@ disclaimerの直後に以下を順番に出力すること：
     "name": "FIC投資研究所",
     "url": "https://fic-investment.biz"
   },
-  "datePublished": "[Makeから渡される記事生成日をYYYY-MM-DD形式でそのまま転記]",
-  "dateModified": "[Makeから渡される記事生成日をYYYY-MM-DD形式でそのまま転記]",
+  "datePublished": "[Makeから渡されるWordPress公開日をYYYY-MM-DDまたはISO 8601形式でそのまま転記]",
+  "dateModified": "[Makeから渡されるWordPress更新日をYYYY-MM-DDまたはISO 8601形式でそのまま転記]",
   "keywords": "[KEYWORDS===で出力したキーワードをそのまま転記]"
 }
 </script>

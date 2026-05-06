@@ -61,9 +61,10 @@ JSON以外のテキスト、前置き、コードブロック記法は一切含�
 - `headline` は `article_title` と一致
 - `description` は1行サマリーと一致
 - `keywords` は `keywords` と一致
-- `datePublished` と `dateModified` は、Make から別途渡される記事生成日をそのまま使う
+- `datePublished` と `dateModified` は、Make から別途渡される WordPress 公開日・更新日を使う
 - 日付をモデルが推測・創作することは禁止
-- 記事生成日が入力で与えられた場合は、その値を `YYYY-MM-DD` のまま転記する
+- 公開日・更新日が入力で与えられた場合は、その値を `YYYY-MM-DD` または ISO 8601 形式のまま転記する
+- 記事生成日しか渡されていない場合は暫定値として使ってよいが、WordPress公開後にサイト側スニペットで実際の公開日・更新日に補正される前提とする
 
 ## 引用リンクルール
 - 記事本文中に一次情報への引用リンクを最低3つ含める
