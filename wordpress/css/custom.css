@@ -1302,6 +1302,10 @@ article mark {
   list-style: none;
 }
 
+.fic-related-companies:not(.fic-related-themes) ul {
+  grid-template-columns: repeat(auto-fill, minmax(260px, 374px));
+}
+
 .fic-related-companies li {
   margin: 0;
   padding: 0;
@@ -1343,6 +1347,19 @@ article mark {
   font-size: 0.82em;
   font-weight: 600;
   line-height: 1.35;
+}
+
+.fic-related-themes ul {
+  grid-template-columns: 1fr;
+}
+
+.fic-related-themes a {
+  min-height: 0;
+  padding: 14px 16px;
+}
+
+.fic-related-themes .fic-related-link-title {
+  line-height: 1.45;
 }
 
 @media (max-width: 767px) {
