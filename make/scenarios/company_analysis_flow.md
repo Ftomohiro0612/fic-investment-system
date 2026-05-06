@@ -43,3 +43,15 @@ This compiled file should be kept in sync whenever these source files change:
 After the article generation path is stable, consider loading:
 - `prompts/article/company_analysis_memo_main.md`
 - `prompts/article/company_analysis_pdf_summary.md`
+
+## Image Creation And Publishing Review
+Before creating the article image and publishing, Codex should review the generated article body and make small editorial fixes when needed. This review belongs in the image creation and posting workflow, so Make does not need an extra module for every minor article-quality issue.
+
+Check especially:
+
+- Remove unfinished-looking expressions such as `不明`, `確認中`, `要確認`, and `取得できず` from public-facing summaries, tables, forecasts, and FAQ.
+- If a numeric value cannot be confirmed, do not invent it. Replace it with the specific source the reader should check, such as `企業IRの月次資料で確認が必要`, `決算説明資料の次回更新で確認が必要`, or `公的統計・業界団体統計で確認が必要`.
+- Soften overly strong impact labels when the effect depends on contract structure, hedging, customer mix, segment exposure, or accounting treatment.
+- Correct awkward or inaccurate business-model wording before publication.
+- Add a short latest-status note only when the article body, memo, or search results clearly support it. Do not add fresh news from inference alone.
+- Keep title, 30-second summary, tables, forecasts, FAQ, references, and Article schema consistent after any body edits.

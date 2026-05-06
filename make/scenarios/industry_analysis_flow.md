@@ -38,6 +38,18 @@ Keep Make responsible for orchestration, not for storing long editorial logic.
 - Do not reintroduce a JSON output requirement if Make expects the delimited text format above
 - If the prompt is updated in GitHub, Make should automatically use the latest file contents without needing manual text edits inside the module
 
+## Image Creation And Publishing Review
+Before creating the article image and publishing, Codex should review the generated article body and make small editorial fixes when needed. This review belongs in the image creation and posting workflow, so Make does not need an extra module for every minor article-quality issue.
+
+Check especially:
+
+- Remove unfinished-looking expressions such as `不明`, `確認中`, `要確認`, and `取得できず` from public-facing summaries, tables, forecasts, and FAQ.
+- If a numeric value cannot be confirmed, do not invent it. Replace it with the specific source the reader should check, such as `Platts JKM等の市況データで確認が必要`, `企業IRの月次資料で確認が必要`, or `公的統計の次回更新で確認が必要`.
+- Soften overly strong impact labels, such as changing `直接恩恵・影響度大` to `条件付き・間接寄り・中〜大` when the effect depends on contract structure, hedging, inventory position, or segment exposure.
+- Correct awkward or inaccurate business-model wording before publication. For example, use `短期スポット運賃感応型` instead of manufacturing-like wording such as `一発受注型` for LNG shipping exposure.
+- Add a short latest-status note only when the article body, memo, or search results clearly support it. Do not add fresh news from inference alone.
+- Keep title, 30-second summary, tables, forecasts, FAQ, references, and Article schema consistent after any body edits.
+
 ## Future Optional Externalization
 After the article-writing step is stable, consider externalizing:
 
