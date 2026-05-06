@@ -1167,6 +1167,74 @@ function fic_output_breadcrumb_json_ld() {
 }
 add_action('wp_head', 'fic_output_breadcrumb_json_ld', 30);
 
+/**
+ * Rank MathをSEOメタの正本にする。
+ *
+ * Diverテーマ側のSEO/OGP出力とRank Mathの出力が重複すると、
+ * description、canonical、OGP、Twitter Cardが二重に出る。
+ * テーマ更新で関数名が変わっても壊れにくいよう、wp_head内の出力を
+ * Rank Mathブロック直前で限定的に掃除する。
+ */
+function fic_start_rank_math_head_cleanup_buffer() {
+    if (is_admin() || !defined('RANK_MATH_VERSION')) {
+        return;
+    }
+
+    ob_start('fic_cleanup_duplicate_theme_seo_head');
+    $GLOBALS['fic_rank_math_head_cleanup_buffer_level'] = ob_get_level();
+}
+add_action('wp_head', 'fic_start_rank_math_head_cleanup_buffer', -9999);
+
+function fic_flush_rank_math_head_cleanup_buffer() {
+    if (empty($GLOBALS['fic_rank_math_head_cleanup_buffer_level'])) {
+        return;
+    }
+
+    $buffer_level = (int) $GLOBALS['fic_rank_math_head_cleanup_buffer_level'];
+    if (ob_get_level() >= $buffer_level) {
+        ob_end_flush();
+    }
+
+    unset($GLOBALS['fic_rank_math_head_cleanup_buffer_level']);
+}
+add_action('wp_head', 'fic_flush_rank_math_head_cleanup_buffer', 9999);
+
+function fic_cleanup_duplicate_theme_seo_head($head_html) {
+    if (strpos($head_html, 'Search Engine Optimization by Rank Math') === false) {
+        return $head_html;
+    }
+
+    $rank_math_marker = '<!-- Search Engine Optimization by Rank Math';
+    $parts = explode($rank_math_marker, $head_html, 2);
+
+    if (count($parts) !== 2) {
+        return $head_html;
+    }
+
+    $before_rank_math = $parts[0];
+    $rank_math_and_after = $rank_math_marker . $parts[1];
+
+    $before_rank_math = preg_replace(
+        '/<!--\s*Diver OGP\s*-->[\s\S]*?<!--\s*\/\s*Diver OGP\s*-->/i',
+        '',
+        $before_rank_math
+    );
+
+    $before_rank_math = preg_replace(
+        '/<meta\s+name=["\']description["\'][^>]*>\s*/i',
+        '',
+        $before_rank_math
+    );
+
+    $before_rank_math = preg_replace(
+        '/<link\s+rel=["\']canonical["\'][^>]*>\s*/i',
+        '',
+        $before_rank_math
+    );
+
+    return $before_rank_math . $rank_math_and_after;
+}
+
 function fic_output_eeat_json_ld() {
     if (!is_singular('post')) {
         return;

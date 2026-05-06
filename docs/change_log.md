@@ -1,5 +1,9 @@
 # Change Log
 
+## 2026-05-06
+- Added a WordPress head-cleanup guard in `wordpress/snippets/functions.php` so Rank Math is treated as the canonical source for SEO meta tags.
+- The cleanup removes Diver theme duplicate OGP output plus pre-Rank-Math duplicate `description` and `canonical` tags inside `wp_head`, reducing conflicting metadata on article and archive pages.
+
 ## 2026-04-26
 - Added externalized industry analysis article prompt at `prompts/article/industry_analysis_article_main.md`
 - Added a GitHub-managed mirror of the current Make-direct industry analysis memo prompt at `prompts/article/industry_analysis_memo_main.md`
