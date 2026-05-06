@@ -1205,6 +1205,7 @@ function fic_flush_seo_document_cleanup_buffer() {
         $post_id = get_queried_object_id();
         if ($post_id) {
             $html = fic_normalize_article_json_ld_document($html, $post_id);
+            $html = fic_add_old_article_latest_canonical($html);
         }
     }
 
@@ -1301,6 +1302,25 @@ function fic_normalize_article_json_ld_document($html, $post_id) {
         },
         $html
     );
+}
+
+function fic_add_old_article_latest_canonical($html) {
+    if (!function_exists('fic_get_latest_company_analysis_post_for_old_post')) {
+        return $html;
+    }
+
+    $latest_post = fic_get_latest_company_analysis_post_for_old_post();
+    if (!$latest_post || stripos($html, '</head>') === false) {
+        return $html;
+    }
+
+    $canonical = '<link rel="canonical" href="' . esc_url(get_permalink($latest_post->ID)) . '" class="fic-old-article-canonical" />';
+
+    if (preg_match('/<link\s+rel=["\']canonical["\'][^>]*>/i', $html)) {
+        return preg_replace('/<link\s+rel=["\']canonical["\'][^>]*>/i', $canonical, $html, 1);
+    }
+
+    return preg_replace('/<\/head>/i', '    ' . $canonical . "\n</head>", $html, 1);
 }
 
 function fic_output_eeat_json_ld() {

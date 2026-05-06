@@ -1,0 +1,722 @@
+{
+  "generatedAt": "2026-05-06T03:48:15.297Z",
+  "summary": {
+    "checked": 12,
+    "updateBoxOk": 12,
+    "noindexOk": 12,
+    "canonicalOk": 12,
+    "unmatched": 88
+  },
+  "checks": [
+    {
+      "id": 8706,
+      "code": "3498",
+      "title": "【企業別分析】霞ヶ関キャピタル（3498）",
+      "oldLink": "https://fic-investment.biz/code-3498/",
+      "latestLink": "https://fic-investment.biz/kasumigaseki-capital-3498-analysis/",
+      "status": 200,
+      "hasUpdateBox": true,
+      "hasLatestLink": true,
+      "robots": "follow, noindex",
+      "canonicals": [
+        "https://fic-investment.biz/kasumigaseki-capital-3498-analysis/"
+      ],
+      "canonicalMatches": true
+    },
+    {
+      "id": 7157,
+      "code": "1802",
+      "title": "【企業別分析】大林組（1802）",
+      "oldLink": "https://fic-investment.biz/code-1802/",
+      "latestLink": "https://fic-investment.biz/obayashi-1802-analysis/",
+      "status": 200,
+      "hasUpdateBox": true,
+      "hasLatestLink": true,
+      "robots": "follow, noindex",
+      "canonicals": [
+        "https://fic-investment.biz/obayashi-1802-analysis/"
+      ],
+      "canonicalMatches": true
+    },
+    {
+      "id": 4812,
+      "code": "6141",
+      "title": "【企業別分析】DMG森精機（6141）",
+      "oldLink": "https://fic-investment.biz/code-6141/",
+      "latestLink": "https://fic-investment.biz/dmg-mori-6141-analysis/",
+      "status": 200,
+      "hasUpdateBox": true,
+      "hasLatestLink": true,
+      "robots": "follow, noindex",
+      "canonicals": [
+        "https://fic-investment.biz/dmg-mori-6141-analysis/"
+      ],
+      "canonicalMatches": true
+    },
+    {
+      "id": 2576,
+      "code": "8802",
+      "title": "【企業別分析】三菱地所（8802）",
+      "oldLink": "https://fic-investment.biz/code-8802/",
+      "latestLink": "https://fic-investment.biz/mitsubishi-estate-8802-analysis/",
+      "status": 200,
+      "hasUpdateBox": true,
+      "hasLatestLink": true,
+      "robots": "follow, noindex",
+      "canonicals": [
+        "https://fic-investment.biz/mitsubishi-estate-8802-analysis/"
+      ],
+      "canonicalMatches": true
+    },
+    {
+      "id": 1317,
+      "code": "9104",
+      "title": "【企業別分析】商船三井（9104）",
+      "oldLink": "https://fic-investment.biz/code-9104/",
+      "latestLink": "https://fic-investment.biz/mol-9104-analysis/",
+      "status": 200,
+      "hasUpdateBox": true,
+      "hasLatestLink": true,
+      "robots": "follow, noindex",
+      "canonicals": [
+        "https://fic-investment.biz/mol-9104-analysis/"
+      ],
+      "canonicalMatches": true
+    },
+    {
+      "id": 1250,
+      "code": "1812",
+      "title": "【企業別分析】鹿島建設（1812）",
+      "oldLink": "https://fic-investment.biz/code-1812/",
+      "latestLink": "https://fic-investment.biz/kajima-1812-analysis/",
+      "status": 200,
+      "hasUpdateBox": true,
+      "hasLatestLink": true,
+      "robots": "follow, noindex",
+      "canonicals": [
+        "https://fic-investment.biz/kajima-1812-analysis/"
+      ],
+      "canonicalMatches": true
+    },
+    {
+      "id": 967,
+      "code": "7011",
+      "title": "【企業別分析】三菱重工業（7011）",
+      "oldLink": "https://fic-investment.biz/code-7011/",
+      "latestLink": "https://fic-investment.biz/mhi-7011-analysis/",
+      "status": 200,
+      "hasUpdateBox": true,
+      "hasLatestLink": true,
+      "robots": "follow, noindex",
+      "canonicals": [
+        "https://fic-investment.biz/mhi-7011-analysis/"
+      ],
+      "canonicalMatches": true
+    },
+    {
+      "id": 834,
+      "code": "3382",
+      "title": "【企業別分析】セブン＆アイHD（3382）",
+      "oldLink": "https://fic-investment.biz/code-3382/",
+      "latestLink": "https://fic-investment.biz/seven-and-i-3382-analysis/",
+      "status": 200,
+      "hasUpdateBox": true,
+      "hasLatestLink": true,
+      "robots": "follow, noindex",
+      "canonicals": [
+        "https://fic-investment.biz/seven-and-i-3382-analysis/"
+      ],
+      "canonicalMatches": true
+    },
+    {
+      "id": 404,
+      "code": "4063",
+      "title": "【企業別分析】信越化学工業（4063）",
+      "oldLink": "https://fic-investment.biz/code-4063/",
+      "latestLink": "https://fic-investment.biz/shin-etsu-chemical-4063-analysis/",
+      "status": 200,
+      "hasUpdateBox": true,
+      "hasLatestLink": true,
+      "robots": "follow, noindex",
+      "canonicals": [
+        "https://fic-investment.biz/shin-etsu-chemical-4063-analysis/"
+      ],
+      "canonicalMatches": true
+    },
+    {
+      "id": 388,
+      "code": "8035",
+      "title": "【企業別分析】東京エレクトロン（8035）",
+      "oldLink": "https://fic-investment.biz/code-8035/",
+      "latestLink": "https://fic-investment.biz/tokyo-electron-8035-analysis/",
+      "status": 200,
+      "hasUpdateBox": true,
+      "hasLatestLink": true,
+      "robots": "follow, noindex",
+      "canonicals": [
+        "https://fic-investment.biz/tokyo-electron-8035-analysis/"
+      ],
+      "canonicalMatches": true
+    },
+    {
+      "id": 373,
+      "code": "6920",
+      "title": "【企業別分析】レーザーテック（6920）",
+      "oldLink": "https://fic-investment.biz/code-6920/",
+      "latestLink": "https://fic-investment.biz/lasertec-6920-analysis/",
+      "status": 200,
+      "hasUpdateBox": true,
+      "hasLatestLink": true,
+      "robots": "follow, noindex",
+      "canonicals": [
+        "https://fic-investment.biz/lasertec-6920-analysis/"
+      ],
+      "canonicalMatches": true
+    },
+    {
+      "id": 297,
+      "code": "6754",
+      "title": "【企業別分析】アンリツ（6754）",
+      "oldLink": "https://fic-investment.biz/code-6754/",
+      "latestLink": "https://fic-investment.biz/anritsu-6754-analysis/",
+      "status": 200,
+      "hasUpdateBox": true,
+      "hasLatestLink": true,
+      "robots": "follow, noindex",
+      "canonicals": [
+        "https://fic-investment.biz/anritsu-6754-analysis/"
+      ],
+      "canonicalMatches": true
+    }
+  ],
+  "unmatched": [
+    {
+      "id": 10342,
+      "code": "6417",
+      "title": "【企業別分析】ＳＡＮＫＹＯ（6417）",
+      "link": "https://fic-investment.biz/code-6417/"
+    },
+    {
+      "id": 9811,
+      "code": "9552",
+      "title": "【企業別分析】M&amp;A総研ホールディングス（9552）",
+      "link": "https://fic-investment.biz/code-9552/"
+    },
+    {
+      "id": 9638,
+      "code": "4776",
+      "title": "【企業別分析】サイボウズ（4776）",
+      "link": "https://fic-investment.biz/code-4776/"
+    },
+    {
+      "id": 9472,
+      "code": "6526",
+      "title": "【企業別分析】ソシオネクスト（6526）",
+      "link": "https://fic-investment.biz/code-6526/"
+    },
+    {
+      "id": 9221,
+      "code": "6104",
+      "title": "【企業別分析】芝浦機械（6104）",
+      "link": "https://fic-investment.biz/code-6104/"
+    },
+    {
+      "id": 9166,
+      "code": "6254",
+      "title": "【企業別分析】野村マイクロ・サイエンス（6254）",
+      "link": "https://fic-investment.biz/code-6254/"
+    },
+    {
+      "id": 9043,
+      "code": "9229",
+      "title": "【企業別分析】サンウェルズ（9229）",
+      "link": "https://fic-investment.biz/code-9229/"
+    },
+    {
+      "id": 8499,
+      "code": "6062",
+      "title": "【企業別分析】チャーム・ケア・コーポレーション（6062）",
+      "link": "https://fic-investment.biz/code-6062/"
+    },
+    {
+      "id": 8464,
+      "code": "7794",
+      "title": "【企業別分析】イーディーピー（7794）",
+      "link": "https://fic-investment.biz/code-7794/"
+    },
+    {
+      "id": 8398,
+      "code": "8253",
+      "title": "【企業別分析】クレディセゾン（8253）",
+      "link": "https://fic-investment.biz/code-8253/"
+    },
+    {
+      "id": 8383,
+      "code": "7816",
+      "title": "【企業別分析】スノーピーク（7816）",
+      "link": "https://fic-investment.biz/code-7816/"
+    },
+    {
+      "id": 8351,
+      "code": "9246",
+      "title": "【企業別分析】プロジェクトカンパニー（9246）",
+      "link": "https://fic-investment.biz/code-9246/"
+    },
+    {
+      "id": 8288,
+      "code": "6338",
+      "title": "【企業別分析】タカトリ（6338）",
+      "link": "https://fic-investment.biz/code-6338/"
+    },
+    {
+      "id": 8249,
+      "code": "4528",
+      "title": "【企業別分析】小野薬品工業（4528）",
+      "link": "https://fic-investment.biz/code-4528/"
+    },
+    {
+      "id": 8064,
+      "code": "6432",
+      "title": "【企業別分析】竹内製作所（6432）",
+      "link": "https://fic-investment.biz/code-6432/"
+    },
+    {
+      "id": 8011,
+      "code": "3086",
+      "title": "【企業別分析】Ｊ．フロント リテイリング（3086）",
+      "link": "https://fic-investment.biz/code-3086/"
+    },
+    {
+      "id": 7914,
+      "code": "8155",
+      "title": "【企業別分析】三益半導体工業（8155）",
+      "link": "https://fic-investment.biz/code-8155/"
+    },
+    {
+      "id": 7819,
+      "code": "7095",
+      "title": "【企業別分析】Ｍａｃｂｅｅ Ｐｌａｎｅｔ（7095）",
+      "link": "https://fic-investment.biz/code-7095/"
+    },
+    {
+      "id": 7735,
+      "code": "6387",
+      "title": "【企業別分析】サムコ（6387）",
+      "link": "https://fic-investment.biz/code-6387/"
+    },
+    {
+      "id": 7689,
+      "code": "9627",
+      "title": "【企業別分析】アインホールディングス（9627）",
+      "link": "https://fic-investment.biz/code-9627/"
+    },
+    {
+      "id": 7667,
+      "code": "9022",
+      "title": "【企業別分析】東海旅客鉄道（9022）",
+      "link": "https://fic-investment.biz/code-9022/"
+    },
+    {
+      "id": 7645,
+      "code": "9531",
+      "title": "【企業別分析】東京ガス（9531）",
+      "link": "https://fic-investment.biz/code-9531/"
+    },
+    {
+      "id": 7415,
+      "code": "5411",
+      "title": "【企業別分析】ＪＦＥホールディングス（5411）",
+      "link": "https://fic-investment.biz/code-5411/"
+    },
+    {
+      "id": 7372,
+      "code": "5401",
+      "title": "【企業別分析】日本製鉄（5401）",
+      "link": "https://fic-investment.biz/code-5401/"
+    },
+    {
+      "id": 7190,
+      "code": "5602",
+      "title": "【企業別分析】栗本鐵工所（5602）",
+      "link": "https://fic-investment.biz/code-5602/"
+    },
+    {
+      "id": 7139,
+      "code": "1803",
+      "title": "【企業別分析】清水建設（1803）",
+      "link": "https://fic-investment.biz/code-1803/"
+    },
+    {
+      "id": 7122,
+      "code": "1801",
+      "title": "【企業別分析】大成建設（1801）",
+      "link": "https://fic-investment.biz/code-1801/"
+    },
+    {
+      "id": 7102,
+      "code": "2427",
+      "title": "【企業別分析】アウトソーシング（2427）",
+      "link": "https://fic-investment.biz/code-2427/"
+    },
+    {
+      "id": 7078,
+      "code": "3861",
+      "title": "【企業別分析】王子ホールディングス（3861）",
+      "link": "https://fic-investment.biz/code-3861/"
+    },
+    {
+      "id": 6932,
+      "code": "5217",
+      "title": "【企業別分析】テクノクオーツ（5217）",
+      "link": "https://fic-investment.biz/code-5217/"
+    },
+    {
+      "id": 6881,
+      "code": "9274",
+      "title": "【企業別分析】ＫＰＰグループホールディングス（9274）",
+      "link": "https://fic-investment.biz/code-9274/"
+    },
+    {
+      "id": 6653,
+      "code": "7972",
+      "title": "【企業別分析】イトーキ（7972）",
+      "link": "https://fic-investment.biz/code-7972/"
+    },
+    {
+      "id": 6556,
+      "code": "9272",
+      "title": "【企業別分析】ブティックス（9272）",
+      "link": "https://fic-investment.biz/code-9272/"
+    },
+    {
+      "id": 6515,
+      "code": "4996",
+      "title": "【企業別分析】クミアイ化学工業（4996）",
+      "link": "https://fic-investment.biz/code-4996/"
+    },
+    {
+      "id": 6476,
+      "code": "3903",
+      "title": "【企業別分析】ｇｕｍｉ（3903）",
+      "link": "https://fic-investment.biz/code-3903/"
+    },
+    {
+      "id": 6243,
+      "code": "9519",
+      "title": "【企業別分析】レノバ（9519）",
+      "link": "https://fic-investment.biz/code-9519/"
+    },
+    {
+      "id": 6190,
+      "code": "1893",
+      "title": "【企業別分析】五洋建設（1893）",
+      "link": "https://fic-investment.biz/code-1893/"
+    },
+    {
+      "id": 6018,
+      "code": "3328",
+      "title": "【企業別分析】ＢＥＥＮＯＳ（3328）",
+      "link": "https://fic-investment.biz/code-3328/"
+    },
+    {
+      "id": 5799,
+      "code": "2307",
+      "title": "【企業別分析】クロスキャット（2307）",
+      "link": "https://fic-investment.biz/code-2307/"
+    },
+    {
+      "id": 5786,
+      "code": "7606",
+      "title": "【企業別分析】ユナイテッドアローズ（7606）",
+      "link": "https://fic-investment.biz/code-7606/"
+    },
+    {
+      "id": 5770,
+      "code": "2372",
+      "title": "【企業別分析】アイロムグループ（2372）",
+      "link": "https://fic-investment.biz/code-2372/"
+    },
+    {
+      "id": 5734,
+      "code": "6730",
+      "title": "【企業別分析】アクセル（6730）",
+      "link": "https://fic-investment.biz/code-6730/"
+    },
+    {
+      "id": 5659,
+      "code": "7148",
+      "title": "【企業別分析】ＦＰＧ（7148）",
+      "link": "https://fic-investment.biz/code-7148/"
+    },
+    {
+      "id": 5491,
+      "code": "6999",
+      "title": "【企業別分析】ＫＯＡ（6999）",
+      "link": "https://fic-investment.biz/code-6999/"
+    },
+    {
+      "id": 5380,
+      "code": "9368",
+      "title": "【企業別分析】キムラユニティー（9368）",
+      "link": "https://fic-investment.biz/code-9368/"
+    },
+    {
+      "id": 5322,
+      "code": "7970",
+      "title": "【企業別分析】信越ポリマー（7970）",
+      "link": "https://fic-investment.biz/code-7970/"
+    },
+    {
+      "id": 5218,
+      "code": "3856",
+      "title": "【企業別分析】Abalance（3856）",
+      "link": "https://fic-investment.biz/code-3856/"
+    },
+    {
+      "id": 5174,
+      "code": "7270",
+      "title": "【企業別分析】SUBARU（7270）",
+      "link": "https://fic-investment.biz/code-7270/"
+    },
+    {
+      "id": 5118,
+      "code": "7033",
+      "title": "【企業別分析】マネジメントソリューションズ（7033）",
+      "link": "https://fic-investment.biz/code-7033/"
+    },
+    {
+      "id": 5015,
+      "code": "6902",
+      "title": "【企業別分析】デンソー（6902）",
+      "link": "https://fic-investment.biz/code-6902/"
+    },
+    {
+      "id": 4902,
+      "code": "8897",
+      "title": "【企業別分析】MIRARTHホールディングス（8897）",
+      "link": "https://fic-investment.biz/code-8897/"
+    },
+    {
+      "id": 4861,
+      "code": "5334",
+      "title": "【企業別分析】日本特殊陶業（5334）",
+      "link": "https://fic-investment.biz/code-5334/"
+    },
+    {
+      "id": 4706,
+      "code": "6779",
+      "title": "【企業別分析】日本電波工業（6779）",
+      "link": "https://fic-investment.biz/code-6779/"
+    },
+    {
+      "id": 4659,
+      "code": "2749",
+      "title": "【企業別分析】JPホールディングス（2749）",
+      "link": "https://fic-investment.biz/code-2749/"
+    },
+    {
+      "id": 4564,
+      "code": "2395",
+      "title": "【企業別分析】新日本科学（2395）",
+      "link": "https://fic-investment.biz/code-2395/"
+    },
+    {
+      "id": 4542,
+      "code": "8923",
+      "title": "【企業別分析】トーセイ（8923）",
+      "link": "https://fic-investment.biz/code-8923/"
+    },
+    {
+      "id": 4491,
+      "code": "3186",
+      "title": "【企業別分析】ネクステージ（3186）",
+      "link": "https://fic-investment.biz/code-3186/"
+    },
+    {
+      "id": 4145,
+      "code": "4369",
+      "title": "【企業別分析】トリケミカル研究所（4369）",
+      "link": "https://fic-investment.biz/code-4369/"
+    },
+    {
+      "id": 4142,
+      "code": "4238",
+      "title": "【企業別分析】ミライアル（4238）",
+      "link": "https://fic-investment.biz/code-4238/"
+    },
+    {
+      "id": 3834,
+      "code": "9090",
+      "title": "【企業別分析】ＡＺ－ＣＯＭ丸和ホールディングス（9090）",
+      "link": "https://fic-investment.biz/code-9090/"
+    },
+    {
+      "id": 3829,
+      "code": "2428",
+      "title": "【企業別分析】ウェルネット（2428）",
+      "link": "https://fic-investment.biz/code-2428/"
+    },
+    {
+      "id": 3824,
+      "code": "4046",
+      "title": "【企業別分析】大阪ソーダ（4046）",
+      "link": "https://fic-investment.biz/code-4046/"
+    },
+    {
+      "id": 3819,
+      "code": "4235",
+      "title": "【企業別分析】ウルトラファブリックス（4235）",
+      "link": "https://fic-investment.biz/code-4235/"
+    },
+    {
+      "id": 3810,
+      "code": "7370",
+      "title": "【企業別分析】Enjin（7370）",
+      "link": "https://fic-investment.biz/code-7370/"
+    },
+    {
+      "id": 3596,
+      "code": "6323",
+      "title": "【企業別分析】ローツェ（6323）",
+      "link": "https://fic-investment.biz/code-6323/"
+    },
+    {
+      "id": 3514,
+      "code": "6616",
+      "title": "【企業別分析】トレックス・セミコンダクター（6616）",
+      "link": "https://fic-investment.biz/code-6616/"
+    },
+    {
+      "id": 3453,
+      "code": "6367",
+      "title": "【企業別分析】ダイキン工業（6367）",
+      "link": "https://fic-investment.biz/code-6367/"
+    },
+    {
+      "id": 3371,
+      "code": "6755",
+      "title": "【企業別分析】富士通ゼネラル（6755）",
+      "link": "https://fic-investment.biz/code-6755/"
+    },
+    {
+      "id": 2949,
+      "code": "3901",
+      "title": "【企業別分析】マークラインズ（3901）",
+      "link": "https://fic-investment.biz/code-3901/"
+    },
+    {
+      "id": 2944,
+      "code": "3695",
+      "title": "【企業別分析】ＧＭＯリサーチ（3695）",
+      "link": "https://fic-investment.biz/code-3695/"
+    },
+    {
+      "id": 2939,
+      "code": "3179",
+      "title": "【企業別分析】シュッピン（3179）",
+      "link": "https://fic-investment.biz/code-3179/"
+    },
+    {
+      "id": 2936,
+      "code": "2471",
+      "title": "【企業別分析】エスプール（2471）",
+      "link": "https://fic-investment.biz/code-2471/"
+    },
+    {
+      "id": 2929,
+      "code": "2371",
+      "title": "【企業別分析】カカクコム（2371）",
+      "link": "https://fic-investment.biz/code-2371/"
+    },
+    {
+      "id": 2841,
+      "code": "4395",
+      "title": "【企業別分析】アクリート（4395）",
+      "link": "https://fic-investment.biz/code-4395/"
+    },
+    {
+      "id": 2830,
+      "code": "9554",
+      "title": "【企業別分析】ＡＶｉＣ（9554）",
+      "link": "https://fic-investment.biz/code-9554/"
+    },
+    {
+      "id": 2774,
+      "code": "7086",
+      "title": "【企業別分析】きずなホールディングス（7086）",
+      "link": "https://fic-investment.biz/code-7086/"
+    },
+    {
+      "id": 2716,
+      "code": "7378",
+      "title": "【企業別分析】アシロ（7378）",
+      "link": "https://fic-investment.biz/code-7378/"
+    },
+    {
+      "id": 2520,
+      "code": "3003",
+      "title": "【企業別分析】ヒューリック（3003）",
+      "link": "https://fic-investment.biz/code-3003/"
+    },
+    {
+      "id": 2431,
+      "code": "5713",
+      "title": "【企業別分析】住友金属鉱山（5713）",
+      "link": "https://fic-investment.biz/code-5713/"
+    },
+    {
+      "id": 1817,
+      "code": "6298",
+      "title": "【企業別分析】ワイエイシイホールディングス（6298）",
+      "link": "https://fic-investment.biz/code-6298/"
+    },
+    {
+      "id": 1397,
+      "code": "9101",
+      "title": "【企業別分析】日本郵船（9101）",
+      "link": "https://fic-investment.biz/code-9101/"
+    },
+    {
+      "id": 938,
+      "code": "9432",
+      "title": "【企業別分析】NTT（9432）",
+      "link": "https://fic-investment.biz/code-9432/"
+    },
+    {
+      "id": 777,
+      "code": "2130",
+      "title": "【企業別分析】メンバーズ（2130）",
+      "link": "https://fic-investment.biz/code-2130/"
+    },
+    {
+      "id": 738,
+      "code": "1721",
+      "title": "【企業別分析】コムシスホールディングス（1721）",
+      "link": "https://fic-investment.biz/code-1721/"
+    },
+    {
+      "id": 685,
+      "code": "1911",
+      "title": "【企業別分析】住友林業（1911）",
+      "link": "https://fic-investment.biz/code-1911/"
+    },
+    {
+      "id": 444,
+      "code": "3436",
+      "title": "【企業別分析】SUMCO（3436）",
+      "link": "https://fic-investment.biz/code-3436/"
+    },
+    {
+      "id": 345,
+      "code": "6890",
+      "title": "【企業別分析】フェローテック（6890）",
+      "link": "https://fic-investment.biz/code-6890/"
+    },
+    {
+      "id": 213,
+      "code": "9517",
+      "title": "【企業別分析】イーレックス（9517）",
+      "link": "https://fic-investment.biz/code-9517/"
+    }
+  ]
+}
