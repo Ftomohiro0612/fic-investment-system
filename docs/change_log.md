@@ -3,6 +3,9 @@
 ## 2026-05-06
 - Added a WordPress head-cleanup guard in `wordpress/snippets/functions.php` so Rank Math is treated as the canonical source for SEO meta tags.
 - The cleanup removes Diver theme duplicate OGP output plus pre-Rank-Math duplicate `description` and `canonical` tags inside `wp_head`, reducing conflicting metadata on article and archive pages.
+- Installed and activated the official Code Snippets plugin on WordPress via REST API after `codex-writer` was promoted to administrator.
+- Added the active snippet `FIC: Deduplicate Rank Math SEO metadata v3`, which cleans the rendered `<head>` because Diver emits duplicate SEO/OGP tags before `wp_head`.
+- Verified live output on the top page, a company-analysis category page, and the Keyence article: Rank Math remains once, Diver OGP is removed, and `description`/`canonical`/OGP/Twitter metadata are no longer duplicated where Rank Math provides them.
 
 ## 2026-04-26
 - Added externalized industry analysis article prompt at `prompts/article/industry_analysis_article_main.md`

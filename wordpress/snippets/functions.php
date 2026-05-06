@@ -1170,40 +1170,53 @@ add_action('wp_head', 'fic_output_breadcrumb_json_ld', 30);
 /**
  * Rank MathをSEOメタの正本にする。
  *
- * Diverテーマ側のSEO/OGP出力とRank Mathの出力が重複すると、
- * description、canonical、OGP、Twitter Cardが二重に出る。
- * テーマ更新で関数名が変わっても壊れにくいよう、wp_head内の出力を
- * Rank Mathブロック直前で限定的に掃除する。
+ * Diverテーマはheader.php側でwp_headより前にSEO/OGPを出すため、
+ * wp_head内だけでは重複を取り切れない。フロントHTML全体を受け、
+ * head要素内のRank Mathより前にあるDiver OGP、description、canonicalだけを掃除する。
  */
-function fic_start_rank_math_head_cleanup_buffer() {
-    if (is_admin() || !defined('RANK_MATH_VERSION')) {
+function fic_start_rank_math_document_cleanup_buffer() {
+    if (is_admin() || wp_doing_ajax() || !defined('RANK_MATH_VERSION')) {
         return;
     }
 
-    ob_start('fic_cleanup_duplicate_theme_seo_head');
-    $GLOBALS['fic_rank_math_head_cleanup_buffer_level'] = ob_get_level();
+    ob_start();
+    $GLOBALS['fic_rank_math_document_cleanup_buffer_level'] = ob_get_level();
 }
-add_action('wp_head', 'fic_start_rank_math_head_cleanup_buffer', -9999);
+add_action('template_redirect', 'fic_start_rank_math_document_cleanup_buffer', 0);
 
-function fic_flush_rank_math_head_cleanup_buffer() {
-    if (empty($GLOBALS['fic_rank_math_head_cleanup_buffer_level'])) {
+function fic_flush_rank_math_document_cleanup_buffer() {
+    if (empty($GLOBALS['fic_rank_math_document_cleanup_buffer_level'])) {
         return;
     }
 
-    $buffer_level = (int) $GLOBALS['fic_rank_math_head_cleanup_buffer_level'];
-    if (ob_get_level() >= $buffer_level) {
-        ob_end_flush();
+    $buffer_level = (int) $GLOBALS['fic_rank_math_document_cleanup_buffer_level'];
+    if (ob_get_level() < $buffer_level) {
+        unset($GLOBALS['fic_rank_math_document_cleanup_buffer_level']);
+        return;
     }
 
-    unset($GLOBALS['fic_rank_math_head_cleanup_buffer_level']);
+    $html = ob_get_clean();
+    unset($GLOBALS['fic_rank_math_document_cleanup_buffer_level']);
+
+    echo fic_cleanup_duplicate_theme_seo_document($html);
 }
-add_action('wp_head', 'fic_flush_rank_math_head_cleanup_buffer', 9999);
+add_action('shutdown', 'fic_flush_rank_math_document_cleanup_buffer', 0);
 
-function fic_cleanup_duplicate_theme_seo_head($head_html) {
-    if (strpos($head_html, 'Search Engine Optimization by Rank Math') === false) {
-        return $head_html;
+function fic_cleanup_duplicate_theme_seo_document($html) {
+    if (strpos($html, 'Search Engine Optimization by Rank Math') === false || stripos($html, '</head>') === false) {
+        return $html;
     }
 
+    return preg_replace_callback(
+        '/<head\b[^>]*>[\s\S]*?<\/head>/i',
+        'fic_cleanup_duplicate_theme_seo_head',
+        $html,
+        1
+    );
+}
+
+function fic_cleanup_duplicate_theme_seo_head($matches) {
+    $head_html = $matches[0];
     $rank_math_marker = '<!-- Search Engine Optimization by Rank Math';
     $parts = explode($rank_math_marker, $head_html, 2);
 
