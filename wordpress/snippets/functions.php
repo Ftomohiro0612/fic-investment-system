@@ -634,6 +634,25 @@ function fic_link_peer_companies_in_comparison_section($content) {
 }
 add_filter('the_content', 'fic_link_peer_companies_in_comparison_section', 20);
 
+function fic_link_company_codes_in_article_tables($content) {
+    if (!is_singular('post') || strpos($content, '<table') === false) {
+        return $content;
+    }
+
+    $company_map = fic_company_code_map();
+
+    $linked_content = preg_replace_callback(
+        '/<table\b[^>]*>.*?<\/table>/us',
+        function ($matches) use ($company_map) {
+            return fic_link_peer_company_names_in_html_fragment($matches[0], $company_map);
+        },
+        $content
+    );
+
+    return $linked_content === null ? $content : $linked_content;
+}
+add_filter('the_content', 'fic_link_company_codes_in_article_tables', 21);
+
 function fic_get_stock_code_from_post($post = null) {
     if (!$post) {
         $post = get_post();
