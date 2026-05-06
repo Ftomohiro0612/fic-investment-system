@@ -1309,6 +1309,8 @@ article mark {
 
 .fic-related-companies a {
   display: flex;
+  flex-direction: column;
+  gap: 6px;
   align-items: center;
   min-height: 46px;
   padding: 11px 14px;
@@ -1327,6 +1329,20 @@ article mark {
   box-shadow: 0 8px 18px rgba(32, 32, 32, 0.08);
   color: #162d51;
   transform: translateY(-1px);
+}
+
+.fic-related-link-title {
+  display: block;
+  width: 100%;
+}
+
+.fic-related-link-date {
+  display: block;
+  width: 100%;
+  color: #647084;
+  font-size: 0.82em;
+  font-weight: 600;
+  line-height: 1.35;
 }
 
 @media (max-width: 767px) {

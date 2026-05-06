@@ -1190,7 +1190,10 @@ function fic_render_related_theme_analysis_links($current_code, $limit = 4) {
     echo '<div class="fic-related-companies-description">この企業の業績に関係しやすい業界・マクロテーマの記事です。</div>';
     echo '<ul>';
     foreach ($posts as $post) {
-        echo '<li><a href="' . esc_url(get_permalink($post->ID)) . '">' . esc_html(get_the_title($post->ID)) . '</a></li>';
+        echo '<li><a href="' . esc_url(get_permalink($post->ID)) . '">';
+        echo '<span class="fic-related-link-title">' . esc_html(get_the_title($post->ID)) . '</span>';
+        echo '<span class="fic-related-link-date">公開日：' . esc_html(get_the_date('Y年n月j日', $post->ID)) . '</span>';
+        echo '</a></li>';
     }
     echo '</ul>';
     echo '</div>';
