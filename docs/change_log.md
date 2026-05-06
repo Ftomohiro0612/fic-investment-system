@@ -8,6 +8,7 @@
 - Verified live output on the top page, a company-analysis category page, and the Keyence article: Rank Math remains once, Diver OGP is removed, and `description`/`canonical`/OGP/Twitter metadata are no longer duplicated where Rank Math provides them.
 - Replaced the live SEO snippet with `FIC: SEO metadata and Article schema cleanup`, a single rendered-document cleanup that also normalizes body-level Article JSON-LD to WordPress publication dates, modified dates, organization author, publisher, canonical page URL, and featured image.
 - Updated company and industry article prompts so Article JSON-LD dates refer to WordPress publication/modified dates instead of treating Make's article generation date as the final source of truth.
+- Added SEO/GEO-oriented WordPress category descriptions for the main analysis and investor-education categories, and documented the live text in `seo/category-descriptions.md`.
 
 ## 2026-04-26
 - Added externalized industry analysis article prompt at `prompts/article/industry_analysis_article_main.md`
