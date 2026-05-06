@@ -1330,3 +1330,7 @@ article mark {
 #footer {
   margin-top: 0 !important;
 }
+
+#header_search.lity-hide {
+  display: none !important;
+}
