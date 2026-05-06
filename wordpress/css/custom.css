@@ -139,6 +139,50 @@
   color: var(--ey-text);
 }
 
+.status-box {
+  position: relative;
+  background: #f5f9fd;
+  border: 1px solid #c9dbea;
+  border-left: 6px solid #1f4e79;
+  border-radius: 0;
+  padding: 20px 24px;
+  margin: 30px 0 36px;
+  box-shadow: 0 10px 24px rgba(31, 78, 121, 0.07);
+}
+
+.status-box p:first-child {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  background: #1f4e79;
+  color: #ffffff;
+  font-size: 0.9em;
+  font-weight: 700;
+  line-height: 1.35;
+  margin: 0 0 14px;
+  padding: 6px 12px;
+  letter-spacing: 0.02em;
+}
+
+.status-box p:first-child::before {
+  content: "UPDATE";
+  display: inline-flex;
+  align-items: center;
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid rgba(255, 255, 255, 0.42);
+  color: #ffd500;
+  font-size: 0.78em;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.status-box p:not(:first-child) {
+  color: #26384a;
+  line-height: 1.8;
+  margin: 0;
+}
+
 .beginner-box {
   background-color: #f4f8fb;
   border: 1px solid #d7e5ed;

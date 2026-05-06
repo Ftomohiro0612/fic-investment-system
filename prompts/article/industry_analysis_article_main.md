@@ -397,7 +397,8 @@
 - HTMLコメントは含めない
 - summary-box 内の見出しは `<h2>` を使わず `<p>` に `<strong>` を組み合わせる
 - 使用可能なCSSクラス：
-  summary-box, beginner-box, table-wrapper, author-credit, disclaimer
+  summary-box, status-box, beginner-box, table-wrapper, author-credit, disclaimer
+- 記事冒頭で「YYYY年M月D日時点の最新状況」「最新ステータス」など、30秒要約とは別の時点更新メモを入れる場合は `status-box` を使うこと。`summary-box` や `takeaways-box` と混同しないこと
 - 表は `<table>` タグで作成し `<div class="table-wrapper">` でラップすること
 - 記事本文中に一次情報への引用リンクを最低3つ含めること
 - 引用形式：`<a href="[URL]" target="_blank" rel="noopener">[出典名]</a>`
