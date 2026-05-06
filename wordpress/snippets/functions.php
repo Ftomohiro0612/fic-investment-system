@@ -1140,6 +1140,104 @@ function fic_insert_related_company_links($content) {
 }
 add_filter('the_content', 'fic_insert_related_company_links', 22);
 
+function fic_get_related_theme_analysis_posts($current_code, $limit = 4) {
+    $current_code = preg_replace('/[^0-9]/', '', (string) $current_code);
+    if ($current_code === '') {
+        return [];
+    }
+
+    $category_ids = [];
+    foreach (['業界分析', '業種別分析'] as $category_name) {
+        $category = get_category_by_slug($category_name);
+        if (!$category) {
+            $category = get_term_by('name', $category_name, 'category');
+        }
+
+        if ($category && !is_wp_error($category)) {
+            $category_ids[] = (int) $category->term_id;
+        }
+    }
+
+    if (empty($category_ids)) {
+        return [];
+    }
+
+    $query = new WP_Query([
+        'post_type'           => 'post',
+        'post_status'         => 'publish',
+        'posts_per_page'      => $limit,
+        'post__not_in'        => [get_queried_object_id()],
+        'category__in'        => array_values(array_unique($category_ids)),
+        's'                   => $current_code,
+        'orderby'             => 'modified',
+        'order'               => 'DESC',
+        'ignore_sticky_posts' => true,
+        'no_found_rows'       => true,
+    ]);
+
+    return $query->posts;
+}
+
+function fic_render_related_theme_analysis_links($current_code, $limit = 4) {
+    $posts = fic_get_related_theme_analysis_posts($current_code, $limit);
+    if (empty($posts)) {
+        return '';
+    }
+
+    ob_start();
+    echo '<div class="fic-related-companies fic-related-themes">';
+    echo '<p><strong>関連テーマ分析</strong></p>';
+    echo '<div class="fic-related-companies-description">この企業の業績に関係しやすい業界・マクロテーマの記事です。</div>';
+    echo '<ul>';
+    foreach ($posts as $post) {
+        echo '<li><a href="' . esc_url(get_permalink($post->ID)) . '">' . esc_html(get_the_title($post->ID)) . '</a></li>';
+    }
+    echo '</ul>';
+    echo '</div>';
+
+    return ob_get_clean();
+}
+
+function fic_insert_related_theme_analysis_links($content) {
+    if (!is_singular('post')) {
+        return $content;
+    }
+
+    $post_id = get_queried_object_id();
+    if (!fic_is_post_in_category_name($post_id, '企業分析') && !fic_is_old_company_analysis_post($post_id)) {
+        return $content;
+    }
+
+    if (strpos($content, 'fic-related-themes') !== false) {
+        return $content;
+    }
+
+    $current_code = fic_get_stock_code_from_post();
+    if ($current_code === '') {
+        return $content;
+    }
+
+    $related_links = fic_render_related_theme_analysis_links($current_code);
+    if ($related_links === '') {
+        return $content;
+    }
+
+    $pattern = '/(<h2\b[^>]*>(?:(?!<\/h2>).)*参照資料(?:(?!<\/h2>).)*<\/h2>)/us';
+    if (preg_match($pattern, $content)) {
+        return preg_replace_callback(
+            $pattern,
+            function ($matches) use ($related_links) {
+                return $related_links . $matches[1];
+            },
+            $content,
+            1
+        );
+    }
+
+    return $content . $related_links;
+}
+add_filter('the_content', 'fic_insert_related_theme_analysis_links', 23);
+
 function fic_output_breadcrumb_json_ld() {
     if (!is_singular('post')) {
         return;
