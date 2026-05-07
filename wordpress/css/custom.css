@@ -284,6 +284,8 @@
 
 .table-wrapper {
   overflow-x: auto;
+  max-width: 100%;
+  -webkit-overflow-scrolling: touch;
   margin: 24px 0 30px;
 }
 
@@ -298,6 +300,10 @@ table {
   background: var(--ey-white);
   margin: 0;
   table-layout: auto;
+}
+
+.table-wrapper table {
+  min-width: 820px;
 }
 
 .table-wrapper th,
@@ -321,7 +327,9 @@ table td {
   background: var(--ey-white);
   line-height: 1.6;
   text-align: left;
-  word-break: break-all;
+  word-break: normal;
+  overflow-wrap: anywhere;
+  line-break: strict;
 }
 
 .table-wrapper tr:nth-child(even) td {
@@ -329,7 +337,32 @@ table td {
 }
 
 .table-wrapper td {
-  min-width: 80px;
+  min-width: 120px;
+}
+
+.table-wrapper th:nth-child(1),
+.table-wrapper td:nth-child(1) {
+  min-width: 150px;
+}
+
+.table-wrapper th:nth-child(2),
+.table-wrapper td:nth-child(2) {
+  min-width: 220px;
+}
+
+.table-wrapper th:nth-child(3),
+.table-wrapper td:nth-child(3) {
+  min-width: 88px;
+}
+
+.table-wrapper th:nth-child(4),
+.table-wrapper td:nth-child(4) {
+  min-width: 200px;
+}
+
+.table-wrapper th:nth-child(5),
+.table-wrapper td:nth-child(5) {
+  min-width: 170px;
 }
 
 .single .entry-content ul,
