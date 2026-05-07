@@ -282,6 +282,7 @@
   margin: 0;
 }
 
+.content .table-wrapper,
 .table-wrapper {
   overflow-x: auto;
   max-width: 100%;
@@ -302,8 +303,9 @@ table {
   table-layout: auto;
 }
 
+.content .table-wrapper table,
 .table-wrapper table {
-  min-width: 820px;
+  min-width: 920px;
 }
 
 .table-wrapper th,
@@ -336,30 +338,41 @@ table td {
   background-color: var(--ey-light-gray);
 }
 
+.content .table-wrapper td,
 .table-wrapper td {
   min-width: 120px;
 }
 
+.content .table-wrapper th:nth-child(1),
+.content .table-wrapper td:nth-child(1),
 .table-wrapper th:nth-child(1),
 .table-wrapper td:nth-child(1) {
   min-width: 150px;
 }
 
+.content .table-wrapper th:nth-child(2),
+.content .table-wrapper td:nth-child(2),
 .table-wrapper th:nth-child(2),
 .table-wrapper td:nth-child(2) {
   min-width: 220px;
 }
 
+.content .table-wrapper th:nth-child(3),
+.content .table-wrapper td:nth-child(3),
 .table-wrapper th:nth-child(3),
 .table-wrapper td:nth-child(3) {
   min-width: 88px;
 }
 
+.content .table-wrapper th:nth-child(4),
+.content .table-wrapper td:nth-child(4),
 .table-wrapper th:nth-child(4),
 .table-wrapper td:nth-child(4) {
   min-width: 200px;
 }
 
+.content .table-wrapper th:nth-child(5),
+.content .table-wrapper td:nth-child(5),
 .table-wrapper th:nth-child(5),
 .table-wrapper td:nth-child(5) {
   min-width: 170px;
