@@ -610,6 +610,36 @@ article mark {
   color: #ffffff !important;
 }
 
+.fic-sidebar-button-wrap {
+  text-align: center;
+  margin: 22px 0 8px;
+}
+
+.fic-sidebar-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 18px;
+  border-radius: 7px;
+  font-weight: 800;
+  line-height: 1.35;
+  text-decoration: none !important;
+}
+
+.shikiho-button {
+  min-width: 176px;
+  background: #ff9900 !important;
+  color: #111111 !important;
+  box-shadow: 0 3px 0 #cc7a00;
+}
+
+.fic-youtube-button {
+  min-width: 208px;
+  background: #ff0000 !important;
+  color: #ffffff !important;
+  box-shadow: 0 3px 0 #b80000;
+}
+
 @media (max-width: 767px) {
   #sidebar .widget_search form,
   #sidebar .widget_search .search-form,
