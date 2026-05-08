@@ -583,30 +583,42 @@ article mark {
   color: #ffffff !important;
 }
 
-.fic-sidebar-button-wrap {
-  text-align: center;
-  margin: 22px 0 8px;
+.fic-sidebar-button-wrap,
+.widget-shikiho p:last-child,
+.fic-youtube-widget p:last-child {
+  text-align: center !important;
+  margin: 22px 0 8px !important;
 }
 
-.fic-sidebar-button {
-  display: inline-flex;
+.fic-sidebar-button,
+.widget-shikiho a[href*="amazon"],
+.fic-youtube-widget a[href*="youtube.com/@FICInvestmentBiz"],
+.fic-youtube-widget a[href*="youtube.com/channel/UCfpej-yllSdPK3SGzmpJeFg"] {
+  display: inline-flex !important;
   align-items: center;
   justify-content: center;
+  width: auto !important;
+  max-width: 100% !important;
+  min-height: 44px;
   padding: 11px 18px;
   border-radius: 7px;
   font-weight: 800;
   line-height: 1.35;
   text-decoration: none !important;
+  box-sizing: border-box;
 }
 
-.shikiho-button {
+.shikiho-button,
+.widget-shikiho a[href*="amazon"] {
   min-width: 176px;
   background: #ff9900 !important;
   color: #111111 !important;
   box-shadow: 0 3px 0 #cc7a00;
 }
 
-.fic-youtube-button {
+.fic-youtube-button,
+.fic-youtube-widget a[href*="youtube.com/@FICInvestmentBiz"],
+.fic-youtube-widget a[href*="youtube.com/channel/UCfpej-yllSdPK3SGzmpJeFg"] {
   min-width: 208px;
   background: #ff0000 !important;
   color: #ffffff !important;
@@ -627,6 +639,22 @@ article mark {
   #sidebar .widget_search #searchsubmit {
     min-width: 78px;
     padding: 0 14px;
+  }
+
+  .fic-sidebar-button-wrap,
+  .widget-shikiho p:last-child,
+  .fic-youtube-widget p:last-child {
+    text-align: center !important;
+    margin: 18px 0 6px !important;
+  }
+
+  .fic-sidebar-button,
+  .widget-shikiho a[href*="amazon"],
+  .fic-youtube-widget a[href*="youtube.com/@FICInvestmentBiz"],
+  .fic-youtube-widget a[href*="youtube.com/channel/UCfpej-yllSdPK3SGzmpJeFg"] {
+    min-width: min(78vw, 232px) !important;
+    padding: 11px 16px;
+    font-size: 15px;
   }
 }
 
