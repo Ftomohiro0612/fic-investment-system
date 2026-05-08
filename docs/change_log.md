@@ -3,6 +3,7 @@
 ## 2026-05-06
 - Updated the shared WordPress table CSS so company and industry article tables wrap inside the article width on desktop, with mobile horizontal scrolling retained.
 - Tightened company and industry article prompts to forbid inline table width styling and to keep multi-column table headings/cells short enough for the shared responsive table CSS.
+- Fixed mobile table typography by locking table, cell, and child-element font sizes to a consistent 14px in the shared responsive table CSS.
 - Added a WordPress head-cleanup guard in `wordpress/snippets/functions.php` so Rank Math is treated as the canonical source for SEO meta tags.
 - The cleanup removes Diver theme duplicate OGP output plus pre-Rank-Math duplicate `description` and `canonical` tags inside `wp_head`, reducing conflicting metadata on article and archive pages.
 - Installed and activated the official Code Snippets plugin on WordPress via REST API after `codex-writer` was promoted to administrator.

@@ -389,6 +389,9 @@ table td {
     width: max-content !important;
     min-width: 720px !important;
     table-layout: auto !important;
+    font-size: 14px !important;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
   }
 
   .content .table-wrapper th,
@@ -397,7 +400,16 @@ table td {
   .table-wrapper td {
     min-width: 8em !important;
     padding: 12px 14px;
-    font-size: 0.94em;
+    font-size: 14px !important;
+    line-height: 1.6;
+  }
+
+  .content .table-wrapper th *,
+  .content .table-wrapper td *,
+  .table-wrapper th *,
+  .table-wrapper td * {
+    font-size: inherit !important;
+    line-height: inherit !important;
   }
 
   .content .table-wrapper th:first-child,
