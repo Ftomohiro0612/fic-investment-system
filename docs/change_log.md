@@ -2,6 +2,7 @@
 
 ## 2026-05-06
 - Updated the shared WordPress table CSS so company and industry article tables wrap inside the article width on desktop, with mobile horizontal scrolling retained.
+- Generalized desktop table layout to use `table-layout: auto` with normal wrapping, so column width is based on both header and body cell content instead of fixed column-count rules.
 - Tightened company and industry article prompts to forbid inline table width styling and to keep multi-column table headings/cells short enough for the shared responsive table CSS.
 - Fixed mobile table typography by locking table, cell, and child-element font sizes to a consistent 14px in the shared responsive table CSS.
 - Updated sidebar CTA button styling so the Shikiho link uses Amazon orange, the YouTube link uses YouTube red, and both buttons are centered consistently.

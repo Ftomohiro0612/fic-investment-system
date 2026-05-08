@@ -302,14 +302,14 @@ table {
   font-size: 0.95em;
   background: var(--ey-white);
   margin: 0;
-  table-layout: fixed;
+  table-layout: auto;
 }
 
 .content .table-wrapper table,
 .table-wrapper table {
   width: 100% !important;
   min-width: 0 !important;
-  table-layout: fixed !important;
+  table-layout: auto !important;
 }
 
 .table-wrapper th,
@@ -354,33 +354,6 @@ table td {
 .table-wrapper th {
   min-width: 0 !important;
   max-width: none;
-}
-
-@media (min-width: 768px) {
-  .content .table-wrapper table:has(thead th:nth-child(3):last-child) th:first-child,
-  .table-wrapper table:has(thead th:nth-child(3):last-child) th:first-child {
-    width: 22%;
-  }
-
-  .content .table-wrapper table:has(thead th:nth-child(4):last-child) th:first-child,
-  .table-wrapper table:has(thead th:nth-child(4):last-child) th:first-child {
-    width: 18%;
-  }
-
-  .content .table-wrapper table:has(thead th:nth-child(4):last-child) th:nth-child(2),
-  .table-wrapper table:has(thead th:nth-child(4):last-child) th:nth-child(2) {
-    width: 30%;
-  }
-
-  .content .table-wrapper table:has(thead th:nth-child(5)) th:first-child,
-  .table-wrapper table:has(thead th:nth-child(5)) th:first-child {
-    width: 13%;
-  }
-
-  .content .table-wrapper table:has(thead th:nth-child(5)) th:nth-child(2),
-  .table-wrapper table:has(thead th:nth-child(5)) th:nth-child(2) {
-    width: 28%;
-  }
 }
 
 @media (max-width: 767px) {
