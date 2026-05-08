@@ -400,6 +400,9 @@
   summary-box, status-box, beginner-box, table-wrapper, author-credit, disclaimer
 - 記事冒頭で「YYYY年M月D日時点の最新状況」「最新ステータス」など、30秒要約とは別の時点更新メモを入れる場合は `status-box` を使うこと。`summary-box` や `takeaways-box` と混同しないこと
 - 表は `<table>` タグで作成し `<div class="table-wrapper">` でラップすること
+- 表に `style` 属性、`width` 属性、`colgroup`、インラインCSSを入れないこと。列幅と折り返しはWordPress共通CSSに任せること
+- 4列以上の表では見出しを短くし、セル本文は1〜2文以内に圧縮すること。長い補足は表の前後の本文に逃がすこと
+- 1行表示を前提にせず、長い見出し・本文はセル内で自然に折り返される前提でHTMLを作ること
 - 記事本文中に一次情報への引用リンクを最低3つ含めること
 - 引用形式：`<a href="[URL]" target="_blank" rel="noopener">[出典名]</a>`
 - 使用するURLは必ず Serper 検索結果で取得済みのURLのみとすること

@@ -284,8 +284,10 @@
 
 .content .table-wrapper,
 .table-wrapper {
-  overflow-x: auto;
+  display: block;
+  width: 100%;
   max-width: 100%;
+  overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   margin: 24px 0 30px;
 }
@@ -300,12 +302,14 @@ table {
   font-size: 0.95em;
   background: var(--ey-white);
   margin: 0;
-  table-layout: auto;
+  table-layout: fixed;
 }
 
 .content .table-wrapper table,
 .table-wrapper table {
-  min-width: 920px;
+  width: 100% !important;
+  min-width: 0 !important;
+  table-layout: fixed !important;
 }
 
 .table-wrapper th,
@@ -317,7 +321,11 @@ table th {
   padding: 14px 16px;
   border: 1px solid #3a3a3f;
   border-bottom: 3px solid var(--ey-yellow) !important;
-  white-space: nowrap;
+  white-space: normal !important;
+  word-break: normal !important;
+  overflow-wrap: break-word;
+  line-height: 1.45;
+  vertical-align: top;
 }
 
 .table-wrapper td,
@@ -327,11 +335,13 @@ table td {
   color: var(--ey-text);
   vertical-align: middle;
   background: var(--ey-white);
-  line-height: 1.6;
+  line-height: 1.65;
   text-align: left;
-  word-break: normal;
-  overflow-wrap: anywhere;
+  word-break: normal !important;
+  overflow-wrap: break-word;
   line-break: strict;
+  white-space: normal !important;
+  vertical-align: top;
 }
 
 .table-wrapper tr:nth-child(even) td {
@@ -339,43 +349,64 @@ table td {
 }
 
 .content .table-wrapper td,
-.table-wrapper td {
-  min-width: 120px;
+.content .table-wrapper th,
+.table-wrapper td,
+.table-wrapper th {
+  min-width: 0 !important;
+  max-width: none;
 }
 
-.content .table-wrapper th:nth-child(1),
-.content .table-wrapper td:nth-child(1),
-.table-wrapper th:nth-child(1),
-.table-wrapper td:nth-child(1) {
-  min-width: 150px;
+@media (min-width: 768px) {
+  .content .table-wrapper table:has(thead th:nth-child(3):last-child) th:first-child,
+  .table-wrapper table:has(thead th:nth-child(3):last-child) th:first-child {
+    width: 22%;
+  }
+
+  .content .table-wrapper table:has(thead th:nth-child(4):last-child) th:first-child,
+  .table-wrapper table:has(thead th:nth-child(4):last-child) th:first-child {
+    width: 18%;
+  }
+
+  .content .table-wrapper table:has(thead th:nth-child(4):last-child) th:nth-child(2),
+  .table-wrapper table:has(thead th:nth-child(4):last-child) th:nth-child(2) {
+    width: 30%;
+  }
+
+  .content .table-wrapper table:has(thead th:nth-child(5)) th:first-child,
+  .table-wrapper table:has(thead th:nth-child(5)) th:first-child {
+    width: 13%;
+  }
+
+  .content .table-wrapper table:has(thead th:nth-child(5)) th:nth-child(2),
+  .table-wrapper table:has(thead th:nth-child(5)) th:nth-child(2) {
+    width: 28%;
+  }
 }
 
-.content .table-wrapper th:nth-child(2),
-.content .table-wrapper td:nth-child(2),
-.table-wrapper th:nth-child(2),
-.table-wrapper td:nth-child(2) {
-  min-width: 220px;
-}
+@media (max-width: 767px) {
+  .content .table-wrapper table,
+  .table-wrapper table {
+    width: max-content !important;
+    min-width: 720px !important;
+    table-layout: auto !important;
+  }
 
-.content .table-wrapper th:nth-child(3),
-.content .table-wrapper td:nth-child(3),
-.table-wrapper th:nth-child(3),
-.table-wrapper td:nth-child(3) {
-  min-width: 88px;
-}
+  .content .table-wrapper th,
+  .content .table-wrapper td,
+  .table-wrapper th,
+  .table-wrapper td {
+    min-width: 8em !important;
+    padding: 12px 14px;
+    font-size: 0.94em;
+  }
 
-.content .table-wrapper th:nth-child(4),
-.content .table-wrapper td:nth-child(4),
-.table-wrapper th:nth-child(4),
-.table-wrapper td:nth-child(4) {
-  min-width: 200px;
-}
-
-.content .table-wrapper th:nth-child(5),
-.content .table-wrapper td:nth-child(5),
-.table-wrapper th:nth-child(5),
-.table-wrapper td:nth-child(5) {
-  min-width: 170px;
+  .content .table-wrapper th:first-child,
+  .content .table-wrapper td:first-child,
+  .table-wrapper th:first-child,
+  .table-wrapper td:first-child {
+    width: auto;
+    min-width: 7em !important;
+  }
 }
 
 .single .entry-content ul,
@@ -453,10 +484,6 @@ article mark {
   .article-content {
     font-size: 15px;
     line-height: 1.85;
-  }
-
-  .table-wrapper table {
-    min-width: 600px;
   }
 
   .table-wrapper th,

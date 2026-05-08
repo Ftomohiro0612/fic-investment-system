@@ -760,6 +760,9 @@
 - summary-box内の見出しは<h2>を使わず、<p>に<strong>を組み合わせる
 - 使用可能なCSSクラス：summary-box, beginner-box, takeaways-box, table-wrapper, author-credit, disclaimer
 - 表は<table>タグで作成し、<div class="table-wrapper">でラップしてください
+- 表に style 属性、width 属性、colgroup、インラインCSSを入れないこと。列幅と折り返しはWordPress共通CSSに任せること
+- 4列以上の表では見出しを短くし、セル本文は1〜2文以内に圧縮すること。長い補足は表の前後の本文に逃がすこと
+- 1行表示を前提にせず、長い見出し・本文はセル内で自然に折り返される前提でHTMLを作ること
 ・FAQセクションは<div class="faq-section">で囲むこと
 ・スキーマはdisclaimerの直後に配置すること
 
