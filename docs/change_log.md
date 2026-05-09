@@ -1,5 +1,12 @@
 # Change Log
 
+## 2026-05-09
+- Tightened `prompts/article/industry_analysis_article_main.md` with a fact-safety gate for strong numeric, policy, regulatory, shipment-stop, and future-plan claims.
+- Added industry prompt rules requiring source name, timing, and scope near strong claims, with reported-language treatment for major-media-only facts.
+- Added reverse-wind theme handling so headings use "逆風を相殺しやすい企業・セグメント" or equivalent instead of forcing "恩恵セクター・企業" when direct beneficiaries are structurally weak.
+- Added a required "主要企業で見るべきポイント" treatment for 2-4 core companies, covering earnings variables, indicators to monitor, and downside/offset factors.
+- Expanded the final self-check list to catch weakly sourced future-period company plans, unnatural benefit headings on headwind themes, and missing company-specific watchpoints.
+
 ## 2026-05-06
 - Updated the shared WordPress table CSS so company and industry article tables wrap inside the article width on desktop, with mobile horizontal scrolling retained.
 - Generalized desktop table layout to use `table-layout: auto` with normal wrapping, so column width is based on both header and body cell content instead of fixed column-count rules.
