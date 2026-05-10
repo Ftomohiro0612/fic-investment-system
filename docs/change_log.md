@@ -1,6 +1,9 @@
 # Change Log
 
 ## 2026-05-10
+- Added policy-theme safeguards to `prompts/article/industry_analysis_article_main.md` and `prompts/article/industry_analysis_memo_main.md`, requiring separation of confirmed facts from unconfirmed policy hypotheses.
+- Tightened main-company handling for industry articles so core beneficiaries or headwind names require IR, filing, earnings-material, or major-media support for segment, revenue, order, backlog, profit, or service-revenue evidence.
+- Added industry-specific earnings-driver formula requirements and stricter current-level table handling for policy themes, including fallback of weak or unverified figures into "metrics to confirm" rather than center evidence.
 - Tightened `prompts/article/industry_analysis_article_main.md` so market-price data such as crude oil, naphtha, diesel, FX, rates, and freight indices must use public/official/major sources when used as central article evidence.
 - Added safeguards against using weak market commentary sites as center evidence in summary boxes, current-level tables, scenarios, FAQ, or Article schema descriptions.
 - Added explicit current-listed-company checks so old company names and old securities codes from scenario-1 examples are revalidated before appearing in industry articles, including the Nippon Express / NIPPON EXPRESS Holdings case.
