@@ -1,6 +1,8 @@
 # Change Log
 
 ## 2026-05-10
+- Required policy, subsidy, regulation, defense, and industrial-support industry articles to include at least one official source in references when an official source is available.
+- Updated the industry memo prompt to preserve official URLs as source candidates for policy themes instead of relying only on media coverage.
 - Added policy-amount disambiguation rules so total public-private investment, fund size, supplementary budget, national spending, fiscal loans, private investment, and subsidy targets are not collapsed into the same phrase.
 - Added date-window checks for time-limited penalties, suspensions, sanctions, and regulatory measures so completed events are written as past events rather than current constraints.
 - Added policy-theme safeguards to `prompts/article/industry_analysis_article_main.md` and `prompts/article/industry_analysis_memo_main.md`, requiring separation of confirmed facts from unconfirmed policy hypotheses.
