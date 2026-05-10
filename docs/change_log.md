@@ -1,5 +1,10 @@
 # Change Log
 
+## 2026-05-10
+- Tightened `prompts/article/industry_analysis_article_main.md` so market-price data such as crude oil, naphtha, diesel, FX, rates, and freight indices must use public/official/major sources when used as central article evidence.
+- Added safeguards against using weak market commentary sites as center evidence in summary boxes, current-level tables, scenarios, FAQ, or Article schema descriptions.
+- Added explicit current-listed-company checks so old company names and old securities codes from scenario-1 examples are revalidated before appearing in industry articles, including the Nippon Express / NIPPON EXPRESS Holdings case.
+
 ## 2026-05-09
 - Tightened `prompts/article/industry_analysis_article_main.md` with a fact-safety gate for strong numeric, policy, regulatory, shipment-stop, and future-plan claims.
 - Added industry prompt rules requiring source name, timing, and scope near strong claims, with reported-language treatment for major-media-only facts.
