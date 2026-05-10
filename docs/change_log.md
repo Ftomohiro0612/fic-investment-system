@@ -1,6 +1,8 @@
 # Change Log
 
 ## 2026-05-10
+- Added policy-amount disambiguation rules so total public-private investment, fund size, supplementary budget, national spending, fiscal loans, private investment, and subsidy targets are not collapsed into the same phrase.
+- Added date-window checks for time-limited penalties, suspensions, sanctions, and regulatory measures so completed events are written as past events rather than current constraints.
 - Added policy-theme safeguards to `prompts/article/industry_analysis_article_main.md` and `prompts/article/industry_analysis_memo_main.md`, requiring separation of confirmed facts from unconfirmed policy hypotheses.
 - Tightened main-company handling for industry articles so core beneficiaries or headwind names require IR, filing, earnings-material, or major-media support for segment, revenue, order, backlog, profit, or service-revenue evidence.
 - Added industry-specific earnings-driver formula requirements and stricter current-level table handling for policy themes, including fallback of weak or unverified figures into "metrics to confirm" rather than center evidence.
