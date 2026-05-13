@@ -1,5 +1,8 @@
 # Change Log
 
+## 2026-05-13
+- Added video review notes for article-linked Shorts and long videos, including dense-map teaser handling, company-analysis hook guidance, NYK two-layer profit structure framing, and high-bitrate publish-file review.
+
 ## 2026-05-10
 - Required policy, subsidy, regulation, defense, and industrial-support industry articles to include at least one official source in references when an official source is available.
 - Updated the industry memo prompt to preserve official URLs as source candidates for policy themes instead of relying only on media coverage.
