@@ -96,6 +96,7 @@ require_once(ABSPATH . 'wp-admin/includes/file.php');
 function fic_get_earnings_schedule() {
     return [
         ['company' => 'くら寿司', 'code' => '2695', 'date' => '2026-03-01'],
+        ['company' => 'トリケミカル研究所', 'code' => '4369', 'date' => '2026-03-13'],
         ['company' => '霞ヶ関キャピタル', 'code' => '3498', 'date' => '2026-04-02'],
         ['company' => 'サイゼリヤ', 'code' => '7581', 'date' => '2026-04-08'],
         ['company' => 'コメダホールディングス', 'code' => '3543', 'date' => '2026-04-08'],
@@ -141,6 +142,7 @@ function fic_get_earnings_schedule() {
         ['company' => 'NTT', 'code' => '9432', 'date' => '2026-05-08'],
         ['company' => 'ソニーグループ', 'code' => '6758', 'date' => '2026-05-08'],
         ['company' => 'FOOD & LIFE COMPANIES', 'code' => '3563', 'date' => '2026-05-08'],
+        ['company' => '川崎汽船', 'code' => '9107', 'date' => '2026-05-08'],
         ['company' => 'ソフトバンク', 'code' => '9434', 'date' => '2026-05-11'],
         ['company' => '日本板硝子', 'code' => '5202', 'date' => '2026-05-11'],
         ['company' => 'オリックス', 'code' => '8591', 'date' => '2026-05-11'],
@@ -168,6 +170,7 @@ function fic_get_earnings_schedule() {
         ['company' => 'バンダイナムコホールディングス', 'code' => '7832', 'date' => '2026-05-13'],
         ['company' => 'INPEX', 'code' => '1605', 'date' => '2026-05-13'],
         ['company' => '栗本鐵工所', 'code' => '5602', 'date' => '2026-05-14'],
+        ['company' => '日本電波工業', 'code' => '6779', 'date' => '2026-05-14'],
         ['company' => 'ホンダ', 'code' => '7267', 'date' => '2026-05-14'],
         ['company' => '三和ホールディングス', 'code' => '5929', 'date' => '2026-05-14'],
         ['company' => '鹿島', 'code' => '1812', 'date' => '2026-05-14'],
@@ -179,6 +182,7 @@ function fic_get_earnings_schedule() {
         ['company' => 'リクルートホールディングス', 'code' => '6098', 'date' => '2026-05-15'],
         ['company' => 'GMOインターネットグループ', 'code' => '9449', 'date' => '2026-05-15'],
         ['company' => 'みずほフィナンシャルグループ', 'code' => '8411', 'date' => '2026-05-15'],
+        ['company' => 'アインホールディングス', 'code' => '9627', 'date' => '2026-06-11'],
     ];
 }
 
