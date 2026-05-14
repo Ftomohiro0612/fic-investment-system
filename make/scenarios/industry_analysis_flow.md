@@ -16,6 +16,29 @@ Generate a standalone industry analysis article using Make while keeping the art
 6. Store output for review
 7. Publish approved output to WordPress
 
+## Codex / Claude Code Migration Design
+
+For the migration away from Make orchestration, split the workflow into two explicit scenarios:
+
+1. Trend discovery
+   - Codex gathers current news by category.
+   - Codex produces `trend_candidates.md` and `trend_candidates_sheet.tsv`.
+   - Candidate rows are not over-filtered; weak but observable themes may remain as C.
+   - Duplicate checks label candidates instead of deleting them automatically.
+
+2. Article generation
+   - Codex reads an approved trend row.
+   - Codex generates eight search queries: definition/current level x2, impact path x2, beneficiary candidates x2, headwind candidates x1, risk/refutation x1.
+   - Codex creates `industry_analysis_input_pack.md`.
+   - Claude Code creates `industry_analysis_memo.md`, `industry_analysis_article.html`, and `industry_analysis_review_notes.md`.
+   - Codex reviews the article, creates/inserts the image, checks the existing WordPress post ID, and updates WordPress.
+
+The canonical migration spec is:
+
+- `docs/codex_industry_analysis_migration_spec.md`
+
+Do not commit Make blueprint JSON files. They may contain credentials or Make-specific connection metadata.
+
 ## Recommended First GitHub-Loaded File
 To keep Make simple, start by loading only this file from GitHub for the article-writing step:
 
