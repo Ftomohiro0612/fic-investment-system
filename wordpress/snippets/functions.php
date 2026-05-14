@@ -172,6 +172,7 @@ function fic_get_earnings_schedule() {
         ['company' => '栗本鐵工所', 'code' => '5602', 'date' => '2026-05-14'],
         ['company' => '日本電波工業', 'code' => '6779', 'date' => '2026-05-14'],
         ['company' => 'ホンダ', 'code' => '7267', 'date' => '2026-05-14'],
+        ['company' => 'ENEOSホールディングス', 'code' => '5020', 'date' => '2026-05-14'],
         ['company' => '三和ホールディングス', 'code' => '5929', 'date' => '2026-05-14'],
         ['company' => '鹿島', 'code' => '1812', 'date' => '2026-05-14'],
         ['company' => '上組', 'code' => '9364', 'date' => '2026-05-14'],
@@ -535,6 +536,15 @@ function fic_company_code_map_manual() {
         '丸紅' => '8002',
         '豊田通商' => '8015',
         '双日' => '2768',
+        '出光興産' => '5019',
+        'ENEOSホールディングス' => '5020',
+        'コスモエネルギーホールディングス' => '5021',
+        'INPEX' => '1605',
+        'サイバーエージェント' => '4751',
+        'ディー・エヌ・エー' => '2432',
+        'MIXI' => '2121',
+        '電通グループ' => '4324',
+        '博報堂DYホールディングス' => '2433',
     ];
 }
 
@@ -1046,9 +1056,12 @@ function fic_related_company_code_groups() {
     $financial = ['8473', '8604', '8316', '8306', '8411', '8591'];
     $construction = ['1801', '1802', '1803', '1812'];
     $real_estate = ['8801', '8802', '3498', '9301'];
+    $energy = ['5019', '5020', '5021', '1605'];
+    $internet_media_game_ads = ['4751', '2432', '2121', '4324', '2433'];
+    $auto_mobility = ['7203', '7267', '7201', '7269', '7270', '7261', '7272'];
 
     $groups = [];
-    foreach ([$trading, $rail, $shipping, $power, $semiconductor_equipment, $financial, $construction, $real_estate] as $group) {
+    foreach ([$trading, $rail, $shipping, $power, $semiconductor_equipment, $financial, $construction, $real_estate, $energy, $internet_media_game_ads, $auto_mobility] as $group) {
         foreach ($group as $code) {
             $groups[$code] = array_values(array_diff($group, [$code]));
         }
