@@ -1,7 +1,7 @@
 あなたは投資リサーチのアナリストです。
 以下の投資テーマについて、業界分析記事を書くために
 必要な外部情報を収集します。
-検索クエリを8本生成してください。
+検索クエリを12本生成してください。
 
 【投資テーマ】
 トレンド名: {{1.`0`}}
@@ -41,6 +41,21 @@ headwinds / downside risk / margin pressure / overcapacity / operating rate な�
 このトレンドが想定より早く終息する条件、市場が織り込み済みである可能性を確認します。
 priced in / risk / downside scenario / policy outlook / commodity price reversal などを含むクエリを優先してください。
 
+■ 先行指標・時系列確認用 × 1
+記事の因果を支える先行指標を取得します。
+価格、受注、稼働率、在庫、設備投資、PMI、賃金、金利、物流量、電力需要など、
+テーマに最も近いKPIを1本で取りに行ってください。
+
+■ 類似過去事例・比較軸確認用 × 1
+過去に同じ構造が起きた時、どの業界・企業に効いたかを確認します。
+previous cycle / past shortage / historical price spike / comparable case /
+過去事例 / 前回局面 などを使ってください。
+
+■ 周辺業界・二次波及確認用 × 1
+直接恩恵・直接逆風だけでなく、物流、金融、建設、素材、サービス、小売など
+二次波及先がないか確認します。
+secondary impact / downstream impact / adjacent industry / supply chain effect などを使ってください。
+
 【時点整合ルール（最重要）】
 - 投資テーマに政策会合・対象月・対象年度・直近イベントの時点が含まれる場合、その時点と整合するクエリを優先してください。
 - latest / recent / current は使ってよいが、古い利上げ観測・別会合の予想ニュースを拾いやすい曖昧クエリは避けてください。
@@ -65,9 +80,9 @@ priced in / risk / downside scenario / policy outlook / commodity price reversal
   例：Shin-Etsu Chemical IR segment price pass-through
 
 【出力ルール（厳守）】
-- カンマ区切りで8つのクエリを1行で出力すること
+- カンマ区切りで12個のクエリを1行で出力すること
 - クォート・括弧・番号・記号は一切含めないこと
 - 前置き・説明は不要
 
 出力例：
-BOJ policy decision official statement current,BOJ outlook inflation forecast latest,Japan CPI official statistics current,Japan naphtha CFR price current,JPCA ethylene operating rate latest,chemical industry overcapacity margin pressure outlook,Shin-Etsu Chemical IR segment price pass-through,BOJ policy outlook priced in risk
+BOJ policy decision official statement current,BOJ outlook inflation forecast latest,Japan CPI official statistics current,Japan naphtha CFR price current,JPCA ethylene operating rate latest,chemical industry overcapacity margin pressure outlook,Shin-Etsu Chemical IR segment price pass-through,chemical sector margin pressure risk,Japan manufacturing PMI current,chemical price spike previous cycle,downstream packaging material cost impact,BOJ policy outlook priced in risk

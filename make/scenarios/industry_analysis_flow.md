@@ -22,13 +22,16 @@ For the migration away from Make orchestration, split the workflow into two expl
 
 1. Trend discovery
    - Codex gathers current news by category.
+   - Codex uses a broader 14-query discovery pass, not the old narrow 8-query pass.
+   - The discovery pass must cover AI/tech, macro/consumption, rates/banks/real estate, logistics/EC/service/tourism, geopolitics/energy, commodities/material costs, and corporate earnings/capex.
    - Codex produces `trend_candidates.md` and `trend_candidates_sheet.tsv`.
+   - Codex writes 10-14 candidate rows to the industry analysis sheet A-L columns.
    - Candidate rows are not over-filtered; weak but observable themes may remain as C.
    - Duplicate checks label candidates instead of deleting them automatically.
 
 2. Article generation
    - Codex reads an approved trend row.
-   - Codex generates eight search queries: definition/current level x2, impact path x2, beneficiary candidates x2, headwind candidates x1, risk/refutation x1.
+   - Codex generates 12 search queries: definition/current level x2, impact path x2, beneficiary candidates x2, headwind candidates x1, risk/refutation x1, leading indicator x1, comparable past case x1, adjacent/secondary impact x1.
    - Codex creates `industry_analysis_input_pack.md`.
    - Claude Code creates `industry_analysis_memo.md`, `industry_analysis_article.html`, and `industry_analysis_review_notes.md`.
    - Codex reviews the article, creates/inserts the image, checks the existing WordPress post ID, and updates WordPress.

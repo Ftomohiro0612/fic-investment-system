@@ -76,7 +76,7 @@ sanctions / shipping disruption / tariffs /
 Houthi / Israel
 などを含むクエリを優先してください。
 
-■ テクノロジー・産業トレンド × 1
+■ テクノロジー・産業トレンド × 2
 今まさに変化しているテクノロジートレンドを取得します。
 EV失速・自動運転・AI投資・半導体規制・
 脱炭素・原子力復活など、
@@ -85,22 +85,43 @@ EV demand / autonomous driving / AI capex /
 semiconductor export control / nuclear energy /
 battery technology
 などを含むクエリを優先してください。
+2本のうち1本はAI半導体・AIサーバー、もう1本はAIクラウド、
+データセンター電力・冷却、AIソフトウェア、ロボット、センサー、
+物流自動化など別の軸にしてください。
 
-■ コモディティ・エネルギー × 1
+■ コモディティ・エネルギー × 2
 原油・天然ガス・金属・農産物・海運・電力など、
 コモディティ市場の最新動向を取得します。
 今の価格水準・需給変化・OPEC動向を反映させてください。
 OPEC / crude oil / LNG / freight / copper /
 gold / commodity prices
 などを含むクエリを優先してください。
+2本のうち1本はエネルギー・航路、もう1本は食料・金属・包装材・電力価格など
+別の価格軸にしてください。
 
-■ 消費・需要動向 × 1
+■ 消費・需要動向 × 2
 消費者信頼感・小売売上・住宅市場・雇用など、
 需要サイドの最新動向を取得します。
 今の景況感を反映した具体的な指標を取得してください。
 consumer confidence / retail sales /
 housing market / employment / spending
 などを含むクエリを優先してください。
+賃金、実質賃金、食品価格、旅行、インバウンド、外食、住宅のいずれかを
+最低1本に含めてください。
+
+■ 企業決算・設備投資・戦略イベント × 2
+日本企業や日本に直接関係する海外企業の、決算見通し、業績予想修正、
+大型設備投資、戦略提携、M&A、供給契約、工場建設・停止を取得します。
+earnings guidance / capex plan / strategic partnership / supply deal /
+factory investment / production halt などを含むクエリを優先してください。
+この枠は業界テーマの主役になりやすいため、固定企業名を狙い撃ちせず、
+ニュースに出た強い固有名詞がある場合だけ企業名を入れてください。
+
+■ 物流・EC・サービス構造変化 × 1
+Amazon等の物流網外部開放、宅配・倉庫・小売・EC、観光・ホテル・航空、
+外食・人手不足など、Make版で拾えていた生活/サービス寄りの構造変化を取得します。
+logistics network / ecommerce fulfillment / tourism demand / service PMI /
+labor shortage / hotel occupancy などを使ってください。
 
 ■ 新興リスク・その他 × 1
 上記に含まれない今まさに浮上している新たなリスクや
@@ -111,8 +132,9 @@ regulatory change / election / bank crisis
 などを参考にしてください。
 
 【クエリ生成のルール】
-- 英語のみでクエリを生成すること
-  （日本語混在は検索精度が下がるため禁止）
+- 原則は英語クエリを使うこと。ただし日本国内の政策、賃金、食品価格、観光、物流、
+  日銀、建設資材、業界団体統計など、日本語ソースのほうが一次情報・業界紙に到達しやすいテーマは
+  日本語クエリを混ぜてよい。
 - 各クエリは具体的かつ簡潔に（3〜7語）
 - 今まさに起きていることを反映した時事的なクエリにすること
   （汎用的・教科書的なクエリは禁止）
@@ -125,10 +147,13 @@ regulatory change / election / bank crisis
   （代わりに latest / recent / current を使うこと）
 - 同じ方向のクエリを重複させないこと
   （役割が違えば角度も変えること）
+- 14本のうち、AI/半導体だけで4本以上を占めないこと。
+- 14本のうち、最低1本は賃金・消費、最低1本は物流/EC/観光/サービス、
+  最低1本は金利/銀行/不動産、最低1本は地政学/エネルギーを含めること。
 
 【出力ルール（厳守）】
-- カンマ区切りで8つのクエリを1行で出力すること
+- カンマ区切りで14個のクエリを1行で出力すること
 - 各クエリの前にカテゴリを付けること
 - 形式：カテゴリ:クエリ
 - 出力例：
-MACRO:FRB interest rate outlook latest,MACRO:Japan inflation consumer spending recent,GEO:geopolitical risk supply chain disruption latest,GEO:Iran Middle East shipping sanctions impact,TECH:AI semiconductor datacenter capex investment latest,COMMODITY:oil LNG gas metals commodity prices latest,CONSUMPTION:Japan consumer spending retail sales latest,RISK:emerging market credit risk debt latest
+MACRO:BOJ policy decision outlook current,MACRO:Japan wages inflation consumption recent,GEO:Middle East shipping energy risk latest,GEO:tariffs export controls supply chain latest,TECH:AI semiconductor datacenter capex latest,TECH:AI cloud software data center power,COMMODITY:oil LNG freight prices latest,COMMODITY:food metals packaging price latest,CONSUMPTION:Japan retail travel spending latest,CONSUMPTION:Japan housing employment income recent,CORPORATE:Japan earnings guidance capex latest,CORPORATE:strategic partnership factory investment Japan,LOGISTICS:ecommerce logistics network opening Japan,RISK:credit risk regulatory change latest
