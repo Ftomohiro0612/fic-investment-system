@@ -25,7 +25,7 @@ For the migration away from Make orchestration, split the workflow into two expl
    - Codex uses a broader 14-query discovery pass, not the old narrow 8-query pass.
    - The discovery pass must cover AI/tech, macro/consumption, rates/banks/real estate, logistics/EC/service/tourism, geopolitics/energy, commodities/material costs, and corporate earnings/capex.
    - Codex produces `trend_candidates.md` and `trend_candidates_sheet.tsv`.
-   - Codex writes 10-14 candidate rows to the industry analysis sheet A-L columns.
+   - Codex writes 10-14 candidate rows to the industry analysis sheet B-M columns, with optional notes in N.
    - Candidate rows are not over-filtered; weak but observable themes may remain as C.
    - Duplicate checks label candidates instead of deleting them automatically.
 
