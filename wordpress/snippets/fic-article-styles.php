@@ -27,6 +27,24 @@ add_action('wp_head', function () {
 .definition-lead{background:#fafafa;border:1px solid #e8e8e8;border-left:4px solid #bfbfbf;border-radius:0;padding:14px 20px;margin:14px 0 28px;font-size:.96em;line-height:1.85;color:#444}
 .definition-lead p{margin:0}
 .definition-lead p+p{margin-top:.6em}
+
+/* ============== 表の自動幅調整（列数が多い表を無理に潰さない） ============== */
+.content .table-wrapper,
+.table-wrapper{display:block;width:100%;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.content .table-wrapper table,
+.table-wrapper table{width:max-content!important;min-width:100%!important;table-layout:auto!important}
+.content .table-wrapper th,
+.content .table-wrapper td,
+.table-wrapper th,
+.table-wrapper td{min-width:9em!important;max-width:none!important;white-space:normal!important;overflow-wrap:break-word}
+@media (max-width:767px){
+  .content .table-wrapper table,
+  .table-wrapper table{min-width:720px!important}
+  .content .table-wrapper th,
+  .content .table-wrapper td,
+  .table-wrapper th,
+  .table-wrapper td{min-width:8em!important}
+}
 </style>
     <?php
 }, 101);
