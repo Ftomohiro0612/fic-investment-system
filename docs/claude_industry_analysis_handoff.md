@@ -81,6 +81,8 @@ Claudeは**統合メモ・記事HTML・レビューメモの3点セット作成*
 
 非AIグラフ・構造図方針: 生成AI画像とは別に、数値比較・構成比・増減要因・時間軸・感応度を見せた方が読みやすい場合は、Claudeが図表案を提案し、Codexが実装・検証します。Claudeはグラフ画像を直接作らず、図表名、挿入位置、必要数値、出典、読者に伝える一言、優先度を `industry_analysis_review_notes.md` に残してください。「読者に伝える一言」は、抽象的な比喩や強すぎる断定ではなく、確認すべき指標や業績に効く段階が分かる実務的な文にしてください。
 
+非AI構造図の見た目は、`docs/reference_images/industry_analysis/fic_non_ai_structure_chart_reference_01.png` と `fic_non_ai_structure_chart_reference_02.png` を参考にします。Claudeが依頼する場合は「AI生成ではなく、HTML/CSSで作る非AI構造図」「濃紺の結論見出し、黄色アクセント、太い日本語文字、4〜6要素、図だけで確認順が分かる」と明記してください。
+
 ### 品質改善ループ
 
 `industry_analysis_review_notes.md` に残した「Codex入力で不足していた情報」「判断に迷った点」「一次情報で要確認の項目」は、Codexレビュー結果として以下の4分類で処理してください。

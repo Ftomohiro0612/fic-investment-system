@@ -7,6 +7,7 @@
 - 参考画像は、情報設計・密度・見出しの強さ・因果フローの見せ方を確認するために使う。
 - 参考画像そのもののレイアウト、色、地図、アイコン、構図をコピーしない。
 - 本文内図解は、原則として生成AIでゼロベース作成する。
+- 正確に読ませる確認順・マトリクス・ロードマップは、生成AIではなくHTML/CSSで作る非AI構造図を使う。
 - 画像単体で「起点イベント」「因果フロー」「追い風」「注意点」「見る指標」が分かることを採用条件にする。
 - 日本語文字が崩れた画像、細かすぎて読めない画像、意味が伝わらない画像は不採用にする。
 
@@ -16,5 +17,9 @@
 - `fic_impact_map_ai_style_reference_02.png`
 - `fic_impact_map_ai_style_reference_03.png`
 - `fic_impact_map_ai_style_reference_04.png`
+- `fic_non_ai_structure_chart_reference_01.png`
+- `fic_non_ai_structure_chart_reference_02.png`
 
 上記はFIC記事用の生成AIインフォグラフィックのスタイル参考です。テーマ名・会社名・数値は各記事に合わせて必ず作り直します。
+
+`fic_non_ai_structure_chart_reference_01.png` と `fic_non_ai_structure_chart_reference_02.png` は、HTML/CSSで作成する非AI構造図の参考です。大きな結論見出し、太い文字、少ない要素、余白、濃紺/黄色アクセント、図だけで理解できる説明文を参考にします。

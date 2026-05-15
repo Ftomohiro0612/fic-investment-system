@@ -164,6 +164,23 @@ Makeのblueprintは、長いプロンプトと検索・整形・シート更新�
 | 感応度表/マトリクス | 価格・為替・金利などの前提差を見る | 原油価格×為替、金利×不動産利回り |
 | 先行指標ダッシュボード | 今後見るべき指標を整理する | 受注残、価格指数、稼働率、PMI |
 
+非AI構造図を依頼する場合の指示例:
+
+```text
+この記事の重要論点を、AI生成ではなくHTML/CSSで作る非AI構造図として作成してください。
+参考図表は `docs/reference_images/industry_analysis/fic_non_ai_structure_chart_reference_01.png` と `fic_non_ai_structure_chart_reference_02.png`。
+目的は装飾ではなく、図だけで「何を確認すべきか」「どの段階で業績に効くか」が分かることです。
+
+要件:
+- 16:9横長、WordPress本文幅で見やすいPNGにする
+- 濃紺の大きな結論見出し、黄色アクセント、白背景、太い日本語文字
+- 文字は大きく短くし、スマホ表示でも読めるようにする
+- 図内要素は4〜6個程度に絞る
+- タイトルは比喩ではなく、読者が持ち帰る結論にする
+- 末尾に「FIC作成。銘柄推奨ではなく、確認指標を整理するための図です。」のような注記を入れる
+- 作成後は、文字かぶり・はみ出し・WordPress表示崩れを確認する
+```
+
 #### 業界分析画像プロンプトの基本形
 
 ```text
@@ -199,8 +216,12 @@ Constraints: original composition, not a copy of the reference. No company logos
 - `docs/reference_images/industry_analysis/fic_impact_map_ai_style_reference_02.png`
 - `docs/reference_images/industry_analysis/fic_impact_map_ai_style_reference_03.png`
 - `docs/reference_images/industry_analysis/fic_impact_map_ai_style_reference_04.png`
+- `docs/reference_images/industry_analysis/fic_non_ai_structure_chart_reference_01.png`
+- `docs/reference_images/industry_analysis/fic_non_ai_structure_chart_reference_02.png`
 
 これらはFIC記事用の生成AIインフォグラフィックのスタイル参考。今後の業界分析画像では、情報密度、見出しの強さ、因果フロー、追い風/注意点/見る指標の配置を参考にする。ただし、参考画像のテーマ名・会社名・数値・構図をそのまま再利用しない。
+
+`fic_non_ai_structure_chart_reference_01.png` と `fic_non_ai_structure_chart_reference_02.png` は、生成AI画像ではなく、CodexがHTML/CSSで作る非AI構造図の参考。確認順、企業分類、時間軸、先行指標など、正確に読ませたい図表に使う。
 
 ### 出力ファイル
 
