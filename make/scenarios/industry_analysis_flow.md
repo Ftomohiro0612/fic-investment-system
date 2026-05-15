@@ -35,6 +35,8 @@ For the migration away from Make orchestration, split the workflow into two expl
    - Codex creates `industry_analysis_input_pack.md`.
    - Claude Code creates `industry_analysis_memo.md`, `industry_analysis_article.html`, and `industry_analysis_review_notes.md`.
    - Codex reviews the article, creates/inserts the image, checks the existing WordPress post ID, and updates WordPress.
+   - If the sheet row already has a slug, Codex and Claude Code must preserve that slug. Do not regenerate or rename the slug during article rewrite, review, image insertion, or WordPress update.
+   - If the sheet row already has a WordPress post ID, Codex must update that post. Only when the post ID is blank should Codex search existing WordPress posts, and only when no existing post is found should Codex create a new draft.
 
 The canonical migration spec is:
 
@@ -58,7 +60,7 @@ Keep Make responsible for orchestration, not for storing long editorial logic.
 ## Notes For Make
 - Preserve the existing output format:
   - `TITLE===`
-  - `SLUG===`
+  - `SLUG===`（既存スラッグがある場合は必ずその値）
   - `KEYWORDS===`
   - `BODY===`
 - Do not reintroduce a JSON output requirement if Make expects the delimited text format above
