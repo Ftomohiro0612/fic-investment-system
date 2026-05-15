@@ -345,8 +345,18 @@ table {
 .content .table-wrapper table,
 .table-wrapper table {
   width: 100% !important;
-  min-width: 900px !important;
+  min-width: 100% !important;
   table-layout: auto !important;
+}
+
+.content .table-wrapper table:has(tr > :nth-child(5)),
+.table-wrapper table:has(tr > :nth-child(5)) {
+  min-width: 900px !important;
+}
+
+.content .table-wrapper table:has(tr > :nth-child(6)),
+.table-wrapper table:has(tr > :nth-child(6)) {
+  min-width: 1050px !important;
 }
 
 .table-wrapper th,
