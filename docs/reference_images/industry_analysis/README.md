@@ -12,9 +12,9 @@
 
 ## 登録画像
 
-- `ai_power_infrastructure_map_ai_reference_01.png`
-- `ai_power_infrastructure_map_ai_reference_02.png`
-- `ai_power_infrastructure_map_ai_reference_03.png`
-- `ai_power_infrastructure_map_ai_reference_04.png`
+- `fic_impact_map_ai_style_reference_01.png`
+- `fic_impact_map_ai_style_reference_02.png`
+- `fic_impact_map_ai_style_reference_03.png`
+- `fic_impact_map_ai_style_reference_04.png`
 
-上記は「AIデータセンター電力制約の影響マップ」の生成AI出力例です。
+上記はFIC記事用の生成AIインフォグラフィックのスタイル参考です。テーマ名・会社名・数値は各記事に合わせて必ず作り直します。
