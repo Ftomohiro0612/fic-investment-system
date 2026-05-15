@@ -344,8 +344,8 @@ table {
 
 .content .table-wrapper table,
 .table-wrapper table {
-  width: max-content !important;
-  min-width: 100% !important;
+  width: 100% !important;
+  min-width: 900px !important;
   table-layout: auto !important;
 }
 

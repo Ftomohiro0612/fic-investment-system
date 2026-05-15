@@ -32,7 +32,7 @@ add_action('wp_head', function () {
 .content .table-wrapper,
 .table-wrapper{display:block;width:100%;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
 .content .table-wrapper table,
-.table-wrapper table{width:max-content!important;min-width:100%!important;table-layout:auto!important}
+.table-wrapper table{width:100%!important;min-width:900px!important;table-layout:auto!important}
 .content .table-wrapper th,
 .content .table-wrapper td,
 .table-wrapper th,
