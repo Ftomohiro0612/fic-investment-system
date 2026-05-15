@@ -24,6 +24,7 @@ PDF本文を読めない運用のため、report だけに寄せず、HTMLで確
 どの業界にどう伝播するか、業界構造・需給関係・サプライチェーンの観点から調べます。
 industry outlook / supply chain / sector impact / operating rate / price index などを含むクエリを優先してください。
 業界年次レポートだけでなく、業界団体統計・月次統計に到達しやすい語も使ってください。
+最上流→中間→直接影響→間接影響→下流の5層サプライチェーンを描けるよう、value chain / suppliers / downstream / end market / procurement / capex などの語も使ってください。
 
 ■ 恩恵企業・セクター候補用 × 2
 具体的にどの企業・セクターが恩恵を受けるか調べます。
@@ -32,6 +33,7 @@ industry outlook / supply chain / sector impact / operating rate / price index �
 - 輸送・航路テーマ：海運企業
 - AI・半導体テーマ：製造装置・材料企業
 IR / results / presentation / segment / business risks / price pass-through などを含むクエリを優先してください。
+Codex投入パックで、社名/コード/対象セグメント/セグメント売上比率または代替KPI/会社コメント/直接度を埋める必要があります。企業名を入れるクエリでは、IR presentation / segment revenue / order backlog / business overview / integrated report / earnings など、個社のセグメント情報に届く語を優先してください。
 
 ■ 逆風企業・セクター候補用 × 1
 具体的にどの企業・セクターが逆風を受けるか調べます。
@@ -45,11 +47,13 @@ priced in / risk / downside scenario / policy outlook / commodity price reversal
 記事の因果を支える先行指標を取得します。
 価格、受注、稼働率、在庫、設備投資、PMI、賃金、金利、物流量、電力需要など、
 テーマに最も近いKPIを1本で取りに行ってください。
+先行指標は、市場マクロ / 業界中間 / 個社 の3階層で整理できるものを優先してください。例：市場規模・価格指数、業界受注/在庫/稼働率、個社受注残/セグメント売上/CAPEX。
 
 ■ 類似過去事例・比較軸確認用 × 1
 過去に同じ構造が起きた時、どの業界・企業に効いたかを確認します。
 previous cycle / past shortage / historical price spike / comparable case /
 過去事例 / 前回局面 などを使ってください。
+市場がどの程度織り込んだかを見るため、stock reaction / valuation / PER / consensus / target price / earnings revision などの語を必要に応じて使ってください。
 
 ■ 周辺業界・二次波及確認用 × 1
 直接恩恵・直接逆風だけでなく、物流、金融、建設、素材、サービス、小売など
