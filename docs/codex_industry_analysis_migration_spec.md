@@ -120,6 +120,56 @@ Makeのblueprintは、長いプロンプトと検索・整形・シート更新�
 5. WordPressは既存投稿IDを確認し、あれば必ずその投稿を更新する。投稿IDが空欄の場合のみ既存投稿検索を行い、見つからなければ新規作成する。
 6. スラッグは一度決めてシートに入力されたら固定する。既存スラッグがある場合、Claude/Codexは新しいスラッグを再生成せず、schemaの `mainEntityOfPage` も既存スラッグに合わせる。
 
+### 業界分析の画像作成方針
+
+業界分析記事の本文内画像は、Codexレビュー後の最終HTMLを起点に、原則として**生成AI画像**で作る。単なる装飾画像ではなく、読者が画像だけを見ても「何が起点で、どの業界に効き、どの指標を見ればよいか」が分かる投資インフォグラフィックにする。
+
+- 画像は生成AIでゼロベース作成する。参考画像、IR資料、記事中の表、既存メディア画像をそのまま模写しない。
+- 参考画像は「情報設計の型」を見るために使う。具体的には、強いタイトル、因果フロー、追い風/注意点のブロック、見る指標の整理、短い日本語ラベル、大きな文字、読みやすい階層を参考にする。
+- 参考画像と同じレイアウト、色、アイコン、地図、構図をコピーしない。テーマごとにオリジナルの構成へ組み替える。
+- 画像内には、記事を読まなくても意味が通る文言を入れる。最低限、`タイトル`、`起点イベント`、`因果フロー`、`追い風`、`注意点`、`見る指標` を短い日本語で入れる。
+- 画像内テキストは短く大きくする。長文説明や細かい数値表は入れない。日本語が崩れた場合、誤字や意味不明ラベルが残った場合は不採用として再生成する。
+- 正確な売上・利益・構成比などの数値グラフは生成AI画像で作らない。表データから機械的に作るHTML/CSS/SVG/PNGを使う。
+- 画像作成時点で、`AW: 画像格納フォルダ` にローカル画像フォルダのフルパスを必ず保存する。
+
+#### 業界分析画像プロンプトの基本形
+
+```text
+Use case: infographic-diagram
+Asset type: WordPress article image for a Japanese investment research article
+Primary request: Create an original AI-generated Japanese investment infographic about [テーマ]. Use the reference only conceptually: a dense but readable impact map with a strong title, causal flow, benefit/risk areas, and key indicators. Do not copy the reference layout, colors, icons, maps, or composition exactly.
+
+Text must be in Japanese and as legible as possible. Use short, large labels only.
+
+Main title text: "[テーマ名]の影響マップ"
+Subtitle text: "[起点イベント]を起点に、[業界/企業KPI]へ波及"
+
+Core flow labels:
+1. "[上流イベント]"
+2. "[制約/変化]"
+3. "[中間需要/設備]"
+4. "[企業KPI]"
+5. "[業績項目]"
+
+Three analysis blocks:
+- "追い風" with items: "[恩恵領域1]", "[恩恵領域2]", "[恩恵領域3]"
+- "注意点" with items: "[ボトルネック1]", "[リスク2]", "[コスト要因3]"
+- "見る指標" with items: "[先行指標1]", "[先行指標2]", "[先行指標3]"
+
+Style/medium: polished editorial financial infographic, AI-generated, premium Japanese business media look, semi-3D icons, clean vector-like illustration, deep navy frame, white background, gold accent, green benefit area, red risk area, blue infrastructure icons.
+Composition/framing: 16:9 landscape, dense but not cluttered, strong hierarchy. Put causal flow across the center with arrows. Place benefit and risk panels below, key indicators along the bottom.
+Constraints: original composition, not a copy of the reference. No company logos. No real maps copied from the reference. No stock photo look. Avoid tiny text. Avoid garbled Japanese. Avoid excessive labels. No watermark.
+```
+
+#### 登録済み参考画像
+
+- `docs/reference_images/industry_analysis/ai_power_infrastructure_map_ai_reference_01.png`
+- `docs/reference_images/industry_analysis/ai_power_infrastructure_map_ai_reference_02.png`
+- `docs/reference_images/industry_analysis/ai_power_infrastructure_map_ai_reference_03.png`
+- `docs/reference_images/industry_analysis/ai_power_infrastructure_map_ai_reference_04.png`
+
+これらは「AIデータセンター電力制約の影響マップ」の生成AI出力例。今後の業界分析画像では、情報密度、見出しの強さ、因果フロー、追い風/注意点/見る指標の配置を参考にする。
+
 ### 出力ファイル
 
 `work/industry_analysis/<slug>/`
