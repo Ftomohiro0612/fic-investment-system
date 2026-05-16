@@ -41,13 +41,13 @@
 4. WordPressはAMの既存投稿IDを確認し、IDがあれば更新する
 5. 画像格納フォルダをAYへ記録する
 6. 未使用WordPressメディアを確認し、削除対象なし/削除済みを記録する
-7. WordPress反映後、ローカル画像フォルダの旧版・没版・差し替え前画像を削除し、採用版だけ残す
+7. WordPress反映後、ローカル画像フォルダの中間生成物・旧版・没版・差し替え前画像を削除し、採用版だけ残す
 
 完了条件:
 - codex_reviewed_article.with_images.html
 - WordPress更新済み
 - シートの AW/AX/AY/AN/AP/AQ/AS 更新
-- WordPress未使用メディアとローカル旧版画像の削除結果をASまたは作業メモに記録
+- WordPress未使用メディアとローカル画像中間生成物/旧版の削除結果をASまたは作業メモに記録
 - 次工程への handoff_image_wp_to_x_or_video.md
 ```
 
