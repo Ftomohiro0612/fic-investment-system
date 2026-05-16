@@ -40,11 +40,13 @@
 3. 図表は「何を伝えたいか」が見ただけでわかる文言にする
 4. WordPressはALの既存投稿IDを確認し、IDがあれば更新する
 5. 画像フォルダ、投稿ID、ステータスをシートへ記録する
+6. WordPress反映後、ローカル画像フォルダの旧版・没版・差し替え前画像を削除し、採用版だけ残す
 
 完了条件:
 - codex_reviewed_article.with_images.html
 - WordPress更新済み
 - シート更新
+- WordPress未使用メディアとローカル旧版画像の削除結果を作業メモに記録
 - handoff_image_wp_to_video.md
 ```
 
