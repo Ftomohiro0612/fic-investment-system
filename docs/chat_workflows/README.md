@@ -4,6 +4,8 @@ FIC投資研究所の作業を、Codex / Claude Code のチャット単位で分
 
 作業フォルダ全体の整理方針は [workspace_organization_policy.md](../workspace_organization_policy.md) を参照します。
 
+旧 `FIC_HANDOFF_MASTER.md` は日常作業の入口ではありません。移行状況は [legacy_master_migration_audit.md](../legacy_master_migration_audit.md) を参照し、旧Masterにしかない規律は現行ドキュメントへ抽出してから使います。
+
 目的は次の3つです。
 
 - 1チャットの履歴を短く保ち、Codex Desktop / Claude Code の応答停止を減らす
