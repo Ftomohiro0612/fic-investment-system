@@ -47,7 +47,7 @@ FIC_WORKSPACE/
 チャット別の開き方は `docs/chat_workflows/` を正本にする。
 
 - 企業分析は、資料作成、Claude記事作成、Codexレビュー、画像/WP、X投稿、動画作成に分ける。
-- 業界分析は、テーマ候補、資料作成、Claude記事作成、Codexレビュー、画像/WP、動画作成に分ける。
+- 業界分析は、テーマ候補、資料作成、Claude記事作成、Codexレビュー、画像/WP、X投稿、動画作成に分ける。
 - 各チャットでは `docs/chat_workflows/*.md` の該当ファイルだけを最初に読む。
 
 ## 移行手順

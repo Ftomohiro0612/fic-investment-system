@@ -19,7 +19,7 @@ FIC投資研究所の作業を、Codex / Claude Code のチャット単位で分
 - 画像・動画・WordPress反映は重いので、記事作成チャットとは分ける。
 - 仕様書やプロンプトの汎用修正は、記事作成チャットではなく別チャットで行う。
 
-## 12分割
+## 13分割
 
 ### 企業分析
 
@@ -37,8 +37,9 @@ FIC投資研究所の作業を、Codex / Claude Code のチャット単位で分
 9. [業界分析 03: Claude 記事作成](industry_03_claude_article.md)
 10. [業界分析 04: Codex レビュー](industry_04_codex_review.md)
 11. [業界分析 05: Codex 画像作成・WordPress反映](industry_05_codex_image_wp.md)
-12. [業界分析 06: Codex 動画作成](industry_06_codex_video.md)
+12. [業界分析 06: Codex X投稿](industry_06_codex_x_post.md)
+13. [業界分析 07: Codex 動画作成](industry_07_codex_video.md)
 
 ## 補足
 
-業界分析のX投稿を独立工程にしたくなった場合は、`industry_05_codex_image_wp.md` の後続工程として分離します。現時点では、まず12分割を優先し、業界分析のX投稿は記事公開後の追加工程として扱います。
+業界分析のX投稿も独立工程として扱います。記事公開後、動画作成前にX投稿メモと投稿文を作ります。
