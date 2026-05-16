@@ -188,10 +188,24 @@ function fic_get_earnings_schedule() {
     ];
 }
 
+function fic_normalize_stock_code($stock_code) {
+    $stock_code = strtoupper(trim((string) $stock_code));
+
+    if (preg_match('/^([0-9]{3}[0-9A-Z]|[0-9]{4})(?:\.[A-Z]+)?$/u', $stock_code, $matches)) {
+        return $matches[1];
+    }
+
+    return '';
+}
+
+function fic_stock_code_regex() {
+    return '/(?<![0-9A-Z])([0-9]{3}[0-9A-Z]|[0-9]{4})(?:\.[A-Z]+)?(?![0-9A-Z])/iu';
+}
+
 function fic_get_post_by_stock_code_in_slug($stock_code) {
     global $wpdb;
 
-    $stock_code = preg_replace('/[^0-9]/', '', (string) $stock_code);
+    $stock_code = fic_normalize_stock_code($stock_code);
     if ($stock_code === '') {
         return null;
     }
@@ -518,6 +532,8 @@ function fic_find_post_by_company_name($company_name) {
 
 function fic_company_code_map_manual() {
     return [
+        'キオクシアホールディングス' => '285A',
+        'キオクシア' => '285A',
         '鹿島建設' => '1812',
         '大林組'   => '1802',
         '大成建設' => '1801',
@@ -556,12 +572,12 @@ function fic_normalize_company_name_for_map($title) {
     $title = preg_replace('/【最新版】/u', '', $title);
     $title = preg_replace('/\[最新版\]/u', '', $title);
 
-    if (preg_match('/^(.+?)[（(]\d{4}[)）]/u', $title, $matches)) {
+    if (preg_match('/^(.+?)[（(](?:[0-9]{3}[0-9A-Z]|[0-9]{4})(?:\.[A-Z]+)?[)）]/iu', $title, $matches)) {
         return trim($matches[1]);
     }
 
-    $title = preg_replace('/（\d{4}）/u', '', $title);
-    $title = preg_replace('/\(\d{4}\)/u', '', $title);
+    $title = preg_replace('/（(?:[0-9]{3}[0-9A-Z]|[0-9]{4})(?:\.[A-Z]+)?）/iu', '', $title);
+    $title = preg_replace('/\((?:[0-9]{3}[0-9A-Z]|[0-9]{4})(?:\.[A-Z]+)?\)/iu', '', $title);
     $title = preg_replace('/の企業分析.*/u', '', $title);
     $title = preg_replace('/企業分析.*/u', '', $title);
     $title = preg_replace('/の分析.*/u', '', $title);
@@ -583,11 +599,11 @@ function fic_company_code_map() {
     ]);
 
     foreach ($posts as $post) {
-        if (!preg_match('/([0-9]{4})/', $post->post_name, $matches)) {
+        if (!preg_match(fic_stock_code_regex(), strtoupper($post->post_name), $matches)) {
             continue;
         }
 
-        $code = $matches[1];
+        $code = fic_normalize_stock_code($matches[1]);
         $company_name = fic_normalize_company_name_for_map($post->post_title);
 
         if ($company_name === '') {
@@ -678,8 +694,8 @@ function fic_get_stock_code_from_post($post = null) {
         return '';
     }
 
-    if (preg_match('/([0-9]{4})/', $post->post_name, $matches)) {
-        return $matches[1];
+    if (preg_match(fic_stock_code_regex(), strtoupper($post->post_name), $matches)) {
+        return fic_normalize_stock_code($matches[1]);
     }
 
     return '';
@@ -731,8 +747,8 @@ function fic_get_stock_code_from_post_context($post = null) {
     }
 
     foreach ([$post->post_title, $post->post_content] as $text) {
-        if (preg_match('/([0-9]{4})/u', (string) $text, $matches)) {
-            return $matches[1];
+        if (preg_match(fic_stock_code_regex(), strtoupper((string) $text), $matches)) {
+            return fic_normalize_stock_code($matches[1]);
         }
     }
 
@@ -1054,6 +1070,7 @@ function fic_related_company_code_groups() {
     $shipping = ['9104', '9101', '9107'];
     $power   = ['9501', '9502', '9503', '9506', '9508'];
     $semiconductor_equipment = ['6146', '6857', '6920', '8035', '7735', '7729', '6141'];
+    $semiconductor_memory = ['285A', '6752', '6502', '6723', '3436', '4063', '4186'];
     $financial = ['8473', '8604', '8316', '8306', '8411', '8591'];
     $construction = ['1801', '1802', '1803', '1812'];
     $real_estate = ['8801', '8802', '3498', '9301'];
@@ -1062,7 +1079,7 @@ function fic_related_company_code_groups() {
     $auto_mobility = ['7203', '7267', '7201', '7269', '7270', '7261', '7272'];
 
     $groups = [];
-    foreach ([$trading, $rail, $shipping, $power, $semiconductor_equipment, $financial, $construction, $real_estate, $energy, $internet_media_game_ads, $auto_mobility] as $group) {
+    foreach ([$trading, $rail, $shipping, $power, $semiconductor_equipment, $semiconductor_memory, $financial, $construction, $real_estate, $energy, $internet_media_game_ads, $auto_mobility] as $group) {
         foreach ($group as $code) {
             $groups[$code] = array_values(array_diff($group, [$code]));
         }
@@ -1159,7 +1176,7 @@ function fic_insert_related_company_links($content) {
 add_filter('the_content', 'fic_insert_related_company_links', 22);
 
 function fic_get_related_theme_analysis_posts($current_code, $limit = 4) {
-    $current_code = preg_replace('/[^0-9]/', '', (string) $current_code);
+    $current_code = fic_normalize_stock_code($current_code);
     if ($current_code === '') {
         return [];
     }
@@ -1560,10 +1577,10 @@ function fic_link_peer_company_text($text, $company_map) {
     }
 
     $with_code = preg_replace_callback(
-        '/([^、,・\/／\n\r]+?)\s*[（(]([0-9]{4})[)）]/u',
+        '/([^、,・\/／\n\r]+?)\s*[（(]([0-9]{3}[0-9A-Z]|[0-9]{4})(?:\.[A-Z]+)?[)）]/iu',
         function ($matches) use ($current_id) {
             $company_name = trim($matches[1]);
-            $stock_code   = trim($matches[2]);
+            $stock_code   = fic_normalize_stock_code($matches[2]);
             $label        = $company_name . '（' . $stock_code . '）';
             $linked_post  = fic_get_post_by_stock_code_in_slug($stock_code);
 
