@@ -19,3 +19,8 @@
 - Does the article include a one-shot vs. recurring benefit time-axis explainer (e.g. equipment vs. materials, order vs. revenue recognition vs. MRO) in a beginner-box, so readers do not misread the theme as uniform upside?
 - When analyst or expert commentary is quoted, are the publishing organisation, the speaker's affiliation, and the publication month all stated in the body?
 - Is the influence-path stage count (4 to 6) matched to the number of decision-maker layers, and does the body explicitly mark which stage the current event sits on?
+- If a comparison article exists, does the review treat the Codex/Claude article as the base and import only reusable strengths from the comparison, such as a clearer causal path, useful keywords, or a reader-friendly framing?
+- Does the article avoid turning a supply-chain concern into a supply-stoppage article when official sources describe supply continuity, policy support, inventories, substitutes, or phased recovery?
+- Are cost pressure themes separated into demand-side impact, supplier-side price pass-through, and upstream spread/volume exposure instead of forcing every company into a simple beneficiary/adversary bucket?
+- When a survey percentage is used, does the article explain what the denominator means so readers do not mistake a response ratio, factor ratio, or cited reason share for a revenue/cost composition ratio?
+- Does the article include a classification table for related companies when the theme has mixed effects, such as adverse impact, price-pass-through candidate, spread-sensitive upstream player, and surrounding evidence?
