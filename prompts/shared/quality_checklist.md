@@ -18,5 +18,4 @@
 - Are revenue and profit decomposition formulas for the lead companies exposed as a body paragraph (e.g. wrapped in a strong tag), not buried inside a table cell?
 - Does the article include a one-shot vs. recurring benefit time-axis explainer (e.g. equipment vs. materials, order vs. revenue recognition vs. MRO) in a beginner-box, so readers do not misread the theme as uniform upside?
 - When analyst or expert commentary is quoted, are the publishing organisation, the speaker's affiliation, and the publication month all stated in the body?
-- When share-price returns, PER, or consensus figures from data aggregators are used, are they kept as supporting context with source, period, and timestamp, rather than placed in the summary box, current-level table, FAQ, or schema citation?
 - Is the influence-path stage count (4 to 6) matched to the number of decision-maker layers, and does the body explicitly mark which stage the current event sits on?
