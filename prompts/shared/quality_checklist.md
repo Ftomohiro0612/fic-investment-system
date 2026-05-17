@@ -24,3 +24,8 @@
 - Are cost pressure themes separated into demand-side impact, supplier-side price pass-through, and upstream spread/volume exposure instead of forcing every company into a simple beneficiary/adversary bucket?
 - When a survey percentage is used, does the article explain what the denominator means so readers do not mistake a response ratio, factor ratio, or cited reason share for a revenue/cost composition ratio?
 - Does the article include a classification table for related companies when the theme has mixed effects, such as adverse impact, price-pass-through candidate, spread-sensitive upstream player, and surrounding evidence?
+- Does the title's strength match the article's factual caution, especially when the body says the event is partial, temporary, phased, or not a full stoppage?
+- When a company describes a partial order-method suspension, phased restart, continued production, or continued shipment, does the article preserve that nuance instead of shortening it into "order stop" or "supply stop"?
+- If a comparison article has clearer educational parts, does the reviewed article import only safe explanatory pieces such as process explanations, term boxes, or profit formulas while keeping the Codex/Claude fact framing?
+- Are any margin, inventory-month, or earnings-impact numbers clearly labelled as company disclosure, external estimate, or FIC assumption-based scenario, with enough assumptions to prevent false precision?
+- Does the leading-indicator table include update frequency and primary source when that would help readers actually monitor the theme?
