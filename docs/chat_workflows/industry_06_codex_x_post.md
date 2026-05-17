@@ -7,6 +7,10 @@
 公開直前または公開済みの業界分析記事をもとに、X投稿用メモと投稿文を作る。
 記事本文の修正、画像作成、WordPress反映、動画作成は行わない。
 
+参照する管理シート:
+- FIC記事管理_v3:
+  https://docs.google.com/spreadsheets/d/1ExBSpP3-QMN2gmh9qswp986LKDKXzsWfjzl78DCDoUg/edit
+- 対象タブ: 業界分析
 対象:
 - 業界分析タブ row:
 - テーマ名:

@@ -7,6 +7,10 @@
 最近のニュースから、業界分析記事化できるテーマ候補を作成し、業界分析タブへ記録する。
 記事本文作成、Claude投入パック作成、画像作成、WordPress反映、動画作成は行わない。
 
+参照する管理シート:
+- FIC記事管理_v3:
+  https://docs.google.com/spreadsheets/d/1ExBSpP3-QMN2gmh9qswp986LKDKXzsWfjzl78DCDoUg/edit
+- 対象タブ: 業界分析
 読む指示書:
 - docs/codex_industry_analysis_migration_spec.md のシナリオ1
 - prompts/search/industry_analysis_trend_candidates_main.md

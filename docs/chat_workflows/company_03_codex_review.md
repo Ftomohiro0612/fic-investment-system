@@ -7,6 +7,10 @@
 Claudeが作成した企業分析記事をCodexでレビューし、必要な修正を行う。
 画像作成、WordPress反映、動画作成、X投稿は行わない。
 
+参照する管理シート:
+- FIC記事管理_v3:
+  https://docs.google.com/spreadsheets/d/1ExBSpP3-QMN2gmh9qswp986LKDKXzsWfjzl78DCDoUg/edit
+- 対象タブ: 企業分析
 対象:
 - 企業名:
 - 証券コード:

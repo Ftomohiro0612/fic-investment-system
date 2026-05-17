@@ -7,6 +7,10 @@
 レビュー済み業界分析記事に生成AI画像・非AI図表を作成/挿入し、WordPressへ反映する。
 記事本文の大幅リライト、動画作成は行わない。
 
+参照する管理シート:
+- FIC記事管理_v3:
+  https://docs.google.com/spreadsheets/d/1ExBSpP3-QMN2gmh9qswp986LKDKXzsWfjzl78DCDoUg/edit
+- 対象タブ: 業界分析
 対象:
 - 業界分析タブ row:
 - テーマ名:

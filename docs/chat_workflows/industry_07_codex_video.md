@@ -7,6 +7,10 @@
 公開済み業界分析記事から動画を作成する。
 記事本文修正、WordPress更新、画像作成は原則行わない。
 
+参照する管理シート:
+- FIC記事管理_v3:
+  https://docs.google.com/spreadsheets/d/1ExBSpP3-QMN2gmh9qswp986LKDKXzsWfjzl78DCDoUg/edit
+- 対象タブ: 業界分析
 対象:
 - 業界分析タブ row:
 - テーマ名:

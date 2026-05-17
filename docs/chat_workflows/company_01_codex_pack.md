@@ -7,6 +7,10 @@
 企業分析記事について、Claudeに渡す投入パックをCodexで作成する。
 記事本文の執筆、画像作成、WordPress反映、動画作成は行わない。
 
+参照する管理シート:
+- FIC記事管理_v3:
+  https://docs.google.com/spreadsheets/d/1ExBSpP3-QMN2gmh9qswp986LKDKXzsWfjzl78DCDoUg/edit
+- 対象タブ: 企業分析
 対象:
 - 企業名:
 - 証券コード:

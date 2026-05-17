@@ -7,6 +7,10 @@
 レビュー済み企業分析記事に画像・非AI図表を作成/挿入し、WordPressへ反映する。
 記事本文の大幅リライト、動画作成、X投稿は行わない。
 
+参照する管理シート:
+- FIC記事管理_v3:
+  https://docs.google.com/spreadsheets/d/1ExBSpP3-QMN2gmh9qswp986LKDKXzsWfjzl78DCDoUg/edit
+- 対象タブ: 企業分析
 対象:
 - 企業名:
 - 証券コード:

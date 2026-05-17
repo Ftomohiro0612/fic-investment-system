@@ -21,8 +21,16 @@ FIC投資研究所の作業を、Codex / Claude Code のチャット単位で分
 - 画像・動画・WordPress反映は重いので、記事作成チャットとは分ける。
 - 仕様書やプロンプトの汎用修正は、記事作成チャットではなく別チャットで行う。
 
-## 13分割
 
+## 管理シート
+
+記事管理は以下のGoogle Sheetsを正本とします。
+
+- FIC記事管理_v3: https://docs.google.com/spreadsheets/d/1ExBSpP3-QMN2gmh9qswp986LKDKXzsWfjzl78DCDoUg/edit
+- 企業分析の対象タブ: 企業分析
+- 業界分析の対象タブ: 業界分析
+
+## 13分割
 ### 企業分析
 
 1. [企業分析 01: Codex 資料作成](company_01_codex_pack.md)
