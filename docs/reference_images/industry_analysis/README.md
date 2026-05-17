@@ -13,13 +13,13 @@
 
 ## 登録画像
 
-- `fic_impact_map_ai_style_reference_01.png`
-- `fic_impact_map_ai_style_reference_02.png`
-- `fic_impact_map_ai_style_reference_03.png`
-- `fic_impact_map_ai_style_reference_04.png`
+- 企業分析の生成AI参考画像: `fic_impact_map_ai_style_reference_01.png`
+- 業界分析の生成AI参考画像: `fic_impact_map_ai_style_reference_02.png`
+- 業界分析の生成AI参考画像: `fic_impact_map_ai_style_reference_03.png`
+- 企業分析の生成AI参考画像: `fic_impact_map_ai_style_reference_04.png`
 - `fic_non_ai_structure_chart_reference_01.png`
 - `fic_non_ai_structure_chart_reference_02.png`
 
-上記はFIC記事用の生成AIインフォグラフィックのスタイル参考です。テーマ名・会社名・数値は各記事に合わせて必ず作り直します。
+生成AI画像は、企業分析では `fic_impact_map_ai_style_reference_01.png` と `fic_impact_map_ai_style_reference_04.png`、業界分析では `fic_impact_map_ai_style_reference_02.png` と `fic_impact_map_ai_style_reference_03.png` を参考にします。テーマ名・会社名・数値は各記事に合わせて必ず作り直します。
 
 `fic_non_ai_structure_chart_reference_01.png` と `fic_non_ai_structure_chart_reference_02.png` は、HTML/CSSで作成する非AI構造図の参考です。大きな結論見出し、太い文字、少ない要素、余白、濃紺/黄色アクセント、図だけで理解できる説明文を参考にします。

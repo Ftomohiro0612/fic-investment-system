@@ -248,14 +248,12 @@ Constraints: original composition, not a copy of the reference. No company logos
 
 #### 登録済み参考画像
 
-- `docs/reference_images/industry_analysis/fic_impact_map_ai_style_reference_01.png`
-- `docs/reference_images/industry_analysis/fic_impact_map_ai_style_reference_02.png`
-- `docs/reference_images/industry_analysis/fic_impact_map_ai_style_reference_03.png`
-- `docs/reference_images/industry_analysis/fic_impact_map_ai_style_reference_04.png`
+- 業界分析の生成AI画像は `docs/reference_images/industry_analysis/fic_impact_map_ai_style_reference_02.png` と `docs/reference_images/industry_analysis/fic_impact_map_ai_style_reference_03.png` を参考にする
+- 企業分析の生成AI画像は `docs/reference_images/industry_analysis/fic_impact_map_ai_style_reference_01.png` と `docs/reference_images/industry_analysis/fic_impact_map_ai_style_reference_04.png` を参考にする
 - `docs/reference_images/industry_analysis/fic_non_ai_structure_chart_reference_01.png`
 - `docs/reference_images/industry_analysis/fic_non_ai_structure_chart_reference_02.png`
 
-これらはFIC記事用の生成AIインフォグラフィックのスタイル参考。今後の業界分析画像では、情報密度、見出しの強さ、因果フロー、追い風/注意点/見る指標の配置を参考にする。ただし、参考画像のテーマ名・会社名・数値・構図をそのまま再利用しない。
+生成AIインフォグラフィックのスタイル参考は、企業分析と業界分析で使い分ける。今後の業界分析画像では `fic_impact_map_ai_style_reference_02.png` と `fic_impact_map_ai_style_reference_03.png` の情報密度、見出しの強さ、因果フロー、追い風/注意点/見る指標の配置を参考にする。ただし、参考画像のテーマ名・会社名・数値・構図をそのまま再利用しない。
 
 `fic_non_ai_structure_chart_reference_01.png` と `fic_non_ai_structure_chart_reference_02.png` は、生成AI画像ではなく、CodexがHTML/CSSで作る非AI構造図の参考。確認順、企業分類、時間軸、先行指標など、正確に読ませたい図表に使う。
 
