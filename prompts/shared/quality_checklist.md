@@ -29,3 +29,15 @@
 - If a comparison article has clearer educational parts, does the reviewed article import only safe explanatory pieces such as process explanations, term boxes, or profit formulas while keeping the Codex/Claude fact framing?
 - Are any margin, inventory-month, or earnings-impact numbers clearly labelled as company disclosure, external estimate, or FIC assumption-based scenario, with enough assumptions to prevent false precision?
 - Does the leading-indicator table include update frequency and primary source when that would help readers actually monitor the theme?
+- For company-analysis articles, does the reviewed HTML include `article_title:` and `slug:` metadata, and is the WordPress handoff explicit that `article_title:` must be used as `post_title` instead of extracting title from `<h1>`?
+- If the body intentionally removes `<h1>`, has the reviewer confirmed there are zero `<h1>` tags and that the WordPress handoff includes a `title.rendered` verification step?
+- Do H2 sections 1 through 12 each have both an introductory `<em>` paragraph and a closing "結局..." takeaway paragraph, using either the 王子HD-style `<strong>結局、N章のまとめは：</strong>` form or an equivalent inline form?
+- If a Claude revision was made after Codex review, did the reviewer first copy or merge the latest `claude_article.html` into `codex_reviewed_article.html`, then re-apply prior Codex fixes so old defects do not return?
+- Are wide tables reviewed for actual display risk, especially tables with 8 or more columns, long English company names, ticker strings, or technical terms that can wrap one character at a time?
+- When a table may collide with a sidebar or become unreadable, has the reviewer reduced/merged columns, shortened headings, or explicitly handed off a horizontal-scroll rendering requirement?
+- Does the final reviewed HTML avoid unresolved-publication markers such as `要確認`, `要追加確認`, `未確認`, `リンク未取得`, `TODO`, and `FIXME`, including inside HTML comments and graph instructions?
+- Are related company names text-only unless a valid internal FIC link is confirmed, avoiding external corporate-site links in comparison tables?
+- When using non-GAAP, core profit, normalized profit, or "巡航利益" style wording, is it clear whether the metric is company-disclosed or an FIC analytical adjustment?
+- For acquisition articles, does the article avoid confusing acquisition price with goodwill amount, and does it refer to goodwill/PPA only when the accounting basis is clear?
+- When company FX assumptions are disclosed, are upside/downside scenarios phrased relative to the company assumption rather than as generic "円高反転" or "円安進行"?
+- For single-reporting-segment companies, does the article avoid saying segment profit is available when only application/use-case revenue is disclosed?
