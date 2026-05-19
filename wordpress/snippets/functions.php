@@ -419,50 +419,34 @@ function fic_render_upcoming_earnings_list($limit = 8) {
     $schedule = fic_get_earnings_schedule();
 
     $today = current_time('Y-m-d');
-    $past_limit = date('Y-m-d', strtotime($today . ' -3 days'));
 
-    $filtered = array_filter($schedule, function($item) use ($past_limit) {
-        return $item['date'] >= $past_limit;
-    });
-
-    $filtered = array_values($filtered);
-    foreach ($filtered as $index => $item) {
-        $filtered[$index]['_original_index'] = $index;
+    foreach ($schedule as $index => $item) {
+        $schedule[$index]['_original_index'] = $index;
     }
 
-    usort($filtered, function($a, $b) use ($today) {
-        $a_is_today = $a['date'] === $today;
-        $b_is_today = $b['date'] === $today;
+    $upcoming = array_values(array_filter($schedule, function($item) use ($today) {
+        return $item['date'] >= $today;
+    }));
 
-        if ($a_is_today && !$b_is_today) {
-            return -1;
-        }
+    $recent_past = array_values(array_filter($schedule, function($item) use ($today) {
+        return $item['date'] < $today;
+    }));
 
-        if (!$a_is_today && $b_is_today) {
-            return 1;
-        }
+    usort($upcoming, function($a, $b) {
+        $date_compare = strcmp($a['date'], $b['date']);
+        return $date_compare !== 0 ? $date_compare : ($a['_original_index'] <=> $b['_original_index']);
+    });
 
-        $a_is_future = $a['date'] > $today;
-        $b_is_future = $b['date'] > $today;
-
-        if ($a_is_future && !$b_is_future) {
-            return -1;
-        }
-
-        if (!$a_is_future && $b_is_future) {
-            return 1;
-        }
-
-        if ($a_is_future && $b_is_future) {
-            $date_compare = strcmp($a['date'], $b['date']);
-            return $date_compare !== 0 ? $date_compare : ($a['_original_index'] <=> $b['_original_index']);
-        }
-
+    usort($recent_past, function($a, $b) {
         $date_compare = strcmp($b['date'], $a['date']);
         return $date_compare !== 0 ? $date_compare : ($a['_original_index'] <=> $b['_original_index']);
     });
 
-    $filtered = array_slice($filtered, 0, $limit);
+    $filtered = array_slice(array_merge($upcoming, $recent_past), 0, $limit);
+    usort($filtered, function($a, $b) {
+        $date_compare = strcmp($a['date'], $b['date']);
+        return $date_compare !== 0 ? $date_compare : ($a['_original_index'] <=> $b['_original_index']);
+    });
 
     if (empty($filtered)) {
         return '<p>現在、表示できる決算予定はありません。</p>';
@@ -1077,9 +1061,10 @@ function fic_related_company_code_groups() {
     $energy = ['5019', '5020', '5021', '1605'];
     $internet_media_game_ads = ['4751', '2432', '2121', '4324', '2433'];
     $auto_mobility = ['7203', '7267', '7201', '7269', '7270', '7261', '7272'];
+    $paper_packaging = ['3861', '3863', '3941', '3880', '3865'];
 
     $groups = [];
-    foreach ([$trading, $rail, $shipping, $power, $semiconductor_equipment, $semiconductor_memory, $financial, $construction, $real_estate, $energy, $internet_media_game_ads, $auto_mobility] as $group) {
+    foreach ([$trading, $rail, $shipping, $power, $semiconductor_equipment, $semiconductor_memory, $financial, $construction, $real_estate, $energy, $internet_media_game_ads, $auto_mobility, $paper_packaging] as $group) {
         foreach ($group as $code) {
             $groups[$code] = array_values(array_diff($group, [$code]));
         }

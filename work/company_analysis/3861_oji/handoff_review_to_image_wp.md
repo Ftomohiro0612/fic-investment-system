@@ -1,31 +1,26 @@
-# handoff_review_to_image_wp: 王子ホールディングス（3861）再レビュー後
+# Handoff: Codexレビュー → 画像/WP工程（王子HD 3861）
 
-作成日: 2026-05-18  
-作成者: Codex  
-前工程: 企業分析 03 Codexレビュー  
-次工程: 企業分析 04 Codex 画像作成・WordPress反映
+## レビュー済み正本
 
-## 対象ファイル
-
-- レビュー済み記事HTML: `work/company_analysis/3861_oji/codex_reviewed_article.html`
+- レビュー後HTML: `work/company_analysis/3861_oji/codex_reviewed_article.html`
+- 元Claude HTML: `work/company_analysis/3861_oji/claude_article.html`
 - レビューノート: `work/company_analysis/3861_oji/claude_review_notes.md`
-- 元記事HTML: `work/company_analysis/3861_oji/claude_article.html`
 
-## Codexレビューでの主な修正
+## Codexレビュー結果
 
-- 21:50更新版の `claude_article.html` を正本にして `codex_reviewed_article.html` を再作成。
-- 為替/M&Aの表現を、単純な「円安=追い風」ではなく通貨別・会社感応度ベースに修正。
-- 上振れシナリオ、因果チェーン、FAQ、FAQ JSON-LD の為替方向を修正。
-- AustroCelはPPA未完了・のれん暫定値・利益寄与非開示の扱いを維持。
+- v4試行版（13規律＋必須グラフ3箇所）・15章構造は実装済み。
+- FIC主軸（業界構造転換 → 王子HDの海外パルプ/国内価格修正/構造改革/M&A → 営業利益 → 中計2027検証）は維持。
+- H2 7のH3順序は「パルプ市況 → 国内紙需要 → 原燃料 → 為替・M&A」で確定。画像1もこの順序に合わせる。
+- 必須グラフ3箇所のHTMLコメントマーカーを確認済み:
+  - H3 5.1 セグメント別売上・営業利益
+  - H2 6 業績の全体像
+  - H2 8 中期経営計画の達成検証
+- 為替を「円安＝単純追い風」と読ませる表現を、会社感応度上のプラス/マイナス方向へ修正。
+- 「前提崩壊」は公開本文向けに「前提見直し」へ調整。
 
 ## 次工程への注意
 
-- WordPress反映では `codex_reviewed_article.html` を本文正本として使う。
-- 既存の画像挿入済みHTMLは、今回の21:50更新版レビュー済みHTMLより古い可能性があるため、画像挿入HTMLを再作成する。
-- AI画像には正確な数値を入れない。v3骨格に合わせ、業界トレンド → 王子HDのポジション → 業績変換 → 投資判断の流れを示す。
-- 為替は「円安=追い風」と単純化しない。会社感応度上、対USドル円安は減益方向、BRL安・NZD安は増益方向という扱いを崩さない。
-
-## レビュー結果
-
-- Codexレビュー結果は `claude_review_notes.md` 末尾に追記済み。
-- 残課題: 同業5社の最新決算数値化、LBKP/NBSK最新市況、AustroCel PPA追加開示確認は次回更新候補。
+- WordPress反映は `codex_reviewed_article.html` を正本にする。
+- 既存の `codex_reviewed_article.with_images.html` がある場合でも、16:55更新版レビュー前HTMLに基づく可能性があるため、画像挿入HTMLは再作成する。
+- 新規グラフ3箇所は、本文表の数値・単位を正とし、画像側で数値を増やさない。
+- AustroCelの利益寄与は会社非開示。画像・本文追加時に利益を断定的に積み上げない。

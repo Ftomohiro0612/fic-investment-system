@@ -1,0 +1,796 @@
+--- page 1 ---
+This document has been translated from the original Japanese document filed by Kioxia Holdings Corporation (the
+“Company”) and is provided for reference purposes only. In the event of any discrepancy between this document and
+the original Japanese document, the original Japanese document shall prevail.
+Consolidated Financial Results for the Fiscal Year Ended March 31, 2026
+(Under IFRS)
+May 15, 2026
+Company name: Kioxia Holdings Corporation Stock Exchange Listing: Tokyo
+Securities code: 285A URL:  https://www.kioxia-holdings.com/en-jp/top.html
+Representative: Representative Director Nobuo Hayasaka
+Contact: General Manager of
+Disclosure Division Makoto Sonoda Telephone: 03 (6478) 2539
+Scheduled date of ordinary
+general meeting of shareholders: June 25, 2026 Scheduled date to
+commence dividend
+payments:
+-Scheduled date to file
+securities report: June 24, 2026
+Supplementary materials for financial results: Yes
+Financial results briefings: Yes
+(rounded to the nearest million yen)
+(% indicates variance against the previous year)
+Revenue Non-GAAP operating
+profit Operating profit Profit before tax Profit
+million yen % million yen % million yen % million yen %
+Fiscal Year
+Ended March 2026 2,337,628 37.0 876,170 93.4 870,369 92.7 784,095 111.5 554,496 103.6
+Fiscal Year
+Ended March 2025 1,706,460 58.5 453,015 － 451,748 － 370,669 － 272,321 －
+Non-GAAP
+profit
+attributable to
+owners of
+parent
+Profit
+attributable to
+owners of
+parent
+Total
+comprehensive
+income
+Basic earnings
+ per share
+Diluted
+earnings per
+share
+Return on
+equity
+Return on
+assets
+Operating
+margin
+million
+yen % million
+yen % million
+yen % JPY JPY % % %
+Fiscal Year
+Ended March
+2026
+559,638 110.4 554,490 103.6 646,679 151.1 1,024.07 1,009.15 51.9 23.7 37.2
+Fiscal Year
+Ended March
+2025
+265,990 － 272,315 － 257,581 － 519.96 515.45 45.9 12.8 26.5
+Total assets Total equity Equity attributable to
+owners of parent
+Ratio of equity
+attributable to owners
+of parent
+Equity attributable to
+owners of parent per share
+million yen million yen million yen % JPY
+As of March 31, 2026 3,690,071 1,399,079 1,398,929 37.9 2,561.74
+As of March 31, 2025 2,919,679 737,696 737,565 25.3 1,367.49
+1. Consolidated Financial Results for the Fiscal Year Ended March 2026 (April 1, 2025 to March 31, 2026)
+(1) Consolidated Operating Results (Cumulative)
+(Reference) Investment income from equity method was 935 million yen for the fiscal year ended March 2026 and 542
+million yen for the fiscal year ended March 2025.
+Note: Non-GAAP measures, which exclude non-recurring items and other specific items from IFRS-based figures to more
+easily evaluate the Group’s fundamental profitability, are internal measures used by management and are not IFRS
+accounting items. As non-GAAP measures have not been audited or reviewed by auditors, they may not accurately
+reflect the Group’s financial condition or operating results.
+(2) Consolidated Financial Position
+
+--- page 2 ---
+Cash flows from
+operating activities
+Cash flows from
+investing activities
+Cash flows from
+financing activities
+Cash and cash equivalents
+at end of period
+million yen million yen million yen million yen
+Fiscal Year Ended March 2026 616,540 (221,512) (96,074) 470,707
+Fiscal Year Ended March 2025 476,416 (173,011) (322,679) 167,932
+Annual dividends
+Total amount
+of dividends
+Dividend
+payout ratio
+Dividend on
+equityEnd of
+first quarter
+End of
+second
+quarter
+End of
+third quarter
+End of
+fiscal year Total
+JPY JPY JPY JPY JPY million yen % %
+Fiscal Year Ended
+March 2025 － 0.00 － 0.00 0.00 － － －
+Fiscal Year Ended
+March 2026 － 0.00 － 0.00 0.00 － － －
+Fiscal Year Ending
+March 2027 (Forecast) － 0.00 － － － －
+(JPY in millions unless indicated otherwise)
+(% indicates variance against the prior quarter)
+Revenue Non-GAAP operating
+profit Operating profit
+Non-GAAP profit
+attributable to owners
+of parent
+Profit attributable to
+owners of parent
+Three months ending
+June 30, 2026
+million yen % million yen % million yen % million yen % million yen %
+1,750,000 74.5 1,300,000 117.0 1,298,000 117.5 870,000 112.2 869,000 113.1
+(3) Consolidated Cash Flows
+2. Status of Dividends
+Note 1:　“Status of Dividends” above refers to dividends on common shares. For the status of dividends on class shares
+(unlisted) with different voting rights than common shares issued by the Company, please refer to "Status of
+dividends on class shares" below.
+Note 2:　Dividends for the fiscal year ending March 2027 are currently undecided. The Company will make an
+announcement once the dividends are decided upon.
+3. Consolidated Business Outlook for the First Quarter of the Fiscal Year Ending March 2027 (April 1, 2026 to June 30,
+2026)
+
+--- page 3 ---
+(1) Changes in accounting policies required by IFRS: None
+(2) Changes in accounting policies other than those required by IFRS: None
+(3) Changes in accounting estimates: None
+(1) Number of issued shares at the end of
+the period (including treasury shares)
+As of March 31, 2026 546,086,290 As of March 31, 2025 539,355,180
+(2) Number of treasury shares at the end
+of the period
+As of March 31, 2026 161 As of March 31, 2025 －
+(3) Average number of shares during the
+period (cumulative)
+As of March 31, 2026 541,455,417 As of March 31, 2025 523,718,990
+(% indicates variance against the previous year)
+Operating revenue Operating profit Ordinary profit Profit
+million yen % million yen % million yen % million yen %
+Fiscal Year
+Ended March 2026 99,583 － 90,890 － 92,855 － 90,754 －
+Fiscal Year
+Ended March 2025 8,570 33.6 87 27.9 763 (34.7) 499 (44.1)
+Basic earnings per share Diluted earnings per share
+JPY JPY
+Fiscal Year
+Ended March 2026 167.61 165.17
+Fiscal Year
+Ended March 2025 － －
+Total assets Net assets Equity-to-asset ratio Net assets per share
+million yen million yen % JPY
+As of March 31, 2026 1,667,460 918,603 55.1 1,681.47
+As of March 31, 2025 1,618,949 1,170,390 72.2 1,568.12
+* Notes
+(1) Significant changes in the scope of consolidation during the fiscal year ended March 31, 2026: None
+(2) Changes in accounting policies and estimates
+(3) Number of issued shares (common shares)
+(Reference) Overview of non-consolidated financial results
+　Non-consolidated financial results for the fiscal year ended March 31, 2026 (from April 1, 2025 to March 31, 2026)
+　1. Non-consolidated operating results
+Note: “－” is used when the variance against the previous year is 1,000% or more
+　2. Non-consolidated financial position
+(Reference) Equity as of March 31, 2026: 918,228 million yen; equity as of March 31, 2025: 1,169,533 million yen
+　<Reason for change in non-consolidated financial results from the previous fiscal year>
+　The main reason for the difference in financial results between the fiscal years ended March 31, 2025 and March 31,
+2026 was the receipt of a dividend from an associate in the fiscal year ended March 31, 2026.
+
+--- page 4 ---
+Annual dividends
+End of first quarter End of second quarter End of third quarter Fiscal year end Total
+Series 1 (Kou) preferred
+shares JPY JPY JPY JPY JPY
+Fiscal year ended
+March 2025 － － － 7,738,453.00 7,738,453.00
+Fiscal year ended
+March 2026 － － － － －
+Fiscal year ending
+March 2027 (forecast) － － － － －
+Series 2 (Otsu) preferred
+shares JPY JPY JPY JPY JPY
+Fiscal year ended
+March 2025 － － － 8,041,552.00 8,041,552.00
+Fiscal year ended
+March 2026 － － － － －
+Fiscal year ending
+March 2027 (forecast) － － － － －
+* These financial results are not subject to quarterly review by certified public accountants or audit firms
+* Appropriate use of business outlooks and other notes
+(Note on forward-looking statements, etc.)
+    Forward-looking statements such as business outlooks contained in these financial results are based on assumptions
+and beliefs that represent information available to the Company at the present time, and are subject to various risks and
+uncertainties (including, but not limited to, economic trends, market demand, and competition in the semiconductor
+industry) and may differ from actual results.
+(Status of dividends on class shares)
+    The breakdown of dividends per share for shares with different voting rights than common shares is as follows.
+Series 1 (Kou) preferred shares and Series 2 (Otsu) preferred shares have been repurchased and cancelled as of July 25,
+2025.
+
+--- page 5 ---
+1. Overview of Operating Results, Etc. 2
+(1) Overview of Operating Results for the Fiscal Year Ended March 31, 2026 2
+(2) Overview of Financial Position for the Fiscal Year Ended March 31, 2026 5
+(3) Overview of Cash Flows for the Fiscal Year Ended March 31, 2026 6
+(4) Business Outlook 7
+2. Basic Policy Regarding Selection of Accounting Standards 8
+3. Consolidated Financial Statements and Related Notes 9
+(1) Consolidated Statement of Financial Position 9
+(2) Consolidated Statement of Profit or Loss and Comprehensive Income 11
+(3) Consolidated Statement of Changes in Equity 13
+(4) Consolidated Statement of Cash Flows 14
+(5) Notes to Consolidated Financial Statements 15
+Index
+- 1 -
+
+--- page 6 ---
+1. Overview of Operating Results, Etc.
+(1) Overview of Operating Results for the Fiscal Year Ended March 31, 2026
+    An overview of the operating results of the Company, its subsidiaries (collectively the “Group”), and interests in
+associates and joint arrangements is as follows.
+    As the Group operates as a single reportable segment, the Memory business, it does not provide segment
+information. However, the Group provides revenue by the application of each product, in accordance with its purpose
+of use. "SSD & Storage" primarily includes solid-state drives (SSDs) and memory products for PCs, data centers,
+and enterprises. "Smart Devices" include embedded memory products with control functions, which are used in
+consumer devices such as smartphones, tablets, and televisions, as well as in automotive and industrial devices.
+"Other" includes retail products such as SD memory cards and USB flash drives, as well as sales to the Sandisk
+group recorded through its three manufacturing joint ventures.
+    As a characteristic of the semiconductor and memory industry of which the Group is a part is volatility in the
+business environment within short time spans, the Group does not provide plans or progress reports for the overall
+fiscal year.
+    The Group discloses consolidated operating results in the form of measures based on International Financial
+Reporting Standards (IFRS), as well as internal measures used by management when making decisions (“non-
+GAAP measures”).
+    Non-GAAP measures exclude non-recurring items and other specific items from IFRS-based figures to more
+easily evaluate the Group’s fundamental profitability.
+    Management believes that disclosing non-GAAP measures makes it easier for stakeholders to compare the
+Group’s performance with that of other companies in the same industry and against previous fiscal years. In doing so
+the Group intends to provide useful information for understanding its regular operating results and business outlooks.
+Non-GAAP measures are used internally by management and are not accounting items based on IFRS, and have
+not been audited or reviewed by auditors. Therefore, such non-GAAP measures may not accurately reflect the
+Group’s financial condition or operating results. “Non-recurring items” are temporary gains and losses that the Group
+deems should be excluded for non-GAAP measures, including the impact of purchase price allocation (PPA) arising
+from mergers and acquisitions, and the impact of significant changes to tax policies. “Other specific items” are gains
+and losses that the Group deems difficult to compare with other companies due to factors such as different
+accounting standards, including costs for the fiscal year recorded under the Group’s continuous service and
+performance-linked stock-based remuneration plans.
+    In regards to the global economy for fiscal year ended March 31, 2026, in developed countries, while there was
+some slowdown in the labor market and the price of goods affected consumer spending, capital investments
+resulting from high demand for AI remained strong. In developing countries, while exports increased overall,
+investment fell as the real estate market continued to struggle, consumer spending dragged, and overall trends
+continued to be weak. High geopolitical risks, particularly in the Middle East and Ukraine, contribute to an uncertain
+outlook for the global economy. During the fiscal year, the yen appreciated against the US dollar compared to the
+previous fiscal year.
+    In the flash memory industry, customer inventory adjustments from the end of the previous fiscal year have
+normalized and demand from smartphone and PC customers has recovered. Demand for AI servers at data center
+and enterprise customers increased, and the overall market is continuing to grow.
+- 2 -
+
+--- page 7 ---
+(JPY in billions unless indicated otherwise)
+Three months ended
+December 31, 2025
+Three months ended
+March 31, 2026
+Quarter on quarter
+change
+Revenue 543.6 1,002.9 +459.2
+SSD & Storage 300.4 600.3 +299.9
+Smart Devices 186.3 337.3 +151.1
+Other 57.0 65.2 +8.2
+Non-GAAP operating profit 144.7 599.1 +454.5
+PPA impact (loss) (0.3) (0.3) -0.0
+Stock-based remuneration costs (loss) (1.6) (2.1) -0.4
+Operating profit 142.8 596.8 +454.0
+Profit before tax 121.7 578.3 +456.6
+Profit 87.8 407.7 +319.9
+Non-GAAP profit attributable to owners of parent 89.5 409.9 +320.4
+Profit attributable to owners of parent 87.8 407.7 +319.9
+Non-GAAP basic earnings per share in yen 165.28 751.78 +586.50
+Basic earnings per share in yen 162.13 747.72 +585.59
+Average USD to yen exchange rate 153 yen 155 yen +2 yen
+■Quarter on Quarter Comparison Table
+Note: Figures in this table are rounded to the nearest billion yen
+    Revenue for the three months ended March 31, 2026 was 1,002.9 billion yen, an increase of 459.2 billion yen from
+the previous quarter. This was primarily due to a significant increase in average selling prices (ASPs), partially offset
+by reduced bit shipment. SSD & Storage revenue was 600.3 billion yen, an increase of 299.9 billion yen from the
+previous quarter, and Smart Device revenue was 337.3 billion yen, an increase of 151.1 billion yen from the previous
+quarter.
+    Operating profit was 596.8 billion yen, an increase of 454.0 billion yen from the previous quarter, primarily due to
+the aforementioned increase in revenue.
+    Profit before tax was 578.3 billion yen, an increase of 456.6 billion yen from the previous quarter.
+    Profit attributable to owners of parent was 407.7 billion yen, an increase of 319.9 billion yen from the previous
+quarter.
+    Non-GAAP operating profit (excludes PPA impact of 0.3 billion yen and stock-based remuneration costs of 2.1
+billion yen) was 599.1 billion yen, an increase of 454.5 billion yen from the previous quarter. Non-GAAP profit
+attributable to owners of parent was 409.9 billion yen, an increase of 320.4 billion yen from the previous quarter.
+- 3 -
+
+--- page 8 ---
+(JPY in billions unless indicated otherwise)
+Fiscal year ended
+March 31, 2025
+Fiscal year ended
+March 31, 2026
+Year on year
+change
+Revenue 1,706.5 2,337.6 +631.2
+SSD & Storage 991.1 1,362.6 +371.5
+Smart Devices 501.1 760.0 +258.8
+Other 214.2 215.0 +0.8
+Non-GAAP operating profit 453.0 876.2 +423.2
+PPA impact (loss) (1.3) (1.1) +0.2
+Stock-based remuneration costs (loss) - (4.7) -4.7
+Operating profit 451.7 870.4 +418.6
+Profit before tax 370.7 784.1 +413.4
+Profit 272.3 554.5 +282.2
+Non-GAAP profit attributable to owners of parent 266.0 559.6 +293.6
+Profit attributable to owners of parent 272.3 554.5 +282.2
+Non-GAAP basic earnings per share in yen 507.89 1,033.58 +525.69
+Basic earnings per share in yen 519.96 1,024.07 +504.11
+Average USD to yen exchange rate 153 yen 150 yen -3 yen
+■Year on Year Comparison Table
+Note: Figures in this table are rounded to the nearest billion yen from the figures in “3. Consolidated Financial
+Statements and Related Notes”, excluding non-GAAP figures, PPA impact, and stock-based remuneration costs
+    Revenue for the fiscal year ended March 31, 2026 was 2,337.6 billion yen, an increase of 631.2 billion yen from
+the previous fiscal year. This was primarily due to a significant increase in ASPs following strong demand from
+generative AI-centered data center customers, as well as an increase in bit shipment.
+    Operating profit was 870.4 billion yen, an increase of 418.6 billion yen from the previous fiscal year, primarily due
+to the aforementioned increase in revenue.
+    Profit before tax was 784.1 billion yen, an increase of 413.4 billion yen from the previous fiscal year.
+    Profit attributable to owners of parent was 554.5 billion yen, an increase of 282.2 billion yen from the previous
+fiscal year.
+    Non-GAAP operating profit (excludes PPA impact of 1.1 billion yen and stock-based remuneration costs of 4.7
+billion yen) was 876.2 billion yen, an increase of 423.2 billion yen from previous fiscal year. Non-GAAP profit
+attributable to owners of parent was 559.6 billion yen, an increase of 293.6 billion yen from the previous fiscal year.
+- 4 -
+
+--- page 9 ---
+(JPY in billions unless indicated otherwise)
+As of March 31, 2025 As of March 31, 2026 Change from the end of
+the previous fiscal year
+Total assets 2,919.7 3,690.1 +770.4
+Total liabilities 2,182.0 2,291.0 +109.0
+Total equity 737.7 1,399.1 +661.4
+Equity attributable to owners of parent 737.6 1,398.9 +661.4
+Ratio of equity attributable to owners of parent 25.3% 37.9% +12.6 percentage points
+(2) Overview of Financial Position for the Fiscal Year Ended March 31, 2026
+Note: Figures in this table are rounded to the nearest billion yen from the figures in “3. Consolidated Financial
+Statements and Related Notes”
+(Assets)
+    Assets as of March 31, 2026 were 3,690.1 billion yen, an increase of 770.4 billion yen from the end of the
+previous fiscal year.
+    This was primarily due to an increase in trade and other receivables of 422.0 billion yen and an increase in cash
+and cash equivalents of 302.8 billion yen following an increase in revenue.
+(Liabilities)
+    Liabilities as of March 31, 2026 were 2,291.0 billion yen, an increase of 109.0 billion yen from the end of the
+previous fiscal year.
+    This was primarily due to an increase in bonds and borrowings of 269.9 billion yen resulting from factors such as
+the issuance of U.S. dollar-denominated unsecured corporate bonds and an increase in trade and other payables of
+90.9 billion yen, partially offset by a decrease in other financial liabilities of 321.0 billion yen resulting from factors
+such as the redemption of non-convertible preferred shares.
+(Equity)
+    Equity as of March 31, 2026 was 1,399.1 billion yen, an increase of 661.4 billion yen from the end of the previous
+fiscal year.
+    This was primarily due to the net profit of 554.5 billion yen. As a result, the equity ratio attributable to owners of
+parent was 37.9%, up 12.6 percentage points from the end of the previous fiscal year.
+- 5 -
+
+--- page 10 ---
+(JPY in billions unless indicated otherwise)
+Fiscal year ended
+March 31, 2025
+Fiscal year ended
+March 31, 2026 Year on year change
+Net cash provided by (used for)
+operating activities 476.4 616.5 +140.1
+Net cash provided by (used for)
+investing activities (173.0) (221.5) -48.5
+Net cash provided by (used for)
+financing activities (322.7) (96.1) +226.6
+(3) Overview of Cash Flows for the Fiscal Year Ended March 31, 2026
+Note: Figures in this table are rounded to the nearest billion yen from the figures in “3. Consolidated Financial
+Statements and Related Notes”
+    The balance of cash and cash equivalents at the end of the fiscal year was 470.7 billion yen, an increase of 302.8
+billion yen from the end of the previous fiscal year. Details of each cash flow are as follows.
+(Operating Activities)
+    The Group recorded 616.5 billion yen in cash inflow as a result of its operating activities (it recorded 476.4 billion
+yen in cash inflow in the previous fiscal year).
+    While there was a cash outflow of 397.7 billion yen (89.4 billion yen in the previous fiscal year) following an
+increase in trade and other receivables, there was also a profit before tax of 784.1 billion yen (370.7 billion yen in
+the previous fiscal year) and 312.8 billion yen in depreciation and amortization (312.3 billion yen in the previous
+fiscal year). Regarding the primary reason for the 140.1 billion yen increase in cash inflow year on year, while the
+amount of increase in trade and other receivables increased, this was outweighed by the increase in profit before
+tax.
+(Investing Activities)
+    The Group recorded 221.5 billion yen in cash outflow as a result of its investing activities (it recorded 173.0 billion
+yen in cash outflow in the previous fiscal year).
+    This included 281.1 billion yen for the purchase of property, plant and equipment (223.8 billion yen in the previous
+fiscal year). The primary reason for the 48.5 billion yen increase in cash outflow year on year was an increase in
+cash used for the purchase of property, plant and equipment following an increase in capital expenditures.
+(Financing Activities)
+    The Group recorded 96.1 billion yen in cash outflow as a result of its financing activities (it recorded 322.7 billion
+yen in cash outflow in the previous fiscal year).
+    While there was 535.6 billion yen in proceeds from new long-term borrowings and 326.7 billion yen in proceeds
+from issuance of U.S. dollar-denominated unsecured corporate bonds, 616.4 billion yen was used for the repayment
+of long-term borrowings following the restructuring of capital structure carried out in July 2025 and 323.0 billion yen
+was used for the redemption of non-convertible preferred shares. The primary reason for the 226.6 billion yen
+decrease in cash outflow year on year was the increase in proceeds from new long-term borrowings and the
+issuance of bonds exceeding the increase in cash used for the repayment of borrowings and the redemption of non-
+convertible preferred shares.
+- 6 -
+
+--- page 11 ---
+(JPY in billions unless indicated otherwise)
+(% indicates variance against the prior quarter)
+Results of the three months
+ended March 2026 Outlook for the three months ending June 2026
+Revenue 1,002.9 1,750.0 +74.5%
+Non-GAAP operating profit 599.1 1,300.0 +117.0%
+Operating profit 596.8 1,298.0 +117.5%
+Non-GAAP profit
+attributable to owners of
+parent
+409.9 870.0 +112.2%
+Profit attributable to
+owners of parent 407.7 869.0 +113.1%
+Non-GAAP basic earnings
+per share in yen 751.78 1,593.15 +841.37
+Basic earnings per share in
+yen 747.72 1,591.32 +843.60
+Average USD to yen
+exchange rate 155 yen 159 yen +4 yen
+(4) Business Outlook
+    The business outlook for the first quarter of the consolidated fiscal year ending March 2027 (April 1, 2026 to June
+30, 2026) is as follows.
+    In the first quarter, both revenue and profit are expected to increase from the fourth quarter of the fiscal year
+ended March 2026, as the strong demand from data centers is expected to continue.
+Consolidated Business Outlook
+First quarter of the consolidated fiscal year ending March 2027 (April 1, 2026 to June 30, 2026)
+(Note on forward-looking statements)
+    Forward-looking statements included in this document are prepared based on the Company’s expectations and
+projections in light of the information currently available to it, which involve various risks and uncertainties (including,
+but not limited to, economic trends, market demand and the highly competitive semiconductor industry). Such risks
+and uncertainties may cause the Group’s actual results to be materially different from any future results expressed or
+implied by these forward-looking statements. The Company undertakes no obligation to update any forward-looking
+statement included herein.
+    The information and projections regarding the flash memory industry included in this document are derived from
+information currently available to the Company. Whilst this document is provided in good faith, it does not purport to
+be comprehensive and has not been independently verified. The Company makes no representations with respect to
+such information and projections.
+    This document includes non-GAAP measures, which are internal measures which management relies upon in
+making decisions that differ from financial measures prepared in accordance with IFRS. The non-GAAP measures,
+which are IFRS measures plus adjustments made for non-recurring items and other specific items, have not been
+audited or reviewed by auditors. Therefore, such non-GAAP measures may not accurately reflect the Group’s
+financial condition or operating results.
+- 7 -
+
+--- page 12 ---
+2. Basic Policy Regarding Selection of Accounting Standards
+    From the first fiscal year since its establishment, the Group has applied international accounting standards from its
+consolidated financial statements to improve the international comparability and convenience of financial information in
+the capital markets.
+- 8 -
+
+--- page 13 ---
+Millions of yen
+As of March 31, 2026 As of March 31, 2025
+Assets:
+Current assets:
+Cash and cash equivalents 470,707 167,932
+Trade and other receivables 660,559 238,594
+Other financial assets 7,191 3,971
+Inventories 412,612 352,863
+Other current assets 66,760 43,349
+Total current assets 1,617,829 806,709
+Non-current assets:
+Property, plant and equipment 1,055,255 1,100,181
+Right-of-use assets 178,092 197,063
+Goodwill 395,585 395,256
+Intangible assets 11,192 10,658
+Investments accounted for using equity method 8,097 7,401
+Other financial assets 219,230 63,179
+Other non-current assets 27,285 20,069
+Deferred tax assets 177,506 319,163
+Total non-current assets 2,072,242 2,112,970
+Total assets 3,690,071 2,919,679
+3. Consolidated Financial Statements and Related Notes
+(1) Consolidated Statement of Financial Position
+- 9 -
+
+--- page 14 ---
+Millions of yen
+As of March 31, 2026 As of March 31, 2025
+Liabilities and equity:
+Liabilities:
+Current liabilities:
+Bonds and borrowings 175,452 246,508
+Trade and other payables 594,917 504,011
+Lease liabilities 43,911 42,521
+Other financial liabilities 28,338 28,058
+Income taxes payable 104,516 38,183
+Provisions 3,876 3,328
+Other current liabilities 146,998 122,564
+Total current liabilities 1,098,008 985,173
+Non-current liabilities:
+Bonds and borrowings 872,116 531,198
+Lease liabilities 161,710 179,294
+Other financial liabilities － 321,261
+Retirement benefit liability 42,871 46,477
+Provisions 12,840 7,560
+Other non-current liabilities 102,725 111,017
+Deferred tax liabilities 722 3
+Total non-current liabilities 1,192,984 1,196,810
+Total liabilities 2,290,992 2,181,983
+Equity:
+Share capital 31,284 25,239
+Capital surplus 875,804 866,665
+Other components of equity 124,888 35,208
+Retained earnings (Accumulated deficit) 366,955 (189,547)
+Treasury shares (2) －
+Total equity attributable to owners of parent 1,398,929 737,565
+Non-controlling interests 150 131
+Total equity 1,399,079 737,696
+Total liabilities and equity 3,690,071 2,919,679
+- 10 -
+
+--- page 15 ---
+Millions of yen except per share amounts
+From April 1, 2025
+to March 31, 2026
+From April 1, 2024
+to March 31, 2025
+Revenue 2,337,628 1,706,460
+Cost of sales 1,324,724 1,137,027
+Gross profit 1,012,904 569,433
+Selling, general and administrative expenses 146,581 127,851
+Other income 8,902 14,675
+Other expenses 4,856 4,509
+Operating profit 870,369 451,748
+Finance income 9,499 3,707
+Finance costs 96,708 85,328
+Share of profit of investments accounted for using
+equity method 935 542
+Profit before tax 784,095 370,669
+Income tax expense 229,599 98,348
+Profit 554,496 272,321
+Profit attributable to:
+Owners of parent 554,490 272,315
+Non-controlling interests 6 6
+Profit 554,496 272,321
+Earnings per share:
+Basic earnings per share in yen 1,024.07 519.96
+Diluted earnings per share in yen 1,009.15 515.45
+(2) Consolidated Statement of Profit or Loss and Comprehensive Income
+Consolidated Statement of Profit or Loss
+- 11 -
+
+--- page 16 ---
+Millions of yen
+From April 1, 2025
+to March 31, 2026
+From April 1, 2024
+to March 31, 2025
+Profit 554,496 272,321
+Other comprehensive income
+Items that will not be reclassified to profit or loss
+Net change in financial assets measured at fair
+value through other comprehensive income 80,309 (16,979)
+Remeasurements of defined benefit plans 2,008 1,652
+Total of items that will not be reclassified to
+profit or loss 82,317 (15,327)
+Items that may be reclassified to profit or loss
+Exchange differences on translation of foreign
+operations 6,178 (1,526)
+Effective portion of cash flow hedges 3,657 2,123
+Share of other comprehensive income of
+investments accounted for using equity method 31 (10)
+Total of items that may be reclassified to profit
+or loss 9,866 587
+Other comprehensive income, net of tax 92,183 (14,740)
+Comprehensive income 646,679 257,581
+Comprehensive income attributable to:
+Owners of parent 646,660 257,581
+Non-controlling interests 19 0
+Comprehensive income 646,679 257,581
+Consolidated Statement of Comprehensive Income
+- 12 -
+
+--- page 17 ---
+Millions of yen
+Share
+capital
+Capital
+surplus
+Other
+components
+of equity
+Retained
+earnings
+(Accumulated
+deficit)
+Treasury
+shares
+Total equity
+attributable
+to owners of
+parent
+Non-
+controlling
+interests
+Total equity
+Balance as of April 1, 2024 10,000 851,517 51,172 (463,054) － 449,635 131 449,766
+Profit － － － 272,315 － 272,315 6 272,321
+Other comprehensive income － － (14,734) － － (14,734) (6) (14,740)
+Comprehensive income － － (14,734) 272,315 － 257,581 0 257,581
+Issuance of new shares 15,229 15,138 － － － 30,367 － 30,367
+Share-based payment transactions 10 10 (40) 2 － (18) － (18)
+Transfer from other components of
+equity to retained earnings － － (1,190) 1,190 － － － －
+Total transactions with owners 15,239 15,148 (1,230) 1,192 － 30,349 － 30,349
+Balance as of March 31, 2025 25,239 866,665 35,208 (189,547) － 737,565 131 737,696
+Profit － － － 554,490 － 554,490 6 554,496
+Other comprehensive income － － 92,170 － － 92,170 13 92,183
+Comprehensive income － － 92,170 554,490 － 646,660 19 646,679
+Issuance of new shares 5,795 5,795 － － － 11,590 － 11,590
+Purchase of treasury shares － － － － (2) (2) － (2)
+Share-based payment transactions 250 3,344 (482) 4 － 3,116 － 3,116
+Transfer from other components of
+equity to retained earnings － － (2,008) 2,008 － － － －
+Total transactions with owners 6,045 9,139 (2,490) 2,012 (2) 14,704 － 14,704
+Balance as of March 31, 2026 31,284 875,804 124,888 366,955 (2) 1,398,929 150 1,399,079
+(3) Consolidated Statement of Changes in Equity
+- 13 -
+
+--- page 18 ---
+Millions of yen
+From April 1, 2025
+to March 31, 2026
+From April 1, 2024
+to March 31, 2025
+Cash flows from operating activities
+Profit before tax 784,095 370,669
+Depreciation and amortization 312,826 312,307
+Impairment losses 366 30
+Finance income (9,499) (3,707)
+Finance costs 96,708 85,328
+Share of loss (profit) of investments accounted for
+using equity method (935) (542)
+Loss (gain) on sales and retirement of non-current
+assets (1,168) (6,883)
+Decrease (increase) in inventories (55,765) (82,092)
+Decrease (increase) in trade and other receivables (397,696) (89,361)
+Increase (decrease) in trade and other payables 53,165 (12,373)
+Increase (decrease) in retirement benefit liability (744) 376
+Other (20,703) (8,700)
+Subtotal 760,650 565,052
+Interest and dividends received 4,019 3,366
+Interest paid (88,709) (82,409)
+Income taxes refund (paid) (59,420) (9,593)
+Net cash provided by operating activities 616,540 476,416
+Cash flows from investing activities
+Purchase of property, plant and equipment (281,062) (223,847)
+Proceeds from sale of property, plant and
+equipment 6,254 8,820
+Purchase of intangible assets (2,612) (1,756)
+Proceeds from government grants 56,396 43,748
+Other (488) 24
+Net cash used in investing activities (221,512) (173,011)
+Cash flows from financing activities
+Net increase (decrease) in short-term borrowings
+and Revolving Credit Facility balances executed － (126,400)
+Proceeds from long-term borrowings 535,637 68,020
+Repayments of long-term borrowings (616,429) (265,879)
+Proceeds from issuance of bonds 326,656 －
+Repayments of lease liabilities (30,528) (28,787)
+Redemption of preferred shares (322,996) －
+Proceeds from issuance of shares 11,588 30,367
+Purchase of treasury shares (2) －
+Net cash used in financing activities (96,074) (322,679)
+Effect of exchange rate changes on cash and cash
+equivalents 3,821 (387)
+Net increase (decrease) in cash and cash equivalents 302,775 (19,661)
+Cash and cash equivalents at beginning of period 167,932 187,593
+Cash and cash equivalents at end of period 470,707 167,932
+(4) Consolidated Statement of Cash Flows
+- 14 -
+
+--- page 19 ---
+(5) Notes to Consolidated Financial Statements
+(Going Concern)
+    Not applicable.
+Millions of yen
+From April 1, 2025
+to March 31, 2026
+From April 1, 2024
+to March 31, 2025
+SSD & Storage 1,362,638 991,147
+Smart Devices 759,978 501,142
+Other 215,012 214,171
+Total 2,337,628 1,706,460
+(Segment Information)
+(1) Information about Reportable Segment
+    Segment information is omitted as the Group operates as a single reportable segment, the Memory business.
+(2) Information on Products and Services
+     Information on the Group’s revenue by application is as follows.
+- 15 -
+
+--- page 20 ---
+From April 1, 2025
+to March 31, 2026
+From April 1, 2024
+to March 31, 2025
+Profit attributable to owners of parent in millions of yen 554,490 272,315
+Weighted average number of ordinary shares 541,455,417 523,718,990
+Increase in the number of ordinary shares
+Capital increase by issuing new shares - 21,562,500
+Exercise of stock acquisition rights 6,728,880 292,680
+Delivery under restricted stock units 2,230 -
+Dilutive effect in shares
+Stock acquisition rights 7,009,057 4,582,960
+Restricted stock units 336,037 -
+Performance share units 660,395 -
+Number of shares after dilutive effect 549,460,906 528,301,950
+Earnings per share:
+Basic earnings per share in yen 1,024.07 519.96
+Diluted earnings per share in yen 1,009.15 515.45
+(Earnings per Share)
+    The basis for the calculation of basic earnings per share and diluted earnings per share are as follows:
+Note: There were no dilutive potential shares not factored into earnings per share for the fiscal years ended March 31,
+2026 and 2025, respectively.
+- 16 -
+
+--- page 21 ---
+Date of agreement July 17, 2025
+Major lenders Sumitomo Mitsui Banking Corporation
+MUFG Bank, Ltd.
+Mizuho Bank, Ltd.
+Development Bank of Japan Inc.
+Financing amount 447,500 Million yen
+Revolving loan 210,000 Million yen
+Interest rate TIBOR + Spread
+Repayment July 31, 2029
+Financial covenants (i) The Group shall not have negative consolidated profit for the year in any two consecutive full
+fiscal years.
+(ii) That the total equity on the consolidated statement of financial position exceeds the greater of
+500 billion yen or 75% of the total equity as of the same period in the previous fiscal year.
+September 30, 2025 3.25:1
+March 31, 2026 3.25:1
+September 30, 2026 3.00:1
+March 31, 2027 3.00:1
+September 30, 2027 3.00:1
+March 31, 2028 3.00:1
+September 30, 2028 2.75:1
+March 31, 2029 2.75:1
+(iii) The “Consolidated Leverage Ratio” shall not exceed the figures in the table below for two
+consecutive quarters
+
+[Definitions and calculation formulas]
+(i) “Consolidated” means the amount in the consolidated financial statements prepared in
+accordance with IFRS.
+(ii) “Consolidated Leverage Ratio” means the ratio of “Consolidated Debt” to “Consolidated
+EBITDA”.
+- “Consolidated Debt” is consolidated interest-bearing debt (excluding lease liabilities).
+- “Consolidated EBITDA” is consolidated operating profit plus depreciation and amortization
+regarding “Property, plant and equipment” and “Intangible assets” which are including
+consolidated operating profit.
+Collateral No collateral is expected to be provided to the lenders in relation to the Loan Agreement.
+(Subsequent Events)
+　　(1) Acquisition of equity in Nanya Technology Corporation
+　　　On April 8, 2026, Kioxia Corporation acquired the common stocks of Nanya Technology Corporation. The total
+consideration for the acquisition is 15,673 million TWD (78,208 million yen).
+　　(2) Accelerated repayment of term loans and Termination of the Senior Facility Agreement
+　　　On April 27, 2026, the Company repaid 127,500 million yen of term loans under the following agreements, in
+　　advance of their original maturity.
+　　　On May 15, 2026, the Company provided a notice of repayment of the remaining term loans and termination of
+　　agreements to the lenders under the following agreements. This repayment and termination are scheduled to be
+　　executed on May 25, 2026.
+　　　The impact from the repayment and termination on the consolidated statements of profit or loss was not material.
+- 17 -

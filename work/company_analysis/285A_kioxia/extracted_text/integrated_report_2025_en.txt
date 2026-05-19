@@ -1,0 +1,3986 @@
+--- page 1 ---
+Integrated Report 2025
+
+
+--- page 2 ---
+Kioxia Group (Kioxia Holdings Corporation and consolidated subsidiaries)
+For matters where the reporting scope differs, the applicable scope is stated separately.
+Scope of the Report
+FY2024 (April 1, 2024–March 31, 2025)
+This report also includes certain information from periods before and after FY2024, as well as the most recent activities.
+Reporting Period
+The International Integrated Reporting Framework  compiled by the IFRS Foundation, the Guidance
+for Collaborative Value Creation  provided by the Ministry of Economy, Trade and Industry, the GRI
+Standards  of the Global Reporting Initiative, and the SASB Standards  of the Sustainability Accounting
+Standards Board, etc.
+Reference Guidelines
+Integrated Report 2025 , covering FY2024, is Kioxia Holdings Corporation’s first
+integrated report.
+It presents an overview of our value creation process as well as our growth strategies,
+business activities, management capital, which is the source of our competitiveness,
+sustainability initiatives, and the governance that supports these activities.
+This report contains historical and current information about Kioxia Group, as well as forward-looking
+statements, including strategies, forecasts, and other projections.
+These statements are based on information available at the time of the report’s preparation and involve
+risks and uncertainties. Accordingly, actual business results and financial performance may differ
+materially from those expressed or implied in the forward-looking statements due to various factors.
+Disclaimer Regarding Forward-Looking Statements
+Key Points of This Report
+Editorial Policy
+Disclosure System
+Financial Information
+Annual Securities Report
+Corporate Governance Report
+Sustainability Report
+Integrated Report
+StrategiesMeasures and Results
+Non-financial Information
+International Financial Reporting Standards (IFRS)
+Accounting Standard
+Contents
+Other company names, product names, and service names in this report may be trademarks of their respective companies.
+About Kioxia Group1
+4 Management Capital
+Data Section6
+Kioxia Group’s Value Creation Initiatives3
+Governance5
+Messages from Senior Management2
+Contents and Editorial Policy
+ Mission, Vision and Origin of the Name “Kioxia”
+What is Flash Memory?
+Our History
+At a Glance
+About Kioxia Group1
+15 Value Creation Process
+16 Market and Social Environment
+18 Our Strengths
+19 Growth Strategy
+20 Business Activities
+24 Sustainability Materiality
+26 Creating Social Value
+Kioxia Group’s Value Creation
+Initiatives
+3
+31 State-of-the-Art Flash Memory Plants
+35 T echnology
+39 Partnerships
+41 Human Resources
+Management Capital4
+46 Corporate Governance
+51 Risk Management and Compliance
+52 Sustainability Management
+Governance5
+Messages from Senior Management2
+7 Message from the President and CEO
+10 Message from the Executive Chairman
+12 Message from the Chief Financial Officer
+1 Contents and Editorial Policy
+2  Mission, Vision and Origin of the Name
+“Kioxia”
+3 What is Flash Memory?
+4 Our History
+5 At a Glance
+Data Section6
+54 Financial Highlights
+55 Non-Financial Highlights
+56 Company Outline
+K ioxia Holdings Corporation
+Integrated Report 2025
+11
+Kioxia Holdings Corporation Integrated Report 2025
+
+--- page 3 ---
+Mission & Vision
+Origin of the Name “Kioxia”
+Mission Vision
+Uplifting the world with “memory”
+By evolving “memory,” we create
+uplifting experiences and change the world.
+With progressive memory technology at the core,
+we offer products, services, and systems
+that create choice and define the future.
+The name KIOXIA is a combination of the Japanese word kioku  meaning
+“memory” and the Greek word axia  meaning “value.”
+The concept of kioku , which underpins our mission and vision, goes
+beyond the notion of memory as mere data to more broadly encompass
+experiences, emotions and ideas.
+About Kioxia Group1
+4 Management Capital
+Data Section6
+Kioxia Group’s Value Creation Initiatives3
+Governance5
+Messages from Senior Management2
+Contents and Editorial Policy
+ Mission, Vision and Origin of the Name “Kioxia”
+What is Flash Memory?
+Our History
+At a Glance
+K ioxia Holdings Corporation
+Integrated Report 2025
+22
+Kioxia Holdings Corporation Integrated Report 2025
+
+--- page 4 ---
+What is Flash Memory?
+Flash memory is semiconductor memory that can record and store large amounts of digital data. The most important feature of flash memory is that it is non-volatile, meaning that it retains data even when
+the power is turned off.
+Kioxia invented NAND flash memory in 1987. Building on this technological innovation, in 2007 we announced the world’s first 3D flash memory technology “BiCS FLASH TM .” With nearly 40 years of
+experience in developing advanced technologies, we have established a position as a leading company in the field of flash memory.
+T oday, flash memory is not only used in digital consumer products such as smartphones and PCs, it has also been widely adopted as a core component of social infrastructure, including AI servers for
+advancing generative AI, and data centers, which support cloud services. It is growing in importance day by day as a foundational technology supporting our digital society.
+Kioxia Group Products
+SSDs (Solid State Drives)
+We offer SSD products for a wide range of markets, from
+client PCs to enterprise servers and cloud data centers,
+as well as for consumers.
+We offer a diverse lineup of flash memory products
+to meet a broad range of needs, with applications in
+smartphones, tablets, and automotive and industrial
+equipment.
+Flash Memory
+ SD Memory Cards and Other Retail Products
+Our retail lineup includes microSD and SD memory
+cards for applications such as digital cameras,
+smartphones, and dash cams, as well as USB flash
+drives available in a variety of capacities and designs.
+About Kioxia Group1
+4 Management Capital
+Data Section6
+Kioxia Group’s Value Creation Initiatives3
+Governance5
+Messages from Senior Management2
+Contents and Editorial Policy
+ Mission, Vision and Origin of the Name “Kioxia”
+What is Flash Memory?
+Our History
+At a Glance
+K ioxia Holdings Corporation
+Integrated Report 2025
+33
+Kioxia Holdings Corporation Integrated Report 2025
+
+--- page 5 ---
+Our History
+Establishment of
+T oshiba Memory
+Corporation
+Spun off from
+T oshiba Group
+Acquisition of LITE-ON T echnology’s
+SSD business
+Start of production at Kitakami Plant
+Acquisition of
+Chubu T oshiba Engineering Corporation
+Start of operation of Flagship Building
+at Y okohama T echnology Campus and
+Shin-Koyasu T echnology Front
+Listed on the Prime Market of
+the T okyo Stock Exchange
+Announcement of
+10th generation
+BiCS FLASH™
+technology
+Commercialization of NAND
+flash memory
+- Spread of PCs
+- Spread of the internet
+- Spread of digital cameras
+- Spread of digital audio players
+- Spread of camera-equipped mobile phones
+- Spread of smartphones
+- Spread of PCs with SSDs
+- Expansion of cloud services
+Commercialization of
+SD memory card
+Announcement of BiCS FLASH™
+3D flash memory technology
+Commercialization of 48-layer
+BiCS FLASH™
+Since inventing NAND flash memory in 1987, Kioxia Group has cultivated flash memory technology and the people that support it. Building on this foundation, we have pursued our mission as a
+company supporting society’s digitalization and the advancement of information technology. Since its spin-off from T oshiba Corporation in 2017, Kioxia Group has continued to grow, and today employs
+approximately 15,000 people, with consolidated revenue exceeding 1 trillion yen.
+We will continue to pursue advances in flash memory technology with the aim of contributing to the sustainable development of our information society and enriching our lives by promoting more
+abundant and convenient lifestyles.
+2017 2019 2022 20241992
+2007
+2005
+2015 2018 2020 2023 20251991
+1990s
+Changes in Society
+2000s 2010s
+- Increased use of AI, IoT and big data
+Explosive growth in the amount of data generated by people,
+and the emergence of new applications
+2020s
+2000
+2008
+Invention of NAND
+flash memory
+World’s First
+SATA SSDs with MLC NAND
+adopted in laptop PCs
+Establishment of Y okkaichi Plant
+Start of 300 mm-wafer fab operation
+March
+Establishment of
+T oshiba Memory Holdings
+Corporation
+October
+Company name changed to
+Kioxia Holdings Corporation
+World’s First
+World’s First
+World’s First
+World’s First
+1987
+About Kioxia Group1
+4 Management Capital
+Data Section6
+Kioxia Group’s Value Creation Initiatives3
+Governance5
+Messages from Senior Management2
+Contents and Editorial Policy
+ Mission, Vision and Origin of the Name “Kioxia”
+What is Flash Memory?
+Our History
+At a Glance
+K ioxia Holdings Corporation
+Integrated Report 2025
+44
+Kioxia Holdings Corporation Integrated Report 2025
+
+--- page 6 ---
+1,706.5 15,000
+At a Glance
+Revenue
+Manufacturing Capabilities
+Number of Employees
+T echnology Development Capabilities
+billion yen Approx.
+(FY2024, consolidated)
+* Source: T echInsights Inc., NAND Market Report Q2, 2025
+(As of March 31, 2025, consolidated)
+Our Y okkaichi Plant and Kitakami Plant are working together to
+achieve world-class production capacity and high production
+efficiency through the use of AI and big data, enabling us to
+respond to growing flash memory demand. The combined
+flash memory production volume on a storage capacity basis
+of the two plants, including that of the manufacturing joint
+venture between Kioxia Group and Sandisk Group, accounts
+for one of the world’s largest shares at 29%.*
+As a pioneer in the flash memory industry, Kioxia Group
+has been recognized for its technological capabilities and
+intellectual property initiatives, and has been named a
+Clarivate T op 100 Global Innovator for four consecutive years,
+placing it among the world’s most innovative companies and
+organizations. In 2025, we were also honored with the
+IEEE Corporate Innovation Award from the Institute of
+Electrical and Electronics Engineers (IEEE).
+Global share of flash memory
+production volume on
+a storage capacity basis
+(FY2024)
+Our revenue is mainly driven by sales of flash memory and SSDs
+for smartphones, PCs, enterprise servers, and data centers.
+People from various backgrounds fulfill their
+potential and leverage their strengths.
+Global Presence
+We operate in nine countries/regions, with sales and customer
+support bases throughout the United States, Europe, and Asia.
+Strong collaboration between our bases in Japan and overseas
+enhances our technology development and production
+capabilities. Our overseas sales ratio of 85.7% is a reflection
+of the strong relationships we have built with customers and
+business partners around the world.
+Overseas sales ratio
+(FY2024)
+8 5.7
+%
+29
+%
+About Kioxia Group1
+4 Management Capital
+Data Section6
+Kioxia Group’s Value Creation Initiatives3
+Governance5
+Messages from Senior Management2
+Contents and Editorial Policy
+ Mission, Vision and Origin of the Name “Kioxia”
+What is Flash Memory?
+Our History
+At a Glance
+K ioxia Holdings Corporation
+Integrated Report 2025
+55
+Kioxia Holdings Corporation Integrated Report 2025
+
+--- page 7 ---
+About Kioxia Group1
+Data Section6
+Governance5
+Management Capital4
+Kioxia Group’s Value Creation Initiatives3
+Messages from
+Senior Management
+2
+2
+Messages from
+Senior Management
+7    Message from the President and CEO
+10  Message from the Executive Chairman
+12  Message from the Chief Financial Officer
+6K ioxia Holdings Corporation
+Integrated Report 2025
+Kioxia Holdings Corporation Integrated Report 2025
+6
+
+--- page 8 ---
+Message from the President and CEO
+Nobuo Hayasaka
+President and CEO
+Kioxia Holdings Corporation
+Meeting Stakeholder Expectations
+through Dialogue and
+the Kioxia Group Mission:
+Uplifting the World with “Memory”
+A New Beginning as a Publicly Listed Company
+The foundation of our business lies in NAND flash memory, which was developed by our
+predecessor, T oshiba, in 1987. Since then, Kioxia has pioneered numerous world firsts, including
+the development of 3D flash memory—BiCS FLASH™— announced in 2007, which unlocked new
+innovation for the advancement of the digital society.
+In 2018 we became independent from the T oshiba Group, and in 2019 we rebranded as Kioxia.
+Our continued growth culminated in our listing on the T okyo Stock Exchange Prime Market in
+December 2024. This milestone is a significant achievement for our Group. As a leader, I felt
+immense pride celebrating this accomplishment with our employees.
+About Kioxia Group1
+Messages from
+Senior Management
+2
+Data Section6
+Governance5
+4 Management Capital
+Kioxia Group’s Value Creation Initiatives3
+Message from the Chief Financial Officer
+Message from the Executive Chairman
+Message from the President and CEO
+K ioxia Holdings Corporation
+Integrated Report 2025
+77
+Kioxia Holdings Corporation Integrated Report 2025
+
+--- page 9 ---
+While our listing marks a new beginning as a publicly traded company, I am keenly aware of the
+heightened expectations of our stakeholders. We are firmly committed to meeting these
+expectations through continuous growth and enhancement of our corporate value.
+Fiscal 2024 Performance and Future Outlook
+In fiscal 2024 we achieved record highs in revenue, non-GAAP operating profit, and non-GAAP
+net income since becoming independent from T oshiba in 2018, driven by recovered demand and
+growing sales of data center and enterprise SSDs.
+While our performance was solid in 2020 due to a surge in PC and smartphone demand driven
+by the pandemic, the market downturn from 2022 to 2023 brought unprecedented challenges.
+*Source: T echInsights Inc., NAND Market Report Q2 2025
+In response, we took swift action, leading the industry in adjusting production and reducing
+costs, while consolidating our R&D functions to strengthen our technology development for
+the future. Then, in fiscal 2024, as demand rebounded amid the rapid rise of generative AI,
+we improved our performance significantly, supported by strong growth in data center and
+enterprise SSD sales.
+We expect generative AI to be a key driver of future growth in flash memory. As generative AI
+becomes more widely adopted in smartphones, PCs, and data centers, we anticipate sharp rises
+in demand for high-capacity, high-speed, and low power consumption flash memory and SSDs.
+Industry research forecasts 26% annual growth in flash memory demand for data centers,
+including significant growth focused on AI inference servers. By 2029, AI servers are predicted to
+account for more than 40% of flash memory demand.*
+T o seize these promising opportunities, we will focus on developing highly competitive products,
+enhancing our production capabilities, and making timely and strategic investments to ensure
+growth.
+The Foundations of Our Competitiveness
+Our Group’s long-term competitiveness and growth are underpinned by three core strengths:
+technology, scale, and partnerships. Furthermore, all of these strengths are supported by the
+exceptional quality of our workforce.
+First, technology: Since the invention of NAND flash memory, we have led the industry in further
+breakthroughs. We have driven progress with developments such as our BiCS FLASH TM  3D flash
+memory, introduction of CBA (CMOS directly Bonded to Array) technology (p. 21), and development
+of emerging memory and storage technologies (p. 37). We are steadfastly committed to
+strengthening our position as a technology leader.
+Second, scale: Through close collaboration between our advanced Y okkaichi and Kitakami plants,
+as well as our joint venture with Sandisk now spanning some 25 years, we produce approximately
+30% of the world’s flash memory.
+Message from the President and CEO
+About Kioxia Group1
+Messages from
+Senior Management
+2
+Data Section6
+Governance5
+4 Management Capital
+Kioxia Group’s Value Creation Initiatives3
+Message from the Chief Financial Officer
+Message from the Executive Chairman
+Message from the President and CEO
+K ioxia Holdings Corporation
+Integrated Report 2025
+88
+Kioxia Holdings Corporation Integrated Report 2025
+
+--- page 10 ---
+Message from the President and CEO
+concern. In addition, through memory innovation, we want to support a more sustainable world,
+make everyday life more convenient, and create a future filled with uplifting experiences.
+T o Our Stakeholders
+As a technology leader in memory, we are committed to strengthening our engagement with
+stakeholders and incorporating their feedback into our business, ultimately for enhanced
+corporate value and further growth. This year marks the launch of our Integrated Report, which
+we intend to use as a key tool for transparent communication.
+We hope you will take this opportunity to learn more about our efforts and embrace our vision of
+“uplifting the world with ‘memory.’” We look forward to your continued interest and support of
+Kioxia’s efforts to drive innovation and create value for the global community.
+Third, partnerships: We have cultivated strong relationships with global leaders in smartphones,
+PCs, servers, and semiconductor equipment and materials suppliers—a critical competitive
+strength for our Group.
+In addition, we support these strengths with our diverse workforce of highly skilled professionals
+in R&D, manufacturing, sales, and marketing. Recruiting and developing top talent are key
+priorities. As a business leader, I have always emphasized recruitment and employee
+development, and I am committed to maintaining open communication with our employees and
+cultivating future generations of talent to ensure our long-term growth.
+Going forward, we are determined to build on our strengths in technology, scale, and partnerships
+by fostering collaboration among people with diverse skills and backgrounds, ultimately to create
+a virtuous cycle of sustainable growth.
+Realizing Our Mission
+The Kioxia mission of “uplifting the world with ‘memory’” reflects our profound belief in the
+transformative power of data. The digital era has seen continuous growth in data generation and
+processing, driven by innovations in fields such as digital cameras, smartphones, and internet
+services. Our flash memory and SSD products have played integral roles in this evolution, and our
+flash memory technology has advanced alongside the progress of digital society. We take great
+pride in these contributions.
+A primary key to our success was our ability to correctly position Kioxia by anticipating a shift
+from simply storing data to using it in highly innovative ways, including through futuristic
+technologies such as generative AI that are now a reality.
+As AI adoption accelerates, Kioxia is determined to provide a foundation for advanced, diverse
+data utilization, which we believe will contribute to a more sustainable world. For example, as the
+demand for data centers surges, energy consumption is becoming an increasingly critical
+challenge. By developing low power consumption products, we will address this environmental
+About Kioxia Group1
+Messages from
+Senior Management
+2
+Data Section6
+Governance5
+4 Management Capital
+Kioxia Group’s Value Creation Initiatives3
+Message from the Chief Financial Officer
+Message from the Executive Chairman
+Message from the President and CEO
+K ioxia Holdings Corporation
+Integrated Report 2025
+99
+Kioxia Holdings Corporation Integrated Report 2025
+
+--- page 11 ---
+Message from the Executive Chairman
+Kioxia’s Next Chapter—
+Driving Innovation, Delivering Value,
+and Leading Data’s Evolution
+in the AI Era
+Reflecting on the past year and looking toward the future, I am proud of what we have
+achieved and excited by the many opportunities ahead. At our core, Kioxia is committed
+to advancing memory technologies that drive the modern data-centric era—empowering
+innovation, supporting sustainability, and delivering long-term value to all our stakeholders.
+From our origins as part of the renowned T oshiba Group to our evolution into an independent
+company, Kioxia has undergone a remarkable transformation. I joined in the earliest days of
+this journey, witnessing firsthand the extraordinary dedication of our team as we established
+the foundation as a successful standalone company.
+Our focus and execution on our competitive advantages have allowed us to navigate through
+various cycles in the semiconductor market, emerging as a resilient, forward-focused
+organization capable of thriving in a dynamic global landscape.
+Stacy J. Smith
+Executive Chairman
+Kioxia Holdings Corporation
+Value Creation Is at Our Core
+Kioxia has empowered the digital transformation that is reshaping the world. Since the invention
+of NAND flash memory in 1987, our foundational technology has been instrumental in advancing
+the digital era. Leveraging our technology stack to retain and process exponentially larger
+About Kioxia Group1
+Messages from
+Senior Management
+2
+Data Section6
+Governance5
+4 Management Capital
+Kioxia Group’s Value Creation Initiatives3
+Message from the Chief Financial Officer
+Message from the Executive Chairman
+Message from the President and CEO
+K ioxia Holdings Corporation
+Integrated Report 2025
+1010
+Kioxia Holdings Corporation Integrated Report 2025
+
+--- page 12 ---
+Message from the Executive Chairman
+volumes of data, Kioxia has driven innovation across multiple industry sectors of the digital
+economy including consumer electronics, cloud computing and data centers, and other industrial
+applications.
+We are entering another transformative era with the rise of AI. As the demand for high-
+performance data solutions continues to grow significantly, flash memory has become an
+essential element in enabling large-scale data utilization. GPUs and DRAM play critical roles
+in training AI models, while flash memory provides the high-capacity, high-speed storage
+infrastructure required for inference at scale.
+Our cutting-edge innovation is focused on leading at key technology inflection points, ensuring
+we deliver highly competitive products to the world as quickly as possible. From our BiCS
+FLASH™—an advanced 3D flash memory technology that delivers breakthrough capacity and
+performance—to our most recent R&D advancements, including next-generation NAND products
+and SSD solutions tailored to the needs of generative AI, Kioxia drives progress at the forefront of
+the industry.
+Leading through Competitive Strengths
+Kioxia’s ability to create enduring value stems from a set of distinct competitive strengths that
+differentiates us in a rapidly evolving landscape. These strengths reflect our leading technological
+expertise, incredible manufacturing scale, long-standing customer partnerships, and commitment
+to nurturing and attracting exceptional talent. These capabilities drive value for all of our
+stakeholders:
+•  T echnology Leadership: As the inventors of NAND flash memory and pioneers of 3D stacking,
+we remain at the forefront of innovation in the sector with the latest advancements in BiCS
+FLASH™ technology, which delivers industry-leading capacity, faster speeds, and enhanced
+energy efficiency. Our latest 3D flash memory enables breakthroughs in high-capacity storage
+solutions tailored to the needs of AI, generative applications, and advanced computing. Our
+relentless pursuit of excellence has positioned Kioxia as a trusted and indispensable technology
+partner across industries.
+•  Manufacturing Scale: Through our joint venture with Sandisk and incredible scale in NAND
+manufacturing, we are one of the largest producers globally, accounting for approximately 30%
+of total flash memory production. This scale provides a critical cost advantage, ensures supply
+chain stability, and enables vertical integration, which strengthens our ability to develop tailored
+solutions for customers. Additionally, our manufacturing scale supports preferred partnerships
+with major global technology leaders, positioning us as a trusted supplier of high-capacity, high-
+performance memory solutions. Importantly, this scale advantage also allows us to reinvest in
+cutting-edge advancements, such as next-generation NAND technologies and energy-efficient
+manufacturing processes, ensuring we remain a leader in the rapidly evolving semiconductor
+landscape.
+•  Customer-Centricity: We work closely with customers to co-develop tailored solutions, making
+us a trusted partner in addressing the growing demand for customized storage solutions like
+SSDs.
+•   T alent Excellence: None of our achievements would be possible without our people. Attracting
+and fostering global talent remains a top priority as we strive to sustain our leadership in a
+competitive marketplace.
+Aspirations as a Public Company
+In December 2024, we reached another defining milestone by completing our Initial Public Offering
+on the T okyo Stock Exchange.
+Our IPO not only marked a historic achievement but also opened new opportunities for Kioxia. As
+a public company, we have gained greater access to capital, strengthened execution capabilities,
+and enhanced governance structures, ensuring we operate with transparency, accountability, and
+precision. This transition has sharpened our focus on creating sustainable growth and long-term
+value for all stakeholders.
+Looking ahead, Kioxia is committed to continuing to lead in a dynamic environment—navigating
+complexity, driving innovation, and shaping the future of the digital age.
+Our mission remains steadfast: to create lasting value for employees, customers, investors, and the
+communities we serve. For employees, this means fostering a culture of excellence, collaboration,
+and innovation. For customers, it’s about delivering technologies that solve their most pressing
+challenges. For investors, it’s about ensuring responsible and transparent growth. And for our global
+communities, it’s about making meaningful contributions to a sustainable future.
+I am deeply optimistic about Kioxia’s potential. I want to express my heartfelt gratitude to those
+who have been part of our journey—our employees, customers, and investors—for their trust,
+dedication, and belief in our vision. T ogether, we are building a company that leads with technology,
+operates with integrity, and creates value that endures.
+We are grateful for your continued support and look forward to sharing our progress in the years to come.
+About Kioxia Group1
+Messages from
+Senior Management
+2
+Data Section6
+Governance5
+4 Management Capital
+Kioxia Group’s Value Creation Initiatives3
+Message from the Chief Financial Officer
+Message from the Executive Chairman
+Message from the President and CEO
+K ioxia Holdings Corporation
+Integrated Report 2025
+1111
+Kioxia Holdings Corporation Integrated Report 2025
+
+--- page 13 ---
+Message from the Chief Financial Officer
+Building Trust through a Flexible
+Financial Strategy that Delivers
+Lasting Value
+Record Revenues and Non-GAAP Operating Profit Achieved
+in First Full- Y ear Results Since Our Independence from the
+T oshiba Group
+We achieved listing on the T okyo Stock Exchange in December of 2024. This milestone year also
+marked our first shareholders’ meeting as a public company. In addition to the shareholders’
+meeting, we also had other opportunities to communicate our management policies throughout
+the year. Through earnings briefings for the third quarter and full year, we had valuable
+opportunities to update stakeholders on our performance and outlook. Demonstrating both our
+recovery from the downturn and our path toward future growth allowed us to secure a deeper
+understanding from stakeholders, which was both reassuring and encouraging. For the fiscal year
+ended March 2025, consolidated revenues reached 1,706.5 billion yen and non-GAAP operating
+profit was 453.0 billion yen—the highest since our independence from the T oshiba Group in 2018.
+Swift Response to Downturn Proves Effective
+After an extraordinary surge in demand for semiconductor memory—driven by remote work,
+online learning, and the expansion of 5G infrastructure during the pandemic—the post-COVID
+market experienced a sharp contraction from late 2022 through the second half of 2023. Demand
+dropped rapidly, excess inventory accumulated, and the supply-demand balance was severely
+disrupted, leading to a significant downturn for our Group in particular and the semiconductor
+memory industry as a whole. This was an exceptionally challenging period, marked by severe
+headwinds that tested us on both financial and operational fronts.
+Hideki Hanazawa
+Senior Managing Executive Officer
+(Chief Financial Officer)
+Kioxia Holdings Corporation
+About Kioxia Group1
+Messages from
+Senior Management
+2
+Data Section6
+Governance5
+4 Management Capital
+Kioxia Group’s Value Creation Initiatives3
+Message from the Chief Financial Officer
+Message from the Executive Chairman
+Message from the President and CEO
+K ioxia Holdings Corporation
+Integrated Report 2025
+1212
+Kioxia Holdings Corporation Integrated Report 2025
+
+--- page 14 ---
+Message from the Chief Financial Officer
+Our swift response to this unprecedented downturn played a crucial role in our recovery.
+We acted more quickly than our peers by reducing production to optimize inventory and by
+implementing cost controls, while continuing to invest in competitive products that would
+ensure future growth. As a result, we not only recovered from the downturn but also successfully
+captured the new wave of demand for AI-related applications, returning to profitability.
+Adapting to Market Changes by Navigating the Silicon Cycle
+We view the semiconductor “silicon cycle” not as a series of booms and busts, but as
+fluctuations in supply and demand within a market that is expanding over the long term.
+The growth rate of the NAND market is not constant, nor does supply increase at a fixed pace,
+leading at times to supply temporarily exceeding or falling short of demand. While such
+imbalances create cyclical movements, the market has shown consistent expansion over time.
+The recent downturn was an extraordinary and highly unusual case, and we do not expect similar
+conditions to recur very often. That said, we will remain vigilant, thoroughly assess the supply-
+demand dynamics underlying market trends, and continue to deliver products—such as those
+supporting generative AI—in a timely manner.
+Balancing Business Growth with Financial Discipline to
+Enhance Corporate Value
+Our capital allocation strategy is guided by our “Long-term Financial Model,” balancing business
+growth with financial discipline. In line with the growth of the flash memory market, we aim to
+expand our operating profit by maintaining and strengthening competitiveness, while maximizing
+cashflow through tax incentives and working capital efficiency. At the same time, we will maintain
+disciplined capital expenditure below 20% of revenues and make targeted investments in R&D
+and talent. We will also focus on strengthening hiring, particularly in development and production.
+Through disciplined investment management and ongoing cost reductions, we will generate
+free cashflow, strengthen our financial foundation, improve the productivity of our factories and
+facilities, and deliver high-performance, competitive products to the market, thereby enhancing
+our return on invested capital (ROIC). Our medium-term target is to maintain a leverage ratio
+below 1x, and in the long term, to achieve a net cash position. In doing so, we will realize both
+sustainable growth and sound financial management, enhancing corporate value and delivering
+returns to our shareholders.
+1 Storage capacity shipment basis (Based on market outlook as of November 2024)
+2 Non-GAAP basis
+3  On an L TM non-GAAP basis. L TM non-GAAP EBITDA is defined as non-GAAP operating profit plus depreciation, summed
+over the most recent four quarters.
+Fostering Deeper Understanding through Enhanced
+Disclosure and Dialogue
+Given the fast-changing industry environment, we are committed to providing timely and
+transparent disclosures. By clarifying both the enduring aspects of our business and the
+shifting market conditions, we aim to deepen stakeholders’ understanding of the Kioxia
+Group. As the inventor of NAND flash memory, our technological strength is well recognized,
+and we sense strong expectations for our continued growth, particularly in light of the
+expanding AI market. T o meet these expectations, we will share not only performance data
+but also our insights into industry trends and how we intend to lead these. By enhancing
+both our disclosure and the quality of our dialogue with stakeholders, we will continue to
+pursue sustained improvements in corporate value over the medium to long term.
+In closing, we remain committed to strengthening stakeholder trust, maintaining financial
+discipline, and delivering sustainable growth, thereby enhancing the long-term value of the
+Kioxia Group.
+Long-T erm Financial Model
+Growth In line with expected NAND market growth
+1
+Profitability
+Financial Stability Net cash positionNet Debt / EBITDA
+3
+ < 1. 0Medium-term Long-term
+Annual cost reduction per GB Mid- 10 % range
+20 %
+Operating margin
+2
+Mid- 20 % range
+About Kioxia Group1
+Messages from
+Senior Management
+2
+Data Section6
+Governance5
+4 Management Capital
+Kioxia Group’s Value Creation Initiatives3
+Message from the Chief Financial Officer
+Message from the Executive Chairman
+Message from the President and CEO
+K ioxia Holdings Corporation
+Integrated Report 2025
+1313
+Kioxia Holdings Corporation Integrated Report 2025
+
+--- page 15 ---
+Messages from Senior Management2
+About Kioxia Group1
+Data Section6
+Governance5
+Management Capital4
+Kioxia Group’s
+Value Creation Initiatives
+3
+3
+Kioxia Group’s
+Value Creation Initiatives
+15  Value Creation Process
+20  Business Activities
+16  Market and Social Environment
+24  Sustainability Materiality
+18  Our Strengths
+26  Creating Social Value
+19  Growth Strategy
+14K ioxia Holdings Corporation
+Integrated Report 2025
+Kioxia Holdings Corporation Integrated Report 2025
+14
+
+--- page 16 ---
+Inputs Business Activities Outputs/Outcomes
+Expanding the potential of products and services through
+memory technology and creating value for society
+together with our partners
+  Maintain technology leadership
+   Develop and deliver products that meet diverse market needs,
+including generative AI
+  Strategically invest and allocate resources
+Financial
+  Revenue:
+1,706.5 billion yen
+  Non-GAAP
+operating profit:
+453.0 billion yen
+(FY2024, consolidated basis)
+Kioxia Group’s strengths
+Memory business
+Provision of high-capacity, high-performance,
+and environmentally conscious flash memory
+and SSD products
+Strong position in high-growth markets
+Industry-leading technological
+competitiveness
+Cost competitiveness based on
+production scale and efficiency
+Non-financial
+  Contributing to the
+development of a
+sustainable society
+Contributing to
+customers’ value
+creation through the
+provision of products
+and services based on
+cutting-edge memory
+technology
+Value Provided
+to Customers
+Uplifting the world with “memory” Kioxia Group’s Mission
+Creating safe and
+secure societies
+and environments
+Building a
+creative world
+through memory
+technology
+Contributing to
+convenient and
+comfortable lifestyles
+Social Value Created with Partners
+Enhancing
+Corporate Value
+Our Aspiration
+Contributing to society by
+providing a foundation for
+data utilization
+Growth Strategy
+Management Capital Business Activities
+Origin of competitiveness for
+medium- to long-term growth
+Sustainable growth
+Governance
+ Corporate governance     Risk management and compliance       Sustainability management
+The Value Creation Process
+Market and
+Social Environment
+Expansion of flash memory
+and SSD demand with the
+development of a digital
+society
+  Increase in total amount
+of digital data and
+expansion of product
+applications
+ Spread of generative AI
+  Increase in social issues
+such as climate change
+Based on its mission of “uplifting the world with ‘memory,’” Kioxia Group contributes to society by providing infrastructure for data utilization
+together with its partners through the provision of products and services. Amid expectations for the continued expansion of demand for flash
+memory and SSDs driven by the spread of generative AI, we drive sustainable growth through our business activities and increase corporate value,
+based on a growth strategy that leverages our management capital and industry-leading strengths, which are the source of our competitiveness.
+State-of-the-art
+flash memory plants
+Human resources
+T echnology
+Partnerships
+Kioxia Group’s
+Value Creation Initiatives
+3
+Data Section6
+Governance5
+Messages from Senior Management2
+About Kioxia Group1
+Management Capital4
+Value Creation Process
+Market and Social Environment
+Our Strengths
+Business Activities
+Growth Strategy
+Sustainability Materiality
+Creating Social Value
+K ioxia Holdings Corporation
+Integrated Report 2025
+1515
+Kioxia Holdings Corporation Integrated Report 2025
+
+--- page 17 ---
+As the global data economy expands, the total volume of digital data continues to grow. With the
+accelerating use of AI, IoT, and big data in recent years, the volume of data generated worldwide
+continues to rise, and is projected to reach 527.5 zettabytes (ZB) annually in 2029 (Fig. 1).
+Flash Memory Demand Outlook
+Flash memory has continued to evolve through technological innovation and increasing storage
+capacity. It has been used in applications ranging from digital cameras to smartphones, PCs, and
+data centers. In recent years, with the advance of generative AI and the spread of technologies
+such as cloud computing and the IoT, its role has become even more important.
+For example, at data centers, HDDs (magnetic disk drives) have long been used as storage devices.
+These are now being replaced by SSDs using flash memory, which offer superior read performance,
+greater resistance to shock and vibration, and lower power consumption in standby mode.
+The main applications in the flash memory market are data centers, smartphones, and PCs. We
+believe the flash memory market will continue to grow through a virtuous cycle of increasing data
+volumes and innovation in flash memory technology.
+With rising data volumes, demand for flash memory is expected to expand at a CAGR of
+approximately 20% from 2025 to 2029 (Fig. 2). Comparing overall data generation with flash
+memory demand, the proportion of data recorded on flash memory is approximately 0.5%.
+Based on total data volume, the CAGR for flash memory demand by application from 2025 to 2029
+is forecast at 26.0% for data centers, 20.2% for smartphones, and 15.2% for PCs (Fig. 2). Notably,
+the growth rate of demand for flash memory in data centers has been rising year by year due to
+the spread of generative AI.
+Market and Social Environment
+Expansion of Flash Memory Market Reflecting
+the Development of a Digital-Driven Society
+Trends in Global Data Generation
+2025 2026 2027 2028 2029
+Smartphones
+PCs
+Data centers
+Others
+20.2 %
+15.2 %
+26.0 %
+18.5 %
+2044 (EB)
+970
+Approx.
+20 %
+Flash Memory
+Market CAGR
+(2025–2029)
+Fig. 2: Flash Memory Demand Outlook (EB) 2
+Note: An exabyte (EB) is 10 18  bytes, and a zettabyte (ZB) is 10 21  bytes, and are units that indicate the volume of data.
+1 Source: IDC, Worldwide IDC Global DataSphere Forecast, 2025-2029, #US53363625
+2 Source: T echInsights Inc., NAND Market Report Q2, 2025
+ʢZBʣ
+527.5ZB
+0
+100
+200
+300
+400
+500
+600
+202920282027202620252024
+(Forecast)
+2029
+data volume
+Fig. 1: Global Data Generation (ZB) 1
+Expansion of flash memory market reflecting the development of a data-driven society and
+the spread of generative AI
+Social demand for progress in reducing electricity consumption and in initiatives toward a
+decarbonized society
+Kioxia Group’s
+Value Creation Initiatives
+3
+Data Section6
+Governance5
+Messages from Senior Management2
+About Kioxia Group1
+Management Capital4
+Value Creation Process
+Market and Social Environment
+Our Strengths
+Business Activities
+Growth Strategy
+Sustainability Materiality
+Creating Social Value
+K ioxia Holdings Corporation
+Integrated Report 2025
+1616
+Kioxia Holdings Corporation Integrated Report 2025
+
+--- page 18 ---
+Generative AI is steadily gaining ground as a new engine of value creation in a range of industries.
+Processing massive amounts of information to output something of value requires high-capacity,
+high-performance, low power consumption storage that consistently provides optimal data access.
+AI servers require faster processing speeds than conventional enterprise server systems, which
+is driving greater demand for high-capacity, high-performance SSDs.
+Kioxia Group sees particularly strong growth potential in the market for inference systems.
+Generative AI operates in a flow where large language models are created in learning systems
+and then utilized by companies and other users in inference systems to generate results. As the
+number of users increases, the number of inference systems likewise grows.
+Moreover, we are seeing the spread of Retrieval-Augmented Generation (RAG), a technology that
+enables companies implementing generative AI to build database systems that use their latest
+and proprietary data. Because RAG uses large volumes of data, its spread is also a factor driving
+greater demand for SSDs in AI servers.
+In addition, as AI functions are increasingly embedded into PCs and smartphones, the flash
+memory capacity of devices (storage density per unit) is expected to increase.
+Further Expansion in Flash Memory Demand Driven by AI
+GPU
+HBM
+SSD
+GPU
+HBM
+SSD
+SSD SSD SSD SSD SSD
+SSD SSD SSD SSD SSD
+Inference systems and servers increase
+with the number of services and users.
+Training
+GPU
+CPU
+HBM
+DRAM
+SSD
+SSD SSD
+SSD SSD
+Inference
+ʜʜ
+SSD SSD
+Snapshots and log
+Extremely large
+training datasets
+Retrieval-
+Augmented
+Generation
+(RAG)
+database
+High-speed loading
+of LLMs and
+key-value caching
+Content store
+RAG
+Requirements for SSDs: High performance High capacity Better power eﬃciency
+SSD Demand Expected to Be Driven by AI Inference
+8BUFS
+$PPMJOHTZTUFN$PNQVUFSSPPN&MFDUSJDJUZ
+The growth of our digital society and spread of generative AI are driving a global increase in
+the number of data centers. According to the Energy and AI  report released by the International
+Energy Agency (IEA) in April 2025, electricity consumption by data centers is projected to double
+between 2024 and 2030 to approximately 945 TWh, slightly exceeding Japan’s current total
+electricity consumption.
+In particular, data centers used for generative AI perform processing and calculation of vast
+volumes of data, making the increase in their electricity consumption a significant social issue.
+Kioxia Group is helping to address this issue by reducing the power consumption and increasing
+the capacity of the flash memory and SSDs used in server storage.
+Increase in Electricity Consumption by Data Centers
+Global Data Center Electricity Consumption in the Base Case, 2020–2030 (Historical and Forecast)
+2020 2024 2030
+250
+0
+500
+750
+1,000
+(TWh)
+Accelerated servers Conventional servers
+Other IT equipment Cooling Other infrastructure
+Historical Forecast
+Source: IEA, Energy and AI, 2025 . https:/ /www.iea.org/reports/energy-and-ai/, License: CC BY 4.0
+Electricity consumption
+Market and Social Environment
+Kioxia Group’s
+Value Creation Initiatives
+3
+Data Section6
+Governance5
+Messages from Senior Management2
+About Kioxia Group1
+Management Capital4
+Value Creation Process
+Market and Social Environment
+Our Strengths
+Business Activities
+Growth Strategy
+Sustainability Materiality
+Creating Social Value
+K ioxia Holdings Corporation
+Integrated Report 2025
+1717
+Kioxia Holdings Corporation Integrated Report 2025
+
+--- page 19 ---
+Our Strengths
+The ongoing development of our digital society and the spread of generative AI are driving growth in the storage market. Kioxia Group has secured its position in this market by building strong relationships
+with its customers and suppliers.
+For nearly 40 years since the invention of NAND flash memory, we have cultivated industry-leading technological competitiveness. By supplying products from cost-competitive plants, we aim to achieve
+sustainable growth and enhance corporate value.
+As a pioneer of the flash memory industry, Kioxia Group
+has led through the development of memory technology,
+responding to the changing needs of society and supporting
+the evolution of applications. We will continue to accelerate
+the development of competitive BiCS FLASH™ 3D flash
+memory that delivers high capacity, high performance and low
+power consumption.
+In addition, we will develop high-capacity, high-performance
+SSDs to meet the evolution of generative AI by combining the
+group’s flash memory technology with software technologies
+such as firmware. Moreover, to address the diverse needs
+of the computers and storage systems of the future, we
+are promoting research and technology development
+across a wide range of fields, including new concepts for
+semiconductor memory.
+Kioxia Group works with global industry leaders in
+smartphones, PCs, and data centers, and has built strong
+relationships with many customers. We also collaborate with
+leading server and data center firms in the development of
+new technologies and products for the AI market. Leveraging
+our global sales, technology, and support network, we capture
+business opportunities and expand our business.
+Furthermore, by strengthening our relationships with suppliers
+of materials, manufacturing equipment, and other services, we
+are building a robust supply chain to ensure stable supplies
+of high-performance, high-quality products. We are also
+working to generate innovation through industry-academia
+collaboration with universities and other research institutions.
+Kioxia Group has two plants: Y okkaichi Plant, which has one
+of the largest flash memory production volumes in the world,
+and Kitakami Plant, which is poised to respond to growth
+in demand going forward. Both plants operate as smart
+factories, utilizing AI and big data to achieve high productivity
+through advanced control of automated transport systems
+and production equipment. Moreover, close coordination with
+the Research and T echnology Development Division enables
+a smooth transition from new product development to mass
+production. The combined flash memory production volume
+on a storage capacity basis of the two plants, including that
+of the manufacturing joint venture between Kioxia Group and
+Sandisk Group, accounts for one of the world’s largest shares
+at 29%* (FY2024). These economies of scale, combined with
+highly efficient capital investment, enable us to maintain
+strong cost competitiveness. We will continue to stay attuned
+to changes in the flash memory market, making agile capital
+investments in line with market trends and taking steps to
+strengthen our competitiveness.
+Relevant Management Capital Relevant Management Capital Relevant Management Capital
+* Source: T echInsights Inc., NAND Market Report Q2 2025
+Partnerships T echnology
+T echnologyHuman ResourcesHuman Resources
+State-of-the-Art Flash Memory Plants
+Strong Position in High-Growth Markets
+Industry-Leading T echnological
+Competitiveness
+Cost Competitiveness Based on
+Production Scale and Efficiencyp. 39 p. 35 p. 31
+p. 41p. 41 p. 35
+Kioxia Group’s
+Value Creation Initiatives
+3
+Data Section6
+Governance5
+Messages from Senior Management2
+About Kioxia Group1
+Management Capital4
+Value Creation Process
+Market and Social Environment
+Our Strengths
+Business Activities
+Growth Strategy
+Sustainability Materiality
+Creating Social Value
+K ioxia Holdings Corporation
+Integrated Report 2025
+1818
+Kioxia Holdings Corporation Integrated Report 2025
+
+--- page 20 ---
+Growth Strategy
+Leveraging its strengths—strong positioning in high-growth markets, industry-leading technological competitiveness, and cost competitiveness based on production scale and efficiency—Kioxia Group will
+develop and deliver high-capacity, high-performance and low power consumption products to meet the growing needs of the flash memory market driven by the spread of generative AI. We will also make
+disciplined investments, allocate resources strategically, strengthen our financial position, and increase profitability.
+Kioxia Group believes that the flash memory market will continue to grow through a virtuous cycle of increasing data volumes
+and advances in flash memory technology.  We have formulated a long-term financial model aimed at achieving sustainable
+business expansion and at using memory technology to pioneer a new era and transform the world.
+We will continue to accelerate the development of competitive
+flash memory that delivers high capacity, high performance,
+and low power consumption, as well as  high-capacity SSDs
+and high-performance SSDs for the AI market. In addition, we
+are pursuing research and development in a wide range of
+fields, including emerging memories, to meet the future needs
+of computers and storage systems.
+Research and Development
+R&D expenses: 8–9% of revenue
+Capital expenditures: 20% or less of revenue
+T echnology
+Kioxia Group will recruit around 700 people each year,* bringing
+in talent from a variety of backgrounds, mainly in research,
+technology development, and production, to respond to
+diversifying market needs and advancement of technology.
+Human Resource Recruitment
+Human resource recruitment: Approx. 700 people/year
+*  Kioxia Corporation and its group companies in Japan: Includes regular hiring
+ (new graduates) and career hiring (experienced professionals)
+We will continue to respond to growth in the flash memory
+market by making disciplined and agile capital expenditures
+at the Y okkaichi Plant and Kitakami Plant, aligned with market
+trends. Moreover, increasing production efficiency will enable
+us to maintain high cost competitiveness.
+Capital Expenditures
+Resource Allocations for Growth
+Long-T erm Financial Model
+Growth
+In line with expected
+NAND market growth 1
+20 %
+Profitability
+1 Storage capacity shipment basis (Based on market outlook as of November 2024)
+2 Non-GAAP basis
+3 On an L TM non-GAAP basis. L TM non-GAAP EBITDA is defined as non-GAAP operating profit plus depreciation, summed over the most recent four quarters.
+SSDs
+SSD market share 1
+15 % or higher
+Financial Stability
+Net cash position
+Net Debt / EBITDA 3
+< 1. 0
+Medium-term Long-term
+Capital Expenditures
+Percentage of revenue
+20 % or less
+Annual cost reduction
+per GB
+Mid- 10 % range
+Operating margin 2
+Mid- 20 % range
+p. 35
+Kioxia Group’s
+Value Creation Initiatives
+3
+Data Section6
+Governance5
+Messages from Senior Management2
+About Kioxia Group1
+Management Capital4
+Value Creation Process
+Market and Social Environment
+Our Strengths
+Business Activities
+Growth Strategy
+Sustainability Materiality
+Creating Social Value
+K ioxia Holdings Corporation
+Integrated Report 2025
+1919
+Kioxia Holdings Corporation Integrated Report 2025
+
+--- page 21 ---
+Business Activities
+Kioxia Group develops, manufactures, and sells flash memory and SSDs. Since inventing NAND
+flash memory in 1987, we have spent nearly 40 years leading the industry in making technological
+innovations that increase the capacity, enhance the performance, and reduce the power
+consumption of flash memory and SSDs. Our growth has kept pace with the advance of our
+digital society.
+Our products are used in a variety of applications, with revenue classified into three categories by
+application. “SSD & Storage” primarily comprises SSD and memory products for PCs, data centers,
+and enterprises. “Smart Devices” comprises embedded memory products with controller ICs,
+used in consumer devices such as smartphones, tablets, and televisions, as well as in automotive
+and industrial devices. “Others” comprises retail products such as SD memory cards and USB
+flash drives, as well as sales to the Sandisk Group recorded through our manufacturing joint
+venture. In FY2024, revenue grew due to a recovery in demand, with particularly strong growth in
+high-capacity SSDs for data centers and enterprises driven by the spread of generative AI. As a
+result, SSD & Storage revenue nearly doubled year on year, accounting for 58.1% of total revenue.
+Kioxia Group has built robust partnerships with leading companies across markets, and has a
+track record of business relationships with major global customers holding significant market
+shares in the data center, smartphone, and PC sectors. We are also collaborating with server and
+GPU manufacturers to further expand our business. The Research and T echnology Development
+Division, Manufacturing Division, and Sales and Marketing Division coordinate closely to respond
+swiftly to market needs by providing optimal products. We will continue to develop new products
+incorporating technologies such as CBA technology (p. 21) to meet increasingly sophisticated
+and diverse needs.
+SSD &
+StorageSmart
+Devices
+Others
+ 58 . 1 %
+29.4 %
+12.6 %
+Revenue
+1,706.5
+billion yen
+SSD & Storage
+Smart Devices
+Others
+Primarily SSD and memory products for PCs, data centers, and enterprises
+Embedded memory products with controller ICs, used in consumer devices
+such as smartphones, tablets, and televisions, as well as in automotive and
+industrial devices
+Retail products such as SD memory cards and USB flash drives, as well as sales
+to the Sandisk Group recorded through our manufacturing joint venture
+Breakdown of Revenue by Application (FY2024)
+Kioxia Group’s
+Value Creation Initiatives
+3
+Data Section6
+Governance5
+Messages from Senior Management2
+About Kioxia Group1
+Management Capital4
+Value Creation Process
+Market and Social Environment
+Our Strengths
+Business Activities
+Growth Strategy
+Sustainability Materiality
+Creating Social Value
+K ioxia Holdings Corporation
+Integrated Report 2025
+2020
+Kioxia Holdings Corporation Integrated Report 2025
+
+--- page 22 ---
+Gen. 6
+Gen. 5
+Gen. 10
+Gen. XGen. Y
+Performance
+Number of layers
+Continuous process migration
+High performance
+Combination of optimal cell technology
+and upgraded CMOS circuit
+High capacity
+Gen. 8
+Gen. 9
+Memory cell array wafer
+Flip
+CMOS circuit wafer
+Bonding
+Cross-sectional scanning
+electron microscope image
+Bonding interface
+CMOS directly Bonded to Array (CBA) T echnology Dual-Axis Strategy
+Business Activities
+Four technologies enable high-capacity 3D flash memory: vertical memory cell stacking, lateral
+shrinking of memory cells, multi-level cell technology,* which logically increases the amount of
+data that can be stored, and the introduction of new architectures. By using a combination of all
+of these technologies, not just vertical scaling, Kioxia Group is increasing bit density (the amount
+of information stored per unit area) and promoting the development of cost-competitive high-
+capacity products.
+We introduced CBA (CMOS directly Bonded to Array) technology starting with the 8th generation
+BiCS FLASH™. CBA technology is a new architecture for 3D flash memory. It involves separately
+manufacturing the CMOS circuit wafer and memory cell array wafer under their respective
+optimal processes and temperature conditions, then bonding the wafers together. This approach
+achieves high performance while reducing the surface area of the chip, thereby increasing bit
+density and enabling the delivery of a cost-competitive product.
+Kioxia Group is pursuing a Dual-Axis Strategy: one axis focuses on increasing the number of
+layers to deliver a line of high-capacity, high-performance products, while the other leverages
+CBA technology to achieve high performance with lower per-layer investment. Through these
+two approaches, we will provide competitive products that meet increasingly sophisticated and
+diverse needs.
+Development of High-Capacity, High-Performance
+3D Flash Memory
+In July 2024, Kioxia Group started mass production of its 8th generation BiCS FLASH™ 1 terabit (Tb)
+TLC products, which incorporate CBA technology, at its Y okkaichi Plant. The 8th generation
+emphasizes read/write performance, and is being deployed in applications requiring high
+performance, such as client SSDs and mobile devices, with production continuing to expand.
+Also in July 2024, we started shipping samples of high-capacity 2 Tb QLC products, which enable
+higher-capacity deployment in various applications, including AI, and help meet expanding data
+demand. They are also used in the KIOXIA LC9 Series, a high-capacity 245.76 terabytes (TB)
+enterprise SSD for generative AI (p. 22), with sample shipments starting in July 2025.
+8th Generation BiCS FLASH™ Products
+Future Development: Dual-Axis Strategy
+*  A technology that increases the amount of data stored in a single memory cell. Depending on the number of bits per cell, memory is
+classified as SLC (Single-Level Cell: 1 bit/cell), MLC (Multi-Level Cell: 2 bits/cell), TLC (Triple-Level Cell: 3 bits/cell), or QLC (Quad-Level
+Cell: 4 bits/cell).
+Kioxia Group’s
+Value Creation Initiatives
+3
+Data Section6
+Governance5
+Messages from Senior Management2
+About Kioxia Group1
+Management Capital4
+Value Creation Process
+Market and Social Environment
+Our Strengths
+Business Activities
+Growth Strategy
+Sustainability Materiality
+Creating Social Value
+K ioxia Holdings Corporation
+Integrated Report 2025
+2121
+Kioxia Holdings Corporation Integrated Report 2025
+
+--- page 23 ---
+Flash memory
+Controller
+Inside a KIOXIA SSD
+Business Activities
+Solid State Drives (SSDs) are storage devices that use flash memory
+to store data. They feature resistance to vibration and shock, are
+lightweight, and boast low power consumption. In SSDs, software
+technologies such as SSD control IC and firmware play a vital role in
+managing data. Kioxia Group’s SSD products combine BiCS FLASH TM
+with in-house-developed SSD control ICs and firmware. Our strength
+lies in combining the latest flash memory and SSD technology to deliver
+products that meet a broad range of needs in applications such as PCs,
+enterprise servers, and cloud data centers.
+We are focusing on products compatible with the high-speed PCIe®
+5.0 interface and will provide advanced SSDs to support increasingly
+sophisticated and diverse market needs and trends driven by the spread
+of generative AI.
+In response to future AI demand, we are also advancing the development
+of new storage solutions, such as a Super High IOPS SSD that achieves
+over 10 million IOPS (input/output operations per second) by combining
+high-speed, low-latency XL-FLASH 3D flash memory with a new
+controller, and a high-capacity QLC SSD that offers advantages over
+nearline HDDs in terms of total cost of ownership (TCO).
+The KIOXIA LC9 Series meets the needs  for efficiently storing
+large-scale training and inference datasets for generative AI, as
+well as the data generated through those processes. The lineup
+includes a high-capacity 245.76 TB product that features 32-die stack
+of the latest 8th generation BiCS FLASH™ 2 Tb QLC 3D flash memory
+in each semiconductor package.
+SSD Product Development
+KIOXIA LC9 Series
+The KIOXIA CM9 Series is designed to handle workloads such
+as AI, machine learning, and high-performance computing.
+It supports the PCIe® 5.0 interface and uses the latest 8th
+generation BiCS FLASH™ TLC to deliver even higher performance
+and power efficiency.
+KIOXIA CM9 Series
+Compatible with the PCIe® 5.0 interface, the KIOXIA XD8 Series is
+designed for large-scale data centers supporting cloud services
+and similar applications. Featuring the E1.S Enterprise and
+Datacenter Standard Form Factor (EDSFF), the series delivers
+superior performance and thermal management to enable higher
+system density and efficiency.
+KIOXIA XD8 Series
+High-Performance SSDs
+High-Capacity SSDs
+Note: PCIe is a registered trademark of PCI-SIG. E3.S E3.L2.5-inch
+Kioxia Group’s
+Value Creation Initiatives
+3
+Data Section6
+Governance5
+Messages from Senior Management2
+About Kioxia Group1
+Management Capital4
+Value Creation Process
+Market and Social Environment
+Our Strengths
+Business Activities
+Growth Strategy
+Sustainability Materiality
+Creating Social Value
+K ioxia Holdings Corporation
+Integrated Report 2025
+2222
+Kioxia Holdings Corporation Integrated Report 2025
+
+--- page 24 ---
+Leading Flash Memory & SSD Innovation
+in the AI Era
+The storage market served by the Kioxia Group continues to
+expand in line with the rapid growth of the digital economy. In
+particular, the rise of generative AI is driving strong demand
+across multiple sectors, including AI servers and edge devices.
+Large language models (LLMs) are increasingly being used
+in AI server applications for the development of inference
+systems deployed by enterprises and other users, as well as
+for training. This is creating growing demand for high-capacity,
+high-performance, energy-efficient storage solutions. Edge
+devices such as smartphones and PCs are increasingly
+incorporating sophisticated AI capabilities, further boosting
+demand for expanded storage.
+In FY2024, Kioxia Group achieved a major milestone with the
+mass production of 8th generation BiCS FLASH™ 1 Tb TLC
+products featuring CBA technology (p. 21). We also began
+sample shipments of 8th generation 2 Tb QLC products and
+launched the high-capacity KIOXIA LC9 Series enterprise
+SSD. This product leverages our advanced flash memory
+capabilities and utilizes our in-house developed SSD controller
+technology, demonstrating the full strength of our integrated
+approach to storage innovation.
+Looking ahead, we will continue to meet the evolving demands
+of advanced applications, seeking to improve our cost
+performance by maximizing the use of existing manufacturing
+facilities. One area of focus will be high-capacity, high-
+performance products that address the needs of the
+enterprise and data center SSD markets. Simultaneously,
+we plan to develop products with fewer memory layers
+that still deliver high performance, catering to low- to mid-
+capacity applications, including edge devices. Pursuing
+this dual-axis strategy with these products will allow us to
+respond effectively to a diverse range of market requirements.
+Furthermore, in the SSD segment, we will continue to expand
+our lineup of AI server-optimized solutions supporting high-
+speed PCIe® 5.0 interfaces, further strengthening our position
+in the storage market.
+In parallel, we are exploring the development of new memory
+devices and other solutions to meet the growing demand
+for high-speed, high-performance AI storage. This includes
+venturing into emerging areas such as XL-FLASH storage-
+class memory and developing the new Super High IOPS
+SSD, which is capable of dramatically faster input/output
+operations. With these competitive and innovative products,
+we aim to make a significant contribution to the growth and
+evolution of the AI-driven storage and memory market.
+In a competitive market that continues to demand speed and
+innovation, Kioxia Group aims to stay one step ahead.
+Message from the Executive Vice President
+Hiroo Oota
+Executive Vice President and
+Executive Officer
+Kioxia Holdings Corporation
+Business Activities
+Kioxia Group’s
+Value Creation Initiatives
+3
+Data Section6
+Governance5
+Messages from Senior Management2
+About Kioxia Group1
+Management Capital4
+Value Creation Process
+Market and Social Environment
+Our Strengths
+Business Activities
+Growth Strategy
+Sustainability Materiality
+Creating Social Value
+K ioxia Holdings Corporation
+Integrated Report 2025
+2323
+Kioxia Holdings Corporation Integrated Report 2025
+
+--- page 25 ---
+Overview of Sustainability Materiality
+Main KPIs
+We have identified the non-financial capital important for Kioxia Group operations over the
+medium to long term and determined the priority areas (Sustainability Materiality) for advancing
+the Group’s sustainable development with society. Our Sustainability Materiality comprises three
+domains that we recognize as being of particular importance: “requirements from stakeholders,”
+which refers to social requirements; “foundation of value creation,” which is the Group’s driving
+force; and “creating social value,” which defines the value that the Group will create for society
+over the medium to long term through memory technologies, based on our mission. These
+domains comprise 11 elements. We have set 30 KPIs corresponding to these elements to
+enhance our activities.
+We are focusing on environmental impact reduction, including climate change countermeasures,
+and on promoting the career advancement of female employees, areas in which stakeholder
+expectations and importance to the Group are high.
+1 Relative value per product capacity (annual) during manufacture, compared with FY2017
+2 Kioxia Corporation
+KPI Outline T argets
+Reduction in
+greenhouse gas
+(GHG) emissions
+Kioxia Group will contribute to the
+realization of a decarbonized society
+by reducing GHG emissions and
+promoting the use of renewable
+energy in its business activities.
+Furthermore, we have adopted
+the recommendations of the T ask
+Force on Climate-Related Financial
+Disclosures (TCFD).
+Net-zero greenhouse gas emissions (Scopes
+1 and 2) by FY2050
+100% renewable energy usage ratio by
+FY2040
+Contribution to
+the environment
+through products
+Kioxia Group strives to reduce
+environmental impacts at every stage
+of the product lifecycle.
+50% reduction in energy consumption by
+products per 1GB of data processing 1  (by
+FY2025, compared with FY2017)
+Promoting
+the career
+advancement of
+female employees
+Among our diversity initiatives, we
+regard the active participation of
+female employees as a particularly
+important theme and are pursuing it
+proactively.
+Double the number of female managers by
+FY2025, compared with FY2019 2
+Women comprise at least 45% of new
+graduate hires for administrative positions,
+and at least 15% for technical positions
+(every fiscal year). 2  As of June 2025, the target
+ratios for female managers and female new
+graduate hires (administrative positions) have
+been reached.
+Sustainability Materiality: Priority Areas for Kioxia Group’s Medium- to Long-term Growth
+Establishment and Identification Process
+The Group has established its Sustainability Materiality in order to enhance its sustainability
+management and clearly set out its policies, based on the recognition that the role that it must
+play in the sustainable development of society is growing as our digital society advances.
+In determining its Sustainability Materiality, the Group has 1) referred to the International
+Integrated Reporting Framework  of the IFRS Foundation, the Guidance for Collaborative Value
+Creation  of the Ministry of Economy, Trade and Industry, the GRI Standards  of the Global
+Reporting Initiative, and ISO 26000 (the international standard on corporate social responsibility),
+among other materials, 2) examined stakeholder concerns and  their importance to the Group,
+3) selected candidate material themes through interviews with the management team and
+verification by external experts, and 4) finalized the selection through deliberations by the
+Group’s Sustainability Committee and Sustainability Strategy Meeting. The material themes
+that the Group has identified are reported to the Board of Directors as part of the non-financial
+medium-term management plan. The board deliberates on these reports to increase the
+effectiveness of the Group’s efforts.
+Concept of Sustainability Materiality
+Uplifting the world with “memory”
+Building a creative world through
+memory technology
+Contributing to convenient and
+comfortable lifestyles
+Creating safe and secure societies and
+environments
+Human resources
+T echnology
+Partnerships
+Requirements from Stakeholders
+Kioxia’ s Foundation of Value Creation
+Creating Social Value
+1
+2
+3
+4
+5
+6
+Respect for
+human rights7 Environmental consideration1 0 Health and safety1 1Climate change9Sustainable
+supply chains8
+Kioxia Group’s
+Value Creation Initiatives
+3
+Data Section6
+Governance5
+Messages from Senior Management2
+About Kioxia Group1
+Management Capital4
+Value Creation Process
+Market and Social Environment
+Our Strengths
+Business Activities
+Growth Strategy
+Sustainability Materiality
+Creating Social Value
+K ioxia Holdings Corporation
+Integrated Report 2025
+2424
+Kioxia Holdings Corporation Integrated Report 2025
+
+--- page 26 ---
+Building on Our Legacy, Creating Social Value
+through Business Growth
+Sustainability Materiality
+Embedded in Our Business Activities
+The semiconductor memory we provide is an essential
+component of today’s digital world, and the scope of Kioxia
+Group’s contributions in this field continues to expand. T o
+progress our sustainability initiatives and ensure we continue
+to make our contribution to society, we have identified what
+we call our Sustainability Materiality—priority issues related to
+sustainability that have the potential to impact both the Kioxia
+Group and our stakeholders.
+Recognizing that actions to address these must be closely tied
+into our business operations, we’ve engaged senior executives
+and employees from our R&D, sales, and manufacturing
+divisions to formulate our most critical challenges. The
+success of this approach has reaffirmed to us the importance
+of environmental stewardship, talent development, respect
+for human rights, sustainable supply chains, and strong
+partnerships—all foundations of our business.
+T o ensure these priorities are acted upon, we have set up task
+forces to drive initiatives through both the PDCA cycle 1  and
+the OODA loop 2 —the latter an agile decision-making process
+well-suited to rapidly changing environments. We have also
+fostered a workplace culture that empowers each of our
+sites to act proactively toward common goals. These efforts
+have led to tangible achievements, including recognition as a
+Corporation Excelling in Health and Productivity Management 3
+and the attainment of RBA (Responsible Business Alliance) 4
+Platinum status at our Y okkaichi and Kitakami plants, as well as
+at Solid State Storage T echnology Corporation in T aiwan.
+Expanding Our Impact across
+the Entire Value Chain
+Since the establishment of our Y okkaichi Plant in 1992, we
+have proactively invested in environmentally-conscious
+facilities and implemented sustainable manufacturing
+processes. These activities constitute the foundation of
+our current sustainability initiatives, and their continued
+success relies on the understanding and collaboration of our
+customers and partners.
+We have communicated to our customers our efforts to
+reduce CO ₂ emissions and improve the energy efficiency of
+our products during use, emphasizing the added value our
+products and services deliver. We also communicate openly
+with our partners to foster mutual understanding, sharing with
+them the societal impact of our business and progressing
+initiatives such as the protection of human rights.
+Looking ahead, we will continue to build on our progress,
+striving for growth and the creation of social value not only
+within the Kioxia Group but across our entire value chain.
+1.  Plan–Do–Check–Act: an iterative design and management method used in
+business for the control and continual improvement of processes and products.
+2.  A decision-making framework comprising four stages—Observe, Orient, Decide,
+and Act.
+3.  A Japanese government-backed recognition of corporations demonstrating
+exceptional practices in promoting employee health and productivity.
+4.  A global nonprofit organization dedicated to supporting the rights and well-being
+of workers and communities in supply chains. Kioxia Holdings joined in 2021.
+Message from the Executive Vice President
+T omoharu Watanabe
+Executive Vice President and
+Executive Officer in Charge of Sustainability
+Kioxia Holdings Corporation
+Sustainability Materiality
+Kioxia Group’s
+Value Creation Initiatives
+3
+Data Section6
+Governance5
+Messages from Senior Management2
+About Kioxia Group1
+Management Capital4
+Value Creation Process
+Market and Social Environment
+Our Strengths
+Business Activities
+Growth Strategy
+Sustainability Materiality
+Creating Social Value
+K ioxia Holdings Corporation
+Integrated Report 2025
+2525
+Kioxia Holdings Corporation Integrated Report 2025
+
+--- page 27 ---
+Creating Social Value
+Basic Philosophy
+W e will contribute new value to society by providing a foundation for
+data utilization.
+Process for Creating Social Value through Kioxia Group’s Business Activities
+Under its mission of “uplifting the world with ‘memory,’” Kioxia Group creates value for society
+together with its partners through products, services, and technologies, while supporting
+the advance of a digital society. By continuing to develop flash memory and SSDs with
+higher capacity, higher performance, and lower power consumption, and by engaging in
+the development of cutting-edge technologies, we will help make life more convenient and
+comfortable for more people, providing new approaches for addressing increasingly diverse
+social issues, and contributing to the creation of  safe and secure societies and environments.
+Moreover, we will provide a foundation for data utilization to help build a more creative and
+inspiring world through “memory,” with the aim of creating new value for society.
+One way Kioxia Group creates social value is by supplying products that meet customers’ diverse and sophisticated needs, helping to improve the quality of their products and services and supporting the
+creation and growth of their businesses. These outcomes support end-user convenience and potential from various aspects, helping to deliver the benefits of a digital society to even more people. In this
+way, our products contribute to the creation of value for society, ultimately leading to the realization of our mission of “uplifting the world with ‘memory.’”
+“Creating Social Value” refers to the areas in which we contribute to society with our partners through our products, services, and
+technologies, as described in “Sustainability Materiality: Priority Areas for Kioxia Group’s Medium- to Long-term Growth” (p. 24).
+Uplifting the world with “memory”
+Building a creative world through
+memory technology
+Contributing to convenient and
+comfortable lifestyles
+Creating  safe and secure
+societies and environments
+Creating
+Social Value
+Flash memory and
+SSD products with
+high capacity, high
+performance, and low
+power consumption
+Business activities Outputs Value provided to customers Creation of value for society
+Example of How Kioxia Group’s Business Activities Create Social Value
+Uplifting the world
+with “memory”
+Building a creative
+world through memory
+technology
+Contributing to
+convenient and
+comfortable lifestyles
+Creating safe and
+secure societies and
+environments
+Research and technology
+development
+Manufacturing
+Sales and marketing
+Increased performance of products
+and services
+- Growth in generative AI utilization
+- Products optimized for each user
+Enhanced reliability of products and
+services
+- Stable provision of products and services
+- Expanded scope of automation utilization
+Reduced environmental impact
+(lower power consumption)
+- Products offering added environmental value
+Expansion of potential
+for end users
+Further advance of
+a digital society
+Realization of a
+sustainable society
+Kioxia Group’s
+Value Creation Initiatives
+3
+Data Section6
+Governance5
+Messages from Senior Management2
+About Kioxia Group1
+Management Capital4
+Value Creation Process
+Market and Social Environment
+Our Strengths
+Business Activities
+Growth Strategy
+Sustainability Materiality
+Creating Social Value
+K ioxia Holdings Corporation
+Integrated Report 2025
+2626
+Kioxia Holdings Corporation Integrated Report 2025
+
+--- page 28 ---
+Exponential growth
+in data volumes
+Merging of physical and
+digital spaces
+Increasing digitalization
+of society
+Expanding amount
+of data generated
+and used
+• Spread of electronic devices
+   such as laptop PCs
+• Start of mobile telephone services
+1 980s
+• Spread of electronic devices
+• Emergence of information security issues
+2000s
+• Popularization of the internet
+• Invented NAND /f_lash memory • Commercialized client SSDs
+• Introduced multi-level cell
+  technology
+• Announced development
+  of 3D /f_lash memory technology
+• Commercialized
+   NVMe™ SSDs
+• Announced 10th generation BiCS FLASH™
+1990s
+Kioxia’ s
+technological
+evolution
+1987 2001 2007 2015 2025
+• Spread of IoT devices
+2010s
+• Accelerating shift to smart devices
+• Growth in applications for
+   generative AI in line with its spread
+2020s
+Contributing to Convenient and Comfortable Lifestyles
+Kioxia Group’s semiconductor memory technologies, typified by the NAND flash memory it invented in 1987, have
+contributed to the creation of a foundation for the advance of a digital society. Flash memory has become indispensable,
+both for the many electronic devices and for cloud computing, which support our daily lives. Our products and
+technologies are helping people realize convenient and comfortable lifestyles.
+Kioxia Group’s Contribution to the Advance of a Digital Society
+Responding to Further Increases in Data Demand
+Given the expanding demands expected to accompany the advance of generative AI, we aim to drive
+innovation in line with the times and to provide products and services that sustainably meet the
+needs of customers and society.
+Uplifting the world with “memory”
+Building a creative world through
+memory technology
+Contributing to convenient and
+comfortable lifestyles
+Creating  safe and secure societies
+and environments
+Creating
+Social Value
+Creating Social Value
+Kioxia Group’s
+Value Creation Initiatives
+3
+Data Section6
+Governance5
+Messages from Senior Management2
+About Kioxia Group1
+Management Capital4
+Value Creation Process
+Market and Social Environment
+Our Strengths
+Business Activities
+Growth Strategy
+Sustainability Materiality
+Creating Social Value
+K ioxia Holdings Corporation
+Integrated Report 2025
+2727
+Kioxia Holdings Corporation Integrated Report 2025
+
+--- page 29 ---
+Creating Social Value
+Creating Safe and Secure Societies and Environments
+Creating New Approaches through “Memory” T echnology to Contribute to Safe and
+Secure Lifestyles
+Supporting a Sustainable Digital Society Supporting Convenience for
+a Motorized Society
+Supporting Security in an Increasingly
+Complex Information Society
+In order for people to lead convenient and comfortable lives, it is essential to create a foundation for safe and secure
+societies and environments.
+As various social issues become increasingly complex and serious, Kioxia Group is providing new approaches through
+“memory” technology to help address these challenges and support the foundation of daily life.
+Flash memory and SSDs are now being used in every
+aspect of life, and demand for higher capacities and
+speeds continues to increase. Meanwhile, the spread of
+digital products and services has raised expectations for
+reductions in power consumption and CO 2  emissions.
+While advances in digital technology and popularization of
+the internet have made daily life and business more
+convenient, they have also increased the prevalence of
+information security issues.
+With the advances in 5G, IoT and AI technologies, connectivity
+has extended to automobiles, which now make use of a
+wide range of data. Demand for data storage in vehicles
+continues to expand with the increase in complexity and
+sophistication of automotive equipment.
+Kioxia Group strives to reduce environmental impact at
+every stage of the product lifecycle. By providing society
+with energy-efficient memory and SSD products, we
+contribute to reducing energy consumption per unit of data
+processing during the use of digital products and services.
+We are addressing the need for the protection of personal
+data and business data through products such as
+enterprise-, data center- and client SSDs.
+Note:  Optional security feature-compliant drives are not available in all
+countries due to export and local regulations.
+We will help improve automobile convenience and safety
+with high-performance, high-capacity automotive UFS and
+e-MMC memory products that meet the sophisticated
+demands of in-vehicle use, such as reliability under a wide
+range of environmental conditions.
+Needs of Customers and Society Needs of Customers and Society Needs of Customers and Society
+Kioxia Group’s Approach Kioxia Group’s Approach Kioxia Group’s Approach
+Uplifting the world with “memory”
+Building a creative world through
+memory technology
+Contributing to convenient and
+comfortable lifestyles
+Creating  safe and secure societies
+and environments
+Creating
+Social Value
+Kioxia Group’s
+Value Creation Initiatives
+3
+Data Section6
+Governance5
+Messages from Senior Management2
+About Kioxia Group1
+Management Capital4
+Value Creation Process
+Market and Social Environment
+Our Strengths
+Business Activities
+Growth Strategy
+Sustainability Materiality
+Creating Social Value
+K ioxia Holdings Corporation
+Integrated Report 2025
+2828
+Kioxia Holdings Corporation Integrated Report 2025
+
+--- page 30 ---
+Kioxia Group will continue striving to build a creative world through its memory technology in collaboration with partners
+to enable diverse and uplifting experiences, as well as creative expression and communication that transcend time and space.
+Creating Social Value
+T ogether with our partners, we are using memory technology to contribute to the
+realization of a world in which people can lead fulfilling lives with uplifting experiences.
+After helping to realize safe, secure, convenient and comfortable lifestyles, we aim to create a world where many
+people can experience an uplifting culture through memory technology.
+Kioxia Group will continue striving to build a creative world through its memory technology in collaboration with
+partners to enable diverse and uplifting experiences, as well as creative expression and communication that transcend
+time and space.
+Building a Creative World through Memory T echnology
+Uplifting the world with “memory”
+Building a creative world through
+memory technology
+Contributing to convenient and
+comfortable lifestyles
+Creating  safe and secure societies
+Creating
+Social Value
+The development of generative AI promises not only to accelerate progress in people’s lives and
+in industry, but also to foster greater creative activity. Kioxia Group will contribute both to the
+foundation of tomorrow’s information society and to supporting new value creation by people.
+Through memory technology, Kioxia Group will generate innovation in collaboration with R&D
+partners in various cutting-edge fields, such as space development and neuroscience.
+Supporting the Development of Generative AI
+and Opening Up New Possibilities for Data Utilization
+Generating Innovation T ogether with Partners
+in Advanced T echnology
+Kioxia Group’s
+Value Creation Initiatives
+3
+Data Section6
+Governance5
+Messages from Senior Management2
+About Kioxia Group1
+Management Capital4
+Value Creation Process
+Market and Social Environment
+Our Strengths
+Business Activities
+Growth Strategy
+Sustainability Materiality
+Creating Social Value
+K ioxia Holdings Corporation
+Integrated Report 2025
+2929
+Kioxia Holdings Corporation Integrated Report 2025
+
+--- page 31 ---
+Data Section6
+Kioxia Group’s Value Creation Initiatives3
+Governance5
+Messages from Senior Management2
+About Kioxia Group1
+Management Capital4
+4
+Management Capital
+31  State-of-the-Art Flash Memory Plants
+35  T echnology
+39  Partnerships
+41  Human Resources
+30K ioxia Holdings Corporation
+Integrated Report 2025
+30
+Kioxia Holdings Corporation Integrated Report 2025
+
+--- page 32 ---
+Y okkaichi Plant
+Kitakami Plant
+Kitakami City,
+Iwate Prefecture
+Yokkaichi City,
+Mie Prefecture
+Kioxia Group’s Strengths
+Kioxia Group’s strengths lie in its economies of scale from having one of the world’s largest flash memory
+production capacities, combining output from its Y okkaichi Plant (Y okkaichi City, Mie Prefecture) and its Kitakami
+Plant (Kitakami City, Iwate Prefecture), and in the high production efficiency realized through smart factories
+leveraging AI and big data. These facilities meet growing flash memory demand with high cost competitiveness,
+supporting our sustainable growth.
+Cost Competitiveness Based on Production Scale and Efficiency
+One of the world’s largest production capacities High production efficiency
+We will execute disciplined capital investments for future growth,
+maintaining high cost competitiveness by leveraging our world-class
+flash memory production capacity that combines the output of
+the Y okkaichi Plant and Kitakami Plant.
+Key Points
+Capital investment
+(FY2024)
+225.6 billion yen
+Global share of flash memory production
+volume on a storage capacity basis
+ (Including joint venture with Sandisk Group, FY2024)
+29 %
+Source: T echInsights Inc., NAND Market Report Q2 2025
+State-of-the-Art Flash Memory Plants    Manufactured Capital
+4 Management Capital
+Data Section6
+Kioxia Group’s Value Creation Initiatives3
+Governance5
+Messages from Senior Management2
+About Kioxia Group1
+Human Resources
+Partnerships
+T echnology
+State-of-the-Art Flash Memory Plants
+K ioxia Holdings Corporation
+Integrated Report 2025
+3131
+Kioxia Holdings Corporation Integrated Report 2025
+
+--- page 33 ---
+One of the World’s Largest Flash Memory Production Volumes
+The combined flash memory production volume on a storage capacity basis of the Y okkaichi Plant and Kitakami
+Plant, including that of the manufacturing joint venture between Kioxia Group and Sandisk Group, accounts for
+one of the world’s largest shares at 29%.*
+Approximately 80% of the production capacity of the two plants is shared equally with Sandisk Group through
+a manufacturing joint venture, while the remaining 20% is held exclusively by Kioxia Group. Accordingly,
+approximately 60% of the flash memory produced at the two plants is allocated to Kioxia Group. Kioxia Group
+manages and operates both plants, and has acquired advanced manufacturing expertise.
+Fab7 of Y okkaichi Plant started operation in October 2022, and Fab2 of Kitakami Plant started operation in
+September 2025. These facilities will continue to meet expected growth in demand for flash memory going
+forward.
+* Source: T echInsights Inc., NAND Market Report Q2 2025
+Since its establishment in 1992, the Y okkaichi Plant has developed as a state-of-the-art
+manufacturing site for memory products. There are six Fabs and an assembly facility on the
+expansive 694,000 m 2  site. Fab7 started operation in October 2022.
+Production efficiency has been increased through the use of a production system that integrates
+the six Fabs, as well as AI and big data. Moreover, through close coordination with the onsite
+research and technology development departments, there is a smooth transition from new
+product development to mass production.
+The Kitakami Plant was established as a mass production site to meet growing demand for
+flash memory. Fab1 started operation in 2020 and Fab2 started operation in September 2025.
+Production capacity of the plant will be continuously expanded in line with growth in demand.
+Specialized in mass production, the plant has increased yields and productivity. It coordinates
+with the Y okkaichi Plant through the use of digital technology, receiving expertise that contributes
+to highly efficient production of high-quality products.
+Global Share of Flash Memory Production Volume on
+a Storage Capacity Basis  (FY2024)
+29%
+Kioxia and
+Sandisk Group
+Kitakami PlantY okkaichi Plant
+Y okkaichi Plant (Y okkaichi City, Mie Prefecture) Kitakami Plant (Kitakami City, Iwate Prefecture)
+State-of-the-Art Flash Memory Plants  Manufactured Capital
+Source: T echInsights Inc., NAND Market Report Q2 2025
+4 Management Capital
+Data Section6
+Kioxia Group’s Value Creation Initiatives3
+Governance5
+Messages from Senior Management2
+About Kioxia Group1
+Human Resources
+Partnerships
+T echnology
+State-of-the-Art Flash Memory Plants
+K ioxia Holdings Corporation
+Integrated Report 2025
+3232
+Kioxia Holdings Corporation Integrated Report 2025
+
+--- page 34 ---
+Smart Factory
+At our plants, manufacturing, inspection and metrology equipment generate a substantial
+amount of manufacturing-related data every day. At the Y okkaichi Plant, the production lines
+generate approximately 3 billion data points per day. AI is used to analyze data in real time for
+various purposes, including to help prevent product defects and automatically identify potential
+causes when defects do occur. For example, traditional device quality inspections involved
+having a technician compare the test data of wafers one by one to identify and categorize the
+characteristics of defects. High-speed automated analysis using AI has enabled us to reduce the
+time required by 99%.
+Kioxia Group has enhanced production efficiency by outsourcing the majority of the semiconductor
+and SSD assembly processes to contract manufacturers overseas, and is working to strengthen
+its supply chain. At the same time, to keep pace with the increasing sophistication of assembly
+technologies, we are developing new assembly technologies and conducting assembly primarily
+focused on advanced products at the Y okkaichi Plant.
+Quality Control Driven by AI and Big Data
+Enhancing the Assembly Processes
+Overhead hoist transport (OHT)
+The Y okkaichi Plant and Kitakami Plant are closely coordinated through the use of digital twins.
+The data obtained from manufacturing equipment and systems at both plants is replicated in
+virtual space in real time. Conditions are optimized through large amounts of data in the digital
+plant and implemented in both plants’ manufacturing processes. This process enables both
+plants to effectively share expertise and achieve high productivity.
+Digital Twin T echnology Replicates Plants in Virtual Space
+State-of-the-Art Flash Memory Plants  Manufactured Capital
+Digital Twin
+A data platform for replicating
+a plant in virtual space
+Design and
+development Manufacturing Evaluation
+Physical plant
+Design and
+development Manufacturing Evaluation
+Digital Plant
+4 Management Capital
+Data Section6
+Kioxia Group’s Value Creation Initiatives3
+Governance5
+Messages from Senior Management2
+About Kioxia Group1
+Human Resources
+Partnerships
+T echnology
+State-of-the-Art Flash Memory Plants
+K ioxia Holdings Corporation
+Integrated Report 2025
+3333
+Kioxia Holdings Corporation Integrated Report 2025
+
+--- page 35 ---
+For Kioxia Group, which supplies memory products to society, its manufacturing sites are crucial
+to business continuity. At its two manufacturing sites in Japan, the Y okkaichi Plant and Kitakami
+Plant, Kioxia Group operates a business continuity management (BCM) framework under which it
+implements disaster-prevention and emergency response measures and promotes systems for
+rapid recovery.
+For example, as an earthquake countermeasure we have adopted seismic isolation structures
+that absorb building vibrations.* Furthermore, we have installed equipment that protects key
+facilities from power outages and momentary voltage drops.
+In addition, we take into account natural disasters, as well as geopolitical and other risks, and are
+working to strengthen supply chain resilience through measures such as supplier diversification,
+and standardization and reduction of components.
+*  At the Y okkaichi Plant, all Fabs from Fab4 onward (beginning with its completion in September 2007) are seismically isolated. At the
+Kitakami Plant, both Fab1 and Fab2 are seismically isolated.
+The manufacturing sites of Kioxia Group promote sustainability through business activities that
+take environmental impact into account, including waste reduction, chemical substance
+management and wastewater quality management.
+The Group strives to make effective use of water resources by taking steps to control the volume
+of water intake and discharge at its plants, and by recovering and recycling some of the water
+used in its manufacturing processes for reuse inside the plants.
+Kioxia Group has set a target of achieving net-zero greenhouse gas emissions from its business
+activities by FY2050, offsetting emissions with amounts absorbed or eliminated. The target
+covers Scope 1 emissions (direct emissions from business sites) and Scope 2 emissions
+(emissions from the use of purchased energy). Furthermore, we have expressed our support for
+the recommendations of the T ask Force on Climate-Related Financial Disclosures (TCFD).
+Initiatives for the Environment
+Sustainable Production Activities
+Kioxia Group will contribute to the realization of a decarbonized society by reducing greenhouse
+gas emissions and promoting the use of renewable energy at its manufacturing sites.
+T o achieve this target, we will expand the use of
+renewable energy through measures such as
+installing solar panels within the factory.
+In its wafer manufacturing process, we have installed
+abatement equipment that breaks down PFCs and
+other greenhouse gases with high global warming
+potential before they are discharged. We have
+installed this equipment in 100% of relevant facilities
+that started operation in 2011 or later.
+Addressing Climate Change
+100 %
+(T arget for FY2040)
+100 %
+(Fabs starting operation in 2011 or later)
+Plant seismic isolation device
+Solar power generation system at Fab5, Y okkaichi Plant Solar power generation system at Fab1, Kitakami Plant
+Renewable energy ratio
+Net-Zero GHG Emissions by FY2050
+PFCs* abatement equipment installation rate
+*  CFC alternatives with high global warming potential used in semiconductor manufacturing.
+The substances we use are CF 4 , C 4 F 8 , CHF 3 , SF 6 , NF 3 , CH 2 F 2 , CH 3 F, CH 4 , and N 2 O.
+State-of-the-Art Flash Memory Plants  Manufactured Capital
+Preparedness for Business Continuity
+4 Management Capital
+Data Section6
+Kioxia Group’s Value Creation Initiatives3
+Governance5
+Messages from Senior Management2
+About Kioxia Group1
+Human Resources
+Partnerships
+T echnology
+State-of-the-Art Flash Memory Plants
+K ioxia Holdings Corporation
+Integrated Report 2025
+3434
+Kioxia Holdings Corporation Integrated Report 2025
+
+--- page 36 ---
+Strengths and Policy in
+Research and T echnology Development
+Kioxia Group has achieved a number of world firsts, such as the invention of NAND
+flash memory, and has contributed to innovation in society.
+T o address increasingly sophisticated and diverse needs, we are advancing
+investment in research and technology development, and strengthening our
+organizational framework, with a focus on medium- to long-term growth. We will
+also steadfastly maintain our position as a technology leader by continuously
+enhancing our technological capabilities through active recruitment, development
+and upskilling of engineers (p. 42), and collaboration with R&D partners (p. 39).
+R&D expenses Number of registered patents
+Created a number of world firsts, such as the invention of
+NAND flash memory
+Promoting advanced and diverse research and technology development
+as a leader in memory technologies
+Key Points
+We will continue to invest in future-
+oriented research and development
+focused on growth areas.
+We will recruit highly skilled professionals
+to advance cutting-edge technology
+development and create frameworks that
+enable them to fully leverage their capabilities.
+By collaborating with R&D
+partners in various fields, we will
+create synergies and generate
+value for society.
+Our View of the Business Environment
+Increasingly sophisticated and
+diverse needs due to the evolution of
+digital technologies, including AI and
+digital transformation
+Need to acquire and upskill engineers in
+line with market expansion
+Increasingly difficult challenges
+in technology development and
+intensifying competition in the field of
+semiconductor memory
+Continuous Investment in
+Research and Development
+Recruitment and Development of
+High-Caliber Engineers Collaboration with Partners
+We will address market needs in both new and existing domains, create new business opportunities,
+and steadfastly maintain our position as a technology leader.
+Creating Industry-Leading Cutting-Edge Memory T echnologies
+T echnology    Intellectual Capital
+(FY2024)
+Over 14,000132.8 billion yen
+(As of December 2024, Kioxia Corporation)
+4 Management Capital
+Data Section6
+Kioxia Group’s Value Creation Initiatives3
+Governance5
+Messages from Senior Management2
+About Kioxia Group1
+Human Resources
+Partnerships
+T echnology
+State-of-the-Art Flash Memory Plants
+K ioxia Holdings Corporation
+Integrated Report 2025
+3535
+Kioxia Holdings Corporation Integrated Report 2025
+
+--- page 37 ---
+Research and T echnology Development Organization
+and Sites
+Kioxia Group has established a research and technology development framework that leads the
+industry in memory technologies. We are also promoting open innovation in cooperation with
+customers and R&D partners, and through industry-academia collaboration, aiming to develop
+innovative technologies.
+We create new products through collaboration within our research and technology development
+structure. This structure consists of a research institute, which studies future technologies from
+a long-term perspective, development centers, which develop technologies to be applied to
+products, and business divisions, which develop commercial products.
+Promotes research and development of technologies to support AI and its applications,
+high-capacity and high-speed memory system technologies utilizing new principles
+and new materials, and new process technologies for manufacturing semiconductor
+memory at low cost
+Plan, develop, and market memory and SSD products that address increasingly
+sophisticated and diverse needs
+Serves as a bridge between research and development of BiCS FLASH™ 3D flash
+memory and mass production
+Kioxia Group’s Research and T echnology Development Structure
+Frontier T echnology R&D
+Institute
+Advanced Memory
+Development Center
+Memory and SSD
+Divisions
+The future
+Development Center
+Advanced Memory Development Center
+Business Divisions
+Memory Division         SSD Division
+Three years from now
+Present
+Research Institute
+Frontier Technology R&D Institute
+Intellectual Property Initiatives
+Kioxia Group appropriately protects and utilizes its own intellectual property, while respecting the
+legitimate intellectual property rights of others. Kioxia Corporation holds over 14,000 registered
+patents worldwide as of December 2024.
+Kioxia Corporation conducts its research and technology development at the Y okohama
+T echnology Campus (Y okohama City, Kanagawa Prefecture) and at the Memory R&D Center at
+the Y okkaichi Plant (Y okkaichi City, Mie Prefecture). The Y okohama T echnology Campus carries
+Memory R&D Center
+Flagship Building at
+Y okohama T echnology Campus
+Shin-Koyasu T echnology Front
+out all steps from research to planning, design, product development, and evaluation of memory
+and SSDs. Shin-Koyasu T echnology Front (Y okohama City, Kanagawa Prefecture), features a clean
+room for advanced research in a wide range of areas, centered on new materials and processes,
+and devices. The Memory R&D Center conducts research and development using the clean room
+facilities of the Y okkaichi Plant.
+Our overseas research and technology development sites are located in countries/regions
+where many advanced IT companies are based, providing us with rapid access to cutting-edge
+technologies and enabling us to respond flexibly to markets and customer needs.
+Kioxia Corporation has been recognized as one of the “Clarivate T op 100 Global Innovators
+2025.” The award is presented to the world’s most innovative companies and organizations
+by Clarivate Plc., based on Clarivate’s proprietary analysis of intellectual property and patent
+trends. This is the fourth consecutive year that we have received the award.
+We are actively advancing initiatives to strengthen our business competitiveness, including
+initiatives for protecting and effectively utilizing our intellectual property.
+Kioxia Selected in Clarivate T op 100 Global Innovators 2025
+TOPICS
+T echnology  Intellectual Capital
+4 Management Capital
+Data Section6
+Kioxia Group’s Value Creation Initiatives3
+Governance5
+Messages from Senior Management2
+About Kioxia Group1
+Human Resources
+Partnerships
+T echnology
+State-of-the-Art Flash Memory Plants
+K ioxia Holdings Corporation
+Integrated Report 2025
+3636
+Kioxia Holdings Corporation Integrated Report 2025
+
+--- page 38 ---
+Recent Achievements in Research and T echnology Development
+Kioxia Group is committed to the research and technology development of semiconductor
+memory, which is indispensable for the rapid digital transformation of society, including the
+advancement of generative AI. In addition to BiCS FLASH™, our 3D flash memory technology,
+we conduct research and technology development in emerging memory solutions in a wide
+range of fields. We aim to meet needs for increased capacity, performance, and added value in
+semiconductor memory for future computing and storage systems. We presented the results of
+our research at major international academic conferences in the semiconductor field, including
+the 2024 International Electron Devices Meeting (IEDM) and the 2025 International Solid-State
+Circuits Conference (ISSCC).
+Low
+Flash Memory
+SRAM
+DRAM
+SCM
+(Storage Class Memory)
+HDD
+(Hard Disk Drive)
+Latency
+Capacity
+T echnology  Intellectual Capital
+Adoption of a vertical oxide-semiconductor (InGaZnO) transistor utilizing materials and a
+structure different from those used in conventional DRAM
+Potential to achieve lower power consumption in servers with large-capacity main memory
+and in IoT products
+Adoption of 4F 2  layout* enables higher memory cell array density
+* Refers to the size of the memory cell relative to design rules. Compared with the mainstream 6F 2  layout used in current DRAM,
+the 4F 2  layout theoretically increases memory cell array density by 1.5 times.
+Oxide-Semiconductor Channel Transistor DRAM (OCTRAM) T echnology
+A type of storage class memory (SCM) with higher capacity than DRAM and higher
+speed than NAND
+Achieved cell read/write operation at the smallest-ever cell size for MRAM
+High-Capacity Crosspoint MRAM T echnology
+A novel structure in which NAND cells are arranged and stacked horizontally, instead of
+in the conventional vertical orientation
+A technology that enables further increases in flash memory capacity
+3D Flash Memory T echnology with Horizontal Cell Stacking Structure
+4 Management Capital
+Data Section6
+Kioxia Group’s Value Creation Initiatives3
+Governance5
+Messages from Senior Management2
+About Kioxia Group1
+Human Resources
+Partnerships
+T echnology
+State-of-the-Art Flash Memory Plants
+K ioxia Holdings Corporation
+Integrated Report 2025
+3737
+Kioxia Holdings Corporation Integrated Report 2025
+
+--- page 39 ---
+Demonstrating T echnology Leadership
+through Exhaustive R&D and
+Advanced Memory Innovation
+Since the invention of NAND flash memory in 1987, Kioxia
+has continuously met the evolving demand for increased
+capacity and higher performance. In 2007, we announced
+the development of the world’s first 3D flash memory—BiCS
+FLASH TM , which is now widely used in smartphones, data
+centers, and other applications, assuming an expanded role in
+our evolving digital world.
+T oday, with the rapid advancement of generative AI, expectations
+for storage technology are growing increasingly sophisticated
+and diverse. Generally, 3D flash memory delivers greater
+capacity through an increase in the number of stacked memory
+cell layers. However, this approach also leads to a significant
+rise in manufacturing costs and longer production times. T o
+address these challenges, Kioxia is not only pursuing vertical
+scaling; we are also adopting innovative approaches such as
+reducing the size of memory cells horizontally and introducing
+a CBA technology (p. 21), enabling us to balance higher
+capacity with cost efficiency.
+If the number of stacked layers exceeds 1,000, costs increase
+further. T o overcome this limitation, we are developing a new
+structure that places memory cells horizontally (p. 37). This
+promising technology is targeted for commercialization in the
+early 2030s.
+In addition, Kioxia is developing emerging memories and
+storages to meet future computing and storage system
+requirements. One such innovation is OCTRAM, a memory
+technology using oxide semiconductors that has the
+potential to deliver low-power, high-capacity DRAM. We
+aim to bring this to practical use in the early 2030s. T o
+process large volumes of data quickly and efficiently, we are
+also progressing the development of SCM (Storage Class
+Memory), which offers higher capacity than DRAM and faster
+performance than NAND (p. 37). T o support the evolving
+needs of generative AI, we are also exploring advanced SSD
+and storage technologies that deliver even higher speeds and
+reduced power consumption.
+In our R&D efforts, we must strike a balance between taking
+the time to develop cutting-edge technologies and speeding
+up the development process; we also need to reduce memory
+power consumption and ensure sustainability. Separately,
+Kioxia is committed to accelerating R&D in a wide range of
+fields beyond flash memory. We are embracing diversity in
+our acquisition of talent, strengthening collaboration with
+research and development partners, and leveraging AI—all
+in an effort to tackle increasingly complex technological
+challenges.
+By further evolving our core memory technologies and staying
+ahead of market trends, we will continue driving forward our
+research and development with a clear vision for the future.
+Message from the Chief T echnology Officer
+T echnology  Intellectual Capital
+Hideshi Miyajima
+Managing Executive Officer
+(Chief T echnology Officer)
+Kioxia Corporation
+4 Management Capital
+Data Section6
+Kioxia Group’s Value Creation Initiatives3
+Governance5
+Messages from Senior Management2
+About Kioxia Group1
+Human Resources
+Partnerships
+T echnology
+State-of-the-Art Flash Memory Plants
+K ioxia Holdings Corporation
+Integrated Report 2025
+3838
+Kioxia Holdings Corporation Integrated Report 2025
+
+--- page 40 ---
+Strengths and Initiatives
+Kioxia Group builds strong relationships with customers, R&D partners, and suppliers. We aim to further
+strengthen these partnerships, develop products and services that anticipate the needs of society, ensure a
+stable supply of high-quality products, and continuously deliver value to society.
+Kioxia Group operates globally, with sites in nine countries/regions. We have
+established strong relationships with many customers through our sales and
+support centers in the United States, Europe, and Asia.
+Customers R&D Partners Suppliers
+We have established global sales,
+technical support, and supply chain
+networks, and co-create value to
+society together with customers all
+over the world.
+We collaborate with technology
+organizations, universities, research
+institutes, and other companies to
+incorporate a wide range of
+cutting-edge knowledge and ideas
+with the aim of further evolving our
+products and technologies.
+We work with equipment and
+material suppliers and others to build
+resilient supply chains that ensure a
+stable supply of high-quality
+products, while strengthening our
+competitiveness by creating new
+manufacturing technologies.
+Collaborating with suppliers and R&D partners to ensure
+a stable supply of products and services and foster innovation
+Timely response to global market needs
+Kioxia Group’s Global Locations
+Building strong relationships with leading companies
+in the data center, smartphone, and PC fields
+Key Points
+Partnerships    Social and Relationship Capital
+Business operations in
+9  countries/regions
+4 Management Capital
+Data Section6
+Kioxia Group’s Value Creation Initiatives3
+Messages from Senior Management2
+About Kioxia Group1
+Governance5
+Human Resources
+Partnerships
+T echnology
+State-of-the-Art Flash Memory Plants
+K ioxia Holdings Corporation
+Integrated Report 2025
+3939
+Kioxia Holdings Corporation Integrated Report 2025
+
+--- page 41 ---
+Partnerships  Social and Relationship Capital
+TOPICS
+Next-Generation Green Data Center T echnology Development Communication Activities at Trade Fairs
+Kioxia Corporation is working together
+with Fujitsu Limited, 1FINITY Inc., AIO
+Core Co., Ltd., Furukawa FITEL Optical
+Components Co., Ltd., Kyocera Corporation,
+and NEC Corporation on the “Next
+Generation Green Data Center T echnology
+Development Project” (JPNP21029). This
+project, subsidized by the New Energy
+and Industrial T echnology Development
+Organization (NEDO), is part of the “Green
+Innovation Fund Project: Construction of
+Next Generation Digital Infrastructure.”
+Each company is contributing to technology
+development aimed at improving energy
+efficiency, increasing capacity, and
+reducing latency in data centers. The aim is
+to achieve more than 40% energy savings
+compared with data centers at the start
+of technology development, through the
+adoption of these technologies.
+Kioxia Corporation is responsible for
+developing a broadband optical-interface
+SSD and has verified the operation of a
+PCIe® 5.0-compatible prototype.
+We will continue developing technologies
+to support next-generation green data
+centers by enhancing their suitability
+for advanced applications that require
+high-speed transfer of large amounts of
+data, such as generative AI. We also plan
+to apply these technologies to proof-of-
+concept (PoC) testing toward future social
+implementation.
+*  PCIe is a registered trademark of PCI-SIG.
+Kioxia Group participates in various trade
+fairs and other events to showcase its latest
+products, services, and technologies, and to
+deepen dialogue with customers and other
+partners.
+In August 2024, we exhibited at FMS: the
+Future of Memory and Storage, the world’s
+largest event dedicated to flash memory
+and storage, held in Santa Clara, California.
+We showcased products including a 2 Tb
+QLC device using 8th-generation BiCS
+FLASH™ technology and NVMe™ SSDs
+for AI servers. The Group’s leadership in
+the ongoing development of flash memory
+technology was recognized at FMS,
+where its RAID Offload on SSD technology
+received a “Best of Show” award, and
+our employees received a “Lifetime
+Achievement Award” for contributions to
+the development of 3D flash memory.
+We also highlighted the importance of high
+performance storage in AI solutions by
+exhibiting at conferences such as NVIDIA
+GTC, Dell T echnologies World, and HPE
+Discover, hosted by leading companies
+in the AI and data center fields. We will
+continue our dialogue with customers
+going forward, with the aim of enhancing
+our presence in the flash memory industry.
+Banner at the entrance of the FMS 2024 venue
+Co-Creation and Dialogue
+with Partners
+Kioxia Group has established strong relationships with customers include leading companies in data center, smartphone, and PC fields, and continue
+to deepen dialogue with them. Also, we collaborate with cross-industry partners to deliver new value to society, such as through the joint development
+of next-generation data center technologies in anticipation of the further evolution of generative AI and markets.
+Joint Development Initiatives
+Dialogue with Partners
+Optical connector
+Photoelectric conversion bridge board
+Photoelectric conversion module KIOXIA enterprise SSD
+U.2 connector
+4 Management Capital
+Data Section6
+Kioxia Group’s Value Creation Initiatives3
+Governance5
+Messages from Senior Management2
+About Kioxia Group1
+Human Resources
+Partnerships
+T echnology
+State-of-the-Art Flash Memory Plants
+K ioxia Holdings Corporation
+Integrated Report 2025
+4040
+Kioxia Holdings Corporation Integrated Report 2025
+
+--- page 42 ---
+Human Resources   Human Capital
+Strengths and Policy
+At Kioxia Group, people with diverse backgrounds participate actively in various fields, including research and
+technology development, production, marketing and sales, and administration. Since its invention of NAND flash
+memory in 1987, Kioxia has delivered numerous world firsts as a driver of innovation.
+In recent years, the talent environment has been changing dramatically, with an increase in workforce mobility
+and career diversification, compounded in Japan by the impact of a declining birthrate and aging population.
+Meanwhile, the flash memory market continues to expand, marked by rapid change and technological innovation.
+Kioxia Group is meeting these challenges by actively recruiting and developing talent, building on the technologies
+and skills it has cultivated to date to generate new value, and establishing mechanisms to enhance corporate value.
+In addition, we aim to create value for society by empowering diverse talent to fully leverage their capabilities and
+generate synergies.
+Number of employees
+15,261
+(As of April 30, 2025, Kioxia Group)
+Ratio of mid-career recruits
+New graduate recruits
+215
+(Joining Kioxia Corporation and Group companies in
+Japan on April 1, 2025)
+Number of female managers
+101
+(As of March 31, 2025, Kioxia Corporation; calculated
+based on the Japan's Act on the Promotion of Women’s
+Participation and Advancement in the Workplace)
+18.6  %
+(FY2024, Kioxia Corporation, share of total recruits)
+T alent with advanced technical capabilities and
+diverse expertise to lead the industry
+T alent who support sustainable business expansion under
+Kioxia’s mission and vision
+T alent who create value for society in collaboration
+with a wide range of partners
+Key Points
+4 Management Capital
+Data Section6
+Kioxia Group’s Value Creation Initiatives3
+Governance5
+Messages from Senior Management2
+About Kioxia Group1
+Human Resources
+Partnerships
+T echnology
+State-of-the-Art Flash Memory Plants
+K ioxia Holdings Corporation
+Integrated Report 2025
+4141
+Kioxia Holdings Corporation Integrated Report 2025
+
+--- page 43 ---
+Recruitment and Development Engineer Development
+Kioxia Group is committed to developing engineers capable of meeting increasingly advanced
+technical needs. In Japan, we provide basic training for new employees to strengthen their
+foundational skills, and from the second year onward we offer specialized technical courses
+required for development. At each workplace, employees also receive on-the-job training and
+undertake other educational programs under the guidance of mentors. We also strive to create a
+workplace environment that supports self-directed development as engineers by encouraging
+continuous learning aligned with career goals. Engineers may pursue one of two paths: the
+generalist track, which bridges business and technology, or the professional track, which
+integrates diverse technical domains to create new value.
+Moreover, advanced specialist knowledge and expertise in research and product development
+are passed on to the next generation by the Senior Fellow, Kioxia’s highest professional position.
+Kioxia Group actively recruits and develops diverse talent to respond to rising market needs, the
+expanding applications of its products and services, advances in technology, and increasingly
+diverse customer requirements.
+Kioxia Corporation has a Training and Development Committee to promote training and utilization
+of personnel. Based on the business plan, the committee reviews the results of in-house training
+programs each fiscal year, proposes improvements, and deliberates on policies for the following
+fiscal year.  In FY2024, the Training and Development Committee deliberated on enhancing
+management training and company-wide expansion of digital transformation training.
+We are also working to create frameworks that enable individual employees to achieve their
+potential. Specifically, we revised the personnel evaluation system, systematized work from home,
+and abolished age-based mandatory retirement for managerial positions.
+Management
+EngineeringEntry Junior
+Junior
+Mid-level
+Mid-level
+Senior Fellow
+Professional
+Generalist
+T echnology
+Business
+T echnical specialist
+Engineer Development
+Numbers of New Graduate and Mid-Career Recruits (Kioxia Corporation)
+1  Number of new graduates recruited each fiscal year starting on April 1st (high school, technical college, university, and graduate school)
+2 Number of mid-career recruits each fiscal year
+Memory devices
+Information science Materials science
+Environmental studies
+Mechanical engineering Materials and metallurgy Biology Physics
+Chemistry Agricultural scienceMathematics
+Electrical and electronic engineering
+SSDsMemory cards
+Information systems
+Environmental systems
+Electrical engineering
+Intelligent systems
+Energy scienceMaterials engineering
+Media informatics
+Computer networks
+Materials chemistry
+Materials science and engineering Mechanical engineering
+Materials science Mechanical systems control
+Biomedical engineering
+Functional materials Materials chemistry
+Bioengineering
+Molecular chemistry
+BioinformaticsInformation science Natural sciences Physical engineering
+Applied physics Astrophysics
+Earth and planetary science
+Physical informatics
+Particle physics
+Biotechnology
+Materials creation
+Quantum science
+Examples of Engineers’ Academic Backgrounds
+Human Resources  Human Capital
+FY2022 FY2023 FY2024
+New graduate recruits 1 401 511 276
+Mid-career recruits 2 282 25 63
+Diverse Expertise as
+a Source of Value
+Specialist in
+a technical field
+T eam leader
+Data Section6
+Kioxia Group’s Value Creation Initiatives3
+Governance5
+Messages from Senior Management2
+About Kioxia Group1
+4 Management Capital
+Human Resources
+Partnerships
+T echnology
+State-of-the-Art Flash Memory Plants
+K ioxia Holdings Corporation
+Integrated Report 2025
+4242
+Kioxia Holdings Corporation Integrated Report 2025
+
+--- page 44 ---
+Human Resources  Human Capital
+Employee Engagement
+Kioxia Group regularly conducts employee engagement surveys, identifies issues, and implements
+measures to address them.
+88% of employees in the Kioxia Group responded to the FY2024 survey. Analysis highlighted
+the importance of communicating matters such as our corporate vision and the background of
+management decisions to employees. In response, we held several dialogue sessions between
+management and employees. We will continue working to strengthen communication in order to
+raise employee engagement and enhance corporate value.
+Diversity Promotion
+In order to respond to changes in the global business environment and to the expanding,
+increasingly sophisticated, and diversifying needs of the market, it is essential to foster an
+environment and culture where all employees can excel and demonstrate their individuality and
+abilities, regardless of race, religion, gender, nationality, disability, age, sexual orientation, gender
+identity, or gender expression. Kioxia Group is committed to creating such an environment and
+culture, ensuring that diverse talent can fully express their individuality and realize their potential.
+In particular, we regard the active participation of female employees as one of our most important
+priorities. T o this end, Kioxia Corporation has set the following targets.
+• Double the number of female managers by FY2025 compared with FY2019
+•  Ensure that at least 45% of new graduates recruited for administrative positions and 15% for
+technical positions are female
+These targets are also stipulated in our General Employers Action Plan under Japan’s Act on the
+Promotion of Women’s Participation and Advancement in the Workplace , and we are steadily
+implementing a range of related measures.
+As of June 2025, we have achieved the target ratios for female managers and for female new
+graduate recruits in administrative positions. Furthermore, we are promoting the use of childcare
+leave by male employees. The childcare leave usage rate for male employees at Kioxia
+Corporation was 54.3% in FY2024.
+Achievements in the Development of Female Managers and Recruitment of Female New Graduates at
+Kioxia Corporation
+Employee Engagement Survey Cycle
+Conduct
+survey
+Compile responses
+Analyze results
+Identify
+issues
+Hold workplace
+feedback
+meetings
+Formulate
+action plans
+Implement
+action plans
+Percentage of Female New Graduate Recruits 2 Number of Female Managers 1
+Administrative
+positions
+T echnical
+positions
+FY2020 25.0% 14.4%
+FY2021 60.0% 11.5%
+FY2022 53.3% 13.2%
+FY2023 37.5% 8.7%
+FY2024 30.4% 9.7%
+FY2025 71.4% 14.3%
+1  Female managers (section manager level and above) at Kioxia
+Corporation as of March 31 each year, including those seconded to
+Kioxia Holdings Corporation. Figures are compared with 2019, the base
+year for the mid-term target. From 2025, the calculation is based on
+the Act on the Promotion of Women’s Participation and Advancement
+in the Workplace. Personnel seconded to other Kioxia companies are
+included in the calculation, while those seconded to companies outside
+Kioxia, as well as secondees from other companies, are excluded. The
+number of female managers under the previous calculation method
+for FY2025 was 100.
+2  The annual hiring records of regular employees with
+bachelor's or master's degrees at Kioxia Corporation.
+Kioxia Holdings Corporation does not hire new graduates.
+2024 2025 (Y ear)20232022202120202019
+1019489
+78
+68
+5449
+2.06
+times1.921.82
+1.591.391.101.00
+Health and Safety
+Kioxia Group considers the promotion of individual employee vitality and mental and physical
+well-being to be an important foundation for its business activities. We strive to create a safe and
+comfortable working environment for all employees and others involved in our business.
+We have progressively acquired certification for occupational health and safety management
+systems under ISO 45001:2018. Based on these systems, we are making efforts to continuously
+reduce health and safety risks through risk assessment, confirm compliance with relevant laws
+and regulations, and increase transparency in health and safety management.
+In 2024, Kioxia Holdings Corporation and Kioxia Corporation were recognized for the second
+consecutive year as a Health and Productivity Management Excellent Corporation (Large
+Corporation Category) by the Ministry of Economy, Trade and Industry (METI)  and the Japan
+Health Conference.  In 2023, Kioxia Holdings Corporation issued its Health
+Management Declaration, under which employee health measures have
+been positioned as investment for health,* and we continue to implement
+health management initiatives.
+* Specific initiatives based on METI’s health management philosophy
+4 Management Capital
+Data Section6
+Kioxia Group’s Value Creation Initiatives3
+Governance5
+Messages from Senior Management2
+About Kioxia Group1
+Human Resources
+Partnerships
+T echnology
+State-of-the-Art Flash Memory Plants
+K ioxia Holdings Corporation
+Integrated Report 2025
+4343
+Kioxia Holdings Corporation Integrated Report 2025
+
+--- page 45 ---
+Building a Company Where Diverse T alent
+Can Thrive
+Driving Sustainable Growth through Our
+People
+At Kioxia Group, we believe that our people are the cornerstone
+of our competitiveness and the key to achieving sustainable
+growth. As the flash memory market continues to expand and
+diversify, we are committed to attracting and developing talented
+individuals and creating an environment where they can thrive.
+T o identify and inspire potential future talent, we engage
+with students of various ages to raise their awareness of the
+semiconductor memory industry and spark their interest
+in Kioxia Group as a potential employer. For our current
+employees, we offer a wide range of training programs and
+have revamped our HR policies and practices, including
+formalizing remote working, to support diverse career
+development paths and individual working styles.
+Our internal Training and Development Committee serves as
+a platform for open dialogue among the members of our senior
+management team. It focuses on formulating and implementing
+policies that will enhance professional development and
+empower employees to grow their expertise and capabilities.
+
+Fostering an Inclusive Culture Where
+Diverse T alent Can Shine
+In a rapidly evolving society with increasingly diverse
+customer needs, building an inclusive culture where people
+from all backgrounds can thrive is essential to strengthening
+our competitive edge.
+We are working to enhance our management capabilities to
+enable diverse talent to generate synergies. At the core of
+our shared mission—"Uplifting the world with ‘memory’”—is
+a collective commitment to creating new value through our
+products and services.
+T o further strengthen engagement across our workforce, we
+are increasing opportunities for dialogue between senior
+executives and employees across all levels and roles—an
+important need highlighted by the findings of our recent
+employee engagement survey. Among our diversity and
+inclusion initiatives, we are especially focused on supporting
+the empowerment of women in the workplace.
+At Kioxia Group, we foster a collaborative culture where
+everyone is encouraged to express ideas freely, address
+one another with respect, and work together beyond
+organizational boundaries toward a common goal. Moving
+forward, we will continue to cultivate an environment where
+diverse talent can grow and employees can challenge one
+another, building our human capital and creating long-term
+corporate value.
+Promoting Employee Well-being
+through Health Management
+The well-being and vitality of every employee are fundamental
+to our business. That’s why we are strongly committed to
+health management and to creating a safe and comfortable
+working environment.
+We will continue to support our employees' personal growth
+and ensure our company is a place where everyone can take
+pride in their work.
+Message from the General Manager, Human Resources and Administration Division
+Human Resources  Human Capital
+Managing Executive Officer
+General Manager, Human Resources and
+Administration Division
+Kyota Okishiro
+Data Section6
+Kioxia Group’s Value Creation Initiatives3
+Governance5
+Messages from Senior Management2
+About Kioxia Group1
+4 Management Capital
+Human Resources
+Partnerships
+T echnology
+State-of-the-Art Flash Memory Plants
+K ioxia Holdings Corporation
+Integrated Report 2025
+4444
+Kioxia Holdings Corporation Integrated Report 2025
+
+--- page 46 ---
+Management Capital4
+Data Section6
+Kioxia Group’s Value Creation Initiatives3
+Messages from Senior Management2
+About Kioxia Group1
+Governance5
+5
+Governance
+46  Corporate Governance
+51  Risk Management and Compliance
+52  Sustainability Management
+45K ioxia Holdings Corporation
+Integrated Report 2025
+45
+Kioxia Holdings Corporation Integrated Report 2025
+
+--- page 47 ---
+Basic Philosophy
+The aim of Kioxia Group’s governance is to enhance the transparency and efficiency of
+management through the establishment of an internal control system for the group, ensure risk
+management and compliance with laws and regulations, and continuously increase corporate
+value as one of the world's largest flash memory players by increasing the speed of management
+through cooperation from supervision to execution. The group strives to ensure the rights and
+equality of shareholders and investors by appropriately disclosing information and engaging in
+constructive dialogue. The group will continue to maintain and improve its governance system in
+order to promote appropriate cooperation through similar information disclosure and dialogue for
+the mutual benefit of all stakeholders related to the company, such as employees, customers,
+business partners, creditors, and local communities.
+Corporate Governance
+Consultation
+Report in response to consultations
+Confirmation/
+Support
+Instruction/
+Supervision
+Appointment/
+Dismissal
+Election/
+Dismissal
+Audit
+CollaborationAudit
+Audit
+Report
+Report
+Instruction
+Report
+Report Report
+Administration
+Report Supervise
+Report
+MonitoringReport
+General Meeting of Shareholders
+Divisions and Group Companies
+Audit &
+Supervisory Board
+Internal Audit
+Division
+Board of Directors
+Nomination and
+Compensation Advisory
+Committee
+Representative Director,
+President and CEO
+Risk Management and
+Compliance Committee
+Accounting
+Auditor
+The Board of Directors consists of six directors (including two outside directors). T o clarify
+management responsibilities and enable prompt responses to changes in the business
+environment, the term of office for directors is set at one year. The Board of Directors serves as
+the core of corporate governance at the company. T o ensure a clear separation between
+supervisory and executive functions, executive officers delegated by the Board of Directors carry
+out duties in their respective areas of responsibility.
+Board of Directors
+The representative director and president, who also serves as president and CEO, makes decisions
+on important matters for the company, generates synergies through the optimal deployment of
+management resources at the company and its group companies, and bears responsibility to
+shareholders for execution of the company’s business. The representative director and president
+also oversees risk management and compliance as part of this role.
+Representative Director and President
+The company has appointed 10 executive officers: one president and CEO, one executive
+chairperson, three executive vice president and executive officers, one senior managing executive
+officer, three managing executive officers, and one executive officer.
+Executive Officers
+The Audit & Supervisory Board consists of three members, including two outside members.
+Working with the accounting auditor and the Internal Audit Division, the Audit & Supervisory
+Board helps ensure sound management.
+Audit & Supervisory Board
+The company has established a voluntary Nomination and Compensation Advisory Committee as
+an advisory body to the Board of Directors (established on November 22, 2024). The committee
+consists of at least three directors, the majority of whom are designated as independent directors
+under the rules of the T okyo Stock Exchange (hereinafter, “independent directors”). The
+chairperson is elected by resolution of the committee from among its independent directors. The
+committee deliberates primarily on matters related to nomination, including policies and
+standards for the appointment and dismissal of directors, the representative director, the
+president and CEO and the executive chairman, as well as matters related to remuneration,
+including drafts of policies for determining the individual remuneration of directors, the
+representative director, the president and CEO, and the executive chairman. These matters are
+then reported to the Board of Directors. Through this framework, the company works to
+strengthen the fairness, transparency, and objectivity of procedures related to the nomination and
+remuneration of directors, thereby enhancing corporate governance.
+Voluntary Nomination and Compensation Advisory Committee
+Corporate Governance Structure (As of August 8, 2025)
+Kioxia Holdings Corporation is a company with a Board of Statutory Auditors. We have developed
+a group governance structure in which the directors’ performance of their duties is audited by our
+statutory auditors (Audit & Supervisory Board members). The company separates management
+and execution. The Board of Directors has a supervisory function over management as a whole,
+including decisions on important matters of business execution, such as the appointment of
+executive officers. The Audit & Supervisory Board conducts audits of execution and management
+to ensure legality and appropriateness, thereby enabling the company to realize a sustainable
+increase in corporate value.
+Report Election/
+Dismissal
+Election/
+Dismissal
+Election/
+Dismissal
+Internal Management
+Reinforcement Division
+Collaboration
+Collaboration
+Audit
+4 Management Capital
+Data Section6
+Kioxia Group’s Value Creation Initiatives3
+Governance5
+Messages from Senior Management2
+About Kioxia Group1
+Sustainability Management
+Risk Management and Compliance
+Corporate Governance
+K ioxia Holdings Corporation
+Integrated Report 2025
+4646
+Kioxia Holdings Corporation Integrated Report 2025
+
+--- page 48 ---
+Management T eam  (As of October 1, 2025)
+Directors
+Corporate Governance
+Status of Important
+Concurrent Positions
+Representative Director and President,
+President and Chief Executive Officer of
+Kioxia Corporation
+Nobuo Hayasaka
+Representative Director,
+President and Chief
+Executive Officer
+Stacy J. Smith
+Director
+Y uji Sugimoto
+Director
+Masashi Suekane
+Director
+Hiroshi Suzuki
+Outside Director
+Status of Important
+Concurrent Positions
+Executive Chairman and Director of
+Kioxia Corporation
+Non-Executive Chair of the Board of
+Autodesk Inc.
+Director of Intel Corporation
+Status of Important
+Concurrent Positions
+Japan Representative and Head of
+Asia Private Equity of Bain Capital
+(Japan), LLC
+Status of Important
+Concurrent Positions
+Partner of Bain Capital (Japan),
+LLC
+Status of Important
+Concurrent Positions
+Not applicable
+Status of Important
+Concurrent Positions
+Lead Independent Director of
+Nasdaq, Inc.
+Director of T aiwan Semiconductor
+Manufacturing Co., Ltd.
+Director of Tigo Energy, Inc.
+Michael R. Splinter
+Outside Director
+Isao Morita
+Outside Audit & Supervisory Board
+Member (Full-time)
+Koichi Hatano
+Outside Audit & Supervisory
+Board Member (Part-time)
+Shunsuke Nakahama
+Audit & Supervisory Board Member
+(Part-time)
+Status of Important Concurrent Positions
+Audit & Supervisory Board Member of
+Kioxia Corporation
+Outside Audit & Supervisory Board Member of
+NIHON DEMPA KOGYO CO., L TD.
+Status of Important Concurrent Positions
+Partner of Bain Capital (Japan), LLC
+Audit & Supervisory Board Members
+Nobuo Hayasaka
+President and Chief Executive Officer
+Stacy J. Smith
+Executive Chairman
+Y oshihiko Kawamura
+Executive Vice President and
+Executive Officer
+Hiroo Oota
+Executive Vice President and
+Executive Officer
+T omoharu Watanabe
+Executive Vice President and
+Executive Officer
+Hideki Hanazawa
+Senior Managing Executive Officer
+(Chief Financial Officer)
+Executive Officers
+Junichiro Y aguchi
+Managing Executive Officer
+(Chief Strategy Officer)
+Kyota Okishiro
+Managing Executive Officer
+(General Manager, Human Resources
+and Administration Division)
+T oshiaki Kawabata
+Executive Officer
+(Chief Information and
+Security Officer)
+Kayoko Y asutomi
+Executive Officer
+(General Manager,
+Legal Affairs Division)
+4 Management Capital
+Data Section6
+Kioxia Group’s Value Creation Initiatives3
+Governance5
+Messages from Senior Management2
+About Kioxia Group1
+Sustainability Management
+Risk Management and Compliance
+Corporate Governance
+K ioxia Holdings Corporation
+Integrated Report 2025
+4747
+Kioxia Holdings Corporation Integrated Report 2025
+
+--- page 49 ---
+Skill Matrix Each director is expected to contribute to the medium- to long-term enhancement of profit and sustainable improvement of corporate value by
+demonstrating the following skills determined by the voluntary Nomination and Compensation Advisory Committee and the Board of Directors.
+Corporate Governance
+Nobuo Hayasaka Stacy J. Smith Y uji Sugimoto Masashi Suekane Hiroshi Suzuki Michael R. Splinter
+Date of appointment as director July 2019 March 2019 March 2019 August 2024 March 2019 June 2020
+Attendance at Board of Directors Meetings (FY2024) 19/20 times 20/20 times 20/20 times 14/14 times 20/20 times 18/20 times
+Reasons for appointment Since joining the company, Mr.
+Hayasaka has been engaged in
+research and development and
+has long overseen and led the
+group’s T echnology Development
+Division. Since his appointment
+as Representative Director and
+President in January 2020, he
+has led initiatives aimed at the
+Group’s sustainable growth and
+enhancement of corporate value
+as its top executive. In light of his
+extensive operational experience
+within the group and his insight
+into overall corporate management,
+the Company has appointed him
+as a director.
+Mr. Smith has served as CFO at
+Intel Corporation and possesses
+advanced financial knowledge
+and extensive experience in
+the semiconductor industry.
+As the company expands as a
+global enterprise, his high-level
+expertise, deep knowledge of
+the semiconductor industry, and
+global management experience
+are deemed essential for
+providing valuable guidance and
+recommendations. Therefore, the
+Company has appointed him as
+a director.
+As the Japan Representative
+and Head of Asia Private Equity
+at a private equity firm, Mr.
+Sugimoto has been involved in
+the management of numerous
+companies and possesses
+extensive knowledge of corporate
+management. Given his experience
+and insight, he is expected to
+provide valuable advice and
+oversight regarding the company’s
+management. Therefore, the
+Company has appointed him as
+a director.
+As a partner at a private equity firm,
+Mr. Suekane has been involved
+in the management of numerous
+companies and possesses
+extensive knowledge of corporate
+management. Given his experience
+and insight, he is expected to
+provide valuable advice and
+oversight regarding the company’s
+management. Therefore, the
+Company has appointed him as
+a director.
+Mr. Suzuki served for many years
+as Director, President & CEO of
+HOYA Corporation, and possesses
+deep expertise in management
+strategy and global business as
+a corporate executive, as well
+as specialized knowledge of the
+semiconductor industry. He is
+expected to apply this insight
+to the company’s management
+and provide supervision from an
+independent standpoint. Therefore,
+the Company has appointed him as
+an outside director.
+Mr. Splinter has long served as
+an executive of global companies
+listed overseas and has extensive
+experience in international
+business in the semiconductor
+industry. Having served as the
+Chairman of Nasdaq, Inc., he also
+possesses supervisory knowledge
+of overseeing listed companies.
+He is expected to contribute to
+the deliberation of the company’s
+basic strategies and supervise
+management from an independent
+standpoint. Therefore, the Company
+has appointed him as an outside
+director.
+Research & Development
+Supply Chain Management (Procurement/Logistics)
+Global
+Finance/Capital Policy
+M&A/Strategic Alliances
+Semiconductors (Including Materials/
+Equipment Manufacturers)
+IT/DX/Information Security
+Capital Market Insight
+Global Intelligence
+Manufacturing/Production Operations
+Sales/Marketing
+Corporate Management (Execution)
+Human Resource Management
+Finance/Accounting
+Corporate Legal Affairs/Compliance
+Governance (Supervision)
+Corporate Strategy
+Note: The check marks in the chart do not represent the full extent of each director’s knowledge, experience, or expertise.
+Skills
+4 Management Capital
+Data Section6
+Kioxia Group’s Value Creation Initiatives3
+Governance5
+Messages from Senior Management2
+About Kioxia Group1
+Risk Management and Compliance
+Sustainability Management
+Corporate Governance
+K ioxia Holdings Corporation
+Integrated Report 2025
+4848
+Kioxia Holdings Corporation Integrated Report 2025
+
+--- page 50 ---
+Kioxia is a high-tech chip company. It leverages its cutting-edge
+BiCS FLASH™ technology to compete in the global market for flash
+memory, offering its clients high performance and cost advantages.
+The company’s ongoing investment in next-generation technology
+will help it grow its business and strengthen its position in the
+global market in the years ahead.
+Kioxia is well positioned to take advantage of the explosion in AI usage. It is a key supplier of
+reliable cost-effective memory storage for the many new data centers being built to host AI
+infrastructure.
+The company’s listing on the T okyo Stock Exchange last December has opened up new
+opportunities for it to fund its long-term growth and take advantage of these exciting trends in
+the marketplace.
+I look forward to Kioxia’s continued innovation and sustainable growth in the years ahead.
+Driving Further Business Growth
+through Advanced T echnology and
+Swift Decision-Making
+Kioxia’s Cutting-Edge T echnology
+and High-Performance Products Will
+Ensure the Company’s Long-term
+Growth in the Y ears Ahead
+I have served as an independent outside director for Kioxia
+Holdings Corporation since it became independent from the
+T oshiba Group. Now that the company is publicly listed,
+governance and the creation of long-term shareholder value are
+increasingly important. While independent outside directors
+already have a voice and a certain degree of influence over the
+company’s business operations, I believe the Board’s composition
+is not yet ideal; efforts should focus on strengthening its independence and diversity.
+The most critical success factors in the semiconductor business are continuous technological
+development that outpaces competitors and a manufacturing framework capable of delivering
+stable, high yields. Business growth can only be achieved by meeting the ever-rising demand for
+miniaturization and stacking process technology. I believe that by fostering flexible thinking,
+attention to detail, and swifter decision-making, Kioxia can further strengthen its business and
+secure the leading market share in the flash memory industry.
+Messages from Outside Directors
+Michael R. Splinter
+Hiroshi Suzuki
+Outside Director
+Chairperson of the Nomination
+and Compensation Advisory
+Committee
+Member of the Nomination
+and Compensation Advisory
+Committee
+Outside Director
+Overview of Duties Performed Regarding the Roles Expected of Outside Officers
+Hiroshi Suzuki
+Director
+Mr. Suzuki has provided insights based on his broad knowledge of the manufacturing industry. In addition, by actively making statements at the Board of Directors Council (a forum established mainly to promote shared
+awareness of issues among directors), and through his role as the chairperson of the Nomination and Compensation Advisory Committee, he fulfills his duties as an outside director.
+Michael R. Splinter
+Director
+Mr. Splinter has provided insights based on his extensive experience and expertise in the global semiconductor industry.
+In addition, by actively making statements at the Board of Directors Council and through his role as a member of the Nomination and Compensation Advisory Committee, he fulfills his duties as an outside director.
+Isao Morita
+Audit & Supervisory Board Member Mr. Morita has provided insights mainly from the perspective of verifying the soundness of governance, leveraging his expertise in memory and storage as well as management.
+Koichi Hatano
+Audit & Supervisory Board Member Mr. Hatano has provided insights mainly from the perspective of verifying the soundness of governance, utilizing his extensive knowledge in the field of human resources and general affairs.
+Activities of Outside Officers in FY2024
+Corporate Governance
+4 Management Capital
+Data Section6
+Kioxia Group’s Value Creation Initiatives3
+Governance5
+Messages from Senior Management2
+About Kioxia Group1
+Risk Management and Compliance
+Sustainability Management
+Corporate Governance
+K ioxia Holdings Corporation
+Integrated Report 2025
+4949
+Kioxia Holdings Corporation Integrated Report 2025
+
+--- page 51 ---
+Officer Remuneration
+Basic Policy
+Based on its Basic Policy on Corporate Governance, the company has established a remuneration
+system for officers designed to realize the continuous enhancement of corporate value, and to
+ensure that the functions of business execution and management supervision are appropriately
+fulfilled. This remuneration plan for officers will be updated periodically to reflect the company’s
+business growth and the market environment.
+Remuneration Details
+The introduction of continuous service stock-based remuneration and performance-linked
+stock-based remuneration was approved at the 7th Annual General Meeting of Shareholders held
+on June 27, 2025. For details, please refer to the company’s Annual Securities Report for the
+Fiscal Y ear Ended March 2025, “(Reference) Revision of Director Remuneration from 2025
+Onward” (Japanese only).
+View on Remuneration Level
+The level of remuneration is designed to ensure appropriate remuneration competitiveness as a
+global company to attract and retain highly capable executive talent who drive the Company’s
+business. Specifically, the level is determined by referencing the remuneration levels of domestic
+and global companies in the semiconductor industry and other related industries.
+Remuneration Structure
+Remuneration for directors who concurrently serve as executive officers is structured as follows, to
+reflect their responsibility for medium- to long-term performance and for enhancing corporate value.
+Fixed remuneration: Monetary remuneration paid as the fundamental component of
+remuneration for officers in accordance with the responsibilities and roles to be fulfilled
+Performance-linked remuneration: Monetary remuneration that varies based on the degree to
+which performance targets are achieved for each fiscal year
+Continuous service stock-based remuneration: Deferred compensation stock-based
+remuneration paid subject to continued service for a certain period
+Performance-linked stock-based remuneration: Deferred compensation stock-based
+remuneration paid based on the degree of achievement of performance targets over a certain
+period
+Remuneration for directors who do not concurrently serve as executive officers is structured as
+follows, considering their role in supervising business execution.
+Fixed remuneration: Monetary remuneration paid as the fundamental component of
+remuneration for officers in accordance with the responsibilities and roles to be fulfilled
+Continuous service stock-based remuneration: Deferred compensation stock-based
+remuneration paid subject to continued service for a certain period
+Method of Determining Remuneration for Officers
+T o ensure objectivity and transparency, the Board of Directors shall delegate the determination of
+individual remuneration amounts for directors to the Nomination and Compensation Advisory
+Committee, which is a voluntary committee chaired by an independent director and composed of
+three or more directors, the majority of whom are independent directors.
+Malus and Clawback Provisions
+In the event of serious misconduct or violation of laws and regulations on the part of a director,
+the company has established a “malus provision” under which, by resolution of the Board of
+Directors, all or a portion of the units of performance-linked remuneration and continuous
+service/performance-linked stock-based remuneration may be reduced or eliminated, and a
+“clawback provision” under which the company may request the return of all or a portion of
+money or shares paid.
+Corporate Governance
+Composition of Remuneration by Officer  (At standard value for performance-linked remuneration and
+with a 100% distribution rate for performance-linked stock-based remuneration)
+ʢʣ
+Fixed remuneration Performance-linked remuneration
+Continuous service stock-based remuneration Performance-linked stock-based remuneration
+
+
+
+
+
+
+Representative Director, President, and Chief Executive Oﬃcer;
+Executive Chairman and Director
+Outside directors
+
+
+
+
+
+
+Annual Securities Report & Semi-Annual Report (Japanese) | Kioxia Holdings Corporation
+4 Management Capital
+Data Section6
+Kioxia Group’s Value Creation Initiatives3
+Governance5
+Messages from Senior Management2
+About Kioxia Group1
+Risk Management and Compliance
+Sustainability Management
+Corporate Governance
+K ioxia Holdings Corporation
+Integrated Report 2025
+5050
+Kioxia Holdings Corporation Integrated Report 2025
+
+--- page 52 ---
+Basic Approach and Structure
+At Kioxia Group, we strive to ensure thorough risk management and compliance with all relevant
+laws and regulations based on the Kioxia Group Standards of Conduct, in order to ensure fair and
+open competition in its business activities.
+At Kioxia Holdings Corporation, the President and CEO is assigned lead responsibility for ensuring
+risk management and compliance. The Executive Officer in charge of Human Resources &
+Administration, the Executive Officer in charge of Legal Affairs and the executive officers
+designated by the President and CEO (“Designated Executive Officers”) have joint second-level
+responsibility. Kioxia Holdings Corporation has established a process whereby the Risk
+Management and Compliance Committee, chaired
+by the President and CEO, has complete authority
+and responsibility with regard to all risk management
+and compliance-related issues across the entire
+group. Our Audit & Supervisory Board members
+attend meetings of this committee as observers.
+In line with its Risk Management and Compliance
+Regulations, Kioxia Group collects, analyzes and
+assesses all relevant risk-related information,
+including compliance risks (business risks and
+risks associated with disasters, accounting fraud,
+information security, product quality, among others).
+We then formulate priority measures and implement
+countermeasures. Furthermore, we have constructed
+a framework that allows swift response to risks
+across the entire group when required.
+Whistleblower System
+In order to create an open work environment and reduce risk, in addition to encouraging day-to-day
+communication within each workplace, the group operates a whistleblower system. All employees
+are informed about this system through the company intranet and other means. The system is
+designed to protect the anonymity of whistleblowers and ensure that they are not treated
+disadvantageously. Additionally, Kioxia Group in Japan* has started accepting reports from
+employees within one year of their retirement. The number of reports received and consultations
+undertaken through the whistleblower system in FY2024 was 143. In addition, Kioxia Holdings
+Corporation has established a system that allows the company’s officers or employees to provide
+information directly to an external lawyer in the event they become aware of any suspected
+violations (including those related to accounting) by the company or by its officers or employees.
+Information Security
+Kioxia Group treats information security as a key management issue, and is strengthening related
+initiatives across the Group. With the advance of digital transformation, the use of data and AI is
+increasing, but so is the risk of cyber-attacks. We are striving to eliminate or mitigate such risks,
+as we consider information to be a critical asset.
+The company rigorously manages personal information and customer and business partner
+information as confidential information. We have established policies to prevent improper
+disclosure or leaks. We have appointed a Chief Information Security Officer, whose responsibility
+is to oversee and ensure compliance with our Information Security Management Policy across
+the group. Information security management processes have also been implemented at each
+business site and organization of all group companies.
+Countermeasures are implemented from organizational, human, physical, and technical
+perspectives and enhanced in ways such as periodic reviews of in-house regulations, audits, and
+employee training. We also communicate awareness messages regarding information security from
+the management to all employees in order to ensure strict compliance with all in-house regulations.
+An incident reporting system has also been established to enable immediate response to any
+incident. There were no major information leaks in FY2024.
+We will continue working to strengthen and improve our information security going forward.
+Risk Management and Compliance
+Kioxia Group’s Risk Management and
+Compliance Committee Structure
+Related Committees
+Chair: Officer Responsible for Risk Management and Compliance
+Vice Chairs:   Officers with Second-Level Responsibility for Risk
+Management and Compliance
+Members: Executive officers and heads of relevant organizations
+Observers: Audit & Supervisory Board members
+evaluate the status of compliance with relevant laws, regulations and internal rules, as well as the
+effectiveness of risk management activities, in order to improve them.
+*Kioxia Holdings Corporation and its subsidiaries in Japan
+Officer Responsible for Risk Management and Compliance
+• President and CEO
+Risk Management and Compliance Committee
+Officers with Second-Level Responsibility for Risk
+Management and Compliance
+•  Executive Officer in charge of Human Resources &
+Administration, Executive Officer in charge of Legal
+Affairs and Designated Executive Officers
+4 Management Capital
+Data Section6
+Kioxia Group’s Value Creation Initiatives3
+Governance5
+Messages from Senior Management2
+About Kioxia Group1
+Internal Audit
+Kioxia Group has established an Internal Audit Division under the direct control of the President
+and CEO of Kioxia Holdings Corporation, with the aim of strengthening internal controls.
+In line with the Internal Audit Policy, the Internal Audit Division formulates and executes audits of
+each division and group company and reports the results to the President and CEO. During these
+audits, the Internal Audit Division conducts investigations to check business processes and audit
+trails, and when issues are discovered, the division monitors the progress and results of
+corrective measures until their completion. The issues are shared within the group and utilized to
+help prevent their occurrence in other divisions. Through these internal audits, we regularly
+Risk Management and Compliance
+Sustainability Management
+Corporate Governance
+K ioxia Holdings Corporation
+Integrated Report 2025
+5151
+Kioxia Holdings Corporation Integrated Report 2025
+
+--- page 53 ---
+Sustainability Management
+Sustainability Management Structure
+T o strengthen and advance company-wide sustainability management, we have created two
+deliberative bodies.
+Kioxia Group’s sustainability strategies, policies and targets are discussed and decided at
+Sustainability Strategy Meetings, which are chaired by the President and CEO. Members consist
+of executive officers, who regularly review
+progress and report any significant issues
+to the Board of Directors. The Sustainability
+Committee, chaired by the Executive Officer in
+charge of Sustainability, comprises the heads
+of corporate divisions and Kioxia Corporation’s
+business divisions. They discuss sustainability
+issues and KPIs and check the progress of
+activities based on the strategies and policies
+formulated at the Sustainability Strategy
+Meetings. In addition, where necessary we
+have set up appropriate task forces under
+the Sustainability Committee to debate key
+sustainability issues, to implement measures
+to address these issues, and manage
+progress. These deliberative bodies are
+managed by the Sustainability Division, which
+is dedicated to promoting Kioxia Group’s
+sustainability activities.
+Respect for Human Rights
+In 2021, based on Kioxia Group’s mission, vision and Standards of Conduct, we formulated the
+Kioxia Human Rights Policy as a way to clarify our corporate responsibility to respect human rights.
+This policy stipulates that we must respect the International Bill of Human Rights to the fullest
+extent, and that we will make every effort to respect human rights in accordance with international
+standards such as the United Nations Guiding Principles on Business and Human Rights .
+The group is also implementing procedures for minimizing human rights risks in its business
+activities in order to fulfill its responsibility to respect human rights. We have assigned
+responsibility for raising employee awareness of human rights issues to staff within the Human
+Resources and Administration Division of Kioxia Corporation, with the Executive Officer in charge
+of Human Resources and Administration leading their efforts. Additionally, these initiatives
+for respecting human rights are reviewed by the Sustainability Committee as part of our
+sustainability management procedures, with any important issues being referred to the Board of
+Directors after discussion at Sustainability Strategy Meetings.
+Furthermore, in order to respect the human rights of those impacted by our business activities
+throughout our overall value chain, the group conducts human rights due diligence in accordance
+with the United Nations Guiding Principles on Business and Human Rights . In order to mitigate
+human rights risks, we are implementing an ongoing cycle of identifying and assessing any
+human rights risks in our business activities, constructing a framework for the prevention and
+mitigation of these risks, implementing appropriate countermeasures, tracking and investigating
+any identified situations, and disclosing relevant information.
+Raising Company-Wide Awareness of Sustainability
+T o raise sustainability awareness among Kioxia Group employees, the President and CEO and
+other senior executives communicate the importance of sustainability management policies and
+practices in corporate strategy meetings at the beginning of each half-year period. In addition,
+education covering sustainability activities is conducted for newly recruited employees and those
+newly appointed to managerial positions, as well as during job-specific training and development
+for employees in sales, procurement and other functions. Furthermore, Kioxia Group distributes
+the Kioxia Sustainability Handbook to all employees to explain the basic concepts of its
+sustainability management, and provides e-learning based on the handbook.  T o encourage
+employees' sustainability activities, we have established a sustainability category within our
+award system and recognize outstanding activities every six months.
+T o foster collaboration among Kioxia Group's organizations, we also keep track of sustainability
+issues at our sites and affiliates and promote activities to address these issues. At their respective
+sustainability meetings, our sites and affiliates manage the progress of their activities for
+achieving the group’s Sustainability Materiality KPIs, as well as their progress in reviewing
+working styles and building better relationships with local communities.
+Sustainability Management Structure
+Board of Directors (Kioxia Holdings Corporation)
+Sustainability Strategy Meeting
+Chairperson : President and CEO
+Members : Executive officers
+Secretariat : Sustainability Division
+Sustainability Committee
+Chairperson : Executive Officer in Charge of Sustainability
+Members : Business/Corporate Section Managers
+Secretariat : Sustainability Division
+T ask Forces for Key Issues
+4 Management Capital
+Data Section6
+Kioxia Group’s Value Creation Initiatives3
+Governance5
+Messages from Senior Management2
+About Kioxia Group1
+Risk Management and Compliance
+Sustainability Management
+Corporate Governance
+K ioxia Holdings Corporation
+Integrated Report 2025
+5252
+Kioxia Holdings Corporation Integrated Report 2025
+
+--- page 54 ---
+Management Capital4
+Kioxia Group’s Value Creation Initiatives3
+Governance5
+Messages from Senior Management2
+About Kioxia Group1
+6
+54  Financial Highlights
+55  Non-Financial Highlights
+56  Company Outline
+Data Section
+Data Section6
+53K ioxia Holdings Corporation
+Integrated Report 2025
+53
+Kioxia Holdings Corporation Integrated Report 2025
+
+--- page 55 ---
+Financial Highlights  (IFRS and Non-GAAP, Consolidated)
+Revenue Non-GAAP Operating Profit (Loss) and
+Operating Profit Margin
+Capital Expenditures and Non-GAAP
+Depreciation and Amortization
+Non-GAAP Profit (Loss) Attributable to
+Owners of Parent
+Net Interest-Bearing Debt and Net D/E Ratio
+0
+500
+1,000
+1,500
+2,000
+FY2024FY2023FY2022FY2021
+1,706.5
+(Billions of yen)
+1,526.5
+1,282.1
+1,076.6
+(300)
+(200)
+(100)
+0
+100
+200
+300 266.0
+(Billions of yen)
+196.9
+(116.4)
+(244.6)
+FY2024FY2023FY2022FY2021
+(Billions of yen)
+Capital expenditures
+Non-GAAP depreciation and amortization
+0
+100
+200
+300
+400
+500
+334.3
+510.4
+400.9
+342.1
+387.7
+311.0
+305.1
+225.6
+FY2024FY2023FY2022FY2021
+(Billions of yen)
+Non-GAAP operating pro/f_it Operating pro/f_it margin
+(%)
+(400)
+(200)
+0
+200
+400
+600
+(40)
+(20)
+0
+20
+40
+60
+346.4
+(67.4)
+(254.0)
+453.0
+26.5
+(23.6)
+(5.3)
+22.7
+FY2024FY2023FY2022FY2021
+939.6
+1,122.9
+(Times)
+0
+1
+2
+3
+1.18
+1.71
+2.77
+1.26
+Net interest-bearing debt Net D/E ratio
+0
+500
+1,000
+1,500
+(Billions of yen)
+931.0
+1,246.5
+FY2024FY2023FY2022FY2021
+Governance5
+4 Management Capital
+Kioxia Group’s Value Creation Initiatives3
+Messages from Senior Management2
+About Kioxia Group1
+Data Section6
+Financial Highlights
+Non-Financial Highlights
+Company Outline
+K ioxia Holdings Corporation
+Integrated Report 2025
+5454
+Kioxia Holdings Corporation Integrated Report 2025
+
+--- page 56 ---
+Water IntakeGreenhouse Gas Emissions (Scope1and Scope 2)
+Number of Employees  (Consolidated)
+Energy Usage
+0
+5,000
+10,000
+15,000
+20,000
+25,000
+30,000
+(Thousand m³) City waterIndustrial water
+24,417 25,153 24,673
+27,614
+24,417
+71
+24,488 122
+25,275
+25,153 24,673
+27,614
+112
+24,785
+141
+27,755
+FY2024FY2023FY2022FY2021
+(t-CO2)
+0
+500,000
+1,000,000
+1,500,000
+2,000,000
+2,500,000
+3,000,000
+Scope 2 (Indirect emissions)
+Scope 1 (Direct emissions)
+2,542,000 2,580,000
+1,899,400
+680,600
+1,870,400
+410,400
+1,951,000
+510,800694,000
+1,899,400
+680,600
+2,280,800
+1,870,400
+410,400
+2,461,800
+1,951,000
+510,800
+1,848,0001,848,000
+694,000
+FY2024FY2023FY2022FY2021
+0
+6,000
+12,000
+18,000
+15,231 15,249 15,042
+14,199
+FY2024FY2023FY2022FY2021
+0
+1,000,000
+2,000,000
+3,000,000
+4,000,000
+5,000,000
+6,000,000
+(MWh)
+Non-renewable energy
+Renewable energy
+1,000
+4,600,700
+4,599,700 4,814,300
+237,905
+4,664,300 4,787,495
+4,599,700 4,814,300
+5,556
+4,819,856
+12,200
+4,676,500
+237,905
+5,025,400
+4,664,300 4,787,495
+FY2024FY2023FY2022FY2021
+(%)
+0
+2.0
+4.0
+6.0
+4.3 4.5 4.6
+4.9
+FY2024FY2023FY2022FY2021
+Note: As of end of March each fiscal year
+Note: Excludes conserved water.
+Scope:  Kioxia Corporation, Kioxia Iwate Corporation, and Solid State
+Storage T echnology Corporation
+Scope:  Female ratio in managers (section manager level and above) of
+Kioxia Corporation, as of end of March each fiscal year
+Note:  Purchased or obtained electricity amount. Renewable energy is the
+portion of purchased electricity generated by renewable energy power
+plants, etc.
+Scope:  Kioxia Corporation, Kioxia Iwate Corporation, and Solid State Storage
+T echnology Corporation
+Female Ratio in Managers
+Non-Financial Highlights
+Scope:  Kioxia Corporation, Kioxia Iwate Corporation, and Solid State
+Storage T echnology Corporation
+Governance5
+4 Management Capital
+Kioxia Group’s Value Creation Initiatives3
+Messages from Senior Management2
+About Kioxia Group1
+Data Section6
+Financial Highlights
+Non-Financial Highlights
+Company Outline
+K ioxia Holdings Corporation
+Integrated Report 2025
+5555
+Kioxia Holdings Corporation Integrated Report 2025
+
+--- page 57 ---
+Company Outline
+Kioxia Group
+(As of March 31, 2025)
+“Kioxia Group” refers to Kioxia Holdings Corporation and its 22 consolidated subsidiaries (7 in
+Japan and 15 overseas)
+Kioxia America, Inc.
+Kioxia Europe GmbH
+Kioxia Singapore Pte. Ltd.
+Kioxia T aiwan Corporation
+Kioxia Semiconductor T aiwan Corporation
+Kioxia Korea Corporation
+Kioxia (China) Co., Ltd.
+Kioxia Israel Ltd.
+Kioxia T echnology UK Ltd.
+Solid State Storage T echnology Corporation
+T amachi Station T ower S, 3-1-21, Shibaura,
+Minato-ku, T okyo 108-0023, Japan
+March 1, 2019
+Kioxia Holdings Corporation was established as the holding
+company for our corporate group by means of a share
+transfer from T oshiba Memory Corporation (now Kioxia
+Corporation.)
+25,239 million yen
+Group strategy formulation and management oversight
+Non-consolidated: 127
+Consolidated: 15,042
+Nobuo Hayasaka
+Kioxia Holdings CorporationName
+Head Office Address
+Establishment
+Capital
+Business
+Number of Employees
+President and CEO
+Kioxia Iwate Corporation
+Kioxia Systems Co., Ltd.
+Kioxia Engineering Corporation
+Kioxia Etoile Corporation
+Kioxia Energy Management Corporation
+Kioxia Holdings Corporation
+Kioxia Corporation
+Consolidated subsidiaries in Japan Consolidated subsidiaries overseas
+Note: Certain consolidated subsidiaries have been omitted.
+T okyo Stock Exchange Prime Market
+(Securities code: 285A)
+Listed Stock Exchange
+Governance5
+4 Management Capital
+Kioxia Group’s Value Creation Initiatives3
+Messages from Senior Management2
+About Kioxia Group1
+Data Section6
+Financial Highlights
+Non-Financial Highlights
+Company Outline
+K ioxia Holdings Corporation
+Integrated Report 2025
+5656
+Kioxia Holdings Corporation Integrated Report 2025
+
+--- page 58 ---
+www.kioxia-holdings.com
+Tamachi Station Tower S, 3-1-21, Shibaura,
+Minato-ku, Tokyo 108-0023, Japan
+Corporate Communication Division

@@ -1,0 +1,917 @@
+--- page 1 ---
+© 2025 KIOXIA Holdings Corporation. All Rights Reserved.
+Kioxia
+Corporate Strategy Meeting
+Kioxia's Medium- to Long-Term Growth Strategy in the Age of AI
+Kioxia Holdings Corporation
+June 5th, 2025
+
+--- page 2 ---
+© 2025 KIOXIA Holdings Corporation. All Rights Reserved. 2
+1. Our Role in the Generative AI Revolution Nobuo Hayasaka
+President and CEO
+2. Flash Memory Market Growth
+and Our Long-Term Financial Model
+Junichiro Yaguchi
+Managing Executive Officer, CSO
+3. Storage Strategy for Generative AI
+Masashi Yokotsuka
+Managing Executive officer
+Vice president, SSD div.*
+4. Our Leadership in Flash Memory Technology
+Hiroo Oota
+Executive Vice President and
+Executive Officer
+5. Manufacturing and Capital Investment Strategy
+Tomoharu Watanabe
+Executive Vice President and
+Executive Officer
+6. Q&A
+Agenda
+※ Managing Executive officer and Vice president, SSD div. of Kioxia corporation
+
+--- page 3 ---
+© 2025 KIOXIA Holdings Corporation. All Rights Reserved. 3
+Forward-looking statements included in this presentation are prepared based on our expectations and projections in light of the
+information currently available to us, which involve various risks and uncertainties (including, but not limited to, economic trends,
+market demand and the highly competitive semiconductor industry). Such risks and uncertainties may cause our actual results to be
+materially different from any future results expressed or implied by these forward-looking statements. We undertake no obligation to
+update any forward-looking statement included herein.
+The information and projections regarding the flash memory industry included in this presentation are derived from information
+currently available to us. Whilst this presentation is provided in good faith, it does not purport to be comprehensive and has not been
+independently verified. We make no representations with respect to such information and projections.
+The long-term financial model in this presentation material is neither a financial forecast nor a projection of future results. The long-
+term financial model contains forward-looking statements, which represent our expectations if a set of assumptions (including those
+regarding future market trends) that we believe are reasonable prove to be true, in the absence of other unanticipated factors. Such
+assumptions are based on currently available information only. We cannot guarantee that they would not differ from actual results in
+the future, which could be caused by a variety of factors, such as supply chain disruptions, material suspensions of operations at our
+production plants, rapid and sharp changes in financial market conditions, and changes in governmental policies with respect to the
+semiconductor industry. Nothing in this presentation material should be regarded as a representation by any person that the KPIs in
+the long-term financial model will be achieved.
+This presentation includes internal measures which our management relies upon in making decisions (the "Non-GAAP Financial
+Measures") that differ from financial measures prepared in accordance with International Financial Reporting Standards ("IFRS"). The
+Non-GAAP Financial Measures, which are IFRS measures plus adjustments made for non-recurring items, have not been audited or
+reviewed by auditors. Therefore, such Non-GAAP Financial Measures may not accurately reflect our financial condition or operating
+results.
+Product and service names mentioned in this document may be trademarks or registered trademarks of their respective companies.
+Disclaimer
+
+--- page 4 ---
+© 2025 KIOXIA Holdings Corporation. All Rights Reserved.
+Our Role
+in the Generative AI Revolution
+Nobuo Hayasaka
+President and CEO
+
+--- page 5 ---
+© 2025 KIOXIA Holdings Corporation. All Rights Reserved. 5
+1987
+Invention of NAND Flash Memory
+2007
+Announcement of 3D Flash Memory,
+“BiCS FLASHTM”
+We Have Been Behind Turning Points in Flash Memory
+
+--- page 6 ---
+© 2025 KIOXIA Holdings Corporation. All Rights Reserved. 6
+Announced the 8th Generation
+BiCS FLASH
+ 2Tb QLC
+Industry's largest capacity
+Sample shipment
+Development of high-capacity
+122.88 TB enterprise SSD
+Presentation
+on next generation 3D
+Flash memory technology
+Conference presentation
+July 24 March 25February 25December 24
+New DRAM technology
+using oxide semiconductors, etc.
+(OCTRAM)
+Industry's largest capacity
+ 275Mbit 4F2 DRAM array and OSFET
+~26nmGate
+InGaZnO
+Electrode
+Electrode
+Conference presentation Sample shipmentSample shipment
+ Conference presentation@2024 IEEE @2025 IEEE
+332Layer BiCS FLASHTM
+Kioxia’s Achievements in FY2024
+
+--- page 7 ---
+© 2025 KIOXIA Holdings Corporation. All Rights Reserved. 7
+AI
+AI
+AI
+The Evolving Use Cases of Flash Memory
+Phase1
+Integration into
+electronic devices
+Phase2
+Contribution to
+Cloud computing
+Phase3
+Development of Generated
+AI Services
+
+--- page 8 ---
+© 2025 KIOXIA Holdings Corporation. All Rights Reserved. 8
+Constant provision of optimal data access
+for all processes of value creation
+TransportationSpace Exploration Retail Entertainment Energy
+Healthcare Manufacturing Finance Education Agriculture
+Database Network Data Security Server Backup Cloud Technology
+SSD
+Data Center
+Data is the Infrastructure of our Daily Lives
+AI creates value from data in all industries
+
+--- page 9 ---
+© 2025 KIOXIA Holdings Corporation. All Rights Reserved. 9
+With a stable production foundation and industry-leading technology,
+we are building the core of the information infrastructure
+together with our partners.
+How Kioxia Excels
+Technology Scale Partnership
+
+
+--- page 10 ---
+Technology
+A Technology Leader in Flash Memory,
+Creating World Firsts
+Development of competitive memory
+devices in pursuit of bit density
+Technological proposals with new
+concepts for SCM and HDD replacement
+Development of high-capacity and
+high-performance SSDs tailored
+to usage scenarios
+
+--- page 11 ---
+Leading Global Flash Memory
+Production Facilities Leveraging
+Economies of Scale
+Enjoying cost benefits from a 25-year
+partnership with Sandisk
+Smooth mass production through data
+integration and AI utilization
+between Yokkaichi and Kitakami plants
+Expansion of product lineup with reduced
+investment through Dual-Axis Strategy
+Scale
+
+--- page 12 ---
+Partnerships with Leading Companies
+in Each Market
+Collaboration with top companies
+in the server market
+Expansion of Business with Hyperscalers
+Business relationships with clients
+that hold significant market
+share in the smartphone and PC sectors
+Building a robust supply chain with
+equipment manufacturers, material suppliers,
+and OSATs
+Partnership
+
+--- page 13 ---
+© 2025 KIOXIA Holdings Corporation. All Rights Reserved. 13
+Environmental contributions to society
+During Product Manufacturing
+Reduction of Greenhouse Gas Emissions
+⚫ Promotion of Energy Conservation and Adoption
+of Renewable Energy: Targeting procuring 100%
+of our energy from renewable sources by FY2040
+⚫ Net-zero Greenhouse Gas Emissions: Aiming for
+net-zero Scope 1 greenhouse gas emissions and
+Scope 2 emissions by FY2050
+During Product Use
+Improvement in Energy Consumption Efficiency
+⚫ Efforts to Reduce Power Consumption per Bit
+Targeting a 50% Reduction in Energy
+Consumption from FY2017 to FY2025
+
+
+--- page 14 ---
+Uplifting the world
+with ”memory”
+
+
+--- page 15 ---
+© 2025 KIOXIA Holdings Corporation. All Rights Reserved.
+Flash Memory Market Growth
+and Our Long-Term Financial Model
+Junichiro Yaguchi
+Managing Executive Officer, CSO
+
+--- page 16 ---
+© 2025 KIOXIA Holdings Corporation. All Rights Reserved. 16
+253
+313
+403
+525
+668
+28%
+34%
+38%
+39%
+41%
+'25E '26E '27E '28E '29E
+657
+740
+852
+971
+1,083
+18%
+24%
+28%
+33%
+39%
+'25E '26E '27E '28E '29E
+PC Unit Shipments1
+1 Source – TechInsights “NAND Market Report Q2 2025”
+2 Based on shipments. Generative AI smartphones / PCs are envisioned as smartphones / PCs equipped with locally stored large
+language models (LLMs) and dedicated logic ASICs for AI processing
+3 Demand forecast is based on NAND consumption (server sales, datacenter buildouts, etc.), not NAND/SSD sales by the memory
+suppliers to the datacenter operators and traditional enterprise OEMs.  4 Refer to footnote 3 on page 17 5 Based on bit demand
+Smartphone Unit Shipments1 NAND Demand From Data Centers1,3
+Smartphone Storage Density per Unit (GB)
+AI Product Ratio2
+PC SSD Density per Unit (GB)
+AI Product Ratio2
+(Exabytes)
+(CY) (CY) (CY)
+CAGR
+13％
+CAGR
+27％
+265
+300
+344
+403
+474
+3%
+14%
+28%
+43%
+61%
+'25E '26E '27E '28E '29E
+CAGR
+16％
+AI Driving Flash Memory Demand Surge Across All Applications
+AI Inference4
+AI Learning4
+Traditional/Others4
+AI Product Ratio5
+
+--- page 17 ---
+© 2025 KIOXIA Holdings Corporation. All Rights Reserved. 17
+970
+2,044
+'25E '26E '27E '28E '29E
+Bit Demand Related to AI (EB)3,4
+Flash memory market
+CAGR 20%
+Inference 69%
+Training 26%
+CAGR
+1 Source – TechInsights Inc. “NAND Market Report Q2 2025”
+2 Demand forecast is based on NAND consumption (server
+sales, datacenter buildouts, etc.), not NAND/SSD sales by the
+memory suppliers to the datacenter operators and traditional
+enterprise OEMs.
+3 AI inference / training SSD refers to any SSD primarily used to
+support AI inference / training workloads (either server- or
+storage-attached)
+4 Generative AI smartphones/PCs are envisioned as devices
+equipped with locally stored large language models (LLMs) and
+dedicated logic ASICs for AI processing. Since no such devices
+exist in the market yet, the modeled forecasts are based on
+assumptions and estimations and are subject to high uncertainty.
+Non-AI 6%
+(CY)
+Flash Memory Market Driven by Generative AI1,2
+
+--- page 18 ---
+© 2025 KIOXIA Holdings Corporation. All Rights Reserved. 18
+Revenue OP （Non-GAAP base）
+'19 '20 '21 '22 '23 '24
+1.7 trillion yen
+453 billion yen
+Record High Revenue
+Record High Profits
+In FY2024, Achieved Record High Revenue and Profits
+SSD &
+Storage
+'19 '20 '22'21 '23 '24(FY) (FY)
+FY2024 Results
+
+--- page 19 ---
+© 2025 KIOXIA Holdings Corporation. All Rights Reserved. 19
+※Kioxia Group as a whole
+20％ or below
+Ratio to Revenue of
+Capital
+Expenditures
+Ratio to Revenue of
+R＆D
+8-9％
+Recruitment
+700 People per year
+Resource allocation for growth
+Approx.
+
+--- page 20 ---
+© 2025 KIOXIA Holdings Corporation. All Rights Reserved. 20
+Growth
+Profitability
+Financial
+Stability
+Long term Net cash position
+Net Debt／EBITDA3
+Medium term ＜1.0
+mid-20% range
+In Line with Expected NAND Market Growth1
+20%
+Operating margin2
+Annual cost
+reduction per GB mid-10% range
+*See DISCLAIMER on page 3 of this document.
+1 Storage Capacity Shipment Basis  2 Non-GAAP Basis  3 LTM Non-GAAP Basis
+※CY25-29
+Long-Term Financial Model
+
+--- page 21 ---
+© 2025 KIOXIA Holdings Corporation. All Rights Reserved. 21
+Capital Allocation Policy
+OP Margin2 | Mid-20%
+Long-term financial model
+Tax Shield from NOL
+JPY 276.5Bn¹
+Working Capital
+Management
+Dividend / Share Repurchase
+Prioritize achieving a net cash position
+Capex | ~20% of Revenue
+Disciplined approach
+R&D | 8-9% of Revenue
+Enhancing technological competitiveness
+Debt Repayment
+Net Debt／EBITDA3＜1.0x (mid-term)
+Net cash position (long-term)
+Cash
+Generation
+Growth
+Investments
+Capital
+Allocation
+(long-term)
+Positive FCF Generation Through the Cycle
+1 After-tax amount of tax loss carryforwards (NOL) as-of March 31, 2024
+Aim to enhance financial soundness for sustainable growth through the cycle
+2 Non-GAAP basis 3 LTM Non-GAAP basis
+
+--- page 22 ---
+© 2025 KIOXIA Holdings Corporation. All Rights Reserved.
+Storage Strategy
+for Generative AI
+Masashi Yokotsuka
+Managing Executive officer, Vice president of SSD div.
+
+--- page 23 ---
+© 2025 KIOXIA Holdings Corporation. All Rights Reserved. 23
+Traditional Server AI Server
+or
+HBM HBM
+Performance Power Capacity
+HBM ✓✓✓✓ ✓✓ ✓
+DRAM ✓✓✓ ✓✓ ✓✓
+SSD ✓✓ ✓✓✓✓ ✓✓✓
+HDD ✓ ✓✓ ✓✓✓✓
+DRAM
+HDD
+From the perspectives of capacity, performance,
+and power efficiency, SSD is the best choice.
+SSD SSD
+AI servers require large-capacity and high-speed data transfer.
+The importance of SSD in AI systems
+Over 1 Trillion parameters
+Approx.
+X4,000 Speed
+Approx.
+X64 Speed
+Faster
+&
+Larger
+
+--- page 24 ---
+© 2025 KIOXIA Holdings Corporation. All Rights Reserved. 24
+Training
+HBM HBM
+Inference
+HBM
+ RAG
+SSD Demand Expected to be Driven by AI Inference
+Inference systems and inference servers will be needed for as many services and users as there are.
+Extremely
+large
+training
+datasets
+Snapshot
+& log
+LLM fast loading
+& KV caching
+Content
+store
+Retrieval
+Augmented
+Generation
+What is required of SSDs :
+• Higher-performance
+• Larger Capacity
+• Better Power Efficiency
+
+--- page 25 ---
+© 2025 KIOXIA Holdings Corporation. All Rights Reserved. 25
+2025/E
+Performance
+SSD
+Capacity SSD
+Kioxia’s SSD lineups for AI systems
+CM9
+LC9
+XD8
+equipped with an in-house
+controller supporting PCIe® 5.0
+equipped with BiCS
+FLASH
+ Generation 8,
+2Tb QLC monolithic chip
+Mission Critical Ready QLC SSD
+Single-Port / Dual-Port 2.5-inch : 122.88TB*
+Best-in-class PCIe® 5.0 SSD DC optimized PCIe® 5.0 SSD
+* 122.88TBis capacity of current product. Future capacityplanned to be larger.
+
+--- page 26 ---
+© 2025 KIOXIA Holdings Corporation. All Rights Reserved. 26
+Flash Memory
+Technology Leadership
+In-house unified Ent. &
+DC R&D platform
+BiCS FLASHTM
+generation 8
+Faster and
+lower-latency
+Larger and more
+power-efficient
+×
+SSD
+
+HW
+PCIe5.0
+DC Form factor
+PLP function
+int main() {
+   int num1, nu
+   printf(“ xxx
+   scanf("%d", &
+printf(“ xxx
+SSD
+
+FW
+Powerful ECC
+Advanced Security
+Customization
+15yr+
+Engagement
+
+In
+
+Enterprise
+Lead new tech
+trends with key
+customersBit Density
+Read
+Latency
+Write Power
+Efficiency
+Higher
+Interface
+Speed
+Our strength
+Combining Flash technology with enterprise experience to deliver reliable SSDs to customers.
+
+
+--- page 27 ---
+© 2025 KIOXIA Holdings Corporation. All Rights Reserved. 27
+Kioxia’s Proposal
+2026/2H
+New SSD
+to enhance GPU
+performance
+Open Software
+to enhance
+inference services
+Super
+High IOPS
+SSD
+AiSAQTM
+CURRENT
+DRAM base
+Expand SSD capability
+in AI market
+HBM
+TLC & QLC
+2~3M IOPS
+Kioxia’s ProposalCURRENT
+RAG
+SSD base
+>10M IOPS 512B Rnd.
+Read
+XL-FLASH (SLC)
+Available
+SSD
+Large
+RAG
+DB
+Our proposal
+As experts in Flash Memory and SSD, Kioxia contributes to the growth of AI systems and the market by collaborating
+with technology leaders and leading customers.
+
+--- page 28 ---
+© 2025 KIOXIA Holdings Corporation. All Rights Reserved.
+Our Leadership
+in Flash Memory Technology
+Hiroo Oota
+Executive Vice President and Executive Officer
+
+--- page 29 ---
+© 2025 KIOXIA Holdings Corporation. All Rights Reserved. 29
+4Mb
+1Gb
+128Gb
+15nm
+700nm
+256Gb
+2Tb
+512Gb
+1Tb
+16Gb
+56nm160nm
+48L
+96L
+162L
+218L(Gen.8)
+Reliability
+              Bit density improvement
+2D NAND
+BiCS FLASHTM
+Die
+capacity
+1991
+SLC
+2001
+MLC
+2008
+TLC
+Application Demand
+AIIndustryConsumer
+Bit
+density
+Application Transition
+2019
+QLC
+Performance, Power efficiency
+2Tb
+332L(Gen.10)*
+SLC : Single Level Cell
+MLC: Multi Level Cell
+TLC: Triple Level Cell
+QLC: Quad Level Cell
+Kioxia is the Pioneer in Flash Memory
+Phase1 Phase2 Phase3
+* Under
+development
+
+--- page 30 ---
+© 2025 KIOXIA Holdings Corporation. All Rights Reserved. 30
+Gb/mm2
+Number of Layers
+Significant Bit Density Improvement through
+Lateral Shrink & CBA
+BiCS FLASHTM
+generation 6
+BiCS FLASHTM
+generation 8
+CBA ③②
+①
+Conventional direction
+BiCS FLASHTM
+generation 5
+②
+Vertical Scaling
+Stacking $$$
+New Architecture
+CBA $
+Lateral Shrink
+High-density Memory Hole -
+… Logical Shrink
+QLC -
+Bit Density Improvement Technologies and
+Relationship with Investment
+Initial
+InvestmentTechnology
+①
+③
+②
+④
+CBA : CMOS directly Bonded to Array QLC: Quad Level Cell
+Technological Leadership Enables Highest Bit Density
+
+--- page 31 ---
+© 2025 KIOXIA Holdings Corporation. All Rights Reserved. 31
+CNA : CMOS Next to Array
+CUA : CMOS Under Array
+CBA : CMOS directly Bonded to Array
+CNA
+CUA
+CBA Reduced
+peripheral
+circuit
+overhead
+Cell
+Array CMOS
+Cell
+Array
+CMOS
+Cell
+Array
+CMOS
+③New ArchitectureWorld’s first
+Eliminated inactive memory
+holes used for isolation
+Active
+memory
+hole
+Inactive
+memory
+hole
+OPS
+OPS : On Pitch SGD
+SGD : Select Gate Drain
+Conventional
+Layout
+②Lateral shrink
+Realized 4 bit per cell from
+BiCS FLASH
+ generation 4
+World’s first
+Bit
+density
+✓ TLC optimal for performance
+✓ QLC optimal for capacity
+Performance
+Reliability
+x2
+x1.5
+x1.33
+High
+High
+④Logical Shrink
+Top view
+Isolation
+SLC  1bit/cell
+MLC  2bit/cell
+TLC  3bit/cell
+QLC  4bit/cell
+Wafer
+bonding
+Key Technologies Enabling Highest Bit Density
+
+--- page 32 ---
+© 2025 KIOXIA Holdings Corporation. All Rights Reserved. 32
+StackingNumber of Layers
+Performance
+Gen.5
+Gen.6
+Gen.8
+Gen.10
+Gen.X
+3.2Gbps
+High performance
+by combining optimal cell technology
+and upgraded CMOS circuit
+CUA
+CNA
+Large Capacity
+by continuous process migration
+Utilizing CBA
+Gen.9, Gen.Y
+CBA : CMOS directly Bonded to Array
+Dual-Axis Strategy enables optimal CAPEX spending and maximizes GB output and offers high performance
+flash memory for wide variety of applications
+BiCS FLASHTM Road Map
+
+--- page 33 ---
+© 2025 KIOXIA Holdings Corporation. All Rights Reserved. 33
+Bit Density
+Write Power
+Efficiency
+Gen.6 Gen.8 Gen.10
+Performance
+Power
+Efficiency
+Bit
+Density
+Gen.5
+3.6Gb/s
+ x1.33
+(*)1.6Gb/s 1.2Gb/s
+x1.5
+(CBA)
+x1.74
+(CUA)
+x1.59
+(CBA)
+x1
+(CNA)
+35us40us x0.95
+ (*)45us
+>1.5GB/s
+per W
+>1.1GB/s
+per W
+ x1.1
+(*)>1.0GB/s
+per W
+Gen.9 : Performance improvements are similar to Gen.10
+(*) : Target performance
+Best in Class
+Best in Class
+Best in Class
+CNA : CMOS Next to Array
+CUA : CMOS Under Array
+CBA : CMOS directly Bonded to Array
+Performance & Bit Density Improvement Across the BiCS FLASHTM Generations
+Read
+Latency
+Higher
+Interface
+Speed
+
+--- page 34 ---
+© 2025 KIOXIA Holdings Corporation. All Rights Reserved. 34
+<10ns
+<40us
+100us
+3-5 us
+GPU memory
+CPU memory
+Storage Class
+Memory
+Warm Storage
+TLC SSD
+Cold Storage
+QLC SSD
+1ms NL HDD
+<40ns
+NL HDD
+QLC NAND
+TLC NAND
+DRAM
+HBM
+Cache
+XL-FLASH
+(SLC NAND)
+Read Latency Image Application
+Targeting New Applications with New Memory Solutions
+XL-FLASH for AI Era (Currently in Production)
+▪ Roughly 10 times faster and durable than typical TLC NAND
+▪ Targeting AI applications such as:
+✓ Super High IOPS SSD (Sample in 2026/2H)
+✓ CXL attached XL-FLASH (Sample in 2026/2H)
+OCTRAM (Research & Development Phase )
+▪ 4F2 layout
+▪ Targeting AI and post-5G system memory
+requiring low power consumption
+Large Capacity QLC (Currently in Production)
+▪ QLC SSDs are in data centers today
+▪ Targeting NL HDD replacement with cost oriented QLC NAND.
+✓ Targeting development of large capacity QLC SSDs that can
+compete with NL HDD in terms of TCO (Total Cost of Ownership)
+OCTRAM：
+Oxide-Semiconductor
+Channel Transistor
+DRAM
+
+
+--- page 35 ---
+© 2025 KIOXIA Holdings Corporation. All Rights Reserved.
+Manufacturing and
+Capital Investment Strategy
+Tomoharu Watanabe
+Executive Vice President and Executive Officer
+
+--- page 36 ---
+© 2025 KIOXIA Holdings Corporation. All Rights Reserved. 36
+Yokkaichi Plant
+7 fabs and memory R&D center
+Main synergy
+Quick
+Ramp
+Improved
+Throughput
+High Yield
+from Initial Stage Quick action by AI
+Kitakami Plant
+2 fabs
+Kioxia’s Operational Excellence
+High Yield Rate and Productivity Achieved in Yokkaichi & Kitakami
+
+--- page 37 ---
+© 2025 KIOXIA Holdings Corporation. All Rights Reserved. 37
+Frontend Allocation
+Kitakami
+Yokkaichi
+Backend Allocation
+Outsourcing
+Outsourcing
+(New Site)
+In-house
+In line with
+market demand 2→3 regions
+Manufacturing Allocation Strategy
+(GB output) (Capacity)
+FY24 FY29E FY24 FY29E
+
+--- page 38 ---
+© 2025 KIOXIA Holdings Corporation. All Rights Reserved. 38
+✓ Investment in mass production
+for future growth
+✓ R&D investment
+to keep technology leadership
+* Source – TechInsights Inc. “NAND Market Report Q1 2025”
+Effective Capex Control
+2016 2017 2018 2019 2020 2021 2022 2023 2024
+Capital Efficiency*
+Prior 5 years cumulative Capex / Current year GB output
+Kioxia
+Industry
+($/GB)
+Manufacturing Capacity Expansion While Keeping Financial Discipline
+
+--- page 39 ---
+© 2025 KIOXIA Holdings Corporation. All Rights Reserved. 39
+KIOXIA +
+Sandisk
+Kioxia + Sandisk Approx.30%
+1 Source – CY24 Production GB, TechInsights Inc. “NAND Market Report Q2 2025”
+Top Class Flash Memory Player ✓ Kioxia owns the facilities
+and controls 100% of manufacturing operation
+✓ Majority of engineering resources
+✓ 60% of total capacity
+JV Capacity60% for KioxiaCapacity
+40%
+Kioxia
+40%
+Sandisk
+20%
+own
+capacity
+Keep Leading Position in Flash Memory Production
+Manufacturing Capacity Expansion to Keep Leading Position
+
+--- page 40 ---
+© 2025 KIOXIA Holdings Corporation. All Rights Reserved. 40
+Geopolitical Risks Environmental Regulations Disasters and Incidents
+BCP management based on strong partnership with suppliers
+Commitment to supply chain risk management
+Kioxia assesses and stays aware of its supply chain risks to minimize its business risks
+
+--- page 41 ---
+Key Message for Today
+
+--- page 42 ---
+© 2025 KIOXIA Holdings Corporation. All Rights Reserved. 42
+We aim to enhance our corporate value by contributing to
+society through providing a foundation for data utilization and
+pursuing sustainable growth
+Market
+Value
+Proposition
+Profitability
+With the widespread adoption of generative AI, the storage market is
+expected to continue expanding, particularly driven by inference
+workloads.
+Maintaining technology leadership through innovation
+By developing competitive devices, we address the increasingly diverse
+storage needs—including high performance, large capacity, and low power
+consumption
+Improving profitability and strengthening our financial foundation
+through disciplined capital investment and strategic resource
+allocation
+Key Message for Today
+
+--- page 43 ---

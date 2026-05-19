@@ -1,0 +1,158 @@
+--- page 1 ---
+In this presentation, we will explain not only the structure of the joint venture
+between Kioxia and Sandisk, but also Kioxia's leadership in research &
+development and manufacturing capabilities that drive the joint venture, as well
+as our factory vision for the future.
+1
+
+--- page 2 ---
+Here is a summary of Fab2 at the Kitakami Plant. Fab2, called K2, will first focus
+on mass production for the eighth generation of BiCS FLASHTM, and we plan to
+incorporate advanced equipment to produce the next generation of high-
+capacity products. Similar to the Yokkaichi Plant, K2 is connected with inter-
+building wafer transportation with K1, enabling high-efficiency production
+utilizing AI. Additionally, a portion of the capital investment is supported by
+subsidies from the Japanese government.
+2
+
+--- page 3 ---
+Similarly to our previous manufacturing facilities, Kioxia is making investments
+into K2 in collaboration with Sandisk. This chart serves as a summary of the
+structure of the joint venture that we have explained previously.
+Our collaboration with Sandisk consists of two components: joint development
+and capital investment for the joint venture. The JV leases production
+equipment and contracts manufacturing to our Yokkaichi and Kitakami plants,
+and Kioxia sells wafers with allocated costs.
+Kioxia as a standalone holds 20% of the total production capacity of the
+Yokkaichi and Kitakami plants, while the remaining 80% is shared equally
+between Kioxia and Sandisk. As a result, we have 60% of capacity and Sandisk
+has 40%.
+We have explained before that Kioxia controls 100% of wafer manufacturing at
+the Yokkaichi and Kitakami plants, so now for the next part of the presentation
+will dive deeper into Kioxia’s own research and development capabilities and
+manufacturing power that are essential to the joint venture.
+3
+
+--- page 4 ---
+First, as shown in the top half of this page, our collaboration with Sandisk is a
+vehicle to consolidate the investments of both companies to achieve economies
+of scale, as well as a means to share development costs through joint
+development.
+However, as indicated in the bottom half, Kioxia conducts advanced
+semiconductor research independently. For cutting-edge research, we lead the
+way in developing fundamental technologies related to materials and their use,
+process technologies, and device design technologies, and we incorporate these
+results into joint development. This approach allows us to achieve high
+investment efficiency and leads to mass production of competitive products.
+Regarding manufacturing, as mentioned earlier, Kioxia controls 100% of wafer
+manufacturing at the Yokkaichi and Kitakami plants. We independently control
+all elements necessary for the operation and production management of both
+manufacturing sites. For instance, we manage the procurement of tens of
+thousands of components, materials, and equipment, optimize and streamline
+automation systems, and work on shortening wafer processing times and
+production lead times. We also utilize big data and AI for detailed production
+management and yield management, along with various environmental
+measures to enhance sustainability.
+Kioxia’s advanced research and manufacturing capabilities are essential for the
+development of competitive BiCS FLASHTM technology, and we are determined
+to continue strengthening these areas in the future.
+4
+
+--- page 5 ---
+According to a report by the research firm TechInsights, for cost per GB for the
+fiscal year 2024, Kioxia achieved a cost approximately 20% lower than the
+industry average.
+Kioxia's advanced research capabilities and manufacturing strength contribute
+to the medium to long-term cost competitiveness of its products. The main
+factors enabling us to achieve this high cost competitiveness are high
+investment efficiency based on advanced research and technologies, as well as
+sound judgment in assessing market conditions. Our production efficiency and
+yield management leverage the experience, know-how, and innovations Kioxia
+has developed over time, combined with the economies of scale derived from
+our collaborations.
+Following pages will discuss the elements shown on the right that contribute to
+our high cost competitiveness, and outline Kioxia’s advantages i n each area.
+5
+
+--- page 6 ---
+First, this page discusses Kioxia’s cutting-edge research.
+The three-dimensional flash memory technology, “BiCS FLASHTM” was
+developed by Kioxia and presented for the first time at a conference in 2007.
+Since then, Kioxia has continued to independently pioneer technology for both
+higher layer stacking and planar scaling, which we proposed for joint
+development, thus enhancing the competitiveness of BiCS FLASHTM products.
+For BiCS FLASHTM, as the number of layers increases, wafer costs rise.
+However, by incorporating various technologies to improve bit density, Kioxia
+has been able to reduce costs per GB. For example, in the eighth generation of
+BiCS FLASHTM, we have achieved a reduction in GB costs that counteracts the
+cost increases associated with more layers by employing techniques like CBL,
+which reduces chip area on the planar level.
+Furthermore, we have made the strategic decision to mass-produce CBA
+technology that Kioxia has built up through years of research, strengthening our
+competitive advantage in an era where high capacity, performance, and low
+power consumption are increasingly demanded, especially in the age of AI.
+Additionally, this CBA technology aligns with Kioxia’s "dual-axis strategy" that
+we have discussed in the past, and we believe it will contribute to the expansion
+of the AI market in the future.
+6
+
+--- page 7 ---
+Now, the next chart covers investment efficiency. Here is a graph Kioxia
+presented during the Corporate Strategy Meeting in June, which shows
+investment efficiency in the form of cumulative capital investment over the past
+five years relative to the annual increase in GB output. As indicated in the
+TechInsights report, Kioxia maintains the highest investment efficiency in the
+industry.
+Kioxia’s high investment efficiency is attributed to maximizing manufacturing
+equipment utilization through integrated production that leverages inter-building
+wafer transportation, the repurposing of existing equipment, and strategically
+planning device and process development with a focus on future equipment
+strategies. Kioxia’s strategic procurement activities also contribute to this high
+level of investment efficiency.
+7
+
+--- page 8 ---
+This page discusses the results of our recent manufacturing activities.
+First, the graph on the left shows that our process handling capacity per wafer
+has improved by approximately 20% over the two years from fiscal year 2022 to
+fiscal year 2024. This improvement is a result of reduced processing times,
+streamlined production lot transportation, and optimized inspection processes.
+Even as manufacturing processes become increasingly advanced and complex,
+Kioxia has achieved high production efficiency, contributing to the shortening of
+manufacturing lead times for the eighth generation of BiCS FLASHTM.
+The graph on the right illustrates yield improvements. Since the start of
+production for the eighth generation of BiCS FLASHTM, Kioxia has shortened the
+time taken to reach a given yield level by about 25% compared to previous
+generations. Kioxia has also improved opportunity loss against past generation
+yield curves by more than 10%. This achievement is due in part to device
+designs considered for manufacturing, as well as extensive utilization of results
+data, causal data, change point data, and equipment setting data derived from
+manufacturing-specific big data. With the help of AI analysis on the production
+line, skilled workers who understand the source of the data are able to
+accumulate know-how through observations and improve the on-site processes,
+resulting in the successful implementation of yield monitoring and production
+improvements.
+8
+
+--- page 9 ---
+Lastly, we would like to share Kioxia's vision for its plants.
+At the Kitakami Plant, Kioxia aims to create an advanced smart factory by
+leveraging the know-how accumulated at the Yokkaichi Plant and incorporating
+and utilizing digital transformation. The Yokkaichi Plant has historically
+promoted automation while eliminating dependence on individual operators. As
+a result, Kioxia has worked to speed up decision-making to minimize losses
+while scaling up operations.
+Kioxia extracts and digitizes necessary data and optimize the frequency of data
+acquisition through machine learning and AI, and we are in the process of using
+AI and efficiency improvement simulations to further refine our approaches.
+Going forward, Kioxia will also focus on enhancing the technical expertise of its
+workforce to address more advanced tasks, promoting predictive and automated
+control, and achieving improvements in manufacturing efficiency and a stable
+production system. The Kitakami Plant is undergoing a transition with the
+introduction of the latest equipment, and Kioxia aims to integrate these
+manufacturing capabilities to create a world-leading, streamlined, and state-of-
+the-art factory operation.
+9
+
+--- page 10 ---
+10

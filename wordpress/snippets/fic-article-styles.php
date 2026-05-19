@@ -28,11 +28,43 @@ add_action('wp_head', function () {
 .definition-lead p{margin:0}
 .definition-lead p+p{margin-top:.6em}
 
+/* ============== 各章の導入リード（<p><em>...</em></p>を通常フォントの案内枠にする） ============== */
+.single .entry-content p:has(> em:only-child),
+.post-content p:has(> em:only-child),
+.article-content p:has(> em:only-child),
+.content p:has(> em:only-child){background:#fffdf2;border-top:1px solid #e8e8e8;border-right:1px solid #e8e8e8;border-bottom:1px solid #e8e8e8;border-left:5px solid #ffd500;color:#1f1f23;font-size:.98em;line-height:1.85;margin:20px 0 26px;padding:15px 20px}
+.single .entry-content p:has(> em:only-child) em,
+.post-content p:has(> em:only-child) em,
+.article-content p:has(> em:only-child) em,
+.content p:has(> em:only-child) em{font-style:normal}
+
 /* ============== 表の自動幅調整（列数が多い表を無理に潰さない） ============== */
 .content .table-wrapper,
 .table-wrapper{display:block;width:100%;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
 .content .table-wrapper table,
 .table-wrapper table{width:100%!important;min-width:100%!important;table-layout:auto!important}
+.table-wrapper caption,
+.single .entry-content .table-wrapper caption,
+.post-content .table-wrapper caption,
+.article-content .table-wrapper caption{caption-side:top;text-align:left;background:#fffdf2;border-top:1px solid #e8e8e8;border-right:1px solid #e8e8e8;border-bottom:0;border-left:5px solid #ffd500;color:#1f1f23;font-size:.93em;font-weight:700;line-height:1.55;margin:0;padding:10px 14px 10px 16px}
+.table-wrapper caption::before,
+.single .entry-content .table-wrapper caption::before,
+.post-content .table-wrapper caption::before,
+.article-content .table-wrapper caption::before{content:"表";display:inline-flex;align-items:center;justify-content:center;min-width:2.4em;margin-right:.7em;padding:3px 7px;background:#1f1f23;color:#ffd500;font-size:.78em;font-weight:800;line-height:1;vertical-align:.08em}
+.article-image figcaption,
+.fic-article-image figcaption,
+.wp-block-image figcaption,
+.post_content figure figcaption,
+.single .entry-content figure figcaption,
+.post-content figure figcaption,
+.article-content figure figcaption{display:block;margin:10px 0 0!important;padding:9px 13px!important;font-size:.84em!important;font-weight:400!important;color:#555!important;background:#f7f7f7!important;border-left:4px solid #ffd500!important;border-radius:0!important;line-height:1.65!important;text-align:left!important;font-style:normal!important}
+.article-image figcaption::before,
+.fic-article-image figcaption::before,
+.wp-block-image figcaption::before,
+.post_content figure figcaption::before,
+.single .entry-content figure figcaption::before,
+.post-content figure figcaption::before,
+.article-content figure figcaption::before{content:"画像説明";display:inline-flex;align-items:center;margin-right:.65em;padding:3px 7px;background:#1f1f23;color:#ffd500;font-size:.78em;font-weight:800;line-height:1;vertical-align:.08em}
 .content .table-wrapper table:has(tr > :nth-child(5)),
 .table-wrapper table:has(tr > :nth-child(5)){min-width:900px!important}
 .content .table-wrapper table:has(tr > :nth-child(6)),
