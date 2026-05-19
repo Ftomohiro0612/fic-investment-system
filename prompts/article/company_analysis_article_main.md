@@ -1354,8 +1354,14 @@ v4・15章構造の分析の深さは維持しつつ、表現を初心者にも�
 3. **各H2直下に「この章で見ること」を1〜2文で入れる**
    - 例：「この章では、『何が起きると日本製紙の利益が増えるのか』『何が起きると利益が減るのか』を見ます。決算書の数字を、現実の出来事に置き換えて読むパートです。」
 
-4. **章末に「結局どう見るか」を短くまとめる**
+4. **章末に「結局どう見るか」を短くまとめる【H2 1〜12すべて必須】**
    - 例：「結局、日本製紙を見るうえでは、『紙がまた伸びるか』よりも、『紙の縮小をどこまで抑え、生活関連と木材で利益を作れるか』が大事です。」
+   - **適用範囲：H2 1〜12のすべての章末に必須**（H2 13まとめ／H2 14参照資料／H2 15 FAQには不要）
+   - 形式は2種類：
+     - 推奨：`<p><strong>結局、N章のまとめは：</strong>...</p>`（王子HD型・視覚的に標準化）
+     - インライン：`<p>結局、〇〇は<strong>...</strong>です。...</p>`
+   - **抜け検証**：完成前に H2 1-12 のすべてに「結局」を含む段落があるかを件数チェックする
+   - 2026-05-20にユーザーから「王子HDには入っていたのに入っていないものがある」と指摘。新規記事4本でH2 1/3/5/11の4章しか入っておらず、残り8章で抜けていた。テンプレ抜けの再発防止として「全章必須」を明示化
 
 5. **文体は少しだけ話し言葉**
    - 例：「ここで大事なのは、売上だけを見ないことです。」
@@ -1474,3 +1480,72 @@ v4記事には**表だけでなくグラフ／図表を必須化する3箇所**�
 - 既存の画像1（上流環境マップ・H2 7直後）／画像2（投資仮説マップ・H2 2直後）と合わせて、v4記事は**5箇所の画像/グラフが必須**
 
 詳細は `memory/feedback_company_article_beginner_friendly.md` および `prompts/article/codex_input_pack_specification_v4.md` Section 4.5 参照。
+
+## 完成前セルフチェックリスト（v4・15章構造）
+
+`claude_article.html` を「完成」「v4対応済み」「修正完了」と報告する**前に**、以下の項目をすべて grep で件数検証する。1つでも漏れがあれば「未完成」として再修正する。
+
+### grep セルフチェックBash
+
+```bash
+# 各記事ごとに実行
+P=work/company_analysis/<code>_<slug>/claude_article.html
+printf "  one-liner-summary (=1): "; grep -c 'class="one-liner-summary"' $P
+printf "  definition-lead (=1): "; grep -c 'class="definition-lead"' $P
+printf "  summary-box (=1): "; grep -c 'class="summary-box"' $P
+printf "  beginner-box (>=5): "; grep -c 'class="beginner-box"' $P
+printf "  H1/header (=0): "; grep -c '<h1\|<header' $P
+printf "  <em>この章では (=12): "; grep -c "<em>この章では" $P
+printf "  <p>この章では (=0): "; grep -c "<p>この章では" $P
+printf "  href in H2 14 (=主要全件): "; awk '/<h2>14\./,/<h2>15\./' $P | grep -c 'href="https'
+printf "  必須グラフマーカー (=3): "; grep -c "グラフ挿入位置" $P
+printf "  画像連動マーカー (=2): "; grep -c "画像[12]挿入位置" $P
+```
+
+### 期待値表
+
+| 項目 | 期待値 | 規律対応 |
+|---|---|---|
+| `class="one-liner-summary"` | 1 | 王子HD型ヘッダー必須 |
+| `class="definition-lead"` | 1 | 王子HD型ヘッダー必須 |
+| `class="summary-box"` | 1 | 30秒要約必須 |
+| `class="beginner-box"` | 5以上 | 規律14（冒頭1＋難解概念4以上） |
+| `<h1` または `<header` | 0 | タイトルはメタコメントから取得 |
+| `<em>この章では` | 12 | 規律3（H2 1-12すべて）|
+| `<p>この章では`（emで囲まれていない） | 0 | em化必須 |
+| H2 1-12 各章末に「結局」を含む段落 | 12章すべて | 規律4（H2 1-12すべて必須）|
+| H2 14 参照資料の `href` URL | 主要参照すべて | 有償レポート除き全件 |
+| 必須グラフマーカー | 3 | H3 5.1／H2 6／H2 8 |
+| 画像連動マーカー | 2 | H2 2直後／H2 7直後 |
+
+### 章末まとめ専用チェック（Node.js）
+
+```javascript
+// H2 1-12のすべてに「結局」を含む段落があるかを件数チェック
+const fs = require('fs');
+const lines = fs.readFileSync(path, 'utf-8').split('\n');
+let chapterStart = 0, chapterTitle = '', chapterHas結局 = false;
+for (let i = 0; i < lines.length; i++) {
+  const m = lines[i].match(/<h2>([0-9]+)\. /);
+  if (m) {
+    if (chapterStart > 0 && parseInt(chapterTitle) <= 12) {
+      console.log('H2 ' + chapterTitle + ': ' + (chapterHas結局 ? 'OK' : 'MISSING'));
+    }
+    chapterStart = i+1; chapterTitle = m[1]; chapterHas結局 = false;
+  }
+  if (lines[i].includes('結局')) chapterHas結局 = true;
+}
+```
+
+### 完了報告の前提
+
+- 「完成」「v4対応済み」「修正完了」と報告するのは、上記grep セルフチェックで全項目が期待値通りであることを確認した後のみ
+- 複数記事を一括処理した場合、1記事ずつ確認せず、すべての記事に対して grep で件数比較して抜けを検出する
+- 王子HD（3861）を**正本**として参照する。構造で迷ったら王子HDの該当箇所を確認する
+
+### Why（この章を新設した理由）
+
+- 2026-05-20までに何度か「完成」報告後にユーザーから抜けの指摘を受けた：参照資料リンクなし、definition-lead欠落、章末まとめ抜け、章導入文の `<em>` 化忘れ、summary-box未配置 等
+- 「構造が揃った」と思っても、各項目を件数で検証しないと抜けが見つけられない
+- 完成前 grep セルフチェックを必ず通す運用にすることで、再発を防止する
+
