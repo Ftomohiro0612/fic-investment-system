@@ -1518,6 +1518,34 @@ printf "  画像連動マーカー (=2): "; grep -c "画像[12]挿入位置" $P
 TBL=$(grep -c "<table" $P); WRAP=$(grep -c 'class="table-wrapper"' $P)
 printf "  全table=$TBL / table-wrapper=$WRAP (一致が期待値): "
 [ "$TBL" -eq "$WRAP" ] && echo "OK" || echo "MISSING $((TBL-WRAP)) tables not wrapped"
+# 論文調動詞は読者目線に置換済みか（規律9）
+printf "  論文調動詞 (=0): "; grep -cE "を判定する|を分解する|を整理する|本記事では|を考察する|を検証する" $P
+# section ラッパーは使わない（フラット構造）
+printf "  section残存 (=0): "; grep -c '<section id="h2-' $P
+```
+
+### 規律10網羅性チェック（Node.js・必ず100%）
+
+```javascript
+const fs = require('fs');
+const lines = fs.readFileSync(path, 'utf-8').split('\n');
+let totalUls = 0, ulsWithFollowup = 0;
+let inSummaryBox = false, inH14_15 = false;
+for (let i = 0; i < lines.length; i++) {
+  if (lines[i].includes('class="summary-box"')) inSummaryBox = true;
+  if (inSummaryBox && lines[i].includes('</div>')) inSummaryBox = false;
+  if (/<h2>1[45]\./.test(lines[i])) inH14_15 = true;
+  if (/^\s*<\/ul>\s*$/.test(lines[i]) && !inSummaryBox && !inH14_15) {
+    totalUls++;
+    let hasNext = false;
+    for (let j = i+1; j < Math.min(i+5, lines.length); j++) {
+      if (/^\s*<p>/.test(lines[j])) { hasNext = true; break; }
+      if (/^\s*<h[2-3]>/.test(lines[j]) || /^\s*<ul>/.test(lines[j]) || /^\s*<table/.test(lines[j]) || /^\s*<div class="beginner-box/.test(lines[j])) break;
+    }
+    if (hasNext) ulsWithFollowup++;
+  }
+}
+console.log(`規律10: ${ulsWithFollowup}/${totalUls} (期待値 100%)`);
 ```
 
 ### 期待値表
@@ -1536,6 +1564,9 @@ printf "  全table=$TBL / table-wrapper=$WRAP (一致が期待値): "
 | 必須グラフマーカー | 3 | H3 5.1／H2 6／H2 8 |
 | 画像連動マーカー | 2 | H2 2直後／H2 7直後 |
 | `<table` の件数と `class="table-wrapper"` の件数 | 一致 | 全テーブルが `.table-wrapper` で包まれている |
+| 論文調動詞「を判定する」「を分解する」「を整理する」「本記事では」 | 0 | 規律9：読者目線動詞に置換済み |
+| `<section id="h2-` ラッパー | 0 | フラット構造（王子HD型） |
+| 規律10網羅率（`</ul>` 直後の `<p>` カバー） | 100% | 30秒要約と H2 14/15 のulは除外 |
 
 ### 章末まとめ専用チェック（Node.js）
 
@@ -1567,4 +1598,30 @@ for (let i = 0; i < lines.length; i++) {
 - 2026-05-20までに何度か「完成」報告後にユーザーから抜けの指摘を受けた：参照資料リンクなし、definition-lead欠落、章末まとめ抜け、章導入文の `<em>` 化忘れ、summary-box未配置 等
 - 「構造が揃った」と思っても、各項目を件数で検証しないと抜けが見つけられない
 - 完成前 grep セルフチェックを必ず通す運用にすることで、再発を防止する
+
+### 2026-05-19〜20の品質失敗13項目（網羅）
+
+新規・修正どちらでも、完成報告前に下記13項目を必ず点検する（detail: `memory/feedback_company_article_quality_lessons.md` 参照）：
+
+1. H1/header残存（→0）
+2. one-liner-summary欠落（→1）
+3. definition-lead欠落（→1）
+4. summary-box欠落（→1）
+5. beginner-box不足（→5以上）
+6. 章導入文の `<em>` 化忘れ（→12）
+7. 章末まとめ「結局」抜け（→H2 1-12すべて）
+8. 参照資料のURLリンク漏れ（→主要全件）
+9. テーブルの `.table-wrapper` ラップ忘れ（→`<table`数と`.table-wrapper`数が一致）
+10. 論文調動詞「を判定する」等の残存（→0）
+11. 箇条書き後の補足文（規律10）の網羅性不足（→100%）
+12. 必須グラフ3／画像連動マーカー2（→3／2）
+13. `<section id="h2-` ラッパー残存（→0）
+
+### 必ず守る5原則
+
+A. **王子HD（3861）を「正本」として最初に開く**：構造で迷ったら王子HDの該当箇所を見る
+B. **完成報告は必ずセルフチェック後**：上記Bash＋Node.jsで全項目が期待値通りであることを確認した後のみ
+C. **複数記事は横並びで比較**：1記事ずつでなく、grep で件数比較して抜けを検出
+D. **「機能的にOK」と「テンプレ通りOK」を混同しない**：例「結局」が4章にあっても、12章必要なら未達
+E. **WP反映後の再検証**：PATCH後は `GET /posts/{id}?context=edit` で content.raw を再取得して件数検証
 
