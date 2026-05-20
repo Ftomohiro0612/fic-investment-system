@@ -1,28 +1,36 @@
-# Handoff: Codexレビュー → 画像/WP工程（日本製紙 3863）
+# Handoff: Codexレビュー → 画像作成・WordPress反映
 
-## レビュー済み正本
+対象: 日本製紙（3863） row 78
 
-- レビュー後HTML: `work/company_analysis/3863_nippon_paper/codex_reviewed_article.html`
-- 元Claude HTML: `work/company_analysis/3863_nippon_paper/claude_article.html`
+## 正本
+
+- レビュー済みHTML: `work/company_analysis/3863_nippon_paper/codex_reviewed_article.html`
+- Claude元HTML: `work/company_analysis/3863_nippon_paper/claude_article.html`
 - レビューノート: `work/company_analysis/3863_nippon_paper/claude_review_notes.md`
 
-## Codexレビュー結果
+## WordPressタイトル
 
-- v4試行版（13規律＋必須グラフ3箇所）・15章構造は実装済み。
-- FIC主軸（製紙業界の成熟/斜陽混在 → 日本製紙の紙・板紙価格修正/生活関連海外/木材バイオマス/構造改革 → 営業利益 → 中計2030検証）は維持。
-- H2 7のH3順序は「生活関連 → 紙・板紙 → 原燃料・為替 → 木材・バイオマス」で確定。画像1もこの順序に合わせる。
-- 必須グラフ3箇所のHTMLコメントマーカーを確認済み:
-  - H3 5.1 セグメント別売上・営業利益
-  - H2 6 業績の全体像（FY21-FY30）
-  - H2 8 中期経営計画の達成検証
-- 為替表現を会社開示の「1円円高で+5.5億円」に整合する形へ修正。
-- 王子HDへの外部企業サイトリンクを削除し、関連銘柄はテキスト表示へ統一。
-- 「前提崩壊」は公開本文向けに「前提見直し」へ調整。
+- article_title: 日本製紙（3863）の企業分析｜業界トレンド・中計2030の構造改革ブリッジを読む
+- slug: nippon-paper-3863-analysis
 
-## 次工程への注意
+WordPress反映時は、本文に `<h1>` が無い前提で、必ず `article_title:` を `post_title` に明示セットしてください。反映後にREST応答または管理画面で `title.rendered` が上記タイトルと一致することを確認してください。
 
-- WordPress反映は `codex_reviewed_article.html` を正本にする。
-- 既存の `codex_reviewed_article.with_images.html` がある場合でも、16:38更新版レビュー前HTMLに基づく可能性があるため、画像挿入HTMLは再作成する。
-- 画像1（上流環境マップ）は同一ファイル名で上書きする場合も、4テーマ順序と列名を最新本文に合わせる。
-- 新規グラフ3箇所は、本文表の数値・単位を正とし、画像側で数値を増やさない。
-- Opal/NDPの単独利益は開示範囲に留め、画像や追加本文で過度に積み上げない。
+## Codexレビューでの主な修正
+
+- 会社為替前提に対する円高/円安方向へ表現を修正
+- 王子HDの外部企業リンクをテキスト化
+- 強すぎる「前提崩壊」を緩和
+
+## 画像・グラフ工程への注意
+
+- 既存の画像挿入済みHTMLがある場合でも旧版由来の可能性があるため、今回の `codex_reviewed_article.html` を起点に再作成してください。
+- 8列以上の表は次工程で横スクロール表示を維持してください。特に英字・社名・KPIが長い表では、スマホ/サイドバー環境で1文字折返しが出ないか目視確認してください。
+- 横長表はtable-wrapper付きのため次工程で横スクロール表示を維持。
+
+## WordPress反映後チェック
+
+- `post_title` が `article_title:` と一致
+- 本文内に `<h1>` がない
+- 画像alt属性が会社名・論点に対応
+- 参照資料リンクがクリック可能
+- 表がサイドバーへ潜り込まない

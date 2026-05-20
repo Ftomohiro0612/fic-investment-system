@@ -329,6 +329,19 @@
   margin: 24px 0 30px;
 }
 
+.content article > table,
+.single .entry-content article > table,
+.post-content article > table,
+.article-content article > table {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 24px 0 30px;
+  box-sizing: border-box;
+}
+
 .single .entry-content p:has(> em:only-child),
 .post-content p:has(> em:only-child),
 .article-content p:has(> em:only-child),

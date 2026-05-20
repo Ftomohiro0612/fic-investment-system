@@ -26,3 +26,17 @@ tmp_*.js
 # Local agent/work artifacts
 .claude/
 work/
+
+# Python bytecode
+__pycache__/
+*.pyc
+
+# Generated video QA artifacts
+assets/videos/*.jpg
+assets/videos/*.png
+!assets/videos/fic-logo-header-white-h96.png
+assets/videos/*.log
+assets/videos/*.err.log
+assets/videos/*_qa_*.txt
+assets/videos/youtube_upload_manifest_*.json
+assets/videos/youtube_upload_results_*.json

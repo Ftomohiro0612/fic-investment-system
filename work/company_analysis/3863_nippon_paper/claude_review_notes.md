@@ -305,3 +305,29 @@
 
 ### 今回限りの個別対応
 - 既存 `codex_reviewed_article.with_images.html` は16:38更新版レビュー前の可能性があるため、画像工程では再利用せず、最新 `codex_reviewed_article.html` に対して既存2画像改修＋新規3グラフを挿入する。
+
+
+## Codexレビュー結果（Claude再作成版レビュー 2026-05-20）
+
+レビュー日: 2026-05-20  
+レビュー担当: Codex  
+対象HTML: `work/company_analysis/3863_nippon_paper/claude_article.html` → `work/company_analysis/3863_nippon_paper/codex_reviewed_article.html`
+
+### 確認結果
+
+- v4/15章構造、`article_title:`、`slug:`、H1なし、one-liner、definition-lead、summary-box、beginner-box、H2章導入、章末「結局」カバーを確認。
+- 公開本文の未解決表記（要確認/未確認/TODO等）、過大表現、関連銘柄の外部企業リンクを点検。
+- 参照資料リンクは実在URLの範囲で維持し、未確認URLは追加していない。
+
+### Codex修正
+
+- 会社為替前提に対する円高/円安方向へ表現を修正
+- 王子HDの外部企業リンクをテキスト化
+- 強すぎる「前提崩壊」を緩和
+
+### 次工程への注意
+
+- 次工程は `codex_reviewed_article.html` を正本にする。
+- WordPress反映時は冒頭メタの `article_title:` を `post_title` に明示セットし、本文の `<h1>` からタイトル抽出しない。
+- 画像/グラフ挿入済みHTMLが旧版由来の場合は、今回の正本HTMLから作り直す。
+- 横長表はtable-wrapper付きのため次工程で横スクロール表示を維持。
