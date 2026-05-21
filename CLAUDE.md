@@ -27,6 +27,7 @@ FIC投資研究所の**企業分析・業界分析の記事／X投稿／動画**
 5. **並行運用厳守**：進行中の作業を勝手に他と統合しない。既存Codexワークフローを壊さない。
 6. **機密非出力**：認証情報・トークン・鍵の値をチャットに出さない。
 7. **事実確認の優先順位 ＝ ①リポジトリ内（grep/read）→ ②外部情報（web_fetch/curl/WebSearch）→ ③FIC質問**。調べれば分かる事実はFICに判断を仰がず、**自分で確認してから提示**する。設計・分析タスクは**Phase 0**（参照記事を web_fetch/curl して構造・実装を悉皆確認）から始める。
+   - **「事実に基づく誤り修正」と称して独断で確定してよいのは、①リポジトリ内＋②公開記事HTML/外部実物の両方で裏が取れた場合のみ**。リポジトリ内（テンプレ/Skill定義）だけの結論は「修正」ではなく「**FIC確認必須の提案**」として扱う（独断で確定しない）。grep等は部分一致で誤判定しうるため、対象要素の実体（class属性・CSS定義の所在等）まで確認する。
 
 ## 4. Skill 参照ルール（記事制作の中核）
 
@@ -52,7 +53,7 @@ FIC投資研究所の**企業分析・業界分析の記事／X投稿／動画**
 
 - **公開15章構成**：業界の風向き/投資仮説/勝ち筋とポジション/企業概要/収益構造/業績全体像/業績ドライバー/中計検証/業績シナリオ/先行指標と判定基準/競争優位・同業比較/リスク/まとめ/参照資料/FAQ。
 - **ロール分担**：writer/reviewer＝記事制作コア（段階2）／researcher_company・industry＝投入パック作成／scout・theme_scout＝銘柄・テーマ候補選定／designer＝画像・WP反映／videographer＝動画／x_writer＝X投稿（designer・videographer・x_writerは段階4で追加）。
-- **💡/📘**：💡=ワンポイント解説(beginner-box・論点のかみ砕き)、📘=用語解説(glossary-box・用語の定義)。📘はWP CSS定義（ステップ5）まで本番不使用（💡のみ）。
+- **💡/📘**：💡=ワンポイント解説(論点のかみ砕き)、📘=用語解説(用語の定義)。**両者とも同一クラス `beginner-box`**（CSS=`wordpress/css/custom.css`・本番稼働済み）。区別は見出しの絵文字（💡/📘）＋テキストのみ。term-box/glossary-boxは使わない。
 - **工夫1/2/3**：言い換え／業界固有比喩／日常接点の例示。**B2B対応（工夫3）**＝B2B専業は完成品レベルまで遡って例示、接点が極めて間接的なら産業レベルの存在感説明に切替。
 - **2段構成**：会社前提を客観基準として明示＋FIC独自視点を補足（為替・市況・業績見通し）。
 - **業界判定の定型句**：30秒要約に「業界判定：◯◯は『成熟＋構造転換期』等（後段で詳細）」を出す。
@@ -73,14 +74,13 @@ FIC投資研究所の**企業分析・業界分析の記事／X投稿／動画**
 - **`.claude/skills/` は読み取り専用扱い**：Skill本体は段階・ステップの承認を経てのみ更新する（勝手に書き換えない）。
 - **`docs/chat_workflows/_analysis/` は追記専用**：既存の分析ファイルを削除しない（履歴・遡及参照のため）。
 - **handoff_*.md は前工程の引き継ぎを尊重**：独自判断で書き換えない。
-- **📘 glossary-box は WP CSS定義（ステップ5）まで本番不使用**（💡のみ運用）＝段階1ステップ4確定事項。
 - 削除（画像・動画中間素材）は `wordpress_media_cleanup_policy.md` 準拠。`docs/reference_images/` は削除不可。
 
 ## 8. 出力フォーマット
 
 - **記事**：`wordpress/templates/company_analysis_template.html` を雛形に。冒頭にメタコメント（`article_title:` / `slug:`）。外部URLは実在確認済みのみ・確認日併記。参照資料は最大8件（章順は参照→FAQ）。
 - **JSON-LD（構造化データ）は記事HTMLで手動出力しない**。WordPress側で生成される：FAQPage・BlogPosting・Organization 等は **Rank Math**（SEOプラグイン）が自動生成、BreadcrumbList は theme `functions.php`（`fic_output_breadcrumb_json_ld`）が出力。→ writerは**FAQを通常のHTML構造**（faq-section内の H3=質問／p=回答）で書けば、Rank MathがFAQPage schemaを生成する。**FAQの見出し・本文構造を崩さない**ことが重要。
-- **使用可能CSSクラス**：beginner-box（💡）/ glossary-box（📘・ステップ5でCSS定義）/ summary-box（30秒要約・章要点）/ table-wrapper / one-liner-summary / definition-lead / author-credit / disclaimer / fic-related-companies・fic-related-themes / fic-detail-block（段階2）。**表は必ず `table-wrapper` で内包**。
+- **使用可能CSSクラス**：beginner-box（💡も📘も同一・絵文字で区別）/ summary-box（30秒要約・章要点）/ table-wrapper / one-liner-summary / definition-lead / author-credit / disclaimer / fic-related-companies・fic-related-themes / fic-detail-block（段階2）。CSSは `wordpress/css/custom.css`。**表は必ず `table-wrapper` で内包**。
 - **公開HTMLにmemo類のコメントを残さない**（`要確認`/`要追加確認`/`TODO`/`FIXME`/内部メモは公開HTMLに出さない。判断メモは `claude_review_notes.md` へ）。テンプレの雛形コメント・空プレースホルダは差し替え後に削除。
 - **数値・年度**：単位はbillion→億円×10、`FY ⇔ ◯年◯月期` を1回対応づけ全文一致。会社開示値/外部推計/FIC前提付き試算を同一文中に明示（factual-handling-rules §6）。
 - **handoff**：`work/{key}/handoff_{from}_to_{to}.md`（冒頭にステータスサマリ表）。

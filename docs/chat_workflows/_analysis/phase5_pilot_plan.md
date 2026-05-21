@@ -57,9 +57,9 @@
 
 100点像確定（ステップ4）後、writer/reviewer 投入前に実施する整備フェーズ。スコープ：
 1. テンプレ（`wordpress/templates/company_analysis_template.html`）の**全面15章化**（雛形以外の章の本格実装・章番号振り直し・参照→FAQ順）。
-2. **WP側CSS定義の一括整理**：`glossary-box`（📘・背景色＋左罫線）。`fic-detail-block`（段階2用）も同時定義が自然。**📘はCSS定義まで本番不使用（💡のみ）**。
+2. **WP側CSS定義**：`fic-detail-block`（段階2用）のみ。📘は既存 `beginner-box`（`wordpress/css/custom.css`）で稼働済み＝CSS追加不要（2026-05-21 公開HTML検証で確認）。
 3. `article-quality-checklist` に**企業分析HTML構造マーカー**（`one-liner-summary`／各章導入`<em>`／章末「結局…」／必須グラフ3／画像連動2）を**新15章版**へ振り直して反映（company_03 の旧H2 1〜12基準を更新）。
-4. **英語44項目**（`prompts/shared/quality_checklist.md`）と日本語B項目の役割分担を明文化。
+4. **英語44項目**（`prompts/shared/quality_checklist.md`）と日本語B項目の**2層明確化＋マッピング表**：44項目＝汎用基盤（多くはfact-safety 3規律へ委譲）／日本語B＝100点像拡張、と役割を article-quality-checklist 冒頭に明記し、「どの44項目がどの3規律／B項目へ対応・委譲されるか」の対応表を1つ置く（**一本化はせず**、英語44項目＋grepを使う既存Codex工程を壊さない）。
 
 **段階4へ持ち越し（各ロールSOPのSkill化）**：動画SOP全般（videographer）・X投稿タイプ10種＋決算メモ（x_writer）・画像/WP（designer）・業界分析3タイプ構成・統合メモ14章。詳細は [existing_sops_audit.md](existing_sops_audit.md) §4。
 

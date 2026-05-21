@@ -118,16 +118,14 @@ settings.json の Write/Edit パターン修正が「本当に効いているか
   - README.md との役割分離: README.md は人間向け、CLAUDE.md は Claude Code 向け
   - 着手タイミング: 段階1完了時
 
-- [ ] **📘 glossary-box の本番使用ガード（即時）＋CSS定義（ステップ5）**
-  - 💡（beginner-box）は本番CSS稼働済みだが📘（glossary-box）は未定義。📘を本番記事で使うと表示崩れの恐れ。
-  - **即時ガード**: `glossary-box` のWP CSS定義が完了するまで📘を本番使用しない（💡のみ運用）。writing-style §6・テンプレに明記済み。
-  - **CSS定義は段階1ステップ5で実施**（下記ステップ5タスク2に統合）。
+- [x] **📘 用語解説boxのCSS（2026-05-21 公開HTML検証で解消）**
+  - 当初「📘=glossary-box・WP CSS未定義・本番不使用ガード」と懸念したが、公開HTML実査で**📘は💡と同一クラス `beginner-box`**（CSS=`wordpress/css/custom.css`）で本番稼働済みと判明。glossary-box/term-boxは不要＝誤認だった。📘は絵文字＋「用語メモ：」見出しで区別。ガード不要。
 
 - [ ] **段階1ステップ5 スコープ（テンプレ全面15章化と同時・2026-05-21 FIC確定）**
   1. テンプレ（company_analysis_template.html）全面15章化（雛形以外の章の本格実装・章番号振り直し・参照→FAQ順）。
-  2. WP側CSS定義の一括整理: `glossary-box`（📘・背景色＋左罫線）。`fic-detail-block`（段階2用）も同時定義しておくと運用上自然。
+  2. WP側CSS定義: `fic-detail-block`（段階2用）のみ。📘は既存 `beginner-box` で稼働済み＝CSS追加不要（glossary-box不要・2026-05-21検証）。
   3. article-quality-checklist に企業分析HTML構造マーカー（`one-liner-summary`／各章導入`<em>`／章末「結局…」／必須グラフマーカー3／画像連動マーカー2）を**新15章版**へ振り直して反映（company_03 の旧H2 1〜12基準を更新）。
-  4. 英語44項目（quality_checklist.md）と日本語B項目の役割分担を明文化（または日本語へ一本化）。
+  4. 英語44項目（quality_checklist.md）と日本語B項目の**2層明確化＋マッピング表**（44=汎用基盤・委譲先明記／B=100点像拡張。一本化せず既存Codex工程を維持）。
   - 論点3・4＝a で確定。詳細は [existing_sops_audit.md](existing_sops_audit.md) §4。
 
 - [ ] **各ロールSOPのSkill化（段階4）**

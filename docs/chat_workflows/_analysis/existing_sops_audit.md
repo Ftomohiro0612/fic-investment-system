@@ -460,7 +460,7 @@ phase5_pilot_plan の段階1は **writer/reviewer 向けのSkill先行作成**�
 承認前に直すべき最小補正（3点）:
 1. **article-design-principles §3-5 の動画の尺が誤り**：「短尺2〜5分」と書いたが、実標準は **Shorts 50〜60秒／長尺 3:00〜4:45**（company_06 / video_review_notes.md）。→ 誤った数値を削除し、「**動画詳細規格は video SOP が正本（videographer Skill化は段階4）**」へ書き換える。配置（30秒要約の直後）・推奨・必須でない点は維持。
 2. **writing-style §10 媒体別（X／動画）**：現状「煽り禁止・工夫1中心」のみ。→ 「**X／動画の詳細ルールは既存SOP（x_post_company_analysis_workflow.md・prompts/social/・company_06・video_review_notes.md）が正本。x_writer/videographer Skill化は段階4**」のクロス参照注記を追加。
-3. **📘 glossary-box のWP CSS未定義**：💡（beginner-box）は本番CSS稼働済みだが📘は未定義。本番記事で📘を使うと表示崩れの恐れ。→ 「**WP CSS定義までは📘を本番使用しない（💡のみ運用）**」を即時ガードとして writing-style・テンプレに明記。**CSS定義は段階1ステップ5の必須タスク**（テンプレ全面15章化と同時。論点3=a・FIC確定）。
+3. **📘 用語解説box**（※2026-05-21 公開HTML実査で訂正）：当初「📘=glossary-box・WP CSS未定義・本番不使用ガード・ステップ5でCSS定義」と判断したが、公開記事のclass実査で**📘は💡と同一クラス `beginner-box`**（CSS=`wordpress/css/custom.css`）で本番稼働済みと判明。glossary-box/term-boxは誤認・不要。📘は絵文字＋「用語メモ：」見出しで区別、新規CSS不要。ガード・ステップ5 CSS定義タスクは取り下げ。
 
 ### 承認可否
 上記3点を補正すれば、**段階1ステップ4は承認可能**。残るギャップ（company_03の企業分析HTML構造チェック・英語44項目との2重管理・業界分析3タイプ・14章メモ・各ロールSOPのSkill化）は **writer/reviewerコアの外側か、テンプレ確定に依存**するため、ステップ5以降（調査4）に送る。
@@ -472,7 +472,7 @@ phase5_pilot_plan の段階1は **writer/reviewer 向けのSkill先行作成**�
 ### ステップ5（現スコープ＝テンプレ全面15章化）に追加すべき作業
 - **article-quality-checklist に企業分析HTML構造チェックを15章版で反映**：`one-liner-summary`／`definition-lead`／各章導入`<em>`／章末「結局…」／必須グラフマーカー3箇所／画像連動マーカー。company_03の旧H2 1〜12基準を**新15章**に振り直して取り込む（テンプレ確定と同時でないとマーカー位置が決まらないため、ここが最適）。
 - **英語44項目（quality_checklist.md）と日本語B項目の2重管理を解消**：役割分担を明文化（英語44＝汎用基盤／日本語B＝100点像拡張）か、日本語へ一本化。
-- **📘 glossary-box の WP CSS定義**（背景色＋左罫線）。fic-detail-block（段階2）は対象外。
+- ~~📘 glossary-box の WP CSS定義~~ → **取り下げ**（2026-05-21検証で📘は既存 `beginner-box` 稼働済みと判明・新規CSS不要）。`fic-detail-block`（段階2）は対象外。
 
 ### ステップ6以降の新規ステップ提案（各ロールSOPのSkill化＝段階4と整合）
 - **業界分析の構成Skill**（`industry-article-design` 相当）：業界分析3タイプ（新規事業/ニュース解説・マクロ/テーマ・企業群/業界比較）の章立て分岐。industry版 writer/reviewer 用。
@@ -491,7 +491,7 @@ phase5_pilot_plan の段階1は **writer/reviewer 向けのSkill先行作成**�
 
 1. **段階1ステップ4 の承認方針**：(a) 即承認（SOP整合は段階2以降）／**(b) 最小補正後に承認（推奨）**／(c) スコープ拡大（既存SOPのSkill化を今）。
 2. **article-design-principles §3-5 動画**：**(a) 既存SOP参照に書き換え＋誤った尺を削除（videographer Skillは段階4）＝推奨**／(b) 今 video-production-rules Skillを作る（スコープ拡大）／(c) 現状維持（誤った尺を残す）＝非推奨。
-3. **📘 glossary-box CSS**：**(a) WP CSS定義を段階1ステップ5の必須タスク化＋それまで💡のみ運用のガード（推奨・FIC確定）**／(b) CSS定義まで📘を使わず💡のみ運用のみ／(c) handoffで追跡のみ。
+3. **📘 用語解説box**：※2026-05-21 公開HTML検証で解消＝📘は既存 `beginner-box` で稼働済み（glossary-box・ガード・CSS定義は不要）。当初の(a)(b)(c)は取り下げ。
 4. **品質チェックの企業分析HTML構造＆44項目2重管理**：**(a) ステップ5でテンプレ確定と同時に反映・統合（推奨）**／(b) 今すぐ反映（テンプレ未確定でマーカー位置が動くリスク）／(c) company_03を正本として参照明記のみ（恒久2重管理）。
 5. **業界分析の構成（3タイプ分岐）**：**(a) 段階4でindustry writer/reviewer追加時にSkill化（推奨）**／(b) ステップ5で先行追加／(c) article-design-principlesに業界版セクションを今追加。
 6. **各ロールSOP（動画/X/画像/WP）のSkill化タイミング**：**(a) 段階4で該当subagent追加時（推奨・pilot_plan整合）**／(b) ステップ5〜6で先行Skill化／(c) 当面SOPのまま運用しSkill化しない。
