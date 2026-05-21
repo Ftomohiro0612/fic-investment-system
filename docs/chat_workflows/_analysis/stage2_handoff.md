@@ -75,6 +75,21 @@ FIC投資研究所の **企業分析・業界分析の記事／X投稿／動画*
 
 ---
 
+## ■ 主要決定の「なぜ」（背景・理由）
+
+新チャットで前提を誤読しないための、主要決定の理由。
+
+- **公開15章を正本化／最適化はγで段階2へ退避**：外部リサーチで15章は外部標準（2,000〜4,000字・8章前後）の約2倍と判明。だが王子HD・日本製紙の公開記事で実証済みの高品質構造のため正本化。一方、優先動線・アコーディオン折りたたみ・L1/L2/L3物理分離は**外部に前例ゼロ＝未実証**のため、拙速に独自構造を入れず段階2でパイロット検証してから採否（γ）。
+- **📘＝beginner-box（glossary-box/term-box全廃）**：当初「📘＝新クラスglossary-box・要CSS定義・本番不使用ガード」としたが、**公開HTML実査で📘も💡も同一 `beginner-box`（custom.css稼働済み）**と判明。grepの部分一致だけで断定した誤りを、repo＋公開HTMLの両ソースで裏取りして修正（CLAUDE.md §3追補の契機）。
+- **業績ドライバー定義（§3-6）の新設**：公開記事は7.4だけ特定名（為替・M&A）固定・本数4本固定・「ドライバーとは何か」の定義不在だった。writerごとの章7品質ブレを防ぐため、定義・構造4段・類型5+横断1・判定3条件・本数3〜5可変を明文化。
+- **金額必須化**：公開記事はすべて金額付きで論証（例：王子HD7.1「FY25海外▲254億円」）。冒頭テーブルを4段構造化して当期/翌期の利益寄与額列が消えたため、④列＋各H3本文での金額必須を明文化。
+- **リスク表5列統合**：規定が3系統で食い違い（pack_spec=4列／記事プロンプト=5列／公開記事=対称性列欠落の4列）。各版の長所を統合し、FIC主軸の「対応上流変数」＋一方的羅列を防ぐ「対称性」を両立。
+- **writer⇄reviewer 差し戻しループの採用（Phase 5 の核心的利点）**：現行Codex運用が `codex_reviewed_article.html` の別ファイル作成方式だったのは**Codexの再執筆能力の制約**が理由。Subagent化で writer も reviewer も Claude になるため、「**記事を書いた writer に reviewer の指摘で直させる**」正攻法のワークフローが初めて可能になる。writer は `claude_article.html` を**上書き更新**、差し戻し**上限2周**、3周目になる論点は**FICエスカレーション**。現行運用の制約をそのまま継承するのは設計後退なので採らない。
+- **中計あり/なし分岐**：中計未発表企業でも章8が書けるよう、章の"ハコ"を維持し素材（中計 or 経営方針）を切替（15章を崩さない）。
+- **事実確認の優先順位＋両ソース要件（CLAUDE.md §3-7＋追補）**：段階1で推測判断による見落とし（動画SOP・新構成3章・📘クラス）が頻発した教訓。事実はrepo→公開HTMLで自分で確認、「修正」は両ソース裏取りが条件。
+
+---
+
 ## ■ 環境・運用上の重要な制約
 
 - **settings.json `.claude/` 恒常ゲート**：`.claude/` 配下のWrite/Editは Claude Code のセキュリティ設計で恒常的に承認ゲートされる（settings.jsonでは抑止不可・確定）。ポップアップは正常。**セッション一時許可で運用**。詳細＝`known_issues.md` ★決着テスト結果節。
@@ -110,18 +125,18 @@ FIC投資研究所の **企業分析・業界分析の記事／X投稿／動画*
   - 出力＝記事3点（claude_integrated_memo.md／記事HTML／claude_review_notes.md）＋`handoff_writer_to_reviewer.md`＋Sheets更新。
 - **reviewer Subagent 作成**：
   - 使用Skill＝上記＋**article-quality-checklist（公開前ゲート・grep含む）**＋handoff-templates＋sheets-status-update。
-  - writer⇄reviewer 内部ループ1〜2周。出力＝`handoff_reviewer_to_designer.md`（冒頭ステータス要約付き）。
+  - **差し戻し方式**：reviewerの指摘で writer が `claude_article.html` を上書き更新（**上限2周・3周目はFICエスカレーション**）。回数カウント・指摘フォーマット・エスカレーション判定は reviewer 側が規定。出力＝`handoff_reviewer_to_designer.md`（冒頭ステータス要約付き）。
 - **9役員のうち今回は2名のみ**。残り7名は段階4持ち越し。
 - 認証＝A案（スクリプト経由・値非出力）。`.claude/` 書き込みはセッション一時許可で進める。
 - **完了時の必須アクション（全役員共通）**：①handoff_*.md作成（冒頭ステータスサマリ）②Sheets該当列更新③reportに「handoff作成済み・Sheets更新済み」明記。
 
 ---
 
-## ■ 段階3パイロット（王子HD 3861）着手前の準備事項
+## ■ 段階3パイロット（キオクシア 285A）着手前の準備事項
 
-- 題材＝王子HD（3861）。既存 `work/company_analysis/3861_oji/`（pdf_summary・claude_input_pack）を researcher出力相当として流用。
-- 出力先＝「企業分析_pilot」タブ（本番隔離・段階3でFIC新設）＋`work/company_analysis/3861_oji_pilot/`。
-- WP＝draft/テストIDのみ（本番ID更新・スラッグ反映禁止）。既存王子HD公開記事と品質比較。
+- 題材＝**キオクシア（285A）**。既存 `work/company_analysis/285A_kioxia/`（pdf_summary・claude_input_pack・extracted_text・source_pdfs＝v4準拠）を researcher出力相当として流用。※王子HD(3861)pack も復元済みだが**正式パイロットは285A**（クリーンなv4入力＋公開記事との同一銘柄比較）。
+- 出力先＝「企業分析_pilot」タブ（本番隔離・段階3でFIC新設）＋`work/company_analysis/285A_kioxia_pilot/`。
+- WP＝draft/テストIDのみ（本番ID更新・スラッグ反映禁止）。既存キオクシア公開記事（kioxia-holdings-285a-analysis）と品質比較（品質保証なし旧版 vs Subagent化新版・同一銘柄）。
 - **段階3パイロットで育てる領域**：
   - article-quality-checklist の「基盤」区分 grep/測定基準の追補（現状 #5/#30/#31/#34/#36 確定）。
   - 章6.1 二軸グラフの実装方法判断（α Chart.js／β 静的SVG／γ Mermaid／δ AI画像継続）＝designer作成 or 段階3でFIC判断。
@@ -135,6 +150,20 @@ FIC投資研究所の **企業分析・業界分析の記事／X投稿／動画*
 - 残り7 Subagent：scout／theme_scout／researcher_company／researcher_industry／designer／videographer／x_writer。
 - 残りSkill：動画SOP／X投稿／画像・WP／業界分析3タイプ構成／統合メモ14章。正本は当面 `docs/chat_workflows/company_04〜06`・`industry_*`・`video_review_notes.md`・`x_post_company_analysis_workflow.md`・`non_ai_structure_chart_lessons.md`・`wordpress_media_cleanup_policy.md`（整合監査＝`existing_sops_audit.md`）。
 - Codex工程との44項目突合（マッピング表「基盤」項目の整理余地検討）。
+
+---
+
+## ■ 未完了タスク・次段階への引き継ぎ（段階2完了後に実施）
+
+段階2（writer/reviewer作成）完了後に着手する保留タスク。スコープ分断を避けるため段階2完了まで着手しない。
+
+- **業界分析4テーマの移行**：`FIC.zip` 内 `work/industry_analysis/`（4テーマ：ai-battery-power-infrastructure-softbank-sakai／construction-material-shortage-project-delay-margin-risk／naphtha-packaging-cost-food-consumer-goods／sony-tsmc-physical-ai-sensor-investment）をローカルへ移行（company_analysisと同方式・no-overwrite・`work/` gitignoreでローカルのみ）。段階4 researcher_industry の検証データになる。
+- **`work/_sheets/`（3,064件）の扱い**：中身を1段確認し、Sheetsキャッシュなら移行不要・それ以外なら移行を判断。
+- **FIC.zip（2.3GB・`C:\Users\tomo-\Documents\FIC\FIC.zip`）は保管継続**。プロジェクト全体＋.git履歴＋未移行分（industry_analysis・_sheets）の唯一のバックアップ。**FIC承認なしに削除しない**。
+- **王子HD pack復元の活用**：王子HD(3861)の投入パックが今回復元済み（`work/company_analysis/3861_oji/`・ローカルのみ）。段階3パイロット（285A）完了後の**第2弾検証**（writer Subagentが別銘柄でも機能するか）や、**段階4 researcher_company の出力品質目標**として活用可能。
+- **Phase 5後の chat_workflows 全面見直し（段階4）**：`company_02_claude_article.md`・`company_03_codex_review.md` はCodex+Claude時代の制約を反映。段階4で **writer⇄reviewer 差し戻し方式**（reviewer別ファイル方式→writer上書き方式）に書き換え。
+
+> 注：今回のセッションで `work/company_analysis/`（4社：1812_kajima／285A_kioxia／3861_oji／3863_nippon_paper）をZipからローカル移行済み（約159ファイル・gitignoreでローカルのみ）。3863のvideoは削除、285A・3861のvideoは保持。
 
 ---
 

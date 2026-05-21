@@ -75,12 +75,12 @@
 
 ---
 
-## 段階3: パイロット案件起動（王子HD 3861）
+## 段階3: パイロット案件起動（キオクシア 285A）
 
-- 題材: 王子HD（3861）。既存の `pdf_summary.md`/`claude_input_pack.md` を流用（researcher出力相当）。
-- 出力先: 「**企業分析_pilot**」タブ（本番タブと完全隔離）＋ `work/company_analysis/3861_oji_pilot/`。
-- 手順: writer が記事3点を生成 → reviewer が編集判断＋`article-quality-checklist` grep自己チェック → `handoff_writer_to_reviewer.md`／`handoff_reviewer_to_designer.md`（冒頭ステータス要約付き）。writer⇄reviewer内部ループ1〜2周。
-- 既存の王子HD記事（`codex_reviewed_article.html`）と品質比較。
+- 題材: **キオクシア（285A）**。既存の v4準拠投入パック `work/company_analysis/285A_kioxia/`（`pdf_summary.md`/`claude_input_pack.md`/`extracted_text`/`source_pdfs`）を流用（researcher出力相当）。※王子HD(3861)・日本製紙(3863)の投入パックも復元済みだが、**正式パイロットは285A**（クリーンなv4入力＋公開記事との同一銘柄比較が成立するため）。
+- 出力先: 「**企業分析_pilot**」タブ（本番タブと完全隔離）＋ `work/company_analysis/285A_kioxia_pilot/`。
+- 手順: writer が記事3点を生成 → reviewer が `article-quality-checklist` grep自己チェック＋編集判断 → **reviewerの指摘で writer が `claude_article.html` を上書き更新（差し戻し方式・上限2周・3周目はFICエスカレーション）** → `handoff_writer_to_reviewer.md`／`handoff_reviewer_to_designer.md`（冒頭ステータス要約付き）。
+- 既存のキオクシア公開記事（ https://fic-investment.biz/kioxia-holdings-285a-analysis/ ／`work/company_analysis/285A_kioxia/codex_reviewed_article.html`）と品質比較（品質保証なし旧版 vs Subagent化新版・同一銘柄）。
 - **WordPress REST API書き込みテストはこの段階で初実施**（下書き(draft)/テスト投稿IDのみ。本番ID更新・本番スラッグ反映は禁止＝6-2事故防止）。
 - → FIC評価 → 次へ進むか調整するか判断。
 
