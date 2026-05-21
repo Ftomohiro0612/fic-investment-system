@@ -106,3 +106,50 @@ settings.json の Write/Edit パターン修正が「本当に効いているか
 4. **運用方針**: `.claude/` 書き込みは**セッション一時許可（"allow for this session"）で継続**。実害評価＝1案件あたり数回の承認で許容範囲内。
 
 → 本件クローズ。残課題は本ファイル §1（bare `Write`/`Edit` の allow-all 不発・無害残置）と §2（Windows絶対パス deny 検証保留）のみ。
+
+---
+
+## 保留タスク（段階1完了後に着手）
+
+- [ ] **CLAUDE.md の作成**
+  - 目的: Claude Code がセッション開始時に自動読み込みする内部指示書
+  - 内容: 進行中フェーズ、Skill 参照ルール、危険操作、ドメイン用語、出力フォーマット
+  - 反映: Phase 4 で確定した4 Skill 体系（article-design-principles / writing-style / article-quality-checklist ＋ fact-safety 3規律）
+  - README.md との役割分離: README.md は人間向け、CLAUDE.md は Claude Code 向け
+  - 着手タイミング: 段階1完了時
+
+- [ ] **📘 glossary-box の本番使用ガード（即時）＋CSS定義（ステップ5）**
+  - 💡（beginner-box）は本番CSS稼働済みだが📘（glossary-box）は未定義。📘を本番記事で使うと表示崩れの恐れ。
+  - **即時ガード**: `glossary-box` のWP CSS定義が完了するまで📘を本番使用しない（💡のみ運用）。writing-style §6・テンプレに明記済み。
+  - **CSS定義は段階1ステップ5で実施**（下記ステップ5タスク2に統合）。
+
+- [ ] **段階1ステップ5 スコープ（テンプレ全面15章化と同時・2026-05-21 FIC確定）**
+  1. テンプレ（company_analysis_template.html）全面15章化（雛形以外の章の本格実装・章番号振り直し・参照→FAQ順）。
+  2. WP側CSS定義の一括整理: `glossary-box`（📘・背景色＋左罫線）。`fic-detail-block`（段階2用）も同時定義しておくと運用上自然。
+  3. article-quality-checklist に企業分析HTML構造マーカー（`one-liner-summary`／各章導入`<em>`／章末「結局…」／必須グラフマーカー3／画像連動マーカー2）を**新15章版**へ振り直して反映（company_03 の旧H2 1〜12基準を更新）。
+  4. 英語44項目（quality_checklist.md）と日本語B項目の役割分担を明文化（または日本語へ一本化）。
+  - 論点3・4＝a で確定。詳細は [existing_sops_audit.md](existing_sops_audit.md) §4。
+
+- [ ] **各ロールSOPのSkill化（段階4）**
+  - videographer（video-production-rules）/ x_writer（x-post-rules）/ designer（image-production-rules＋wordpress-publishing）/ 業界分析構成（industry-article-design・3タイプ分岐）/ 統合メモ14章（researcher_company用）。
+  - 既存SOPが当面の正本。Skill化は該当subagent追加時＝段階4。詳細は [existing_sops_audit.md](existing_sops_audit.md) §4。
+
+- [ ] **各ロールSOPのSkill化（段階4）**
+  - videographer（video-production-rules）/ x_writer（x-post-rules）/ designer（image-production-rules＋wordpress-publishing）/ 業界分析構成（industry-article-design・3タイプ分岐）/ 統合メモ14章（researcher_company用）。
+  - 既存SOPが当面の正本。Skill化は該当subagent追加時＝段階4。詳細は [existing_sops_audit.md](existing_sops_audit.md) §4。
+
+---
+
+## プロセス改善（資料発掘の必須工程化）— 2026-05-21 追記
+
+### 背景（発生した見落とし）
+段階1ステップ4 Step A（資料発掘）で、**公開記事の章構造を機械的に一覧化する工程が無かった**ため、王子HD・日本製紙の公開記事が持つ「新構成3章（業界の風向き／投資仮説／業界の勝ち筋と当社ポジション）」をはじめとする**FIC標準15章構成**を見落とした。Step A は内部リポジトリのファイル発掘（Exploreエージェント）と review_notes の要約に依存し、**公開URLの web_fetch による H2/H3 構造の悉皆列挙を行わなかった**。鹿島のみ web_fetch したが章設計に厳密反映できていなかった。詳細は [published_article_structure_audit.md](published_article_structure_audit.md)。
+
+### 改善（今後の類似プロジェクトで必須化＝Phase 0）
+資料発掘（Step A 相当）の冒頭に、以下を**Phase 0 として固定**する:
+1. 参照記事の公開URLを **web_fetch**（内部ドラフトだけに依存しない）。
+2. **H2/H3章構造を Markdown 表形式で悉皆列挙**し、ファイルに保存。
+3. これを「**100点像の基準ベースライン**」として明示し、Step B 以降の設計はこのベースラインとの差分で語る。
+4. 内部ドラフトと公開版が食い違う場合は**公開版を正**とする（公開版がFIC標準の最新実装）。
+
+→ これにより「実装済みの標準構成を設計段階で見落とす」事故を防ぐ。

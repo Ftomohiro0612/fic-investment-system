@@ -6,6 +6,19 @@
 
 ---
 
+## ★最重要プロセス則: 資料発掘は Phase 0（公開記事の構造ベースライン化）から始める
+
+**「100点像」や記事設計に関わる発掘・分析タスクでは、最初に必ず Phase 0 を実施する。** これは Step A（資料発掘）の前提工程であり、省略禁止。
+
+1. 参照記事の**公開URLを web_fetch**（内部リポジトリのドラフトだけに依存しない）。
+2. **H2/H3章構造を Markdown 表で悉皆列挙**し、`docs/chat_workflows/_analysis/` にファイル保存。
+3. これを「**100点像の基準ベースライン**」と明示し、以降の設計はこのベースラインとの差分で語る。
+4. **内部ドラフトと公開版が食い違う場合は公開版を正**とする（公開版がFIC標準の最新実装）。
+
+> 経緯: 段階1ステップ4で Phase 0 を欠いたため、王子HD・日本製紙の公開標準15章構成（新構成3章ほか）を見落とした。詳細は [known_issues.md](known_issues.md) プロセス改善節 と [published_article_structure_audit.md](published_article_structure_audit.md)。**Step Aレベルの抜けは下流工程すべてに波及する**ため、最重要のプロセス則として固定する。
+
+---
+
 ## 段階0: 環境準備
 
 【FIC手動完了済み】
@@ -39,6 +52,16 @@
 6. `article-quality-checklist`（**最小骨子**。100点像を反映）
 
 → FIC確認 → 段階2へ
+
+### ステップ4後続：テンプレ全面15章化（FIC命名「段階1ステップ5」・2026-05-21確定）
+
+100点像確定（ステップ4）後、writer/reviewer 投入前に実施する整備フェーズ。スコープ：
+1. テンプレ（`wordpress/templates/company_analysis_template.html`）の**全面15章化**（雛形以外の章の本格実装・章番号振り直し・参照→FAQ順）。
+2. **WP側CSS定義の一括整理**：`glossary-box`（📘・背景色＋左罫線）。`fic-detail-block`（段階2用）も同時定義が自然。**📘はCSS定義まで本番不使用（💡のみ）**。
+3. `article-quality-checklist` に**企業分析HTML構造マーカー**（`one-liner-summary`／各章導入`<em>`／章末「結局…」／必須グラフ3／画像連動2）を**新15章版**へ振り直して反映（company_03 の旧H2 1〜12基準を更新）。
+4. **英語44項目**（`prompts/shared/quality_checklist.md`）と日本語B項目の役割分担を明文化。
+
+**段階4へ持ち越し（各ロールSOPのSkill化）**：動画SOP全般（videographer）・X投稿タイプ10種＋決算メモ（x_writer）・画像/WP（designer）・業界分析3タイプ構成・統合メモ14章。詳細は [existing_sops_audit.md](existing_sops_audit.md) §4。
 
 ---
 
