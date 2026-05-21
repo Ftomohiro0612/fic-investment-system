@@ -1,0 +1,91 @@
+{
+  "permissions": {
+    "allow": [
+      "Read",
+      "Write",
+      "Edit",
+      "WebFetch",
+      "WebSearch",
+
+      "Bash(ls:*)",
+      "Bash(dir:*)",
+      "Bash(cd:*)",
+      "Bash(cat:*)",
+      "Bash(type:*)",
+      "Bash(mkdir:*)",
+      "Bash(echo:*)",
+      "Bash(where:*)",
+      "Bash(which:*)",
+      "Bash(move:*)",
+      "Bash(copy:*)",
+      "Bash(ren:*)",
+
+      "Bash(node:*)",
+      "Bash(npm:*)",
+      "Bash(npx:*)",
+      "Bash(python:*)",
+      "Bash(pip:*)",
+      "Bash(pip3:*)",
+
+      "Bash(git status)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git pull)",
+      "Bash(git branch:*)",
+      "Bash(git checkout:*)",
+      "Bash(git restore:*)",
+
+      "Bash(grep:*)",
+      "Bash(rg:*)",
+      "Bash(find:*)",
+      "Bash(findstr:*)",
+
+      "Bash(curl http://localhost:*)",
+      "Bash(curl https://fic-investment.biz:*)",
+      "Bash(curl https://hooks.make.com:*)",
+      "Bash(curl https://sheets.googleapis.com:*)",
+
+      "Bash(jq:*)"
+    ],
+    "deny": [
+      "Bash(rm -rf:*)",
+      "Bash(rm -rf /:*)",
+      "Bash(del /s:*)",
+      "Bash(del /q:*)",
+      "Bash(rmdir /s:*)",
+      "Bash(format:*)",
+
+      "Bash(git push --force:*)",
+      "Bash(git push -f:*)",
+      "Bash(git reset --hard:*)",
+
+      "Bash(npm publish:*)",
+      "Bash(npm unpublish:*)",
+
+      "Read(./.env*)",
+      "Read(**/.env*)",
+      "Read(**/.gcp-sheets-credentials.json)",
+      "Read(**/youtube-oauth-token.json)",
+      "Read(**/.sandbox-secrets/**)",
+      "Read(**/wp-config.php)",
+      "Read(**/credentials.json)",
+      "Read(**/*secret*)",
+      "Read(**/*password*)",
+      "Read(**/*api_key*)",
+
+      "Read(.secrets/fic-wp.json)",
+      "Read(.secrets/sandbox_users.json)",
+      "Read(.secrets/x-api.json)",
+      "Read(.secrets/youtube-oauth-token.json)",
+      "Read(.codex/**)",
+      "Read(C:/Users/tomo-/.codex/**)",
+      "Read(./data/.gcp-sheets-credentials.json)",
+
+      "Bash(curl:*--data*password*)",
+      "Bash(curl:*--data*api_key*)"
+    ],
+    "defaultMode": "acceptEdits"
+  }
+}

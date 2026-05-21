@@ -24,7 +24,12 @@ temp/
 tmp_*.js
 
 # Local agent/work artifacts
-.claude/
+# .claude/ の中身は原則除外しつつ、コア資産(skills/agents/settings)だけ追跡する。
+# 親ディレクトリを丸ごと除外すると子の再包含が効かないため .claude/* で中身を除外する。
+.claude/*
+!.claude/skills/
+!.claude/agents/
+!.claude/settings.json
 work/
 
 # Python bytecode
@@ -40,3 +45,12 @@ assets/videos/*.err.log
 assets/videos/*_qa_*.txt
 assets/videos/youtube_upload_manifest_*.json
 assets/videos/youtube_upload_results_*.json
+
+# Secrets (auth credentials — never commit)
+.secrets/
+*.env
+credentials.json
+*-credentials.json
+*-oauth-*.json
+wp-app-password.json
+x-api.json
