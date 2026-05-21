@@ -111,7 +111,7 @@ settings.json の Write/Edit パターン修正が「本当に効いているか
 
 ## 保留タスク（段階1完了後に着手）
 
-- [ ] **CLAUDE.md の作成**
+- [x] **CLAUDE.md の作成**（完了 2026-05-21・コミット）
   - 目的: Claude Code がセッション開始時に自動読み込みする内部指示書
   - 内容: 進行中フェーズ、Skill 参照ルール、危険操作、ドメイン用語、出力フォーマット
   - 反映: Phase 4 で確定した4 Skill 体系（article-design-principles / writing-style / article-quality-checklist ＋ fact-safety 3規律）
