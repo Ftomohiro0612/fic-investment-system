@@ -91,3 +91,18 @@ settings.json の Write/Edit パターン修正が「本当に効いているか
 3. **ポップアップ無し** → 候補のいずれかが有効＝**修正成功**。不要パターンを1つずつ削って最小形に絞る（推奨残し: cwd相対 `.claude/...`）。テストファイル削除。
 4. **ポップアップ有り** → **原因③（`.claude/` 恒常ゲート）確定**。`/feedback` で「allow/acceptEdits を設定しても `.claude/` 配下Writeが承認を要求する」とVS Code拡張へ報告。運用はセッション一時許可で継続（実害は軽微：1案件あたり数回の承認）。
 5. 結論を本ファイルと MEMORY.md（[[claude-settings-permission-path-anchor]]）に反映し、settings.json を最小形に整える。
+
+### ★決着テスト結果（2026-05-21 セッション再起動後・実施済み・確定）
+
+**結論: 原因③（`.claude/` 恒常ゲート）確定。settings.json では解決不可。**
+
+- VS Code 完全終了→再起動した新セッションで、12通りの allow パターン（bare `Write`／cwd相対 `.claude/...`／どこでも `**/.claude/...`／正規化済み絶対 `//c/Users/.../.claude/...`）を全投入した状態のまま、未使用パス `.claude/skills/_perm_test2/PERM_TEST.md` への初回新規Writeを実施。
+- **承認ポップアップが出た**（FIC実機確認・許可選択）。→ どの allow 形でも `.claude/` 配下Writeのゲートは外れない＝**Claude Code のセキュリティ設計による恒常ゲート**と確定。`acceptEdits` でも自動承認されない。
+
+**対応（実施済み）:**
+1. **`/feedback` 報告**: 「Windows VS Code拡張で、`.claude/` 配下への新規Writeが settings.json の allow（`Write(.claude/skills/**)` 等）や `acceptEdits` でも承認を要求される。期待: allowで許可可能にする or 回避方法のドキュメント整備。運用制約: 大量のSkill/Subagent作成時に承認回数が増える」。報告本文は本セッションでFICへ提示済み（FICが /feedback から送信）。
+2. **settings.json 最小形化**: 実験用12行 → 公式仕様準拠の cwd相対4行（`Write/Edit(.claude/skills/**)`, `Write/Edit(.claude/agents/**)`）のみ残置。理由＝将来 Claude Code が `.claude/` ゲートを緩和した際に即効くようにする「正しい意図の最小表現」。
+3. **テストファイル削除済み**: `.claude/skills/_perm_test2/`（PERM_TEST.md 含む）。
+4. **運用方針**: `.claude/` 書き込みは**セッション一時許可（"allow for this session"）で継続**。実害評価＝1案件あたり数回の承認で許容範囲内。
+
+→ 本件クローズ。残課題は本ファイル §1（bare `Write`/`Edit` の allow-all 不発・無害残置）と §2（Windows絶対パス deny 検証保留）のみ。

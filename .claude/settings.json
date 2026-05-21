@@ -12,16 +12,6 @@
       "Edit(.claude/skills/**)",
       "Edit(.claude/agents/**)",
 
-      "Write(**/.claude/skills/**)",
-      "Write(**/.claude/agents/**)",
-      "Edit(**/.claude/skills/**)",
-      "Edit(**/.claude/agents/**)",
-
-      "Write(//c/Users/tomo-/Documents/FIC/fic-investment-system/.claude/skills/**)",
-      "Write(//c/Users/tomo-/Documents/FIC/fic-investment-system/.claude/agents/**)",
-      "Edit(//c/Users/tomo-/Documents/FIC/fic-investment-system/.claude/skills/**)",
-      "Edit(//c/Users/tomo-/Documents/FIC/fic-investment-system/.claude/agents/**)",
-
       "Bash(ls:*)",
       "Bash(dir:*)",
       "Bash(cd:*)",
