@@ -7,8 +7,10 @@
       "WebFetch",
       "WebSearch",
 
-      "Write(.claude/skills/**)",
-      "Write(.claude/agents/**)",
+      "Write(/.claude/skills/**)",
+      "Write(/.claude/agents/**)",
+      "Edit(/.claude/skills/**)",
+      "Edit(/.claude/agents/**)",
 
       "Bash(ls:*)",
       "Bash(dir:*)",
@@ -67,7 +69,7 @@
       "Bash(npm publish:*)",
       "Bash(npm unpublish:*)",
 
-      "Read(./.env*)",
+      "Read(/.env*)",
       "Read(**/.env*)",
       "Read(**/.gcp-sheets-credentials.json)",
       "Read(**/youtube-oauth-token.json)",
@@ -78,16 +80,16 @@
       "Read(**/*password*)",
       "Read(**/*api_key*)",
 
-      "Read(.secrets/fic-wp.json)",
-      "Read(.secrets/sandbox_users.json)",
-      "Read(.secrets/x-api.json)",
-      "Read(.secrets/youtube-oauth-token.json)",
-      "Read(.codex/**)",
+      "Read(/.secrets/fic-wp.json)",
+      "Read(/.secrets/sandbox_users.json)",
+      "Read(/.secrets/x-api.json)",
+      "Read(/.secrets/youtube-oauth-token.json)",
+      "Read(/.codex/**)",
       "Read(C:/Users/tomo-/.codex/**)",
-      "Read(./data/.gcp-sheets-credentials.json)",
+      "Read(/data/.gcp-sheets-credentials.json)",
 
-      "Write(./.secrets/**)",
-      "Edit(./.secrets/**)",
+      "Write(/.secrets/**)",
+      "Edit(/.secrets/**)",
 
       "Bash(curl:*--data*password*)",
       "Bash(curl:*--data*api_key*)"
