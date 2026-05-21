@@ -7,6 +7,9 @@
       "WebFetch",
       "WebSearch",
 
+      "Write(.claude/skills/**)",
+      "Write(.claude/agents/**)",
+
       "Bash(ls:*)",
       "Bash(dir:*)",
       "Bash(cd:*)",
@@ -82,6 +85,9 @@
       "Read(.codex/**)",
       "Read(C:/Users/tomo-/.codex/**)",
       "Read(./data/.gcp-sheets-credentials.json)",
+
+      "Write(./.secrets/**)",
+      "Edit(./.secrets/**)",
 
       "Bash(curl:*--data*password*)",
       "Bash(curl:*--data*api_key*)"
