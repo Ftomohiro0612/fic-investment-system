@@ -29,7 +29,7 @@ model: opus
 
 ## 3. 図の見やすさ規律
 - **概念図（AI画像）＝構造図正本に準拠**：`docs/non_ai_structure_chart_lessons.md`（「この図で伝えたいこと」を冒頭明示／結論見出しの帯＋ラベル／要素4つ前後／カード3層〔番号・短見出し・補足1-2行〕／矢印で読む順を固定〔上流→業績〕／下部に見る順番・確認指標／太字・大きく・余白／フォントYu Gothic・Meiryo系）。これらをAI画像プロンプト仕様に落とす。
-- **データ図（SVG）＝正本の転用可能原則＋一般的グラフ可読性**：結論の明示・余白・凡例・出所注・数値は本体表（記事）と一致。正確な数値比較はデータ図側で担う（構造図正本はデータ図を範囲外＝line16）。**SVG/グラフ固有の見やすさはパイロット後に `docs/data_figure_lessons.md`（新規）へ反映**（C'案・「本作業1本→点検→教訓即時反映」）。
+- **データ図（SVG）＝`docs/data_figure_lessons.md` に従う**（285Aパイロットで初版作成・今後追補）：結論の明示・余白・凡例・出所注・数値は本体表（記事）と一致／グラフ種類は結論で選ぶ（構成比は横100%棒）／font-familyはsvg属性ベタ書き／静的SVG（Chart.js・Mermaid不可）。正確な数値比較はデータ図側で担う（構造図正本はデータ図を範囲外＝line16）。新たな見やすさ知見は同ファイルへC'案で追補。
 
 ## 4. キャプション・文体（[[writing-style]] §5）
 - figcaptionは**です・ます基調**（記事本文と統一）。初心者に「何を見ればよいか」を平易に。
@@ -59,4 +59,4 @@ model: opus
 - 機密値（鍵・トークン）非出力。骨格・スコープ判断はFIC承認後。
 
 ---
-関連: [[article-design-principles]]（図の役割・入口/中身）/ [[writing-style]]（キャプションのです・ます・初心者間口）/ [[factual-handling-rules]]・[[source-hierarchy]]（図の数値・出所）/ [[handoff-templates]] / [[sheets-status-update]]。図の見やすさ正本＝`docs/non_ai_structure_chart_lessons.md`（概念図）／`docs/data_figure_lessons.md`（データ図・パイロットで獲得予定・新規）。SOP＝`docs/chat_workflows/company_04_codex_image_wp.md`（WP反映部分は段階4で書換予定）。
+関連: [[article-design-principles]]（図の役割・入口/中身）/ [[writing-style]]（キャプションのです・ます・初心者間口）/ [[factual-handling-rules]]・[[source-hierarchy]]（図の数値・出所）/ [[handoff-templates]] / [[sheets-status-update]]。図の見やすさ正本＝`docs/non_ai_structure_chart_lessons.md`（概念図）／`docs/data_figure_lessons.md`（データ図・285Aパイロットで初版作成）。SOP＝`docs/chat_workflows/company_04_codex_image_wp.md`（WP反映部分は段階4で書換予定）。
