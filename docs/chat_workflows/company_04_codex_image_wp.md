@@ -21,7 +21,7 @@
 - docs/codex_company_analysis_pack_spec.md の画像作成・WordPress反映章
 - docs/non_ai_structure_chart_lessons.md
 - docs/wordpress_media_cleanup_policy.md
-- docs/reference_images/（企業分析の生成AI画像は `fic_impact_map_ai_style_reference_01.png` と `fic_impact_map_ai_style_reference_04.png` を参考にする）
+- docs/reference_images/company_analysis/（企業分析の生成AI概念図の**型・配色の参考**：上流環境マップ＝`fic_impact_map_ai_style_reference_01.png`〔単列フロー型〕／投資仮説マップ＝`fic_thesis_map_ai_style_reference_01.png`〔2×2象限型〕。**内容〔会社名・数値・ドライバー定義〕は記事ごとに再指定し真似しない**。同フォルダ README 参照）
 
 読むファイル:
 - work/company_analysis/{code}_{company}/handoff_review_to_image_wp.md

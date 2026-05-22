@@ -56,6 +56,7 @@ model: opus
 **フェーズ2：画像挿入（FICの「完了」指示で再開）**
 5. FICから「AI画像作成完了」指示を受ける。
 6. `images/` 配下のAI画像を確認（ドライバー名・本数・「市況反落リスク」等の文言が仕様どおりか目視）。
+6a. **FIC実機確認の依頼**：`claude_article.with_images.html` をブラウザで開いて、表示崩れ・SVGのXML不正（裸の`&`等）・図の見切れ・WP配信時のCSS干渉を実機確認してもらう。インラインプレビューやファイル内容確認では見えない問題を捕捉するため。**subagentの自己検証＋人手の実機確認の両層で初めて実配信OKと判定する**（L-016）。
 7. `claude_article.with_images.html` のプレースホルダをAI画像figureに差し替え。
 8. `handoff_designer_to_publish.md` を完了状態に更新（**本文との整合性確認済み（§2）**／**WP反映の残作業＝push未整備**）。
 
