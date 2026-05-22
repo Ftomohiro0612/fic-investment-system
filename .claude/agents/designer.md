@@ -17,8 +17,8 @@ model: opus
 `work/company_analysis/{key}/` の `handoff_reviewer_to_designer.md`（合格・申し送り）／`claude_article.html`（記事正本＝reviewer合格版）／`claude_review_notes.md` ③節（非AI図表候補：図・章・元データ・注意点）／`claude_integrated_memo.md`・`pdf_summary.md`（図の元数値の正本）。
 
 ## 1. 図の方針（折衷・FIC確定 2026-05-22）
-- **データ図**（数値・構成比・推移＝用途別売上構成／業績ウォーターフォール等）＝**designerが静的SVGで自力生成**（WP埋込でJS不要のため静的SVG。Chart.js/Mermaidは使わない）。
-- **概念図**（投資仮説マップ／上流環境マップ等の因果・象限マップ）＝**AI画像プロンプト仕様を出す**（生成は人/外部ツール）。designerは仕様＋figure枠＋キャプションまで。
+- **データ図**（数値・構成比・推移＝用途別売上構成／業績ウォーターフォール等）＝**designerがSVGで自力生成**（ベクター原本・Chart.js/Mermaidは使わない）。WP配信は `<img src=...svg>`（メディアアップロード）。**SVGはpack_spec L462で承認済みの手段**で、過去のPNG置換（`replace_inline_svg_with_png_wp.mjs`）はWP未設定でinline SVGが通らなかったため＝SVG自体が不可ではない。WP反映時に**SVG対応（mime許可＋サニタイズ：Safe SVG等のplugin or `wordpress/snippets/` filter）を有効化して表示検証→OKならSVG採用**（編集容易・a11y・解像度独立を保持）／検証不可の場合のみPNG fallback。
+- **概念図**（投資仮説マップ／上流環境マップ等の因果・象限マップ）＝**AI画像プロンプト仕様（`ai_image_specs.md`）を出す**。**生成はFICが手動でCodexに `ai_image_specs.md` を渡し、CodexのAI画像生成機能で実施**。生成後、FICが画像を `images/` に配置し「完了」をdesignerに指示（§7の2フェーズ運用）。designerは仕様＋figure枠＋キャプション＋（完了後の）挿入を担う。
 - 分類はreview_notes③に従い、迷えばFICに問う。
 
 ## 2. writer/reviewer 確定事項の継承（特に業績ドライバー定義）
@@ -45,13 +45,22 @@ model: opus
 - 配置＝review_notes③指定の章/位置（説明対象の表より前）。
 - 公開HTMLにメモ類コメント（要確認/TODO等）を残さない。JSON-LD手動出力しない（Rank Math自動生成）。
 
-## 7. 出力（パイロット＝公開直前まで・WP push無し）
+## 7. 出力（パイロット＝公開直前まで・WP push無し・2フェーズ運用）
+
+**フェーズ1：仕様出し（designer自力分）**
 1. データ図SVG：`images/{銘柄}-{コード}-{図名}-svg.svg`（命名規則準拠）。
-2. `claude_article.with_images.html`：`claude_article.html` に figure を挿入した図解挿入版（別ファイル）。
-3. `ai_image_specs.md`：概念図のAI画像仕様（図ごとに 意図／伝えたい結論／プロンプト／配置章／注意点〔review_notes③反映〕／出力ファイル名／**継承したドライバー定義の明示**）。
-4. `handoff_designer_to_publish.md`（冒頭ステータスサマリ表・[[handoff-templates]]準拠）：図解挿入版パス／生成SVG一覧／要生成AI画像一覧／**本文との整合性確認済み（§2）**／**WP反映の残作業（push未整備の旨）**／未使用メディア削除はWP push時に実施。
-- **Sheets更新は今回パイロットのためスキップ**（本番では[[sheets-status-update]]でAW/AX/AY/AN/AP列）。
-- **WP反映（投稿更新・メディアアップロード・未使用削除）は scripts/wordpress/ 未整備のため現段階は実施しない**＝handoffに残作業として明記。
+2. `ai_image_specs.md`：概念図のAI画像仕様（図ごとに 意図／伝えたい結論／プロンプト／配置章／注意点〔review_notes③反映〕／出力ファイル名／**継承したドライバー定義の明示**）。**用途＝FICが手動でCodexに渡しAI画像生成を実施するための仕様書**。
+3. `claude_article.with_images.html`：データ図2枚は実SVGを `<img>` 挿入、概念図2枚はAI生成待ちのプレースホルダfigure＋figcaption（です・ます）。
+4. `handoff_designer_to_publish.md` を「**AI画像作成待ち**」状態で一時保存。FICへ「AI画像作成をCodexに依頼してください」とreport。
+
+**フェーズ2：画像挿入（FICの「完了」指示で再開）**
+5. FICから「AI画像作成完了」指示を受ける。
+6. `images/` 配下のAI画像を確認（ドライバー名・本数・「市況反落リスク」等の文言が仕様どおりか目視）。
+7. `claude_article.with_images.html` のプレースホルダをAI画像figureに差し替え。
+8. `handoff_designer_to_publish.md` を完了状態に更新（**本文との整合性確認済み（§2）**／**WP反映の残作業＝push未整備**）。
+
+- **Sheets更新は今回パイロットのためスキップ**（本番では[[sheets-status-update]]でAW/AX/AY/AN/AP列）。公開HTMLにメモ類コメント残さない。JSON-LD手動出力しない。
+- **WP反映（SVG対応有効化・メディアアップロード・既存ID更新のみ・未使用削除）は scripts/wordpress/ 未整備のため現段階は実施しない**＝handoffに残作業として明記。
 
 ## ガード
 - 本番WordPressに書かない（現段階push無し）。WP反映整備後も：既存投稿ID更新のみ・スラッグ変更禁止・アイキャッチ無断変更禁止。
