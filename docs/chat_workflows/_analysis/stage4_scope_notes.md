@@ -56,3 +56,37 @@
 ---
 
 > 本メモは判断材料。優先順位・curation方式・プロトコルの確定は段階4着手時にFICが決める。
+
+---
+
+## ■ 段階4 進捗と引き継ぎ（2026-05-22時点・新チャット用）
+
+### 現在地
+- 段階1（Skill）・段階2（writer/reviewer）・段階3（285Aパイロットで writer/reviewer 実証）＝完了。
+- **段階4：designer 完了**。残り6ロール＝researcher_company／researcher_industry／scout／theme_scout／videographer／x_writer。
+- **次アクション＝researcher_company 着手の Phase 0（事実確認）から**。
+
+### designer で確定した成果（commit 47e4d37〜636bd6f）
+- `.claude/agents/designer.md`（v1.2相当＋§7に6a追加）：データ図＝静的SVG自力／概念図＝AI画像仕様の折衷。§2「writer/reviewer確定事項の継承」。WP反映は scripts/wordpress 未整備で「公開直前」まで。
+- 285Aパイロットの4図確定（`work/company_analysis/285A_kioxia_pilot/`・ローカル）：上流環境マップ(単列フロー・AI)／投資仮説マップ(2×2象限・AI)／用途別売上(SVG)／業績ウォーターフォール(SVG)。`claude_article.with_images.html` に挿入済み。
+- 参考画像化：`docs/reference_images/company_analysis/`（fic_impact_map_ai_style_reference_01.png＝フロー型／fic_thesis_map_ai_style_reference_01.png＝2×2型＋README）。
+- 教訓：L-009〜L-016（`review_lessons_log.md`）／`data_figure_lessons.md`（新規・SVGデータ図の見やすさ＝&エスケープ・単体XML検証・見切れ防止）。
+
+### 段階4で確立した運用ルール（researcher以降にも適用）
+- **導入プロトコル**＝「定義→本作業1本→点検→教訓即時反映」。各ロールで回す。
+- **§2 確定事項の継承**＝後工程subagentは上流（writer/reviewer等）の確定事項を明示継承（L-009）。
+- **二層検証**（L-016）＝subagent自己検証＋**人手の実機確認（ブラウザで開く）**の両層で初めて実配信OK判定。
+- **AI画像生成フロー**＝subagentが仕様(ai_image_specs.md)出し→FICが手動でCodexに渡し生成→画像配置→subagentが挿入（2フェーズ・L-011）。
+- **過去制約は原因特定後に判断**（L-012）。**教訓即時反映=C'案**（論理的原則/両ソース裏取り済みは即時、データ的一般化は段階4へ。§7ゲートは.claude/skills/のみFIC承認）。
+- **環境メモ**：カスタムsubagentは本セッション環境では Agentツールから直接起動不可→general-purposeに定義を読ませて代行。SVG→PNGはChrome headlessで可。
+
+### researcher_company Phase 0 で確認すべきこと（次チャットの最初の作業）
+- 正本＝`docs/codex_company_analysis_pack_spec.md`（v4パック仕様＝researcherの出力形式）。
+- Codex現行リサーチ手順（PDF直読・Serper検索・統合）と、`work/company_analysis/3861_oji/`（王子HD pack・復元済み＝検証データ/品質目標）。
+- **核心の見極め**：Claude Code subagentが実際にできる範囲（WebFetch/WebSearch/curlでのPDF取得・テキスト抽出・Web検索の可否）＝designerの「AI画像は自力不可」に相当する論点。
+
+### 保留（段階4後半 or 完了後）
+- WP pushツール整備（`scripts/wordpress/` 未整備）＋データ図SVGのWP配信検証（mime/サニタイズ）。285Aの仕上げ（公開）。
+
+### 新チャットで最初に読むファイル
+`CLAUDE.md`／memory（MEMORY.md・自動読込）／本書（stage4_scope_notes.md）／`stage2_handoff.md`／`review_lessons_log.md`（L-001〜L-016）／`data_figure_lessons.md`／`.claude/agents/{writer,reviewer,designer}.md`／`.claude/skills/`。
