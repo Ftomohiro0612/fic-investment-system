@@ -218,6 +218,17 @@ reviewer 差し戻し・点検で得た**再利用可能な教訓**を蓄積し�
 - 段階4での反映先候補：→ 即時反映：designer.md §7フェーズ2に「FIC実機確認の依頼」ステップ(6a)を追加。段階4の他外部委託・配信工程（videographer・WP push）にも二層検証を適用。handoff-templatesに「実機確認依頼」を将来検討。
 - curation判定：**採用・designer.md §7に即時組み込み**。
 
+### L-017
+- 日付：2026-05-22
+- 対象記事：—（段階4 researcher_company設計・APIキー露出事故から）
+- 指摘ID：—（FIC共有のMakeブループリントに稼働中APIキー平文混入を発見）
+- 区分：guard／process（機密の取り扱い）
+- 重大度：major（鍵をrepoにコミットすれば実害・履歴に残存）
+- 指摘内容：subagent定義は「鍵を扱うか否か」をfrontmatterまたは冒頭で明示する。鍵不要のロールは「鍵不要」を明記し設計上鍵が混入しない設計に、鍵が必要なロールはスクリプト経由（実行時読み・値は出力しない）に限定する。実例＝researcher_companyはWebSearch/WebFetch/curlがキー不要のため「認証鍵は使わない」をfrontmatter description＋冒頭＋ガードに明記。Make旧フローの生JSON（OpenAI/Serper/FMPキー平文）はrepo非保存とし、機密抽出mdのみ保存。
+- 根本原因の仮説：普遍性=高。subagentが外部リソースにアクセスするほど鍵混入リスクが上がる（researcher_companyは外部アクセス最多ロール）。鍵の有無を定義で明示すれば、設計時に鍵混入を未然防止でき、レビュー時も判定が機械的になる。CLAUDE.md §6（機密非出力）の subagent設計への展開。
+- 段階4での反映先候補：→ **即時反映：researcher_company.md v1 に「認証鍵は使わない」を明記済み**。段階4以降の全subagent（videographer〔YouTube OAuth〕・x_writer〔X API〕等＝鍵を扱うロール）に「鍵はスクリプト経由・実行時読み・値非出力」を定義で明示。複数ロール適用後、handoff-templates or CLAUDE.md §7への昇格を判断。
+- curation判定（段階4記入）：**採用・researcher_company定義に即時組み込み**。鍵を扱うロール（videographer/x_writer）作成時に同パターン適用。
+
 ---
 
 ## 蒸留サイクル（運用メモ）
