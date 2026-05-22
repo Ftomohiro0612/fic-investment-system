@@ -51,6 +51,7 @@
 
 - **designer の教訓継承チェック（小ステップ）**：designer 完成後、writer/reviewer に反映済みの教訓（です・ます調／IFRSラベル＝親会社所有者帰属持分比率／予想範囲明示／反証のN四半期パターン）が designer 処理と矛盾しないか確認する。具体例：designer が画像キャプションやWP本文補助テキストを書く際の**文体基調（です・ます調）の扱い**を、**designer の system prompt 起草時にチェックポイント化**する。
 - **C'案標準プロトコルのドキュメント位置**：「定義→本作業1本→点検→教訓即時反映」はPhase 5移行の中核資産。本メモ内記載に加え、段階4完了後の本番運用（FICが新Subagentを作る・既存Subagentを改修する）でも参照されるため、**CLAUDE.md への追記** または **独立ドキュメント `docs/chat_workflows/_analysis/phase5_standard_protocol.md` の新設**を検討（優先度=中・段階4着手後でも可）。
+- **writer/reviewer 確定事項の継承プロトコル（段階4標準・L-009）**：後工程subagentは、upstream（writer/reviewer、特にFICエスカレーション結果）の**確定事項を明示継承**してから自分の出力を作る。最重要＝**業績ドライバー定義**（本数・名称・上流/KPI/収益化/効き方・統合/分離/除外）。本文と図／動画／X投稿の齟齬（読者誤読）を防ぐ。**designer定義v1に「確定事項の継承」セクションとして組み込み済み**。**段階4以降の全subagent定義v1（videographer・x_writer 等）に同セクションを標準組み込み**（videographer＝動画のドライバー図シーン、x_writer＝X投稿の因果でドライバー定義を反映）。複数ロール適用後、handoff-templates Skillへの昇格を判断。
 
 ---
 
