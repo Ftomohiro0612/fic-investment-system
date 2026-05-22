@@ -185,6 +185,8 @@ FIC投資研究所の **企業分析・業界分析の記事／X投稿／動画*
 
 ## ■ 段階4持ち越し事項
 
+> **段階4スコープ再設計の論点（優先順位・教訓curation・C'案活用・導入プロトコル）＝`stage4_scope_notes.md`**（FIC着手判断の材料・2026-05-22作成）。
+
 - 残り7 Subagent：scout／theme_scout／researcher_company／researcher_industry／designer／videographer／x_writer。
 - 残りSkill：動画SOP／X投稿／画像・WP／業界分析3タイプ構成／統合メモ14章。正本は当面 `docs/chat_workflows/company_04〜06`・`industry_*`・`video_review_notes.md`・`x_post_company_analysis_workflow.md`・`non_ai_structure_chart_lessons.md`・`wordpress_media_cleanup_policy.md`（整合監査＝`existing_sops_audit.md`）。
 - Codex工程との44項目突合（マッピング表「基盤」項目の整理余地検討）。
@@ -197,9 +199,9 @@ FIC投資研究所の **企業分析・業界分析の記事／X投稿／動画*
 理由：①保留タスク3点は段階3パイロット（企業分析 writer/reviewer を285Aで試すだけ）の実行に影響しない／②段階3結果が writer/reviewer 設計の検証になり、問題があれば修正→その後に業界分析データ移行する方が手戻りが少ない／③writer/reviewer が「新鮮なうち」（設計直後）に検証する方が記憶バイアスを避けられる／④段階3完了後の判断材料が増えてから移行方針（v4 spec準拠の業界分析pack形式の確認等）を固める方が明確。
 ※Zip保管継続は「残す」で確定済み・追加作業なし（下記3点目）。
 
-- **業界分析4テーマの移行**：`FIC.zip` 内 `work/industry_analysis/`（4テーマ：ai-battery-power-infrastructure-softbank-sakai／construction-material-shortage-project-delay-margin-risk／naphtha-packaging-cost-food-consumer-goods／sony-tsmc-physical-ai-sensor-investment）をローカルへ移行（company_analysisと同方式・no-overwrite・`work/` gitignoreでローカルのみ）。段階4 researcher_industry の検証データになる。
-- **`work/_sheets/`（3,064件）の扱い**：中身を1段確認し、Sheetsキャッシュなら移行不要・それ以外なら移行を判断。
-- **FIC.zip（2.3GB・`C:\Users\tomo-\Documents\FIC\FIC.zip`）は保管継続**。プロジェクト全体＋.git履歴＋未移行分（industry_analysis・_sheets）の唯一のバックアップ。**FIC承認なしに削除しない**。
+- **業界分析4テーマの移行 ✅完了（2026-05-22）**：`FIC.zip` 内 `work/industry_analysis/`（4テーマ：ai-battery-power-infrastructure-softbank-sakai〔65ファイル〕／construction-material-shortage-project-delay-margin-risk〔21〕／naphtha-packaging-cost-food-consumer-goods〔23〕／sony-tsmc-physical-ai-sensor-investment〔22〕＝計131ファイル）をローカル `work/industry_analysis/` へ移行済み（company_analysisと同方式・`work/` gitignoreでローカルのみ・git追跡外）。動画なし・最大3MBのPNG中心。**段階4 researcher_industry の検証データ／出力品質目標として使う**（公開済み業界記事の制作過程＝.md/.html/画像/.mjsが残る）。
+- **`work/_sheets/`（3,064件）の扱い ✅確認完了（2026-05-22）＝移行不要**：実体は **node_modules（約3,060件・npm install で再生成可能）＋ Sheets読み取り診断スクリプト2本（`read_target_rows.mjs`＝業界分析タブ特定行のハードコード読み取り／`test_access.mjs`＝タブ一覧の接続テスト）＋package.json**。**Sheetsデータキャッシュではない**。2スクリプトは repo の `scripts/sheets/read_sheet_tab.mjs`（汎用）に置換済みの使い捨て前身＝移行不要。Zipバックアップに残るため消失なし。
+- **FIC.zip（2.3GB・`C:\Users\tomo-\Documents\FIC\FIC.zip`）は保管継続（2026-05-22 移行後に再確認・保管継続を確定）**。理由：industry_analysisは移行済みだが、**`work/` は丸ごと .gitignore＝GitHubに載らない**（company_analysis・industry_analysis・pilot成果物はローカル単一コピー）。Zipはそれら work/ 資産＋`fic-archive`（旧Codexワークスペース・repo外）の**唯一の冗長バックアップ**。削除はwork/資産の単一障害点化を招くため、**work/に別の冗長バックアップが用意できるまで保管継続。FIC承認なしに削除しない**。
 - **王子HD pack復元の活用**：王子HD(3861)の投入パックが今回復元済み（`work/company_analysis/3861_oji/`・ローカルのみ）。段階3パイロット（285A）完了後の**第2弾検証**（writer Subagentが別銘柄でも機能するか）や、**段階4 researcher_company の出力品質目標**として活用可能。
 - **Phase 5後の chat_workflows 全面見直し（段階4）**：`company_02_claude_article.md`・`company_03_codex_review.md` はCodex+Claude時代の制約を反映。段階4で **writer⇄reviewer 差し戻し方式**（reviewer別ファイル方式→writer上書き方式）に書き換え。
 
