@@ -61,10 +61,10 @@
 
 ## ■ 段階4 進捗と引き継ぎ（2026-05-22時点・新チャット用）
 
-### 現在地
+### 現在地（2026-05-23更新）
 - 段階1（Skill）・段階2（writer/reviewer）・段階3（285Aパイロットで writer/reviewer 実証）＝完了。
-- **段階4：designer 完了**。残り6ロール＝researcher_company／researcher_industry／scout／theme_scout／videographer／x_writer。
-- **次アクション＝researcher_company 着手の Phase 0（事実確認）から**。
+- **段階4：designer 完了＋researcher_company 完了**。**主要4ロール（writer/reviewer/designer/researcher_company）＝Phase 5 移行の核心マイルストーン到達**。残り5ロール＝researcher_industry／scout／theme_scout／videographer／x_writer（主要4ロールの応用版・派生版・標準プロトコルに乗せるだけ）。
+- **次アクション選択肢**：(A) researcher_industry 着手 ／ (B) writer試作（researcher_company→writer縦ライン検証＝3861 v4 packで記事生成）。
 
 ### designer で確定した成果（commit 47e4d37〜636bd6f）
 - `.claude/agents/designer.md`（v1.2相当＋§7に6a追加）：データ図＝静的SVG自力／概念図＝AI画像仕様の折衷。§2「writer/reviewer確定事項の継承」。WP反映は scripts/wordpress 未整備で「公開直前」まで。
@@ -80,13 +80,25 @@
 - **過去制約は原因特定後に判断**（L-012）。**教訓即時反映=C'案**（論理的原則/両ソース裏取り済みは即時、データ的一般化は段階4へ。§7ゲートは.claude/skills/のみFIC承認）。
 - **環境メモ**：カスタムsubagentは本セッション環境では Agentツールから直接起動不可→general-purposeに定義を読ませて代行。SVG→PNGはChrome headlessで可。
 
-### researcher_company Phase 0 で確認すべきこと（次チャットの最初の作業）
-- 正本＝`docs/codex_company_analysis_pack_spec.md`（v4パック仕様＝researcherの出力形式）。
-- Codex現行リサーチ手順（PDF直読・Serper検索・統合）と、`work/company_analysis/3861_oji/`（王子HD pack・復元済み＝検証データ/品質目標）。
-- **核心の見極め**：Claude Code subagentが実際にできる範囲（WebFetch/WebSearch/curlでのPDF取得・テキスト抽出・Web検索の可否）＝designerの「AI画像は自力不可」に相当する論点。
+### researcher_company で確定した成果（2026-05-23完了）
+- `.claude/agents/researcher_company.md`（v1＋L-018/L-019反映）：認証鍵不要（WebSearch/WebFetch/curl/Read PDF直読/pdftotext）。§2必須順序＝PDF直読→ドライバー仮説→Web補強。§4＝6カテゴリ構造化Web検索＋先行指標現在値。§6＝v4 18セクション網羅（実数充填は非ゲート＝Codex並み）。§7＝writer §2継承の上流準備（4テーマ案・上流環境マップ・先行指標現在値を事前提示）。§8＝二層QA（L-016）＋2フェーズ運用（L-011/L-012）。fact-safety 3規律をinvoke。
+- 3861_oji v4パイロット成果（`work/company_analysis/3861_oji_v4_pilot/`）：pdf_summary.md／claude_input_pack.md（18セクション全網羅＋v4§1.8）／handoff_researcher_company_to_writer.md。中心命題＝「営業利益半減（△48.9%）でも純利益増益（+20.4%）＝資産売却の一時要因」。ドライバー4テーマ（T1パルプ市況／T2国内需要×価格転嫁／T3ポートフォリオ転換／T4資本効率＝横断）。同業比較核心＝「パルプ市況の効き方が王子・北越（パルプ自社）vs 日本製紙・大王（パルプ外部調達）で逆」。
+- v3 Codex pack比較：同業セル全空欄＝v4で実数充填（日本製紙252億+27.9%／大王240億+145%／北越75億△61.8%／レンゴー予想400億）。先行指標も名称止まり→現在値（パルプ$595/t・原油$106〜114・石炭$138/t・USD/JPY159・国内出荷△1.8%）取得＝**v3 Codex packの弱点を解消（Codex超え・非ゲート）**。
+- 公開記事比較：公開記事も独立に4ドライバー小節（7.1パルプ／7.2国内需要／7.3原燃料／7.4為替・M&A）採用＝T1〜T4設計の独立検証完了。
+- 教訓：L-017（鍵明示）／L-018（同業WebSearch要約の予実・累計取り違えリスク・一次資料再確認規律）／L-019（handoff命名はSKILL正本に統一）。
+
+### 主要4ロール完成宣言（2026-05-23）
+| ロール | 状況 |
+|---|---|
+| writer | ✅ 段階2・段階3パイロット実証 |
+| reviewer | ✅ 段階2・段階3パイロット実証 |
+| designer | ✅ 段階4パイロット縦ライン1本完成（285A） |
+| researcher_company | ✅ 段階4パイロット完成（3861 v4 packゼロ生成・v3比較・公開記事比較・二層QA） |
+
+→ **Phase 5 移行の核心マイルストーン到達**。残り5ロール（researcher_industry／scout／theme_scout／videographer／x_writer）は主要4ロールの応用・派生で、段階4標準プロトコル（定義→本作業1本→点検→教訓即時反映）に乗せるだけ。
 
 ### 保留（段階4後半 or 完了後）
 - WP pushツール整備（`scripts/wordpress/` 未整備）＋データ図SVGのWP配信検証（mime/サニタイズ）。285Aの仕上げ（公開）。
 
 ### 新チャットで最初に読むファイル
-`CLAUDE.md`／memory（MEMORY.md・自動読込）／本書（stage4_scope_notes.md）／`stage2_handoff.md`／`review_lessons_log.md`（L-001〜L-016）／`data_figure_lessons.md`／`.claude/agents/{writer,reviewer,designer}.md`／`.claude/skills/`。
+`CLAUDE.md`／memory（MEMORY.md・自動読込）／本書（stage4_scope_notes.md）／`stage2_handoff.md`／`review_lessons_log.md`（L-001〜L-019）／`data_figure_lessons.md`／`.claude/agents/{writer,reviewer,designer,researcher_company}.md`／`.claude/skills/`／`work/company_analysis/3861_oji_v4_pilot/`（researcher_company実証データ）。

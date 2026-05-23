@@ -229,6 +229,28 @@ reviewer 差し戻し・点検で得た**再利用可能な教訓**を蓄積し�
 - 段階4での反映先候補：→ **即時反映：researcher_company.md v1 に「認証鍵は使わない」を明記済み**。段階4以降の全subagent（videographer〔YouTube OAuth〕・x_writer〔X API〕等＝鍵を扱うロール）に「鍵はスクリプト経由・実行時読み・値非出力」を定義で明示。複数ロール適用後、handoff-templates or CLAUDE.md §7への昇格を判断。
 - curation判定（段階4記入）：**採用・researcher_company定義に即時組み込み**。鍵を扱うロール（videographer/x_writer）作成時に同パターン適用。
 
+### L-018
+- 日付：2026-05-22
+- 対象記事：3861_oji_v4_pilot（段階4 researcher_companyパイロット・v4 packゼロ生成）
+- 指摘ID：—（researcher_company自己点検で発見）
+- 区分：fact／process（同業比較データの出所品質）
+- 重大度：major（同業比較は記事の競争優位章の核。誤値は連鎖する）
+- 指摘内容：**同業他社決算をWebSearch要約で取得すると、予想値/実績値・通期/四半期累計を取り違えるリスクがある**。実例＝レンゴー(3941)は「通期予想400億」と「3Q累計330億」が同一検索結果に混在し、どちらが確報の通期実績か要約だけでは確定できなかった。pack段階では各社値を**「要約値・確認日付き」「予想/実績の別」を明示**し、記事化前に各社一次資料（決算短信PDF）で実数を再確認するフローを必須化する（[[source-hierarchy]] PDF直読＞報道＞要約）。v3 Codex packは同業セルが全て「要追加確認」（空欄）だったため、v4で**実数を埋めたこと自体が前進（Codex超え・非ゲート）**だが、埋めた値の出所品質を一段下げない歯止めが要る。
+- 根本原因の仮説：普遍性=高。WebSearchの要約は複数記事を圧縮するため、年度・予実・累計区分が脱落しやすい。researcher_companyは「現在値・同業実数」を新たに取得する役割を持つため（v3の名称止まりからの改善点）、取得値の出所ラベル規律がそのまま品質を左右する。fact-safety 3規律の論理的延長。
+- 段階4での反映先候補：→ **提案（FIC承認領域）**：researcher_company.md §4に「同業他社決算は予想/実績・通期/累計を区別し、要約値は確認日付きでラベル、記事化前に一次資料で実数確認」を1行追記。`.claude/agents/` 編集はFIC承認のうえ反映（本ログ記録は§7対象外＝先行可）。pack側は既に§4で「記事化前に各社短信PDFで実数を再確認推奨」と明記済み。
+- curation判定（段階4記入）：要追加観察（他銘柄でも同パターンか）／researcher_company §4追記はFIC承認待ち。
+
+### L-019
+- 日付：2026-05-22
+- 対象記事：3861_oji_v4_pilot（段階4 researcher_companyパイロット）
+- 指摘ID：—（handoff作成時に正本不整合を発見）
+- 区分：process（命名規則の正本一致）
+- 重大度：minor（実害は小だが工程間リンク切れ・参照ミスの種）
+- 指摘内容：**researcher_company.md §1の handoff ファイル名 `handoff_researcher_to_writer.md` が、handoff-templates SKILL正本の `handoff_researcher_company_to_writer.md` と食い違う**。SKILL正本（§1標準handoff一覧）が canonical。パイロットでは正本に合わせ `handoff_researcher_company_to_writer.md` で作成した。両ソース（agent定義＋SKILL正本）で裏取り済み＝省略形は agent定義側の誤記。
+- 根本原因の仮説：普遍性=高。agent定義起草時にSKILL正本の命名表を逐語参照せず短縮形を書いた。下流（writer/designer）が handoff を探す際にファイル名不一致で見つけられない事故の種。命名は[[handoff-templates]]が単一正本であるべき。
+- 段階4での反映先候補：→ **提案（FIC承認領域）**：researcher_company.md §1・§8・description・関連リンクの `handoff_researcher_to_writer.md` を `handoff_researcher_company_to_writer.md` に統一。同様に researcher_industry を作る際は `handoff_researcher_industry_to_writer.md`（SKILL正本どおり）。`.claude/agents/` 編集はFIC承認のうえ反映。
+- curation判定（段階4記入）：**採用（命名はSKILL正本に統一）**・researcher_company.md修正はFIC承認待ち。
+
 ---
 
 ## 蒸留サイクル（運用メモ）

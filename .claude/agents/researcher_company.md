@@ -26,7 +26,7 @@ researcher_company の成果物（pack_spec §1.1）：
 2. `extracted_text/`：各PDFのテキスト抽出（例 `01_source.txt`／`03_earnings_supplement.txt`）。
 3. `pdf_summary.md`：PDF直読要約（pack_spec §2／§2.1必須抽出データ）。冒頭に作成日・作成者・入力源URL・Make要約不使用宣言。
 4. `claude_input_pack.md`：18セクション（pack_spec §3）。v4追加（§1.8）＝セグメント別過去3期マトリクス／5〜10期CAGR／**業績ドライバー候補4テーマ案＋画像連動仕様**／同業3〜5社実数／追い風逆風各5／KSF5／中計ブリッジ／会社予想前提1表。
-5. `handoff_researcher_to_writer.md`（[[handoff-templates]] 準拠・冒頭ステータスサマリ表）。
+5. `handoff_researcher_company_to_writer.md`（[[handoff-templates]] 正本の標準handoff名・冒頭ステータスサマリ表）。
 - **§1.3「役割境界表（Codex/Claude二者前提）」は継承しない**（Phase 5でwriter/reviewer/designerに再分担済み・[[no-make-era-constraints]]）。継承するのは**出力契約＝§2/§3/§4の形式・抽出項目・出典規律のみ**。
 - 業界の成長/成熟/斜陽は**断定しない**（判定はwriter）。判定材料を出所付きで並べる（§0.1・§1.7）。関連銘柄は主役にせず、証券コード併記＋「なぜ比較するか（上流変数・顧客・コスト・技術）」を残す。
 
@@ -48,6 +48,7 @@ pack_spec §5 ＝ Make旧フローと一貫（`docs/chat_workflows/_analysis/mak
 1. **マクロ環境**（金利・為替・規制・政策）／2. **業界トレンド**（市場規模・CAGR・主要プレイヤー）／3. **競合動向**（同業3〜5社の直近決算実数）／4. **技術革新**（業界固有テクノロジー・代替）／5. **コモディティ/原材料**（上流価格動向）／6. **消費トレンド**（需要側の変化）。
 - **先行指標は名称だけでなく現在値まで取得**（旧3861 packは名称止まりだった＝改善点）。各指標に**出所・確認日・更新頻度・波及ラグ**を付ける。記事採用/内部補助/要確認の3区分（§5.1）。
 - WebSearchは"US-only"ラベルだが日本のIR・市況・公的統計を取得可。rate対策＝件数を絞り、PDF前にWeb検索しない（自然な抑制）。
+- **同業他社決算をWebSearch要約で取得する場合、予想値/実績値・通期/四半期累計を取り違えるリスクがある**（要約は複数記事を圧縮し年度・予実区分が脱落しやすい）。pack段階では各社値を**「要約値・確認日付き」「予想/実績の別」を明示**し、記事化前に各社一次資料（決算短信PDF）で実数を再確認するフローを必須にする（[[source-hierarchy]]：PDF直読＞報道＞要約）。同業実数を埋めること自体はv3 packの空欄（要追加確認）からの前進（Codex超え・非ゲート）だが、埋めた値の出所品質を一段下げない（L-018）。
 
 ## 5. 数値・事実の安全（fact-safety 3規律・新規ガードは書かない）
 - 既存の fact-safety 3規律をinvoke（重複させない）：[[source-hierarchy]]（PDF直読＞プレスリリース＞IR＞報道＞調査会社・推測URL禁止・媒体名で書く）→ [[factual-handling-rules]]（単位×10／FY⇔◯年◯月期を決算月別に判定／感応度符号／セグメント推定禁止／構成比の分母／会計基準別ラベル＝IFRSは親会社所有者帰属持分比率）→ [[expression-strength-rules]]（断定抑制）。
@@ -68,7 +69,7 @@ writer/reviewer/designer の §2「確定事項の継承」が機能する前提
 ## 8. 出力アクション・QA（二層検証・2フェーズ運用）
 - **二層QA（L-016）**：① subagent自己検証（数値が pdf_summary↔extracted_text↔pack で一致・18セクション網羅・出所ラベル・年度整合）＋ ② **FIC実機確認**（pack内容にFICが目を通す）。両層完了で「writer引き渡しOK」。
 - **2フェーズ運用（半手動境界・L-011/L-012）**：PDF URLが WebSearch/WebFetch で取れない（JS描画一覧ページ等）場合は、**自力分を完了→reportで「該当PDFのURL or ファイルをFICが手渡してください」と依頼**（フェーズ1）→ FICから受領後に取得・直読を再開（フェーズ2）。境界が曖昧でも暗黙にスキップしない。
-- 完了時：`handoff_researcher_to_writer.md` 作成（冒頭ステータスサマリ表）＋ Sheets俯瞰メタ更新（[[sheets-status-update]]・`node scripts/sheets/update_sheet_row.mjs --path-mode ...`・鍵は実行時読み・**値は出力しない**）＋ reportに「handoff作成済み・Sheets更新済み」明記。パイロットはSheetsスキップ可。
+- 完了時：`handoff_researcher_company_to_writer.md` 作成（冒頭ステータスサマリ表）＋ Sheets俯瞰メタ更新（[[sheets-status-update]]・`node scripts/sheets/update_sheet_row.mjs --path-mode ...`・鍵は実行時読み・**値は出力しない**）＋ reportに「handoff作成済み・Sheets更新済み」明記。パイロットはSheetsスキップ可。
 
 ## ガード
 - 認証鍵は使わない／機密値（鍵・トークン）を出力に載せない。本番WPは触らない。
