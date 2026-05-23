@@ -250,6 +250,7 @@ reviewer 差し戻し・点検で得た**再利用可能な教訓**を蓄積し�
 - 根本原因の仮説：普遍性=高。agent定義起草時にSKILL正本の命名表を逐語参照せず短縮形を書いた。下流（writer/designer）が handoff を探す際にファイル名不一致で見つけられない事故の種。命名は[[handoff-templates]]が単一正本であるべき。
 - 段階4での反映先候補：→ **提案（FIC承認領域）**：researcher_company.md §1・§8・description・関連リンクの `handoff_researcher_to_writer.md` を `handoff_researcher_company_to_writer.md` に統一。同様に researcher_industry を作る際は `handoff_researcher_industry_to_writer.md`（SKILL正本どおり）。`.claude/agents/` 編集はFIC承認のうえ反映。
 - curation判定（段階4記入）：**採用（命名はSKILL正本に統一）**・researcher_company.md修正はFIC承認待ち。
+- **L-019 拡張（2026-05-23・writer試作 Phase 0 で発見）**：handoff命名の正本不整合は**1ロール単位でなく全ロール横断**で確認する。writer.md §0入力把握にも同じ短縮名 `handoff_researcher_to_writer.md` が残存していたためFIC承認のうえ canonical名 `handoff_researcher_company_to_writer.md` に統一（commit追記）。**新subagent作成時・既存subagentの入出力handoffを変更する際は、関連ロール全てのagent定義内handoff命名をhandoff-templates SKILL正本と照合する**（Phase 0 標準チェック）。本作業（writer起動等）を始める前にこの照合をPhase 0で済ませる。本拡張がなければwriter §2継承プロトコルが機能不全＝縦ライン検証の主目的が崩壊していた＝Phase 0の本質的価値の実証。
 
 ---
 
