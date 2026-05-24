@@ -49,6 +49,7 @@ model: opus
 
 **フェーズ1：仕様出し（designer自力分）**
 1. データ図SVG：`images/{銘柄}-{コード}-{図名}-svg.svg`（命名規則準拠）。
+1a. **フェーズ1完了の前に、各SVGを単体で `<img src=.svg>` でブラウザ自己描画確認する**（インラインプレビューでは下部見切れ・テキスト重なり・viewBox外のはみ出し・注釈枠の文字はみ出しが見えない＝L-021）。問題があればフェーズ1の handoff前に修正する（L-016「人手実機確認」に到達する前にdesignerが自浄するゲート）。
 2. `ai_image_specs.md`：概念図のAI画像仕様（図ごとに 意図／伝えたい結論／プロンプト／配置章／注意点〔review_notes③反映〕／出力ファイル名／**継承したドライバー定義の明示**）。**用途＝FICが手動でCodexに渡しAI画像生成を実施するための仕様書**。
 3. `claude_article.with_images.html`：データ図2枚は実SVGを `<img>` 挿入、概念図2枚はAI生成待ちのプレースホルダfigure＋figcaption（です・ます）。
 4. `handoff_designer_to_publish.md` を「**AI画像作成待ち**」状態で一時保存。FICへ「AI画像作成をCodexに依頼してください」とreport。

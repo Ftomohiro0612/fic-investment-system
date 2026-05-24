@@ -278,7 +278,8 @@ reviewer 差し戻し・点検で得た**再利用可能な教訓**を蓄積し�
 - 段階4での反映先候補：→ **即時反映（C'案・論理的原則＋repo実体両ソース裏取り済み・段階4「定義→本作業→点検→教訓即時反映」サイクル）**：
   - `docs/data_figure_lessons.md` に4つの追補セクション追記＝完了（commit）。
   - `.claude/agents/designer.md` §7「出力アクション・QA」に「**フェーズ1完了の前に各SVGを単体で `<img src=.svg>` でブラウザ自己描画確認（インラインプレビューでは不可）**」の1行追加を**FIC承認待ち提案**。これにより次回からdesignerは生成後にブラウザ確認を必須化＝同パターン再発を仕組みで防止。
-- curation判定（段階4記入）：**採用・data_figure_lessons.md 追補完了（commit）／designer.md §7追記はFIC承認待ち**。
+- curation判定（段階4記入）：**採用・data_figure_lessons.md 追補完了＋designer.md §7追記完了（FIC承認 2026-05-24）＋review_lessons_log.md記録の3層構造**。
+- **★L-021が示した「教訓即時反映の3層型」（FIC評価・2026-05-24）**：具体ルール（`docs/data_figure_lessons.md` 4セクション追補）＋教訓本体（本ログ L-021）＋subagent定義への反映（`.claude/agents/designer.md` §7 1a項追加）の3層分離。段階3パイロット時代は教訓を1箇所に書いて終わりがちだったが、L-021は3層に分離することで「ルール参照・教訓追跡・実装ゲート」の役割が明確化し再現性が担保される。次回以降の教訓記録の標準型として参照価値あり（→ `stage4_scope_notes.md`「教訓即時反映の3層型（標準型）」セクションに記録）。
 
 ---
 
