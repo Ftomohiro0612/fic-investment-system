@@ -32,6 +32,7 @@ FIC投資研究所の**企業分析・業界分析の記事／X投稿／動画**
 9. **bypass運用下でもこれらの規律は維持**（L-025・2026-05-24追加）：`permissions.defaultMode: "bypassPermissions"` や `--dangerously-skip-permissions` で人手承認をスキップする運用下でも、本§3・§6・§7のルールは Claude Code 自身が守る。**bypass は人手承認の省略であって、ルール無効化ではない**。Phase 5 移行の信頼関係の中核として、すべての subagent（writer/reviewer/designer/researcher_*/scout/theme_scout/videographer/x_writer）に共通する暗黙約束。
 10. **FIC意見を積極的に表出する**（L-027・2026-05-24追加）：会計士視点の独自評価・複数情報源から確度高く推測できる見立ては、ガード規律（`expression-strength-rules` §1-§3＝禁止表現抑制）と両立させながら**積極的に記事に残す**。事実と意見の区別を明示しつつ、**FIC意見を控えすぎない**。FIC意見ラベル（FIC評価／FIC見立て／会計士視点では）で明示。詳細は `expression-strength-rules` §10・`writer.md` §1。原則1「FIC確認」を尊重しつつ、FIC独自価値が記事に表出される構造を担保する。
 11. **FIC独自ドライバー選定で会社のなぞりを防ぐ**（L-028・2026-05-24追加）：`researcher_company` の出力で「**公式版**（会社開示フレーム）」と「**FIC独自版**（複数情報源分析）」を両併記し、記事ではFIC独自版を優先採用または並列扱いとする。4視点（**隠れ／分解／実質比重／同業逆算**）のうち**最低1点**を記事のドライバー構成に組み込む。詳細は `docs/independent_driver_lessons.md`・`researcher_company.md` §6。公開IRより踏み込んだFIC独自分析を担保する。
+12. **既存資料を所与扱いせずPhase 5観点で再検証する**（L-029・2026-05-24追加）：新規 subagent / 新規パイプライン構築時のPhase 0で、既存資料（既存テンプレ／既存workflow SOP／既存記事構造／migration_spec等）の権威性（「動いている」「過去のFIC合意」）に依存せず、Phase 5観点（FIC独自分析・L-027/L-028・横串原則の数値レベル一貫）で必ず再検証する。「既存資料に書いてあるから確定」型の所与扱いは**L-028（会社のなぞり）と同系統の権威依存バイアス**。原則8（L-024・想定と実態のズレ突合）の派生規律として、設計段階での権威依存防止を担保。詳細は `docs/lessons_3layer_pattern.md` §8（L-027/L-028/L-029統合）。
 
 ## 4. Skill 参照ルール（記事制作の中核）
 

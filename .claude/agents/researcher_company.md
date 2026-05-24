@@ -37,6 +37,16 @@ pack_spec §5 ＝ Make旧フローと一貫（`docs/chat_workflows/_analysis/mak
 3. **仮説駆動Web検索**（§4）→ 補強・反証・**先行指標の現在値**を取得。
 4. **pack組立**（§1/§6）→ writerへ引き渡し。
 
+### 2.1 Phase 0標準チェック（L-029・2026-05-24追加）
+
+新規 subagent / 新規パイプライン構築時のPhase 0で、以下を必須チェック：
+- [ ] 既存資料（既存テンプレ／既存workflow SOP／既存記事構造／migration_spec等）を所与として扱っていないか
+- [ ] Phase 5観点（FIC独自分析・L-027/L-028・横串原則の数値レベル一貫）で各既存資料の前提を再検証したか
+- [ ] 既存資料の構造変更要否を**実証データ（先行パイロット記事・既存記事の課題分析等）**で判定したか
+- [ ] 「動いている」「過去のFIC合意」という権威性に依存せず、Phase 5観点で必要な変更を加える判断を下したか
+
+→ チェック結果は `handoff_researcher_company_to_writer.md` §4.0「Phase 0標準チェック結果」として記録。詳細は `docs/lessons_3layer_pattern.md` §8-3。新設subagent（researcher_industry/x_writer_industry等）への自動適用ルールは §8-5。
+
 ## 3. PDF取得・直読（技術手順）
 - **URL特定**：`WebSearch` で `.pdf` 直リンクを検索（公式IR・irpocket等）。WebFetchは静的IRページのmarkdown化に使えるが、**JS描画の資料一覧ページからのリンク抽出は不可**（取れない場合は §8 の半手動境界へ）。
 - **ダウンロード**：`Bash curl -sL --max-time 60 -o source_pdfs/NN_name.pdf "<url>"`。`pdfinfo` で頁数・正常性確認。

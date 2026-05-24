@@ -15,6 +15,7 @@ model: opus
 
 ## 0. 入力把握（最初に読む）
 - `work/company_analysis/{key}/CLAUDE_CODE_FIC_INSTRUCTIONS.md`（あれば企業別指示）／`claude_input_pack.md`／`pdf_summary.md`／`handoff_researcher_company_to_writer.md`（あれば。[[handoff-templates]] 正本の標準handoff名）。
+- **Phase 0標準チェック確認（L-029・2026-05-24追加）**：`handoff_researcher_company_to_writer.md` §4.0「Phase 0標準チェック結果」を確認。researcher段階で既存資料のPhase 5観点再検証が完了していることを必須前提。未確認なら writer開始前にFIC確認。詳細は `docs/lessons_3layer_pattern.md` §8。
 - **入力packは `docs/codex_company_analysis_pack_spec.md`（v4）準拠が前提**。旧版・形式不明など非準拠なら**作業を停止しFICに確認**（推測で進めない）。
 - 段階3パイロット入力＝`work/company_analysis/285A_kioxia/`（v4準拠pack）。
 - 設計の正本は下記Skill/ガイド/テンプレ。`prompts/article/*` はlegacy参照（Skillと矛盾時はSkill優先）。
