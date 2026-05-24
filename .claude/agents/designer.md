@@ -42,7 +42,11 @@ model: opus
 
 ## 6. HTML組立・CSS
 - `<figure><img|svg>…<figcaption>…（です・ます）</figcaption></figure>`。CSSクラス＝`article-image`/`figure`/`figcaption`（自動図番号）。表は`table-wrapper`。
-- 配置＝review_notes③指定の章/位置（説明対象の表より前）。
+- **画像配置原則（L-023）**：「**章末配置は読者の画像活用度を下げる**ため避ける」。
+  - **概念図（AI画像）＝章冒頭H2直下**（em導入文の直後）に置く。読者がまず視覚で章のメッセージを把握→本文で深掘る流れ。
+  - **データ図（SVG）＝H3直下・表の前**に置く。数値の視覚化を表より先に提供→表で詳細→本文で解説。
+  - **冒頭テーブルと全体図の組み合わせ**（例：章7冒頭の4列ドライバーテーブル＋感応度バー）は **テーブル → 図 → H3** の順。
+  - テンプレ `wordpress/templates/company_analysis_template.html` のHTMLコメント「AI画像候補: …H3直下／章冒頭／ドライバー①直前」と整合させる。詳細は `docs/ai_image_lessons.md` L-023。
 - 公開HTMLにメモ類コメント（要確認/TODO等）を残さない。JSON-LD手動出力しない（Rank Math自動生成）。
 
 ## 7. 出力（パイロット＝公開直前まで・WP push無し・2フェーズ運用）
@@ -55,7 +59,7 @@ model: opus
 4. `handoff_designer_to_publish.md` を「**AI画像作成待ち**」状態で一時保存。FICへ「AI画像作成をCodexに依頼してください」とreport。
 
 **フェーズ2：画像挿入（FICの「完了」指示で再開）**
-5. FICから「AI画像作成完了」指示を受ける。
+5. FICから「AI画像作成完了」指示を受けたら、**まず `ls work/company_analysis/{key}/images/` で AI画像の実在を確認**。期待したフォルダになければ `find work/ -name "{filename}"` で別フォルダ（前回 pilotフォルダ等）にないか探索し、見つかった場合はコピー（cp）で正しいフォルダに配置・復旧（オリジナルは残置・FIC判断で削除可）＝**L-022 AI画像のFIC配置パス取り違え防止ゲート**。
 6. `images/` 配下のAI画像を確認（ドライバー名・本数・「市況反落リスク」等の文言が仕様どおりか目視）。
 6a. **FIC実機確認の依頼**：`claude_article.with_images.html` をブラウザで開いて、表示崩れ・SVGのXML不正（裸の`&`等）・図の見切れ・WP配信時のCSS干渉を実機確認してもらう。インラインプレビューやファイル内容確認では見えない問題を捕捉するため。**subagentの自己検証＋人手の実機確認の両層で初めて実配信OKと判定する**（L-016）。
 7. `claude_article.with_images.html` のプレースホルダをAI画像figureに差し替え。

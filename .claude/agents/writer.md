@@ -38,6 +38,7 @@ model: opus
 - `wordpress/templates/company_analysis_template.html` を雛形に。冒頭にメタコメント `article_title:` / `slug:`。
 - **JSON-LDは出力しない**（FAQPage等はWordPress側 Rank Math が自動生成。FAQは faq-section内 H3=質問／p=回答 の構造を崩さない）。
 - 表は必ず `table-wrapper` で内包。💡/📘は `beginner-box`。公開HTMLにmemo類コメント（要確認/要追加確認/TODO/FIXME/内部メモ）を残さない。
+- **非AI図表候補（review_notes③）の配置指示は「章冒頭H2直下」または「H3直下」を原則とする**（L-023）。章末配置は読者の画像活用度を下げる＝避ける。詳細はdesignerが `docs/ai_image_lessons.md` L-023を参照。
 
 ## 5. 出力3点（必須）
 1. `claude_integrated_memo.md`：分析素材（網羅性確保）。

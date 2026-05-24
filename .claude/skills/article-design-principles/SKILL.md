@@ -68,6 +68,8 @@ description: よく読まれる投資記事の一般原則と、FIC独自視点�
 
 > **各章の内容レベルの書き方（目的／必須要素／王子HDからの改善点／やりがちな失敗）は [chapter_design_guide.md](../../../docs/chat_workflows/_analysis/chapter_design_guide.md)（章別設計ガイド）を正本とする。** writer/reviewer は章ごとにこれを参照。
 
+> **画像配置原則（L-023・2026-05-24確定）**：図（AI画像・SVG）は「**章末配置は読者の画像活用度を下げる**」ため避ける。**概念図（AI画像）＝章冒頭H2直下**（em導入文の後）／**データ図（SVG）＝H3直下・表の前**／**冒頭テーブルと全体図の組み合わせはテーブル→図→H3の順**を原則とする。テンプレ `wordpress/templates/company_analysis_template.html` のHTMLコメント「AI画像候補：H3直下／章冒頭／ドライバー①直前」と整合。詳細は `docs/ai_image_lessons.md` L-023。writer/designer 両工程で適用。
+
 冒頭部：タイトル（説明型）／導入リード／💡ワンポイント解説／30秒要約／（任意）動画セクション。
 
 | 章 | H2 | H3（要点） |

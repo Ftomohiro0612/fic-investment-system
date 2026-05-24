@@ -281,6 +281,36 @@ reviewer 差し戻し・点検で得た**再利用可能な教訓**を蓄積し�
 - curation判定（段階4記入）：**採用・data_figure_lessons.md 追補完了＋designer.md §7追記完了（FIC承認 2026-05-24）＋review_lessons_log.md記録の3層構造**。
 - **★L-021が示した「教訓即時反映の3層型」（FIC評価・2026-05-24）**：具体ルール（`docs/data_figure_lessons.md` 4セクション追補）＋教訓本体（本ログ L-021）＋subagent定義への反映（`.claude/agents/designer.md` §7 1a項追加）の3層分離。段階3パイロット時代は教訓を1箇所に書いて終わりがちだったが、L-021は3層に分離することで「ルール参照・教訓追跡・実装ゲート」の役割が明確化し再現性が担保される。次回以降の教訓記録の標準型として参照価値あり（→ `stage4_scope_notes.md`「教訓即時反映の3層型（標準型）」セクションに記録）。
 
+### L-022
+- 日付：2026-05-24
+- 対象記事：3861_oji_v4_pilot（段階4 縦ライン検証・designer フェーズ2 画像受領時に発見）
+- 指摘ID：—（designer 自己検証で発見）
+- 区分：process（AI画像のFIC手動配置時のフォルダ取り違え防止）
+- 重大度：minor（今回はファイル名正しく find -name で即発見・実害なし／公開直前の発見で記事への影響もなし）
+- 指摘内容：**FIC が AI画像を `work/company_analysis/3861_oji_v4_pilot/images/` ではなく `work/company_analysis/285A_kioxia_pilot/images/`（前回 designerパイロットのフォルダ）に誤配置**していた。ファイル名は仕様通り（`3861-oji-impact-map.png` / `3861-oji-thesis-map.png`）だったため designer の `find -name` で即発見、コピー（cp）で正しいフォルダに配置・復旧（オリジナルは残置・FIC判断で削除可）。
+- 根本原因の仮説：普遍性=高。仕様書 `ai_image_specs.md` および「Codex送信用プロンプト」の保存先指示が**ファイル名のみ**（「保存先：3861-oji-impact-map.png」）で、絶対パス（フォルダ）を明示していなかった。FICが前回 designerパイロット（285A）の感覚で `images/` に配置する際に、別の銘柄フォルダを選んでしまった。**designer が画像受領後に存在確認するゲートが無かった**ことも一因。
+- 段階4での反映先候補：→ **即時反映（C'案・論理的原則＋両ソース裏取り済み・段階4「教訓即時反映の3層型」適用）**：
+  - 層1：`docs/ai_image_lessons.md` を新設（AI画像運用ルールの集約先）＝完了（commit）。L-022 セクションに「保存先絶対パス明示」「Codex送信プロンプトにも絶対パス明示」「designer フェーズ2の最初に画像存在確認」の3点を規律化。
+  - 層2：本エントリ（review_lessons_log.md L-022）。
+  - 層3：`.claude/agents/designer.md` §7 フェーズ2 §5 に「FICから完了指示受領後、`ls work/company_analysis/{key}/images/` または `find work/ -name {filename}` で AI画像の実在確認＋取り違え発見時の対応（コピーで復旧）」ステップ追加（FIC承認・反映完了）。
+- curation判定（段階4記入）：**採用・3層完了（FIC承認 2026-05-24）**。
+
+### L-023
+- 日付：2026-05-24
+- 対象記事：3861_oji_v4_pilot（段階4 縦ライン検証・designer フェーズ2 FIC実機確認時に発見）
+- 指摘ID：—（FIC「画像があって文章が後の方が画像を存分に活用できる」指摘）
+- 区分：design（画像配置原則）
+- 重大度：major（画像活用度を直接左右する・全記事で再発するパターン）
+- 指摘内容：**3861パイロットで designer が画像5点を全て「章末」に配置していた**（章1.3末・章2.3末・章5.3末・章6.1表直下・章7.1感応度節後）。FIC実機確認で「画像があってそれを説明する文章が後に来る方が画像を存分に活用できる」と指摘＝**章末配置は読者の画像活用度を下げる**。テンプレ `wordpress/templates/company_analysis_template.html` のHTMLコメントは「H3直下・章冒頭・ドライバー①直前」を想定しており、**designer はテンプレ準拠でなかった**ことも判明。
+- 根本原因の仮説：普遍性=高（次回以降の全記事で再発しうる）。designer の暗黙の設計判断（章末「結局」締めの後＝次章への橋渡し位置）がテンプレ想定と乖離していた。テンプレのHTMLコメントを参照する規律が SKILL/agent定義に明示されていなかった。
+- 段階4での反映先候補：→ **即時反映（C'案・論理的原則＋両ソース裏取り済み・段階4「教訓即時反映の3層型」適用）**：
+  - 層1：`docs/ai_image_lessons.md` L-023セクション＋ `docs/data_figure_lessons.md` 配置原則追補＋ `docs/non_ai_structure_chart_lessons.md` 配置原則追補（3ファイル）＝完了（commit）。画像種別ごとの最適配置（AI画像=章冒頭H2直下／データ図=H3直下表の前／冒頭テーブルとの組合せはテーブル→図→H3の順）を規律化。
+  - 層2：本エントリ（review_lessons_log.md L-023）。
+  - 層3：`.claude/skills/article-design-principles/SKILL.md` §3-1テンプレに「画像配置は章冒頭H2直下 or H3直下を原則とする（L-023）」を明示＋ `.claude/agents/designer.md` § 7 ＋ `.claude/agents/writer.md` § ?? に画像配置原則を反映（FIC承認・反映完了）。
+- curation判定（段階4記入）：**採用・3層完了（FIC承認 2026-05-24）**。
+
+> **L-021/L-022/L-023の3事例で「教訓即時反映の3層型」が定着**。縦ライン1本完成宣言と同時に独立ドキュメント `docs/lessons_3layer_pattern.md`（仮称・FIC案B）を新設し、本3事例を参照型として記載予定。
+
 ---
 
 ## 蒸留サイクル（運用メモ）
