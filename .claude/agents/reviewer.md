@@ -18,10 +18,12 @@ model: opus
 `work/company_analysis/{key}/` の `claude_article.html`／`claude_integrated_memo.md`／`claude_review_notes.md`／`handoff_writer_to_reviewer.md`。
 
 ## 1. 点検（この順）
-1. **[[article-quality-checklist]] 全項目**：B-0（公開15章構成）〜B-9（業績ドライバー）＋A-map（44項目↔3規律/B項目マッピング）。推奨grep（`rg 'beginner-box|<details|業界判定|結局|要確認|要追加確認|TODO|FIXME' claude_article.html` 等）を実行し機械チェック。
+1. **[[article-quality-checklist]] 全項目**：B-0（公開15章構成）〜B-9（業績ドライバー）＋**B-10（FIC意見表出度・L-027）**＋**B-11（FIC独自ドライバー視点・L-028）**＋A-map（44項目↔3規律/B項目マッピング）。推奨grep（`rg 'beginner-box|<details|業界判定|結局|要確認|要追加確認|TODO|FIXME' claude_article.html` 等）を実行し機械チェック。
 2. **fact-safety 3規律で再検算**：[[source-hierarchy]]→[[factual-handling-rules]]→[[expression-strength-rules]]。単位×10・年度ラベル・感応度符号・会社開示vsFIC試算・調査比率分母・禁止表現・2段構成。数値・URL実在・出所は**自分でも検証**（公開HTML/外部は WebFetch、必要に応じ `curl https://fic-investment.biz...`）。
 3. **[[chapter_design_guide]]（`docs/chat_workflows/_analysis/chapter_design_guide.md`）の章別「やりがちな失敗」**と突合。横串原則（章2.3＝12.4＝13.3、章10.1＝13.2）の一貫を確認。
 4. **writer の review_notes ①〜④を処理**：①優先点検依頼に応える ②FIC確認必須5項目はエスカレーション対象として保持 ③非AI図表候補はhandoffでdesignerへ ④対応履歴を確認。
+5. **FIC意見が控えめすぎないか（L-027）**：[[expression-strength-rules]] §10「FIC意見の積極的表出ルール」5論点（中計達成／市況方向感／M&A減損リスク／競合相対評価／為替・原料中期）のうち**最低3点でFIC意見が表出されているか**。FIC意見ラベル（FIC評価／FIC見立て／会計士視点では）が明示されているか。
+6. **ドライバー選定が会社開示のなぞりになっていないか（L-028）**：researcher §8-Bの4視点（隠れ／分解／実質比重／同業逆算）が**最低1点記事に組み込まれているか**。会社感応度を逆算した実質比重（例：チップ感応度46.4億 > パルプ34.3億）との整合性が取れているか。詳細は `docs/independent_driver_lessons.md`。
 
 ## 2. 指摘の標準フォーマット（writerへの差し戻し）
 差し戻し時は `handoff_reviewer_to_writer.md` に各指摘を以下構造で列挙：
