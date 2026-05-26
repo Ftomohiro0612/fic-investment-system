@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FIC Company Hub Preview</title>
+  <link rel="stylesheet" href="../css/fic-home-page-mvp.css">
+  <style>
+    body {
+      margin: 0;
+      background: #f5f6f8;
+      color: #25252a;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    .preview-shell {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 28px 0 48px;
+    }
+  </style>
+</head>
+<body>
+  <main class="preview-shell">
+    <div class="fic-home fic-company-hub">
+      <section class="fic-hub-hero" aria-labelledby="fic-company-hub-title">
+        <a class="fic-hub-home-link" href="fic-home-page-mvp-preview.html">トップページへ</a>
+        <p class="fic-home-section-label">Company Hub</p>
+        <h1 id="fic-company-hub-title">企業を探す</h1>
+        <p>企業名、証券コード、決算予定、最新分析から、個別企業の業績が動く理由を探します。</p>
+        <div class="fic-hub-hero-meta">
+          <span><strong>92</strong>本の企業分析</span>
+          <a href="#">企業分析一覧</a>
+        </div>
+        <form class="fic-home-search fic-hub-search" role="search" method="get" action="#">
+          <label for="fic-company-hub-search">企業名・証券コードを検索</label>
+          <div class="fic-home-search-row">
+            <input id="fic-company-hub-search" type="search" name="s" placeholder="例：ニトリ、9843、三菱UFJ">
+            <button type="submit">検索</button>
+          </div>
+        </form>
+      </section>
+
+      <nav class="fic-hub-nav" aria-label="目的別ページナビゲーション">
+        <a class="fic-hub-nav-item is-active" href="fic-company-hub-preview.html" aria-current="page"><em>現在地</em><strong>企業を探す</strong><span>企業名・証券コードから</span></a>
+        <a class="fic-hub-nav-item" href="fic-theme-hub-preview.html"><strong>テーマから探す</strong><span>ニュース材料から</span></a>
+        <a class="fic-hub-nav-item" href="fic-learning-hub-preview.html"><strong>投資の読み方</strong><span>決算と指標の基礎</span></a>
+      </nav>
+
+      <section class="fic-home-section fic-hub-guide" aria-labelledby="fic-company-hub-guide-title">
+        <div class="fic-home-section-head">
+          <p class="fic-home-section-label">Start</p>
+          <h2 id="fic-company-hub-guide-title">企業分析の探し方</h2>
+          <p>検索、最新分析、決算予定の3つから入れます。</p>
+        </div>
+        <div class="fic-hub-card-grid">
+          <div class="fic-hub-card"><span>Search</span><strong>企業名・証券コードで探す</strong><p>気になる企業がある場合は、まず検索から入れます。</p></div>
+          <div class="fic-hub-card"><span>Latest</span><strong>最新の企業分析を見る</strong><p>直近で更新された分析から、足元の論点を確認します。</p></div>
+          <div class="fic-hub-card"><span>Earnings</span><strong>決算前後に確認する</strong><p>売上、利益率、会社予想、次のKPIを決算前後で見ます。</p></div>
+        </div>
+      </section>
+
+      <section class="fic-home-section fic-hub-checks" aria-labelledby="fic-company-hub-checks-title">
+        <div class="fic-home-section-head">
+          <p class="fic-home-section-label">Checklist</p>
+          <h2 id="fic-company-hub-checks-title">企業分析で見るポイント</h2>
+          <p>個別企業を見るときは、株価より先に業績の変化点を確認します。</p>
+        </div>
+        <div class="fic-home-earnings-checks">
+          <div class="fic-home-earnings-check"><span>売上</span><strong>数量、単価、為替、セグメントのどれで動いたか</strong></div>
+          <div class="fic-home-earnings-check"><span>利益率</span><strong>価格転嫁、原価、人件費、販管費の変化</strong></div>
+          <div class="fic-home-earnings-check"><span>財務</span><strong>キャッシュフロー、自己資本比率、投資余力</strong></div>
+          <div class="fic-home-earnings-check"><span>次のKPI</span><strong>受注、在庫、稼働率、月次、会社予想</strong></div>
+        </div>
+      </section>
+
+      <section class="fic-home-section fic-home-latest" aria-labelledby="fic-company-hub-latest-title">
+        <div class="fic-home-section-head">
+          <p class="fic-home-section-label">Latest Company Analysis</p>
+          <h2 id="fic-company-hub-latest-title">最新の企業分析</h2>
+          <p>直近で公開・更新された企業分析です。</p>
+        </div>
+        <div class="fic-hub-latest-grid">
+          <a class="fic-home-latest-card fic-hub-latest-card" href="#"><time datetime="2026-05-19">2026年5月19日</time><strong>ニトリホールディングス（9843）の企業分析</strong><span>減収増益、海外出店、原価低減、製造物流IT小売の構造を読む。</span></a>
+          <a class="fic-home-latest-card fic-hub-latest-card" href="#"><time datetime="2026-05-19">2026年5月19日</time><strong>アインホールディングス（9627）の企業分析</strong><span>調剤報酬改定、M&A、処方箋単価の確認ポイントを整理。</span></a>
+        </div>
+      </section>
+
+      <section class="fic-home-section fic-home-trust fic-hub-next" aria-labelledby="fic-company-hub-next-title">
+        <div>
+          <p class="fic-home-section-label">Next</p>
+          <h2 id="fic-company-hub-next-title">決算予定とあわせて確認する</h2>
+          <p>決算発表前後は、企業分析と決算スケジュールをあわせて見ると、確認すべきKPIを先回りできます。</p>
+        </div>
+        <div class="fic-home-trust-links">
+          <a href="#">決算スケジュール</a>
+          <a href="fic-theme-hub-preview.html">テーマから探す</a>
+          <a href="#">トップページ</a>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

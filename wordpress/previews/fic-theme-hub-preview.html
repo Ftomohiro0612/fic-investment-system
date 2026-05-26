@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FIC Theme Hub Preview</title>
+  <link rel="stylesheet" href="../css/fic-home-page-mvp.css">
+  <style>
+    body {
+      margin: 0;
+      background: #f5f6f8;
+      color: #25252a;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    .preview-shell {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 28px 0 48px;
+    }
+  </style>
+</head>
+<body>
+  <main class="preview-shell">
+    <div class="fic-home fic-theme-hub">
+      <section class="fic-hub-hero" aria-labelledby="fic-theme-hub-title">
+        <a class="fic-hub-home-link" href="fic-home-page-mvp-preview.html">トップページへ</a>
+        <p class="fic-home-section-label">Theme Hub</p>
+        <h1 id="fic-theme-hub-title">テーマから探す</h1>
+        <p>金利、為替、原材料、AI、政策などの材料が、どの業界・企業の業績に波及するかを探します。</p>
+        <div class="fic-hub-hero-meta">
+          <span><strong>34</strong>本のテーマ記事</span>
+          <a href="#">テーマ分析一覧</a>
+        </div>
+        <form class="fic-home-search fic-hub-search" role="search" method="get" action="#">
+          <label for="fic-theme-hub-search">テーマ・材料を検索</label>
+          <div class="fic-home-search-row">
+            <input id="fic-theme-hub-search" type="search" name="s" placeholder="例：金利、為替、半導体、原材料">
+            <button type="submit">検索</button>
+          </div>
+        </form>
+      </section>
+
+      <nav class="fic-hub-nav" aria-label="目的別ページナビゲーション">
+        <a class="fic-hub-nav-item" href="fic-company-hub-preview.html"><strong>企業を探す</strong><span>企業名・証券コードから</span></a>
+        <a class="fic-hub-nav-item is-active" href="fic-theme-hub-preview.html" aria-current="page"><em>現在地</em><strong>テーマから探す</strong><span>ニュース材料から</span></a>
+        <a class="fic-hub-nav-item" href="fic-learning-hub-preview.html"><strong>投資の読み方</strong><span>決算と指標の基礎</span></a>
+      </nav>
+
+      <section class="fic-home-section fic-hub-guide" aria-labelledby="fic-theme-hub-trigger-title">
+        <div class="fic-home-section-head">
+          <p class="fic-home-section-label">Drivers</p>
+          <h2 id="fic-theme-hub-trigger-title">材料別に探す</h2>
+          <p>ニュースの見出しから、業績に効く変数へつなぎます。</p>
+        </div>
+        <div class="fic-home-trigger-grid fic-theme-trigger-grid">
+          <a class="fic-home-trigger-card" href="#"><span>Rates</span><strong>金利</strong><p>金融、不動産、設備投資、消費への波及を確認。</p></a>
+          <a class="fic-home-trigger-card" href="#"><span>FX</span><strong>為替</strong><p>輸出、輸入コスト、海外売上、価格改定を見る。</p></a>
+          <a class="fic-home-trigger-card" href="#"><span>Cost</span><strong>原材料</strong><p>価格転嫁、粗利率、在庫評価、調達先を確認。</p></a>
+          <a class="fic-home-trigger-card" href="#"><span>AI/Semi</span><strong>AI・半導体</strong><p>設備投資、部材、電力、データセンター需要を追う。</p></a>
+          <a class="fic-home-trigger-card" href="#"><span>Policy</span><strong>政策・規制</strong><p>補助金、規制変更、公共投資の受益と逆風を分ける。</p></a>
+          <a class="fic-home-trigger-card" href="#"><span>Energy</span><strong>エネルギー</strong><p>燃料費、電力料金、物流費、化学品価格への影響を見る。</p></a>
+        </div>
+      </section>
+
+      <section class="fic-home-section fic-hub-checks" aria-labelledby="fic-theme-hub-flow-title">
+        <div class="fic-home-section-head">
+          <p class="fic-home-section-label">How To Read</p>
+          <h2 id="fic-theme-hub-flow-title">テーマ分析の読み方</h2>
+          <p>材料そのものではなく、次に確認する業績指標まで落とし込みます。</p>
+        </div>
+        <div class="fic-home-earnings-checks">
+          <div class="fic-home-earnings-check"><span>1</span><strong>ニュース・材料を確認する</strong></div>
+          <div class="fic-home-earnings-check"><span>2</span><strong>影響を受ける業界と企業を分ける</strong></div>
+          <div class="fic-home-earnings-check"><span>3</span><strong>売上、利益率、受注、在庫など次に見るKPIを決める</strong></div>
+        </div>
+      </section>
+
+      <section class="fic-home-section fic-hub-guide" aria-labelledby="fic-theme-reading-title">
+        <div class="fic-home-section-head">
+          <p class="fic-home-section-label">Theme Guides</p>
+          <h2 id="fic-theme-reading-title">テーマの読み方</h2>
+          <p>ニュースを読む前後に確認したい、常設のテーマ解説です。</p>
+        </div>
+        <div class="fic-hub-card-grid">
+          <a class="fic-hub-card" href="../deploy/phase1-articles/previews/interest-rate-impact-stocks.html"><span>Rates</span><strong>金利上昇で見る企業影響</strong><p>銀行、不動産、リース、成長株への波及を読む。</p></a>
+          <a class="fic-hub-card" href="../deploy/phase1-articles/previews/fx-impact-company-earnings.html"><span>FX</span><strong>為替で業績が動く企業の見方</strong><p>円安・円高が売上と利益率にどう効くかを読む。</p></a>
+          <a class="fic-hub-card" href="../deploy/phase1-articles/previews/raw-material-cost-pass-through.html"><span>Cost</span><strong>原材料高と価格転嫁</strong><p>コスト増を価格・数量・粗利率へ分解する。</p></a>
+          <a class="fic-hub-card" href="../deploy/phase1-articles/previews/semiconductor-investment-supply-chain.html"><span>Semi</span><strong>半導体投資の波及先</strong><p>装置、部材、電力、建設への広がりを見る。</p></a>
+          <a class="fic-hub-card" href="../deploy/phase1-articles/previews/policy-subsidy-investment-theme.html"><span>Policy</span><strong>政策・補助金テーマの読み方</strong><p>予算、採択、受注、売上計上まで段階で読む。</p></a>
+          <a class="fic-hub-card" href="../deploy/phase1-articles/previews/logistics-reform-2024-problem.html"><span>Logistics</span><strong>物流改革と2024年問題</strong><p>物流費、運賃、省力化、価格転嫁を確認する。</p></a>
+        </div>
+      </section>
+
+      <section class="fic-home-section fic-home-latest" aria-labelledby="fic-theme-hub-latest-title">
+        <div class="fic-home-section-head">
+          <p class="fic-home-section-label">Latest Theme Analysis</p>
+          <h2 id="fic-theme-hub-latest-title">最新のテーマ分析</h2>
+          <p>直近のニュース・マクロ材料を、業界と企業への波及で整理します。</p>
+        </div>
+        <div class="fic-hub-latest-grid">
+          <a class="fic-home-latest-card fic-hub-latest-card" href="#"><time datetime="2026-05-18">2026年5月18日</time><strong>建設資材不足と粗利率リスク</strong><span>工期遅延、価格転嫁、建材メーカーへの波及を整理。</span></a>
+          <a class="fic-home-latest-card fic-hub-latest-card" href="#"><time datetime="2026-05-17">2026年5月17日</time><strong>ナフサ高と包装コスト再燃</strong><span>食品・日用品株と包装材メーカーへの影響を読む。</span></a>
+        </div>
+      </section>
+
+      <section class="fic-home-section fic-home-trust fic-hub-next" aria-labelledby="fic-theme-hub-next-title">
+        <div>
+          <p class="fic-home-section-label">Next</p>
+          <h2 id="fic-theme-hub-next-title">企業分析へつなげる</h2>
+          <p>気になる材料を見つけたら、関連企業の売上ドライバー、利益率、次の決算で確認するKPIまで追います。</p>
+        </div>
+        <div class="fic-home-trust-links">
+          <a href="fic-company-hub-preview.html">企業を探す</a>
+          <a href="fic-learning-hub-preview.html">投資の読み方</a>
+          <a href="#">トップページ</a>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

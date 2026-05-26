@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FIC Learning Hub Preview</title>
+  <link rel="stylesheet" href="../css/fic-home-page-mvp.css">
+  <style>
+    body {
+      margin: 0;
+      background: #f5f6f8;
+      color: #25252a;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    .preview-shell {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 28px 0 48px;
+    }
+  </style>
+</head>
+<body>
+  <main class="preview-shell">
+    <div class="fic-home fic-learning-hub">
+      <section class="fic-hub-hero" aria-labelledby="fic-learning-hub-title">
+        <a class="fic-hub-home-link" href="fic-home-page-mvp-preview.html">トップページへ</a>
+        <p class="fic-home-section-label">Learning Hub</p>
+        <h1 id="fic-learning-hub-title">投資の読み方</h1>
+        <p>企業分析を読むために必要な、決算・利益率・受注残・在庫・財務の見方を短く整理します。</p>
+        <div class="fic-hub-hero-meta">
+          <span><strong>12</strong>本の投資の読み方</span>
+          <a href="#">投資の読み方一覧</a>
+        </div>
+        <form class="fic-home-search fic-hub-search" role="search" method="get" action="#">
+          <label for="fic-learning-hub-search">知りたい指標を検索</label>
+          <div class="fic-home-search-row">
+            <input id="fic-learning-hub-search" type="search" name="s" placeholder="例：営業利益率、受注残、ROE、在庫">
+            <button type="submit">検索</button>
+          </div>
+        </form>
+      </section>
+
+      <nav class="fic-hub-nav" aria-label="目的別ページナビゲーション">
+        <a class="fic-hub-nav-item" href="fic-company-hub-preview.html"><strong>企業を探す</strong><span>企業名・証券コードから</span></a>
+        <a class="fic-hub-nav-item" href="fic-theme-hub-preview.html"><strong>テーマから探す</strong><span>ニュース材料から</span></a>
+        <a class="fic-hub-nav-item is-active" href="fic-learning-hub-preview.html" aria-current="page"><em>現在地</em><strong>投資の読み方</strong><span>決算と指標の基礎</span></a>
+      </nav>
+
+      <section class="fic-home-section fic-hub-guide" aria-labelledby="fic-learning-topic-title">
+        <div class="fic-home-section-head">
+          <p class="fic-home-section-label">Topics</p>
+          <h2 id="fic-learning-topic-title">知りたいことから選ぶ</h2>
+          <p>記事を読む前に、つまずきやすい数字の意味を先に押さえます。</p>
+        </div>
+        <div class="fic-hub-card-grid">
+          <a class="fic-hub-card" href="#"><span>First</span><strong>決算短信の読み方</strong><p>売上、営業利益、会社予想、進捗率を最初に確認する。</p></a>
+          <a class="fic-hub-card" href="#"><span>Margin</span><strong>利益率を見る</strong><p>売上が伸びても利益が増えない理由を、粗利率と販管費から読む。</p></a>
+          <a class="fic-hub-card" href="#"><span>KPI</span><strong>受注残・在庫を見る</strong><p>次の売上や値下げリスクにつながる先行指標を確認する。</p></a>
+          <a class="fic-hub-card" href="#"><span>Finance</span><strong>財務とROEを見る</strong><p>自己資本、キャッシュフロー、ROEを成長余力とリスクに分ける。</p></a>
+          <a class="fic-hub-card" href="#"><span>Company</span><strong>企業分析の読み順</strong><p>30秒要約から、売上、利益率、中計、リスクへ順番に読む。</p></a>
+        </div>
+      </section>
+
+      <section class="fic-home-section fic-home-route" aria-labelledby="fic-learning-route-title">
+        <div class="fic-home-section-head">
+          <p class="fic-home-section-label">Route</p>
+          <h2 id="fic-learning-route-title">最初の読み順</h2>
+          <p>初心者はこの順番で読むと、企業分析の記事がかなり楽になります。</p>
+        </div>
+        <div class="fic-home-route-grid">
+          <div class="fic-home-route-step"><span>01</span><strong>まず決算の数字を読む</strong><p>売上、営業利益、会社予想、進捗率だけを先に確認します。</p></div>
+          <div class="fic-home-route-step"><span>02</span><strong>数字が動いた理由を見る</strong><p>数量、単価、為替、原材料、人件費など、利益の変化点を探します。</p></div>
+          <div class="fic-home-route-step"><span>03</span><strong>次に確認するKPIを決める</strong><p>受注、在庫、稼働率、月次、会社予想のどれを見るべきかを決めます。</p></div>
+        </div>
+      </section>
+
+      <section class="fic-home-section fic-hub-guide" aria-labelledby="fic-investment-reading-title">
+        <div class="fic-home-section-head">
+          <p class="fic-home-section-label">Reading Guides</p>
+          <h2 id="fic-investment-reading-title">まず読む投資の読み方</h2>
+          <p>企業分析でよく出る指標と決算用語を、先に短く確認できます。</p>
+        </div>
+        <div class="fic-hub-card-grid">
+          <a class="fic-hub-card" href="../deploy/phase1-articles/previews/kessan-tanshin-reading-guide.html"><span>First</span><strong>決算短信の読み方</strong><p>売上、営業利益、会社予想、進捗率を最初に確認する。</p></a>
+          <a class="fic-hub-card" href="../deploy/phase1-articles/previews/operating-margin-guide.html"><span>Margin</span><strong>営業利益率とは何か</strong><p>売上が伸びても利益が増えない理由を読む。</p></a>
+          <a class="fic-hub-card" href="../deploy/phase1-articles/previews/orders-backlog-inventory-guide.html"><span>KPI</span><strong>受注残と在庫の見方</strong><p>次の売上と値下げリスクにつながる先行指標を見る。</p></a>
+          <a class="fic-hub-card" href="../deploy/phase1-articles/previews/roe-roic-guide.html"><span>ROE</span><strong>ROEとROICの違い</strong><p>資本効率と事業の稼ぐ力を分けて確認する。</p></a>
+          <a class="fic-hub-card" href="../deploy/phase1-articles/previews/segment-information-guide.html"><span>Segment</span><strong>セグメント情報の読み方</strong><p>どの事業が売上と利益を動かしたかを読む。</p></a>
+          <a class="fic-hub-card" href="../deploy/phase1-articles/previews/cash-flow-guide.html"><span>Cash</span><strong>キャッシュフロー計算書の見方</strong><p>利益と現金のズレ、投資余力、財務リスクを見る。</p></a>
+        </div>
+      </section>
+
+      <section class="fic-home-section fic-home-latest" aria-labelledby="fic-learning-latest-title">
+        <div class="fic-home-section-head">
+          <p class="fic-home-section-label">Latest Basics</p>
+          <h2 id="fic-learning-latest-title">最新の投資の読み方</h2>
+          <p>決算や企業分析を読むための土台になる記事です。</p>
+        </div>
+        <div class="fic-hub-latest-grid">
+          <a class="fic-home-latest-card fic-hub-latest-card" href="../deploy/phase1-articles/previews/kessan-tanshin-reading-guide.html"><time datetime="2026-05-22">2026年5月22日</time><strong>決算短信の読み方</strong><span>最初に見るべき売上、営業利益、会社予想、進捗率を整理。</span></a>
+          <a class="fic-home-latest-card fic-hub-latest-card" href="../deploy/phase1-articles/previews/operating-margin-guide.html"><time datetime="2026-05-22">2026年5月22日</time><strong>営業利益率とは何か</strong><span>売上が伸びても利益が増えない理由を、価格転嫁や固定費から読む。</span></a>
+        </div>
+      </section>
+
+      <section class="fic-home-section fic-home-trust fic-hub-next" aria-labelledby="fic-learning-next-title">
+        <div>
+          <p class="fic-home-section-label">Next</p>
+          <h2 id="fic-learning-next-title">実際の記事で確認する</h2>
+          <p>基礎を押さえたら、気になる企業やニュース材料で、売上・利益率・KPIの変化を確認します。</p>
+        </div>
+        <div class="fic-home-trust-links">
+          <a href="fic-company-hub-preview.html">企業で試す</a>
+          <a href="fic-theme-hub-preview.html">材料で試す</a>
+          <a href="#">トップページ</a>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
