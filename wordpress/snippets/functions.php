@@ -449,7 +449,7 @@ function fic_render_upcoming_earnings_list($limit = 8) {
     });
 
     if (empty($filtered)) {
-        return '<p>現在、表示できる決算予定はありません。</p>';
+        return '<div class="fic-home-earnings-empty"><strong>直近の決算予定は更新準備中です。</strong><p>公開済みの企業分析や、決算短信の読み方から先に確認できます。</p><div><a href="' . esc_url(home_url('/companies/')) . '" data-fic-area="home_earnings_empty" data-fic-label="企業分析を見る">企業分析を見る</a><a href="' . esc_url(home_url('/kessan-tanshin-reading-guide/')) . '" data-fic-area="home_earnings_empty" data-fic-label="決算短信の読み方">決算短信の読み方</a></div></div>';
     }
 
     ob_start();
@@ -502,6 +502,1039 @@ function fic_upcoming_earnings_shortcode($atts) {
     return fic_render_upcoming_earnings_list((int) $atts['limit']);
 }
 add_shortcode('upcoming_earnings', 'fic_upcoming_earnings_shortcode');
+
+if (!function_exists('fic_get_category_url_by_name')) {
+function fic_get_category_url_by_name($category_name, $fallback_path = '/') {
+    $category_id = get_cat_ID($category_name);
+
+    if ($category_id) {
+        $category_url = get_category_link($category_id);
+
+        if (!is_wp_error($category_url)) {
+            return $category_url;
+        }
+    }
+
+    return home_url($fallback_path);
+}
+}
+
+if (!function_exists('fic_get_category_url_by_names')) {
+function fic_get_category_url_by_names($category_names, $fallback_path = '/') {
+    $category_names = is_array($category_names) ? $category_names : [$category_names];
+
+    foreach ($category_names as $category_name) {
+        $category_id = get_cat_ID($category_name);
+
+        if ($category_id) {
+            $category_url = get_category_link($category_id);
+
+            if (!is_wp_error($category_url)) {
+                return $category_url;
+            }
+        }
+    }
+
+    return home_url($fallback_path);
+}
+}
+
+if (!function_exists('fic_get_post_url_by_slug')) {
+function fic_get_post_url_by_slug($slug, $fallback_path = '/') {
+    $post = get_page_by_path($slug, OBJECT, 'post');
+
+    if ($post && 'publish' === get_post_status($post)) {
+        return get_permalink($post);
+    }
+
+    return home_url($fallback_path);
+}
+}
+
+if (!function_exists('fic_get_latest_posts_by_category_name')) {
+function fic_get_latest_posts_by_category_name($category_name, $limit = 3) {
+    $category_names = is_array($category_name) ? $category_name : [$category_name];
+    $category_ids = [];
+
+    foreach ($category_names as $name) {
+        $category_id = get_cat_ID($name);
+        if ($category_id) {
+            $category_ids[] = $category_id;
+        }
+    }
+
+    $category_ids = array_values(array_unique(array_filter($category_ids)));
+
+    if (empty($category_ids)) {
+        return [];
+    }
+
+    return get_posts([
+        'post_type'           => 'post',
+        'post_status'         => 'publish',
+        'posts_per_page'      => $limit,
+        'category__in'        => $category_ids,
+        'ignore_sticky_posts' => true,
+        'no_found_rows'       => true,
+    ]);
+}
+}
+
+if (!function_exists('fic_get_category_post_count_by_name')) {
+function fic_get_category_post_count_by_name($category_name) {
+    $category_names = is_array($category_name) ? $category_name : [$category_name];
+    $category_ids = [];
+
+    foreach ($category_names as $name) {
+        $category_id = get_cat_ID($name);
+        if ($category_id) {
+            $category_ids[] = $category_id;
+        }
+    }
+
+    $category_ids = array_values(array_unique(array_filter($category_ids)));
+
+    if (empty($category_ids)) {
+        return 0;
+    }
+
+    $count_query = new WP_Query([
+        'post_type'           => 'post',
+        'post_status'         => 'publish',
+        'posts_per_page'      => 1,
+        'fields'              => 'ids',
+        'category__in'        => $category_ids,
+        'ignore_sticky_posts' => true,
+        'no_found_rows'       => false,
+    ]);
+    $count = (int) $count_query->found_posts;
+    wp_reset_postdata();
+
+    return $count;
+}
+}
+
+if (!function_exists('fic_trim_plain_text')) {
+function fic_trim_plain_text($text, $length = 86) {
+    $text = trim(wp_strip_all_tags(html_entity_decode((string) $text, ENT_QUOTES, get_bloginfo('charset'))));
+    $text = preg_replace('/\s+/u', ' ', $text);
+
+    if (function_exists('mb_strlen') && function_exists('mb_substr')) {
+        if (mb_strlen($text, 'UTF-8') > $length) {
+            return mb_substr($text, 0, $length, 'UTF-8') . '...';
+        }
+
+        return $text;
+    }
+
+    return strlen($text) > $length ? substr($text, 0, $length) . '...' : $text;
+}
+}
+
+if (!function_exists('fic_tracking_attr')) {
+function fic_tracking_attr($area, $label) {
+    return ' data-fic-area="' . esc_attr($area) . '" data-fic-label="' . esc_attr($label) . '"';
+}
+}
+
+if (!function_exists('fic_render_home_latest_group')) {
+function fic_render_home_latest_group($group) {
+    $posts = fic_get_latest_posts_by_category_name($group['category'], 3);
+    $category_names = is_array($group['category']) ? $group['category'] : [$group['category']];
+    $primary_category = reset($category_names);
+
+    ob_start();
+
+    echo '<section class="fic-home-latest-group">';
+    echo '<div class="fic-home-latest-group-head">';
+    echo '<span>' . esc_html($group['label']) . '</span>';
+    echo '<h3>' . esc_html($group['title']) . '</h3>';
+    echo '<p>' . esc_html($group['description']) . '</p>';
+    echo '</div>';
+
+    if (!empty($posts)) {
+        echo '<div class="fic-home-latest-list">';
+        foreach ($posts as $post) {
+            $excerpt_source = has_excerpt($post) ? $post->post_excerpt : $post->post_content;
+
+            echo '<a class="fic-home-latest-card" href="' . esc_url(get_permalink($post)) . '"' . fic_tracking_attr('home_latest_' . strtolower($group['label']), get_the_title($post)) . '>';
+            echo '<time datetime="' . esc_attr(get_the_date('c', $post)) . '">' . esc_html(get_the_date('Y年n月j日', $post)) . '</time>';
+            echo '<strong>' . esc_html(get_the_title($post)) . '</strong>';
+            echo '<span>' . esc_html(fic_trim_plain_text($excerpt_source, 88)) . '</span>';
+            echo '</a>';
+        }
+        echo '</div>';
+    } else {
+        echo '<div class="fic-home-latest-empty">';
+        echo '<strong>準備中</strong>';
+        echo '<p>' . esc_html($group['empty']) . '</p>';
+        echo '</div>';
+    }
+
+    echo '<a class="fic-home-latest-more" href="' . esc_url(fic_get_category_url_by_names($category_names, '/category/')) . '"' . fic_tracking_attr('home_latest_more', $group['more']) . '>' . esc_html($group['more']) . '</a>';
+    echo '</section>';
+
+    return ob_get_clean();
+}
+}
+
+if (!function_exists('fic_render_home_mvp')) {
+function fic_render_home_mvp() {
+    $theme_analysis_categories = ['テーマ分析', '業界分析'];
+    $learning_categories = ['投資の読み方', '基礎講座', 'ビギナーガイド'];
+
+    $entry_cards = [
+        [
+            'label' => '企業分析',
+            'title' => '個別企業を構造で読む',
+            'body'  => '売上、利益率、中計、リスクを一気に確認。',
+            'url'   => home_url('/companies/'),
+            'count' => fic_get_category_post_count_by_name('企業分析'),
+        ],
+        [
+            'label' => 'テーマ分析',
+            'title' => 'ニュースの波及先を読む',
+            'body'  => '金利、為替、原材料、AI投資の影響先を探す。',
+            'url'   => home_url('/themes/'),
+            'count' => fic_get_category_post_count_by_name($theme_analysis_categories),
+        ],
+        [
+            'label' => '投資の読み方',
+            'title' => '決算と指標の見方を学ぶ',
+            'body'  => '決算、利益率、受注残、在庫などの基礎。',
+            'url'   => home_url('/learn/'),
+            'count' => fic_get_category_post_count_by_name($learning_categories),
+        ],
+    ];
+
+    $flow_steps = [
+        [
+            'label' => 'Step 1',
+            'title' => '上流要因',
+            'body'  => '為替、金利、原材料、政策、需要。',
+        ],
+        [
+            'label' => 'Step 2',
+            'title' => '企業KPI',
+            'body'  => '数量、単価、受注、在庫、稼働率。',
+        ],
+        [
+            'label' => 'Step 3',
+            'title' => '売上・利益',
+            'body'  => '売上、営業利益、利益率への波及。',
+        ],
+        [
+            'label' => 'Step 4',
+            'title' => '次に見る指標',
+            'body'  => '次の決算で見る確認点と反証条件。',
+        ],
+    ];
+
+    $first_check_items = [
+        [
+            'label' => '1',
+            'title' => '気になる企業を調べる',
+            'body'  => '企業名や証券コードから探す。',
+            'url'   => home_url('/companies/'),
+        ],
+        [
+            'label' => '2',
+            'title' => 'ニュースの波及先を見る',
+            'body'  => '材料が効く業界・企業を探す。',
+            'url'   => home_url('/themes/'),
+        ],
+        [
+            'label' => '3',
+            'title' => '決算と指標を学ぶ',
+            'body'  => '読み方の土台を先に押さえる。',
+            'url'   => home_url('/learn/'),
+        ],
+        [
+            'label' => '4',
+            'title' => '次の決算で確認する',
+            'body'  => '決算日と更新予定を見る。',
+            'url'   => home_url('/earnings-schedule/'),
+        ],
+    ];
+
+    $route_steps = [
+        [
+            'label' => '01',
+            'title' => '決算と指標の意味をつかむ',
+            'body'  => '営業利益率、受注残、在庫など、企業分析の読み方を先に押さえます。',
+            'url'   => home_url('/learn/'),
+        ],
+        [
+            'label' => '02',
+            'title' => '気になる企業を1社読む',
+            'body'  => '売上、利益率、中計、リスクをつなげて、業績が動く理由を確認します。',
+            'url'   => home_url('/companies/'),
+        ],
+        [
+            'label' => '03',
+            'title' => '業界・テーマへ広げる',
+            'body'  => 'ニュースやマクロ変化が、どの企業に波及するかを横に広げて見ます。',
+            'url'   => home_url('/themes/'),
+        ],
+    ];
+
+    $trigger_items = [
+        [
+            'label' => 'Rates',
+            'title' => '金利',
+            'body'  => '銀行、不動産、リース、成長株の前提を確認。',
+            'query' => '金利',
+        ],
+        [
+            'label' => 'FX',
+            'title' => '為替',
+            'body'  => '輸出、輸入、海外売上、原価への影響を見る。',
+            'query' => '為替',
+        ],
+        [
+            'label' => 'Cost',
+            'title' => '原材料',
+            'body'  => '価格転嫁、粗利率、在庫評価の変化を追う。',
+            'query' => '原材料',
+        ],
+        [
+            'label' => 'AI/Semi',
+            'title' => 'AI・半導体',
+            'body'  => '設備投資、部材、電力、データセンターへ広げる。',
+            'query' => '半導体 AI',
+        ],
+    ];
+
+    $earnings_checks = [
+        ['label' => '売上', 'body' => '数量・単価・為替のどれで動いたか'],
+        ['label' => '利益率', 'body' => '原価、人件費、販管費、価格転嫁'],
+        ['label' => '会社予想', 'body' => '上方修正、据え置き、進捗率'],
+        ['label' => '次のKPI', 'body' => '受注、在庫、稼働率、月次指標'],
+    ];
+
+    $latest_groups = [
+        [
+            'label'       => 'Company',
+            'title'       => '最新の企業分析',
+            'description' => '個別企業の売上ドライバー、利益構造、中計、リスクを最新資料ベースで整理します。',
+            'category'    => '企業分析',
+            'more'        => '企業分析をもっと見る',
+            'empty'       => '企業分析の記事を準備しています。',
+        ],
+        [
+            'label'       => 'Theme',
+            'title'       => '最新のテーマ分析',
+            'description' => 'ニュースやマクロ変化が、どの業界・企業に波及するかを因果構造で追います。',
+            'category'    => $theme_analysis_categories,
+            'more'        => 'テーマ分析をもっと見る',
+            'empty'       => 'テーマ分析の記事を準備しています。',
+        ],
+        [
+            'label'       => 'Basics',
+            'title'       => '投資の読み方',
+            'description' => '決算、利益率、受注残、在庫、ROEなど、企業分析を読むための土台を整えます。',
+            'category'    => $learning_categories,
+            'more'        => '投資の読み方を見る',
+            'empty'       => '投資の読み方の記事を準備しています。まずは企業分析・テーマ分析から読み始められます。',
+        ],
+    ];
+
+    $home_stat_items = [
+        ['label' => '企業分析', 'count' => fic_get_category_post_count_by_name('企業分析')],
+        ['label' => 'テーマ分析', 'count' => fic_get_category_post_count_by_name($theme_analysis_categories)],
+        ['label' => '投資の読み方', 'count' => fic_get_category_post_count_by_name($learning_categories)],
+    ];
+    $home_latest_posts = fic_get_latest_posts_by_category_name(array_merge(['企業分析'], $theme_analysis_categories, $learning_categories), 1);
+    $home_latest_post = !empty($home_latest_posts) ? $home_latest_posts[0] : null;
+
+    ob_start();
+
+    echo '<div class="fic-home">';
+
+    echo '<section class="fic-home-hero" aria-labelledby="fic-home-hero-title">';
+    echo '<div class="fic-home-hero-copy">';
+    echo '<p class="fic-home-eyebrow">公開資料から、企業業績が動く理由を読む</p>';
+    echo '<h1 id="fic-home-hero-title">FIC投資研究所</h1>';
+    echo '<p class="fic-home-lead">公開資料をもとに、企業業績がなぜ動くのかを短く、深く整理します。</p>';
+    echo '<div class="fic-home-stats" aria-label="FICの記事蓄積">';
+    foreach ($home_stat_items as $stat) {
+        if (!empty($stat['count'])) {
+            echo '<div class="fic-home-stat"><strong>' . esc_html(number_format_i18n((int) $stat['count'])) . '</strong><span>' . esc_html($stat['label']) . '</span></div>';
+        }
+    }
+    echo '</div>';
+    if ($home_latest_post) {
+        echo '<div class="fic-home-now">';
+        echo '<span>最新更新</span>';
+        echo '<a href="' . esc_url(get_permalink($home_latest_post)) . '"' . fic_tracking_attr('home_hero', 'latest_update') . '>';
+        echo '<time datetime="' . esc_attr(get_the_date('c', $home_latest_post)) . '">' . esc_html(get_the_date('Y年n月j日', $home_latest_post)) . '</time>';
+        echo '<strong>' . esc_html(get_the_title($home_latest_post)) . '</strong>';
+        echo '</a>';
+        echo '</div>';
+    }
+    echo '<form class="fic-home-search" role="search" method="get" action="' . esc_url(home_url('/')) . '">';
+    echo '<label for="fic-home-search-input">企業名・証券コード・テーマを検索</label>';
+    echo '<div class="fic-home-search-row">';
+    echo '<input id="fic-home-search-input" type="search" name="s" placeholder="例：ニトリ、9843、半導体、金利" value="' . esc_attr(get_search_query()) . '">';
+    echo '<button type="submit">検索</button>';
+    echo '</div>';
+    echo '<div class="fic-home-search-chips" aria-label="よく見られるテーマ">';
+    foreach (['半導体', '金利', '為替', '決算', 'AI'] as $keyword) {
+        echo '<a href="' . esc_url(home_url('/?s=' . rawurlencode($keyword))) . '"' . fic_tracking_attr('home_search_chip', $keyword) . '>' . esc_html($keyword) . '</a>';
+    }
+    echo '</div>';
+    echo '</form>';
+    echo '<div class="fic-home-actions">';
+    echo '<a class="fic-home-primary" href="' . esc_url(home_url('/companies/')) . '"' . fic_tracking_attr('home_hero_action', '企業を探す') . '>企業を探す</a>';
+    echo '<a class="fic-home-secondary" href="' . esc_url(home_url('/themes/')) . '"' . fic_tracking_attr('home_hero_action', 'テーマから探す') . '>テーマから探す</a>';
+    echo '<a class="fic-home-secondary" href="' . esc_url(home_url('/learn/')) . '"' . fic_tracking_attr('home_hero_action', '投資の読み方') . '>投資の読み方</a>';
+    echo '<a class="fic-home-secondary" href="' . esc_url(home_url('/earnings-schedule/')) . '"' . fic_tracking_attr('home_hero_action', '決算予定') . '>決算予定</a>';
+    echo '</div>';
+    echo '</div>';
+    echo '<div class="fic-home-hero-panel" aria-label="FICの分析フロー">';
+    echo '<div class="fic-home-visual-card">';
+    echo '<div class="fic-home-visual-head"><span>FIC Lens</span><strong>材料から業績へ</strong></div>';
+    echo '<div class="fic-home-visual-flow" aria-hidden="true">';
+    echo '<span>上流要因</span>';
+    echo '<i></i>';
+    echo '<span>KPI</span>';
+    echo '<i></i>';
+    echo '<span>売上・利益</span>';
+    echo '</div>';
+    echo '<div class="fic-home-visual-metrics" aria-hidden="true">';
+    echo '<span>為替</span><span>受注</span><span>利益率</span><span>在庫</span><span>中計</span><span>反証</span>';
+    echo '</div>';
+    echo '<div class="fic-home-source-badges" aria-label="FICの分析前提">';
+    echo '<span>公開資料</span><span>会計士視点</span><span>編集確認</span>';
+    echo '</div>';
+    echo '</div>';
+    echo '</div>';
+    echo '</section>';
+
+    echo '<nav class="fic-home-quicknav" aria-label="トップページ内ナビゲーション">';
+    echo '<a href="#fic-home-firstcheck"' . fic_tracking_attr('home_quicknav', 'まず見る') . '>まず見る</a>';
+    echo '<a href="#fic-home-triggers"' . fic_tracking_attr('home_quicknav', '材料から探す') . '>材料から探す</a>';
+    echo '<a href="#fic-home-latest"' . fic_tracking_attr('home_quicknav', '新着分析') . '>新着分析</a>';
+    echo '<a href="#fic-home-upcoming"' . fic_tracking_attr('home_quicknav', '決算予定') . '>決算予定</a>';
+    echo '</nav>';
+
+    echo '<section id="fic-home-firstcheck" class="fic-home-section fic-home-firstcheck" aria-labelledby="fic-home-firstcheck-title">';
+    echo '<div class="fic-home-section-head">';
+    echo '<p class="fic-home-section-label">First Check</p>';
+    echo '<h2 id="fic-home-firstcheck-title">迷ったら、まずここから見る</h2>';
+    echo '<p>銘柄、ニュース、基礎、決算。入口を4つに絞りました。</p>';
+    echo '</div>';
+    echo '<div class="fic-home-firstcheck-grid">';
+    foreach ($first_check_items as $item) {
+        echo '<a class="fic-home-firstcheck-card" href="' . esc_url($item['url']) . '"' . fic_tracking_attr('home_firstcheck', $item['title']) . '>';
+        echo '<span>' . esc_html($item['label']) . '</span>';
+        echo '<strong>' . esc_html($item['title']) . '</strong>';
+        echo '<em>' . esc_html($item['body']) . '</em>';
+        echo '</a>';
+    }
+    echo '</div>';
+    echo '</section>';
+
+    echo '<section id="fic-home-triggers" class="fic-home-section fic-home-triggers" aria-labelledby="fic-home-triggers-title">';
+    echo '<div class="fic-home-section-head">';
+    echo '<p class="fic-home-section-label">Market Triggers</p>';
+    echo '<h2 id="fic-home-triggers-title">業績を動かす材料から探す</h2>';
+    echo '<p>ニュースを見たら、まず業績への通り道を確認します。</p>';
+    echo '</div>';
+    echo '<div class="fic-home-trigger-grid">';
+    foreach ($trigger_items as $item) {
+        echo '<a class="fic-home-trigger-card" href="' . esc_url(home_url('/?s=' . rawurlencode($item['query']))) . '"' . fic_tracking_attr('home_market_trigger', $item['title']) . '>';
+        echo '<span>' . esc_html($item['label']) . '</span>';
+        echo '<strong>' . esc_html($item['title']) . '</strong>';
+        echo '<em>' . esc_html($item['body']) . '</em>';
+        echo '</a>';
+    }
+    echo '</div>';
+    echo '</section>';
+
+    echo '<section class="fic-home-section fic-home-entry" aria-labelledby="fic-home-entry-title">';
+    echo '<div class="fic-home-section-head">';
+    echo '<p class="fic-home-section-label">Start Here</p>';
+    echo '<h2 id="fic-home-entry-title">目的別に読む</h2>';
+    echo '<p>読む目的を選んでください。</p>';
+    echo '</div>';
+    echo '<div class="fic-home-entry-grid">';
+    foreach ($entry_cards as $card) {
+        echo '<a class="fic-home-entry-card" href="' . esc_url($card['url']) . '"' . fic_tracking_attr('home_entry', $card['label']) . '>';
+        echo '<span class="fic-home-card-label">' . esc_html($card['label']) . '</span>';
+        echo '<strong>' . esc_html($card['title']) . '</strong>';
+        echo '<span>' . esc_html($card['body']) . '</span>';
+        if (!empty($card['count'])) {
+            echo '<em class="fic-home-entry-count">' . esc_html(number_format_i18n((int) $card['count'])) . '本の記事</em>';
+        }
+        echo '</a>';
+    }
+    echo '</div>';
+    echo '</section>';
+
+    echo '<section class="fic-home-section fic-home-route" aria-labelledby="fic-home-route-title">';
+    echo '<div class="fic-home-section-head">';
+    echo '<p class="fic-home-section-label">Reading Route</p>';
+    echo '<h2 id="fic-home-route-title">最初の3ステップ</h2>';
+    echo '<p>初めて来た人は、この順番で読むとFICの使い方がつかめます。</p>';
+    echo '</div>';
+    echo '<div class="fic-home-route-grid">';
+    foreach ($route_steps as $step) {
+        echo '<a class="fic-home-route-step" href="' . esc_url($step['url']) . '"' . fic_tracking_attr('home_reading_route', $step['title']) . '>';
+        echo '<span>' . esc_html($step['label']) . '</span>';
+        echo '<strong>' . esc_html($step['title']) . '</strong>';
+        echo '<em>' . esc_html($step['body']) . '</em>';
+        echo '</a>';
+    }
+    echo '</div>';
+    echo '</section>';
+
+    echo '<section class="fic-home-section fic-home-flow" aria-labelledby="fic-home-flow-title">';
+    echo '<div class="fic-home-section-head">';
+    echo '<p class="fic-home-section-label">FIC Method</p>';
+    echo '<h2 id="fic-home-flow-title">上流要因から業績まで、一本の線で読む</h2>';
+    echo '<p>材料が業績に届くまでを追います。</p>';
+    echo '</div>';
+    echo '<div class="fic-home-flow-grid">';
+    foreach ($flow_steps as $step) {
+        echo '<div class="fic-home-flow-step">';
+        echo '<span>' . esc_html($step['label']) . '</span>';
+        echo '<strong>' . esc_html($step['title']) . '</strong>';
+        echo '<p>' . esc_html($step['body']) . '</p>';
+        echo '</div>';
+    }
+    echo '</div>';
+    echo '</section>';
+
+    echo '<section id="fic-home-latest" class="fic-home-section fic-home-latest" aria-labelledby="fic-home-latest-title">';
+    echo '<div class="fic-home-section-head">';
+    echo '<p class="fic-home-section-label">Latest Analysis</p>';
+    echo '<h2 id="fic-home-latest-title">いま読める分析</h2>';
+    echo '<p>最新記事を、企業・テーマ・学習の3つの入口に分けて表示します。</p>';
+    echo '</div>';
+    echo '<div class="fic-home-latest-grid">';
+    foreach ($latest_groups as $group) {
+        echo fic_render_home_latest_group($group);
+    }
+    echo '</div>';
+    echo '</section>';
+
+    echo '<section id="fic-home-upcoming" class="fic-home-section fic-home-upcoming" aria-labelledby="fic-home-upcoming-title">';
+    echo '<div class="fic-home-section-head">';
+    echo '<p class="fic-home-section-label">Earnings Watch</p>';
+    echo '<h2 id="fic-home-upcoming-title">直近の分析更新予定</h2>';
+    echo '<p>決算発表に合わせて、売上や利益の構造に着目した分析記事を順次更新しています。</p>';
+    echo '</div>';
+    echo '<div class="fic-home-earnings-checks" aria-label="決算で見るポイント">';
+    foreach ($earnings_checks as $check) {
+        echo '<div class="fic-home-earnings-check">';
+        echo '<span>' . esc_html($check['label']) . '</span>';
+        echo '<strong>' . esc_html($check['body']) . '</strong>';
+        echo '</div>';
+    }
+    echo '</div>';
+    echo fic_render_upcoming_earnings_list(8);
+    echo '</section>';
+
+    echo '<section class="fic-home-section fic-home-video" aria-labelledby="fic-home-video-title">';
+    echo '<div>';
+    echo '<p class="fic-home-section-label">Video</p>';
+    echo '<h2 id="fic-home-video-title">動画でざっくり見る</h2>';
+    echo '<p>記事を読む前に全体像をつかみたい方へ。企業分析やテーマ分析の要点を、短い図解動画でも確認できます。</p>';
+    echo '</div>';
+    echo '<div class="fic-home-video-actions">';
+    echo '<a class="fic-home-video-primary" href="' . esc_url('https://www.youtube.com/@FICInvestmentBiz') . '" target="_blank" rel="noopener"' . fic_tracking_attr('home_video', 'YouTubeを見る') . '>YouTubeを見る</a>';
+    echo '<a class="fic-home-video-secondary" href="' . esc_url(home_url('/companies/')) . '"' . fic_tracking_attr('home_video', '記事で詳しく読む') . '>記事で詳しく読む</a>';
+    echo '</div>';
+    echo '</section>';
+
+    echo '<section class="fic-home-section fic-home-trust" aria-labelledby="fic-home-trust-title">';
+    echo '<div>';
+    echo '<p class="fic-home-section-label">Editorial Policy</p>';
+    echo '<h2 id="fic-home-trust-title">分析の前提を明確にします</h2>';
+    echo '<p>FIC投資研究所では、公開資料を優先し、会社開示値・外部推計・FIC前提付き試算を区別します。記事は特定銘柄の売買を推奨するものではなく、投資判断の前提を整理するための情報提供です。</p>';
+    echo '</div>';
+    echo '<div class="fic-home-trust-links">';
+    echo '<a href="' . esc_url(home_url('/about/')) . '"' . fic_tracking_attr('home_trust', 'FIC投資研究所について') . '>FIC投資研究所について</a>';
+    echo '<a href="' . esc_url(home_url('/editorial-policy/')) . '"' . fic_tracking_attr('home_trust', '編集方針') . '>編集方針</a>';
+    echo '<a href="' . esc_url(home_url('/learn/')) . '"' . fic_tracking_attr('home_trust', '投資の読み方') . '>投資の読み方</a>';
+    echo '</div>';
+    echo '</section>';
+
+    echo '</div>';
+
+    return ob_get_clean();
+}
+}
+
+if (!function_exists('fic_home_mvp_shortcode')) {
+function fic_home_mvp_shortcode() {
+    return fic_render_home_mvp();
+}
+}
+add_shortcode('fic_home_mvp', 'fic_home_mvp_shortcode');
+
+if (!function_exists('fic_render_hub_nav')) {
+function fic_render_hub_nav($active = '') {
+    $items = [
+        ['key' => 'company', 'label' => '企業を探す', 'body' => '企業名・証券コードから', 'url' => home_url('/companies/')],
+        ['key' => 'theme', 'label' => 'テーマから探す', 'body' => 'ニュース材料から', 'url' => home_url('/themes/')],
+        ['key' => 'learning', 'label' => '投資の読み方', 'body' => '決算と指標の基礎', 'url' => home_url('/learn/')],
+    ];
+
+    ob_start();
+
+    echo '<nav class="fic-hub-nav" aria-label="目的別ページナビゲーション">';
+    foreach ($items as $item) {
+        $classes = 'fic-hub-nav-item';
+        if ($active === $item['key']) {
+            $classes .= ' is-active';
+        }
+
+        $aria_current = $active === $item['key'] ? ' aria-current="page"' : '';
+
+        echo '<a class="' . esc_attr($classes) . '" href="' . esc_url($item['url']) . '"' . $aria_current . fic_tracking_attr('hub_nav', $item['label']) . '>';
+        if ($active === $item['key']) {
+            echo '<em>現在地</em>';
+        }
+        echo '<strong>' . esc_html($item['label']) . '</strong>';
+        echo '<span>' . esc_html($item['body']) . '</span>';
+        echo '</a>';
+    }
+    echo '</nav>';
+
+    return ob_get_clean();
+}
+}
+
+if (!function_exists('fic_render_company_hub')) {
+function fic_render_company_hub() {
+    $company_count = fic_get_category_post_count_by_name('企業分析');
+    $latest_posts = fic_get_latest_posts_by_category_name('企業分析', 6);
+    $hub_cards = [
+        [
+            'label' => 'Search',
+            'title' => '企業名・証券コードで探す',
+            'body'  => '気になる企業がある場合は、まず検索から入れます。',
+        ],
+        [
+            'label' => 'Latest',
+            'title' => '最新の企業分析を見る',
+            'body'  => '直近で更新された分析から、足元の論点を確認します。',
+        ],
+        [
+            'label' => 'Earnings',
+            'title' => '決算前後に確認する',
+            'body'  => '売上、利益率、会社予想、次のKPIを決算前後で見ます。',
+        ],
+    ];
+    $check_items = [
+        ['label' => '売上', 'body' => '数量、単価、為替、セグメントのどれで動いたか'],
+        ['label' => '利益率', 'body' => '価格転嫁、原価、人件費、販管費の変化'],
+        ['label' => '財務', 'body' => 'キャッシュフロー、自己資本比率、投資余力'],
+        ['label' => '次のKPI', 'body' => '受注、在庫、稼働率、月次、会社予想'],
+    ];
+
+    ob_start();
+
+    echo '<div class="fic-home fic-company-hub">';
+    echo '<section class="fic-hub-hero" aria-labelledby="fic-company-hub-title">';
+    echo '<a class="fic-hub-home-link" href="' . esc_url(home_url('/')) . '"' . fic_tracking_attr('company_hub_hero', 'トップページへ') . '>トップページへ</a>';
+    echo '<p class="fic-home-section-label">Company Hub</p>';
+    echo '<h1 id="fic-company-hub-title">企業を探す</h1>';
+    echo '<p>企業名、証券コード、決算予定、最新分析から、個別企業の業績が動く理由を探します。</p>';
+    echo '<div class="fic-hub-hero-meta">';
+    if ($company_count) {
+        echo '<span><strong>' . esc_html(number_format_i18n((int) $company_count)) . '</strong>本の企業分析</span>';
+    }
+    echo '<a href="' . esc_url(fic_get_category_url_by_name('企業分析', '/category/')) . '"' . fic_tracking_attr('company_hub_hero', '企業分析一覧') . '>企業分析一覧</a>';
+    echo '</div>';
+    echo '<form class="fic-home-search fic-hub-search" role="search" method="get" action="' . esc_url(home_url('/')) . '">';
+    echo '<label for="fic-company-hub-search">企業名・証券コードを検索</label>';
+    echo '<div class="fic-home-search-row">';
+    echo '<input id="fic-company-hub-search" type="search" name="s" placeholder="例：ニトリ、9843、三菱UFJ" value="' . esc_attr(get_search_query()) . '">';
+    echo '<button type="submit">検索</button>';
+    echo '</div>';
+    echo '</form>';
+    echo '</section>';
+    echo fic_render_hub_nav('company');
+
+    echo '<section class="fic-home-section fic-hub-guide" aria-labelledby="fic-company-hub-guide-title">';
+    echo '<div class="fic-home-section-head">';
+    echo '<p class="fic-home-section-label">Start</p>';
+    echo '<h2 id="fic-company-hub-guide-title">企業分析の探し方</h2>';
+    echo '<p>検索、最新分析、決算予定の3つから入れます。</p>';
+    echo '</div>';
+    echo '<div class="fic-hub-card-grid">';
+    foreach ($hub_cards as $card) {
+        echo '<div class="fic-hub-card">';
+        echo '<span>' . esc_html($card['label']) . '</span>';
+        echo '<strong>' . esc_html($card['title']) . '</strong>';
+        echo '<p>' . esc_html($card['body']) . '</p>';
+        echo '</div>';
+    }
+    echo '</div>';
+    echo '</section>';
+
+    echo '<section class="fic-home-section fic-hub-checks" aria-labelledby="fic-company-hub-checks-title">';
+    echo '<div class="fic-home-section-head">';
+    echo '<p class="fic-home-section-label">Checklist</p>';
+    echo '<h2 id="fic-company-hub-checks-title">企業分析で見るポイント</h2>';
+    echo '<p>個別企業を見るときは、株価より先に業績の変化点を確認します。</p>';
+    echo '</div>';
+    echo '<div class="fic-home-earnings-checks">';
+    foreach ($check_items as $item) {
+        echo '<div class="fic-home-earnings-check">';
+        echo '<span>' . esc_html($item['label']) . '</span>';
+        echo '<strong>' . esc_html($item['body']) . '</strong>';
+        echo '</div>';
+    }
+    echo '</div>';
+    echo '</section>';
+
+    echo '<section class="fic-home-section fic-home-latest" aria-labelledby="fic-company-hub-latest-title">';
+    echo '<div class="fic-home-section-head">';
+    echo '<p class="fic-home-section-label">Latest Company Analysis</p>';
+    echo '<h2 id="fic-company-hub-latest-title">最新の企業分析</h2>';
+    echo '<p>直近で公開・更新された企業分析です。</p>';
+    echo '</div>';
+    if (!empty($latest_posts)) {
+        echo '<div class="fic-hub-latest-grid">';
+        foreach ($latest_posts as $post) {
+            $excerpt_source = has_excerpt($post) ? $post->post_excerpt : $post->post_content;
+            echo '<a class="fic-home-latest-card fic-hub-latest-card" href="' . esc_url(get_permalink($post)) . '"' . fic_tracking_attr('company_hub_latest', get_the_title($post)) . '>';
+            echo '<time datetime="' . esc_attr(get_the_date('c', $post)) . '">' . esc_html(get_the_date('Y年n月j日', $post)) . '</time>';
+            echo '<strong>' . esc_html(get_the_title($post)) . '</strong>';
+            echo '<span>' . esc_html(fic_trim_plain_text($excerpt_source, 92)) . '</span>';
+            echo '</a>';
+        }
+        echo '</div>';
+    } else {
+        echo '<p class="fic-home-latest-empty">企業分析の記事を準備しています。</p>';
+    }
+    echo '</section>';
+
+    echo '<section class="fic-home-section fic-home-trust fic-hub-next" aria-labelledby="fic-company-hub-next-title">';
+    echo '<div>';
+    echo '<p class="fic-home-section-label">Next</p>';
+    echo '<h2 id="fic-company-hub-next-title">決算予定とあわせて確認する</h2>';
+    echo '<p>決算発表前後は、企業分析と決算スケジュールをあわせて見ると、確認すべきKPIを先回りできます。</p>';
+    echo '</div>';
+    echo '<div class="fic-home-trust-links">';
+    echo '<a href="' . esc_url(home_url('/earnings-schedule/')) . '"' . fic_tracking_attr('company_hub_next', '決算スケジュール') . '>決算スケジュール</a>';
+    echo '<a href="' . esc_url(home_url('/themes/')) . '"' . fic_tracking_attr('company_hub_next', 'テーマから探す') . '>テーマから探す</a>';
+    echo '<a href="' . esc_url(home_url('/')) . '"' . fic_tracking_attr('company_hub_next', 'トップページ') . '>トップページ</a>';
+    echo '</div>';
+    echo '</section>';
+    echo '</div>';
+
+    return ob_get_clean();
+}
+}
+
+if (!function_exists('fic_company_hub_shortcode')) {
+function fic_company_hub_shortcode() {
+    return fic_render_company_hub();
+}
+}
+add_shortcode('fic_company_hub', 'fic_company_hub_shortcode');
+
+if (!function_exists('fic_render_theme_hub')) {
+function fic_render_theme_hub() {
+    $theme_analysis_categories = ['テーマ分析', '業界分析'];
+    $theme_reading_categories = ['テーマの読み方'];
+    $theme_count = fic_get_category_post_count_by_name(array_merge($theme_analysis_categories, $theme_reading_categories));
+    $latest_posts = fic_get_latest_posts_by_category_name($theme_analysis_categories, 6);
+    $theme_items = [
+        ['label' => 'Rates', 'title' => '金利', 'body' => '銀行、不動産、リース、成長株への波及を見る。', 'query' => '金利'],
+        ['label' => 'FX', 'title' => '為替', 'body' => '輸出、輸入、海外売上、原価への影響を見る。', 'query' => '為替'],
+        ['label' => 'Cost', 'title' => '原材料', 'body' => '価格転嫁、粗利率、在庫評価への影響を見る。', 'query' => '原材料'],
+        ['label' => 'AI/Semi', 'title' => 'AI・半導体', 'body' => '設備投資、部材、電力、データセンターへ広げる。', 'query' => '半導体 AI'],
+        ['label' => 'Policy', 'title' => '政策・規制', 'body' => '補助金、規制、制度変更の企業影響を探す。', 'query' => '政策 規制'],
+        ['label' => 'Energy', 'title' => 'エネルギー', 'body' => '原油、電力、燃料費、資源価格の波及を見る。', 'query' => 'エネルギー 原油'],
+    ];
+    $flow_items = [
+        ['label' => '1', 'body' => 'ニュースやマクロ材料を確認する'],
+        ['label' => '2', 'body' => '影響を受ける業界と企業を探す'],
+        ['label' => '3', 'body' => '次の決算で見るKPIへ落とす'],
+    ];
+    $theme_reading_items = [
+        ['label' => 'Rates', 'title' => '金利上昇で見る企業影響', 'body' => '銀行、不動産、リース、成長株への波及を読む。', 'slug' => 'interest-rate-impact-stocks'],
+        ['label' => 'FX', 'title' => '為替で業績が動く企業の見方', 'body' => '円安・円高が売上と利益率にどう効くかを読む。', 'slug' => 'fx-impact-company-earnings'],
+        ['label' => 'Cost', 'title' => '原材料高と価格転嫁', 'body' => 'コスト増を価格・数量・粗利率へ分解する。', 'slug' => 'raw-material-cost-pass-through'],
+        ['label' => 'Semi', 'title' => '半導体投資の波及先', 'body' => '装置、部材、電力、建設への広がりを見る。', 'slug' => 'semiconductor-investment-supply-chain'],
+        ['label' => 'Policy', 'title' => '政策・補助金テーマの読み方', 'body' => '予算、採択、受注、売上計上まで段階で読む。', 'slug' => 'policy-subsidy-investment-theme'],
+        ['label' => 'Logistics', 'title' => '物流改革と2024年問題', 'body' => '物流費、運賃、省力化、価格転嫁を確認する。', 'slug' => 'logistics-reform-2024-problem'],
+    ];
+
+    ob_start();
+
+    echo '<div class="fic-home fic-theme-hub">';
+    echo '<section class="fic-hub-hero" aria-labelledby="fic-theme-hub-title">';
+    echo '<a class="fic-hub-home-link" href="' . esc_url(home_url('/')) . '"' . fic_tracking_attr('theme_hub_hero', 'トップページへ') . '>トップページへ</a>';
+    echo '<p class="fic-home-section-label">Theme Hub</p>';
+    echo '<h1 id="fic-theme-hub-title">テーマから探す</h1>';
+    echo '<p>金利、為替、原材料、AI、政策などの変化が、どの業界・企業に波及するかを探します。</p>';
+    echo '<div class="fic-hub-hero-meta">';
+    if ($theme_count) {
+        echo '<span><strong>' . esc_html(number_format_i18n((int) $theme_count)) . '</strong>本のテーマ記事</span>';
+    }
+    echo '<a href="' . esc_url(fic_get_category_url_by_names($theme_analysis_categories, '/category/')) . '"' . fic_tracking_attr('theme_hub_hero', 'テーマ分析一覧') . '>テーマ分析一覧</a>';
+    echo '</div>';
+    echo '<form class="fic-home-search fic-hub-search" role="search" method="get" action="' . esc_url(home_url('/')) . '">';
+    echo '<label for="fic-theme-hub-search">テーマ・ニュース材料を検索</label>';
+    echo '<div class="fic-home-search-row">';
+    echo '<input id="fic-theme-hub-search" type="search" name="s" placeholder="例：金利、為替、半導体、原材料" value="' . esc_attr(get_search_query()) . '">';
+    echo '<button type="submit">検索</button>';
+    echo '</div>';
+    echo '</form>';
+    echo '</section>';
+    echo fic_render_hub_nav('theme');
+
+    echo '<section class="fic-home-section fic-home-triggers" aria-labelledby="fic-theme-hub-trigger-title">';
+    echo '<div class="fic-home-section-head">';
+    echo '<p class="fic-home-section-label">Triggers</p>';
+    echo '<h2 id="fic-theme-hub-trigger-title">材料別に探す</h2>';
+    echo '<p>ニュースを見たら、まず業績への通り道を確認します。</p>';
+    echo '</div>';
+    echo '<div class="fic-home-trigger-grid fic-theme-trigger-grid">';
+    foreach ($theme_items as $item) {
+        echo '<a class="fic-home-trigger-card" href="' . esc_url(home_url('/?s=' . rawurlencode($item['query']))) . '"' . fic_tracking_attr('theme_hub_trigger', $item['title']) . '>';
+        echo '<span>' . esc_html($item['label']) . '</span>';
+        echo '<strong>' . esc_html($item['title']) . '</strong>';
+        echo '<em>' . esc_html($item['body']) . '</em>';
+        echo '</a>';
+    }
+    echo '</div>';
+    echo '</section>';
+
+    echo '<section class="fic-home-section fic-home-route" aria-labelledby="fic-theme-hub-flow-title">';
+    echo '<div class="fic-home-section-head">';
+    echo '<p class="fic-home-section-label">Flow</p>';
+    echo '<h2 id="fic-theme-hub-flow-title">テーマ分析の読み方</h2>';
+    echo '<p>材料を見つけたら、企業業績に届くまでを追います。</p>';
+    echo '</div>';
+    echo '<div class="fic-home-route-grid">';
+    foreach ($flow_items as $item) {
+        echo '<div class="fic-home-route-step">';
+        echo '<span>' . esc_html($item['label']) . '</span>';
+        echo '<strong>' . esc_html($item['body']) . '</strong>';
+        echo '</div>';
+    }
+    echo '</div>';
+    echo '</section>';
+
+    echo '<section class="fic-home-section fic-hub-guide" aria-labelledby="fic-theme-reading-title">';
+    echo '<div class="fic-home-section-head">';
+    echo '<p class="fic-home-section-label">Theme Guides</p>';
+    echo '<h2 id="fic-theme-reading-title">テーマの読み方</h2>';
+    echo '<p>ニュースを読む前後に確認したい、常設のテーマ解説です。</p>';
+    echo '</div>';
+    echo '<div class="fic-hub-card-grid">';
+    foreach ($theme_reading_items as $item) {
+        echo '<a class="fic-hub-card" href="' . esc_url(fic_get_post_url_by_slug($item['slug'], '/' . $item['slug'] . '/')) . '"' . fic_tracking_attr('theme_hub_reading', $item['title']) . '>';
+        echo '<span>' . esc_html($item['label']) . '</span>';
+        echo '<strong>' . esc_html($item['title']) . '</strong>';
+        echo '<p>' . esc_html($item['body']) . '</p>';
+        echo '</a>';
+    }
+    echo '</div>';
+    echo '</section>';
+
+    echo '<section class="fic-home-section fic-home-latest" aria-labelledby="fic-theme-hub-latest-title">';
+    echo '<div class="fic-home-section-head">';
+    echo '<p class="fic-home-section-label">Latest Theme Analysis</p>';
+    echo '<h2 id="fic-theme-hub-latest-title">最新のテーマ分析</h2>';
+    echo '<p>直近で公開・更新されたテーマ分析です。</p>';
+    echo '</div>';
+    if (!empty($latest_posts)) {
+        echo '<div class="fic-hub-latest-grid">';
+        foreach ($latest_posts as $post) {
+            $excerpt_source = has_excerpt($post) ? $post->post_excerpt : $post->post_content;
+            echo '<a class="fic-home-latest-card fic-hub-latest-card" href="' . esc_url(get_permalink($post)) . '"' . fic_tracking_attr('theme_hub_latest', get_the_title($post)) . '>';
+            echo '<time datetime="' . esc_attr(get_the_date('c', $post)) . '">' . esc_html(get_the_date('Y年n月j日', $post)) . '</time>';
+            echo '<strong>' . esc_html(get_the_title($post)) . '</strong>';
+            echo '<span>' . esc_html(fic_trim_plain_text($excerpt_source, 92)) . '</span>';
+            echo '</a>';
+        }
+        echo '</div>';
+    } else {
+        echo '<p class="fic-home-latest-empty">テーマ分析の記事を準備しています。</p>';
+    }
+    echo '</section>';
+
+    echo '<section class="fic-home-section fic-home-trust fic-hub-next" aria-labelledby="fic-theme-hub-next-title">';
+    echo '<div>';
+    echo '<p class="fic-home-section-label">Next</p>';
+    echo '<h2 id="fic-theme-hub-next-title">企業分析へつなげる</h2>';
+    echo '<p>テーマの影響先が見えたら、個別企業の記事で売上・利益率・KPIへの波及を確認します。</p>';
+    echo '</div>';
+    echo '<div class="fic-home-trust-links">';
+    echo '<a href="' . esc_url(home_url('/companies/')) . '"' . fic_tracking_attr('theme_hub_next', '企業を探す') . '>企業を探す</a>';
+    echo '<a href="' . esc_url(home_url('/learn/')) . '"' . fic_tracking_attr('theme_hub_next', '投資の読み方') . '>投資の読み方</a>';
+    echo '<a href="' . esc_url(home_url('/')) . '"' . fic_tracking_attr('theme_hub_next', 'トップページ') . '>トップページ</a>';
+    echo '</div>';
+    echo '</section>';
+    echo '</div>';
+
+    return ob_get_clean();
+}
+}
+
+if (!function_exists('fic_theme_hub_shortcode')) {
+function fic_theme_hub_shortcode() {
+    return fic_render_theme_hub();
+}
+}
+add_shortcode('fic_theme_hub', 'fic_theme_hub_shortcode');
+
+if (!function_exists('fic_render_learning_hub')) {
+function fic_render_learning_hub() {
+    $learning_categories = ['投資の読み方', '基礎講座', 'ビギナーガイド'];
+    $learning_count = fic_get_category_post_count_by_name($learning_categories);
+    $latest_posts = fic_get_latest_posts_by_category_name($learning_categories, 6);
+    $learning_topics = [
+        ['label' => 'First', 'title' => '決算短信の読み方', 'body' => '売上、営業利益、会社予想、進捗率を最初に確認する。', 'query' => '決算短信 読み方'],
+        ['label' => 'Margin', 'title' => '利益率を見る', 'body' => '売上が伸びても利益が増えない理由を、粗利率と販管費から読む。', 'query' => '営業利益率 粗利率'],
+        ['label' => 'KPI', 'title' => '受注残・在庫を見る', 'body' => '次の売上や値下げリスクにつながる先行指標を確認する。', 'query' => '受注残 在庫'],
+        ['label' => 'Finance', 'title' => '財務とROEを見る', 'body' => '自己資本、キャッシュフロー、ROEを成長余力とリスクに分ける。', 'query' => 'ROE 財務'],
+        ['label' => 'Company', 'title' => '企業分析の読み順', 'body' => '30秒要約から、売上、利益率、中計、リスクへ順番に読む。', 'query' => '企業分析 読み方'],
+    ];
+    $reading_steps = [
+        ['label' => '01', 'title' => 'まず決算の数字を読む', 'body' => '売上、営業利益、会社予想、進捗率だけを先に確認します。'],
+        ['label' => '02', 'title' => '数字が動いた理由を見る', 'body' => '数量、単価、為替、原材料、人件費など、利益の変化点を探します。'],
+        ['label' => '03', 'title' => '次に確認するKPIを決める', 'body' => '受注、在庫、稼働率、月次、会社予想のどれを見るべきかを決めます。'],
+    ];
+    $investment_reading_items = [
+        ['label' => 'First', 'title' => '決算短信の読み方', 'body' => '売上、営業利益、会社予想、進捗率を最初に確認する。', 'slug' => 'kessan-tanshin-reading-guide'],
+        ['label' => 'Margin', 'title' => '営業利益率とは何か', 'body' => '売上が伸びても利益が増えない理由を読む。', 'slug' => 'operating-margin-guide'],
+        ['label' => 'KPI', 'title' => '受注残と在庫の見方', 'body' => '次の売上と値下げリスクにつながる先行指標を見る。', 'slug' => 'orders-backlog-inventory-guide'],
+        ['label' => 'ROE', 'title' => 'ROEとROICの違い', 'body' => '資本効率と事業の稼ぐ力を分けて確認する。', 'slug' => 'roe-roic-guide'],
+        ['label' => 'Segment', 'title' => 'セグメント情報の読み方', 'body' => 'どの事業が売上と利益を動かしたかを読む。', 'slug' => 'segment-information-guide'],
+        ['label' => 'Cash', 'title' => 'キャッシュフロー計算書の見方', 'body' => '利益と現金のズレ、投資余力、財務リスクを見る。', 'slug' => 'cash-flow-guide'],
+    ];
+
+    ob_start();
+
+    echo '<div class="fic-home fic-learning-hub">';
+    echo '<section class="fic-hub-hero" aria-labelledby="fic-learning-hub-title">';
+    echo '<a class="fic-hub-home-link" href="' . esc_url(home_url('/')) . '"' . fic_tracking_attr('learning_hub_hero', 'トップページへ') . '>トップページへ</a>';
+    echo '<p class="fic-home-section-label">Learning Hub</p>';
+    echo '<h1 id="fic-learning-hub-title">投資の読み方</h1>';
+    echo '<p>企業分析を読むために必要な、決算・利益率・受注残・在庫・財務の見方を短く整理します。</p>';
+    echo '<div class="fic-hub-hero-meta">';
+    if ($learning_count) {
+        echo '<span><strong>' . esc_html(number_format_i18n((int) $learning_count)) . '</strong>本の投資の読み方</span>';
+    }
+    echo '<a href="' . esc_url(fic_get_category_url_by_names($learning_categories, '/category/')) . '"' . fic_tracking_attr('learning_hub_hero', '投資の読み方一覧') . '>投資の読み方一覧</a>';
+    echo '</div>';
+    echo '<form class="fic-home-search fic-hub-search" role="search" method="get" action="' . esc_url(home_url('/')) . '">';
+    echo '<label for="fic-learning-hub-search">知りたい指標を検索</label>';
+    echo '<div class="fic-home-search-row">';
+    echo '<input id="fic-learning-hub-search" type="search" name="s" placeholder="例：営業利益率、受注残、ROE、在庫" value="' . esc_attr(get_search_query()) . '">';
+    echo '<button type="submit">検索</button>';
+    echo '</div>';
+    echo '</form>';
+    echo '</section>';
+    echo fic_render_hub_nav('learning');
+
+    echo '<section class="fic-home-section fic-hub-guide" aria-labelledby="fic-learning-topic-title">';
+    echo '<div class="fic-home-section-head">';
+    echo '<p class="fic-home-section-label">Topics</p>';
+    echo '<h2 id="fic-learning-topic-title">知りたいことから選ぶ</h2>';
+    echo '<p>記事を読む前に、つまずきやすい数字の意味を先に押さえます。</p>';
+    echo '</div>';
+    echo '<div class="fic-hub-card-grid">';
+    foreach ($learning_topics as $topic) {
+        echo '<a class="fic-hub-card" href="' . esc_url(home_url('/?s=' . rawurlencode($topic['query']))) . '"' . fic_tracking_attr('learning_hub_topic', $topic['title']) . '>';
+        echo '<span>' . esc_html($topic['label']) . '</span>';
+        echo '<strong>' . esc_html($topic['title']) . '</strong>';
+        echo '<p>' . esc_html($topic['body']) . '</p>';
+        echo '</a>';
+    }
+    echo '</div>';
+    echo '</section>';
+
+    echo '<section class="fic-home-section fic-home-route" aria-labelledby="fic-learning-route-title">';
+    echo '<div class="fic-home-section-head">';
+    echo '<p class="fic-home-section-label">Route</p>';
+    echo '<h2 id="fic-learning-route-title">最初の読み順</h2>';
+    echo '<p>初心者はこの順番で読むと、企業分析の記事がかなり楽になります。</p>';
+    echo '</div>';
+    echo '<div class="fic-home-route-grid">';
+    foreach ($reading_steps as $step) {
+        echo '<div class="fic-home-route-step">';
+        echo '<span>' . esc_html($step['label']) . '</span>';
+        echo '<strong>' . esc_html($step['title']) . '</strong>';
+        echo '<p>' . esc_html($step['body']) . '</p>';
+        echo '</div>';
+    }
+    echo '</div>';
+    echo '</section>';
+
+    echo '<section class="fic-home-section fic-hub-guide" aria-labelledby="fic-investment-reading-title">';
+    echo '<div class="fic-home-section-head">';
+    echo '<p class="fic-home-section-label">Reading Guides</p>';
+    echo '<h2 id="fic-investment-reading-title">まず読む投資の読み方</h2>';
+    echo '<p>企業分析でよく出る指標と決算用語を、先に短く確認できます。</p>';
+    echo '</div>';
+    echo '<div class="fic-hub-card-grid">';
+    foreach ($investment_reading_items as $item) {
+        echo '<a class="fic-hub-card" href="' . esc_url(fic_get_post_url_by_slug($item['slug'], '/' . $item['slug'] . '/')) . '"' . fic_tracking_attr('learning_hub_reading', $item['title']) . '>';
+        echo '<span>' . esc_html($item['label']) . '</span>';
+        echo '<strong>' . esc_html($item['title']) . '</strong>';
+        echo '<p>' . esc_html($item['body']) . '</p>';
+        echo '</a>';
+    }
+    echo '</div>';
+    echo '</section>';
+
+    echo '<section class="fic-home-section fic-home-latest" aria-labelledby="fic-learning-latest-title">';
+    echo '<div class="fic-home-section-head">';
+    echo '<p class="fic-home-section-label">Latest Basics</p>';
+    echo '<h2 id="fic-learning-latest-title">最新の投資の読み方</h2>';
+    echo '<p>決算や企業分析を読むための土台になる記事です。</p>';
+    echo '</div>';
+    if (!empty($latest_posts)) {
+        echo '<div class="fic-hub-latest-grid">';
+        foreach ($latest_posts as $post) {
+            $excerpt_source = has_excerpt($post) ? $post->post_excerpt : $post->post_content;
+            echo '<a class="fic-home-latest-card fic-hub-latest-card" href="' . esc_url(get_permalink($post)) . '"' . fic_tracking_attr('learning_hub_latest', get_the_title($post)) . '>';
+            echo '<time datetime="' . esc_attr(get_the_date('c', $post)) . '">' . esc_html(get_the_date('Y年n月j日', $post)) . '</time>';
+            echo '<strong>' . esc_html(get_the_title($post)) . '</strong>';
+            echo '<span>' . esc_html(fic_trim_plain_text($excerpt_source, 92)) . '</span>';
+            echo '</a>';
+        }
+        echo '</div>';
+    } else {
+        echo '<p class="fic-home-latest-empty">投資の読み方の記事を準備しています。</p>';
+    }
+    echo '</section>';
+
+    echo '<section class="fic-home-section fic-home-trust fic-hub-next" aria-labelledby="fic-learning-next-title">';
+    echo '<div>';
+    echo '<p class="fic-home-section-label">Next</p>';
+    echo '<h2 id="fic-learning-next-title">実際の記事で確認する</h2>';
+    echo '<p>基礎を押さえたら、気になる企業やニュース材料で、売上・利益率・KPIの変化を確認します。</p>';
+    echo '</div>';
+    echo '<div class="fic-home-trust-links">';
+    echo '<a href="' . esc_url(home_url('/companies/')) . '"' . fic_tracking_attr('learning_hub_next', '企業で試す') . '>企業で試す</a>';
+    echo '<a href="' . esc_url(home_url('/themes/')) . '"' . fic_tracking_attr('learning_hub_next', '材料で試す') . '>材料で試す</a>';
+    echo '<a href="' . esc_url(home_url('/')) . '"' . fic_tracking_attr('learning_hub_next', 'トップページ') . '>トップページ</a>';
+    echo '</div>';
+    echo '</section>';
+    echo '</div>';
+
+    return ob_get_clean();
+}
+}
+
+if (!function_exists('fic_learning_hub_shortcode')) {
+function fic_learning_hub_shortcode() {
+    return fic_render_learning_hub();
+}
+}
+add_shortcode('fic_learning_hub', 'fic_learning_hub_shortcode');
 
 function fic_find_post_by_company_name($company_name) {
     $posts = get_posts([

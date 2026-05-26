@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FIC Responsive QA</title>
+  <style>
+    body {
+      margin: 0;
+      background: #f5f6f8;
+      color: #25252a;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    main {
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 28px 0 48px;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: 1.5rem;
+      line-height: 1.35;
+    }
+
+    p {
+      margin: 0 0 20px;
+      color: #5b6472;
+      line-height: 1.7;
+    }
+
+    .qa-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .qa-frame {
+      min-width: 0;
+      background: #ffffff;
+      border: 1px solid #e4e4e7;
+      border-radius: 8px;
+      box-shadow: 0 10px 24px rgba(31, 31, 35, 0.06);
+      overflow: hidden;
+    }
+
+    .qa-frame h2 {
+      margin: 0;
+      padding: 12px 14px;
+      background: #1f1f23;
+      color: #ffd500;
+      font-size: 0.95rem;
+      line-height: 1.35;
+    }
+
+    iframe {
+      display: block;
+      width: 390px;
+      max-width: 100%;
+      height: 1280px;
+      margin: 0 auto;
+      background: #f5f6f8;
+      border: 0;
+    }
+
+    @media (max-width: 900px) {
+      .qa-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>FIC Responsive QA</h1>
+    <p>スマホ幅390px相当で、トップページと3つの固定ページハブを並べて確認するためのローカル用ページです。</p>
+
+    <div class="qa-grid">
+      <section class="qa-frame">
+        <h2>Top / 390px</h2>
+        <iframe src="fic-home-page-mvp-preview.html" title="Top page mobile preview"></iframe>
+      </section>
+      <section class="qa-frame">
+        <h2>Company Hub / 390px</h2>
+        <iframe src="fic-company-hub-preview.html" title="Company hub mobile preview"></iframe>
+      </section>
+      <section class="qa-frame">
+        <h2>Theme Hub / 390px</h2>
+        <iframe src="fic-theme-hub-preview.html" title="Theme hub mobile preview"></iframe>
+      </section>
+      <section class="qa-frame">
+        <h2>Learning Hub / 390px</h2>
+        <iframe src="fic-learning-hub-preview.html" title="Learning hub mobile preview"></iframe>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
