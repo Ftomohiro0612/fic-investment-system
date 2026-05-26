@@ -41,8 +41,9 @@ Claudeが作成した業界分析記事をCodexでレビューし、必要な修
 2. 確定/報道/仮説の区別を確認する
 3. 見出し階層、表、図表位置、参照資料形式を整える
 4. タイトル、冒頭、30秒要約、FAQの読みやすさと表現強度を確認する
-5. 必要なら codex_reviewed_article.html を作る
-6. review_notes に Codexレビュー結果を追記する
+5. `node scripts/audit_article_heading_hierarchy.mjs work/industry_analysis/{slug}/codex_reviewed_article.html` を実行し、H2だけで長い章が残っていないか確認する
+6. 必要なら codex_reviewed_article.html を作る
+7. review_notes に Codexレビュー結果を追記する
 
 完了条件:
 - codex_reviewed_article.html
@@ -69,3 +70,5 @@ Claudeが作成した業界分析記事をCodexでレビューし、必要な修
 - 比較記事に分かりやすい説明パーツがある場合、因果の安全性をCodex/Claude版に合わせたうえで、用語解説、利益計算式、工程説明などの教育的パーツだけを移植できないか確認する。
 - 粗利率影響、在庫月数、価格影響などの独自数値を出す場合は、会社開示値かFIC前提付き試算かを明記し、前提条件、対象売上比率、価格転嫁率、工期遅延率などを添える。根拠が弱い数値は `小幅な下押し圧力` のような定性表現に弱める。
 - 先行指標表には、可能な限り `更新頻度` と `主な確認先` を入れる。読者が次にいつ、どの資料を見ればよいか分かる表にする。
+- H2はテーマの大きな問い、H3は章内の確認ポイントとして使う。影響経路、関連銘柄、業績ドライバー、先行指標、3シナリオが長くなる場合はH3で分ける。
+- 仕上げ時に `node scripts/audit_article_heading_hierarchy.mjs work/industry_analysis/{slug}/codex_reviewed_article.html` を実行し、`work/article-heading-hierarchy-audit.md` の `Review needed` が `None` になっていることを確認する。

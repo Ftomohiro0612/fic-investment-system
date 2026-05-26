@@ -1,0 +1,29 @@
+﻿body { margin: 0; background: #f5f6f8; color: #17191f; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.8; }
+a { color: inherit; }
+.wrap { width: min(1040px, calc(100% - 32px)); margin: 0 auto; padding: 32px 0 56px; }
+.hero { background: #111318; color: #fff; border-bottom: 5px solid #ffd400; padding: 28px; margin-bottom: 24px; }
+.hero p { color: #d7dde8; margin: 8px 0 0; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; }
+.card { display: block; background: #fff; border: 1px solid #dfe3ea; border-radius: 8px; overflow: hidden; text-decoration: none; box-shadow: 0 10px 28px rgba(15, 23, 42, .08); }
+.card img { width: 100%; aspect-ratio: 1200 / 630; object-fit: cover; display: block; }
+.card div { padding: 14px; }
+.card span, .meta { color: #8a6f00; font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: .04em; }
+.card strong { display: block; font-size: 17px; line-height: 1.5; margin-top: 6px; }
+.article { background: #fff; padding: 28px; border: 1px solid #dfe3ea; border-radius: 8px; }
+.article img.eyecatch { width: 100%; border-radius: 8px; margin-bottom: 24px; display: block; }
+.article h1 { font-size: 34px; line-height: 1.35; margin: 6px 0 14px; }
+.article h2 { border-left: 6px solid #ffd400; padding-left: 12px; margin-top: 34px; }
+.article table { width: 100%; border-collapse: collapse; }
+.article th, .article td { border: 1px solid #dfe3ea; padding: 10px; vertical-align: top; }
+.article th { background: #f7f8fb; }
+.one-liner-summary, .summary-box, .definition-lead, .beginner-box, .formula-box { background: #f7f8fb; border-left: 5px solid #ffd400; padding: 14px 16px; margin: 18px 0; }
+.fic-article-after-nav { margin: 38px 0 22px; padding: 22px; background: linear-gradient(135deg, #111318 0%, #1b1b1f 58%, #4c4100 100%); border-bottom: 5px solid #ffd400; color: #fff; }
+.fic-article-after-nav-label { margin: 0 0 8px; color: #ffd400; font-size: 12px; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; }
+.fic-article-after-nav-lead { margin: 0 0 16px; color: #edf1f7; font-weight: 700; }
+.fic-article-after-nav-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+.fic-article-after-nav a { display: block; min-height: 96px; padding: 14px; background: rgba(255,255,255,.08); border: 1px solid rgba(255,212,0,.32); color: #fff; text-decoration: none; }
+.fic-article-after-nav strong, .fic-article-after-nav span { display: block; }
+.fic-article-after-nav strong { margin-bottom: 6px; color: #ffd400; font-size: 17px; line-height: 1.45; }
+.fic-article-after-nav span { color: #d7dde8; font-size: 14px; line-height: 1.65; }
+@media (max-width: 760px) { .article { padding: 18px; } .article h1 { font-size: 26px; } .fic-article-after-nav { padding: 18px; } .fic-article-after-nav-grid { grid-template-columns: 1fr; } .fic-article-after-nav a { min-height: auto; } }
+.back { display: inline-block; margin-bottom: 18px; color: #8a6f00; font-weight: 800; text-decoration: none; }
