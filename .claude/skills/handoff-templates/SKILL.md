@@ -21,15 +21,19 @@ description: 工程間の引き継ぎファイル handoff_{from}_to_{to}.md の�
 
 | 役員 | いつ書くか | 主な渡し先 |
 |---|---|---|
-| `researcher_company` / `researcher_industry` | 投入パック完成時 | writer |
-| `writer` | 記事3点（メモ/HTML/review_notes）完成時 | reviewer |
-| `reviewer` | 編集判断レビュー確定時（修正はwriterへ差し戻し） | designer |
-| `designer` | 画像作成・WP反映完了時 | x_writer / videographer（＋AI画像はCodex） |
+| `researcher_company` | 企業版 投入パック完成時 | writer |
+| `researcher_industry` | 業界版 投入パック完成時 | **writer_industry**（Phase 5・writer_industry 分離後の正式名称） |
+| `writer` | 企業版 記事3点（memo/HTML/review_notes）完成時 | reviewer |
+| `writer_industry` | 業界版 記事3点（memo_v3/HTML_v3/review_notes_v3）完成時 | reviewer |
+| `reviewer` | 編集判断レビュー確定時（修正は writer / writer_industry へ差し戻し） | designer（企業版）／designer_industry（業界版・段階4で起草） |
+| `designer` / `designer_industry` | 画像作成・WP反映完了時 | x_writer / videographer（＋AI画像はCodex） |
 | `videographer` | 台本・図解素材・構成確定時 | Codex（TTS/レンダ/アップ） |
 | `x_writer` | X投稿文確定・Sheets記録時 | （終端／FIC） |
 | `scout` / `theme_scout` | 候補をFICが採択し案件化したとき（標準handoff） | researcher_company / researcher_industry |
 
-> writer⇄reviewer の修正往復は subagent 間の内部ループで、**外部handoffは「writer→reviewer」と「reviewer→designer」の確定時のみ**作る（フェーズ4 C-2 / 6-4）。
+> writer/writer_industry ⇄ reviewer の修正往復は subagent 間の内部ループで、**外部handoffは「writer→reviewer / writer_industry→reviewer」と「reviewer→designer / reviewer→designer_industry」の確定時のみ**作る（フェーズ4 C-2 / 6-4）。
+>
+> **Phase 5（業界版 writer_industry 分離後）の設計判断**：reviewer は1ロールで企業版/業界版両対応（`.claude/agents/reviewer.md` 内で §1点検項目を企業版/業界版に分岐）。designer も現状は1ロール（designer_industry は段階4で起草予定）。writer/writer_industry はロール分離（記事構造・横串原則・L-027業界版3階層運用が異なるため）。
 
 ---
 
@@ -38,20 +42,35 @@ description: 工程間の引き継ぎファイル handoff_{from}_to_{to}.md の�
 - 命名: **`handoff_{from}_to_{to}.md`**（from/to は役員名のsnake_case）。
 - 配置: **対象案件フォルダ内**（企業 `work/company_analysis/{code}_{company}/`、業界 `work/industry_analysis/{slug}/`）。`_handoffs/` 等に集約しない（フェーズ4 7-7）。
 
-標準 handoff 一覧（10本：パイプライン本線8 ＋ Codex連携特殊2）:
+標準 handoff 一覧（12本：パイプライン本線10 ＋ Codex連携特殊2）:
 
 | ファイル名 | 区間 | 備考 |
 |---|---|---|
 | `handoff_scout_to_researcher_company.md` | 企業 銘柄採択 → 資料作成 | FIC採択時に作成 |
 | `handoff_theme_scout_to_researcher_industry.md` | 業界 テーマ採択 → 資料作成 | FIC採択時に作成 |
-| `handoff_researcher_company_to_writer.md` | 企業 資料作成 → 記事作成 | |
-| `handoff_researcher_industry_to_writer.md` | 業界 資料作成 → 記事作成 | |
-| `handoff_writer_to_reviewer.md` | 記事作成 → レビュー | |
-| `handoff_reviewer_to_designer.md` | レビュー → 画像・WP反映 | |
-| `handoff_designer_to_x_writer.md` | 画像・WP反映 → X投稿 | |
-| `handoff_designer_to_videographer.md` | 画像・WP反映 → 動画 | |
+| `handoff_researcher_company_to_writer.md` | 企業 資料作成 → 企業版 記事作成 | |
+| `handoff_researcher_industry_to_writer_industry.md` | 業界 資料作成 → 業界版 記事作成 | Phase 5（writer_industry 分離）。旧名 `handoff_researcher_industry_to_writer.md` は廃止 |
+| `handoff_writer_to_reviewer.md` | 企業版 記事作成 → レビュー | reviewer 企業版経路 |
+| `handoff_writer_industry_to_reviewer.md` | 業界版 記事作成 → レビュー | Phase 5（writer_industry 分離）。reviewer 業界版経路 |
+| `handoff_reviewer_to_designer.md` | レビュー → 企業版 画像・WP反映 | designer 企業版経路 |
+| `handoff_reviewer_to_designer_industry.md` | レビュー → 業界版 画像・WP反映 | Phase 5（designer_industry は段階4で起草予定）。reviewer 業界版経路 |
+| `handoff_designer_to_x_writer.md` | 画像・WP反映 → X投稿 | designer/designer_industry いずれも from に入り得る |
+| `handoff_designer_to_videographer.md` | 画像・WP反映 → 動画 | designer/designer_industry いずれも from に入り得る |
 | `handoff_designer_to_codex_image.md` | designer → Codex（AI画像生成発注） | 特殊: AI画像のプロンプト発注書（[[ai-image-prompt-rules]] 由来） |
 | `handoff_videographer_to_codex_render.md` | videographer → Codex（TTS/レンダ/アップ） | 特殊: 実行系をCodexへ |
+
+### 業界版のバリエーション（差し戻し時のバージョン管理）
+
+業界版は researcher_industry → writer_industry → reviewer → designer_industry の4段で **差し戻し循環構造** を持つ（[[writer_industry]] §7.2／researcher_industry handoff §3.2 の3レベル判定）。差し戻し時のhandoff命名：
+
+| バリエーション | ファイル名 | 用途 |
+|---|---|---|
+| 初版 | `handoff_researcher_industry_to_writer_industry.md` | 通常 |
+| 補足追加（レベル2差し戻し） | `handoff_researcher_industry_to_writer_industry_supplement.md` | 軽微な追加調査・pack素材補足 |
+| マイナー更新（レベル3差し戻し） | `handoff_researcher_industry_to_writer_industry_v3.1.md` | pack 構造変更（部分） |
+| メジャー更新（レベル3差し戻し・構造大改訂） | `handoff_researcher_industry_to_writer_industry_v4.md` | pack 構造変更（全体） |
+
+→ 旧handoff（初版）は **履歴として保持・上書きしない**。バージョン管理ルールは researcher_industry handoff §3.2 に正本。
 
 ---
 
