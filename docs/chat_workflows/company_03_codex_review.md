@@ -40,9 +40,10 @@ Claudeが作成した企業分析記事をCodexでレビューし、必要な修
 1. 数値、単位、年度、会計指標を確認する
 2. 因果関係が薄い箇所を補う
 3. 表の向き、見出し、用語メモ、関連銘柄、関連テーマを確認する
-4. Claudeが修正した最新版 `claude_article.html` を確認し、必要なら `codex_reviewed_article.html` へ取り込んだ上でCodex修正を再適用する
-5. 必要なら codex_reviewed_article.html を作る
-6. claude_review_notes.md 末尾に Codexレビュー結果を追記する
+4. 見出し階層を確認し、H2だけで長い章はH3で分割する
+5. Claudeが修正した最新版 `claude_article.html` を確認し、必要なら `codex_reviewed_article.html` へ取り込んだ上でCodex修正を再適用する
+6. 必要なら codex_reviewed_article.html を作る
+7. claude_review_notes.md 末尾に Codexレビュー結果を追記する
 
 完了条件:
 - codex_reviewed_article.html
@@ -65,6 +66,8 @@ Claudeが作成した企業分析記事をCodexでレビューし、必要な修
 - `one-liner-summary`、`definition-lead`、`summary-box` が各1件ある。
 - H2 1〜12の章導入 `<em>` が12件ある。
 - H2 1〜12の章末まとめが全章にある。王子HD型の `<strong>結局、N章のまとめは：</strong>` と既存インライン型のどちらでもよいが、12章カバーを確認する。
+- H2は大きな問い、H3は章内の確認ポイントとして使われている。長いH2本文、複数論点、表が複数ある章はH3で分割されている。
+- `node scripts/audit_article_heading_hierarchy.mjs work/company_analysis/{code}_{company}/codex_reviewed_article.html` を実行し、`work/article-heading-hierarchy-audit.md` の `Review needed` が `None` になっている。
 - 必須グラフマーカー3箇所（5.1、6章、8章）がある。
 - 画像連動マーカー2箇所がある。
 - 参照リンク数がhandoffまたは作成者申告と一致する。
@@ -79,6 +82,7 @@ Claudeが作成した企業分析記事をCodexでレビューし、必要な修
 ```bash
 rg -n '<h1|class="one-liner-summary"|class="definition-lead"|class="summary-box"|<em>|<strong>結局、|article_title:|slug:' work/company_analysis/{code}_{company}/codex_reviewed_article.html
 rg -n '要確認|要追加確認|未確認|リンク未取得|TODO|FIXME|セグメント別利益|2027年3月期通期予想|円高反転|円安進行|圧倒的|独占|崩壊|TSMC直撃|V字回復' work/company_analysis/{code}_{company}/codex_reviewed_article.html
+node scripts/audit_article_heading_hierarchy.mjs work/company_analysis/{code}_{company}/codex_reviewed_article.html
 ```
 
 ## 次工程handoff必須事項
