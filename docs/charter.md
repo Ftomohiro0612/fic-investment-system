@@ -59,9 +59,19 @@
 - 直近の重要 decision-log: [DEC-2026-06-02-project-scope-and-priority](https://github.com/Ftomohiro0612/ai-agent-control-center/blob/main/docs/decision-log/2026-06-02-project-scope-and-priority.md)
 - 追跡アンカー: [Issue #10](https://github.com/Ftomohiro0612/fic-investment-system/issues/10)
 
+### 用語・フェーズ定義の在処（索引）
+
+本charter・[Issue #10](https://github.com/Ftomohiro0612/fic-investment-system/issues/10) に出てくる記事制作ワークフローのフェーズ（`Phase1〜5`）の定義は下記にある（用語の中身は本フォルダが正本。ここは「どこを見れば分かるか」の索引）：
+
+- `Phase1〜2`（現状整理） → `docs/chat_workflows/_analysis/phase1_2_current_state.md`
+- `Phase3`（設計方針） → `docs/chat_workflows/_analysis/phase3_design_direction.md`
+- `Phase4`（確定設計） → `docs/chat_workflows/_analysis/phase4_final_design.md`
+- `Phase5`（パイロット計画＝writer/reviewer/researcher系のsubagent化） → `docs/chat_workflows/_analysis/phase5_pilot_plan.md`
+
 ### 変更履歴
 
 | 日付 | 変更者 | 変更内容 | 紐づく decision-log |
 |---|---|---|---|
 | 2026-06-02 | AI PM候補（Claude Code） | charter初版ドラフト作成（§2/§5起案、§3/§4/§6/§7 確認待ち） | DEC-2026-06-02-management-fields-and-charter |
 | 2026-06-02 | AI PM候補（Claude Code） | オーナー確認で §3 収益方針（収益化＝広告・アフィリエイト）・§4 KPI（検索流入・PV成長）・§6 投資助言の線引き（助言せず情報提供に徹する）を確定。残 §7＝KPI目標値 | DEC-2026-06-02-management-fields-and-charter |
+| 2026-06-02 | 統括PM代行（Claude Code） | フッターに「用語・フェーズ定義の在処（索引）」を追加し Phase1〜5 の定義文書をリンク（散らばり防止の共通ルール） | DEC-2026-06-02-management-fields-and-charter |
