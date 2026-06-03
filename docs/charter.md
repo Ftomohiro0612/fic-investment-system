@@ -9,7 +9,7 @@
 | プロジェクトPM | AI PM候補（暫定 / Claude Code） |
 | 優先度 | 高（正本は [project-map.md](https://github.com/Ftomohiro0612/ai-agent-control-center/blob/main/docs/project-map.md)。[DEC-2026-06-02-project-scope-and-priority](https://github.com/Ftomohiro0612/ai-agent-control-center/blob/main/docs/decision-log/2026-06-02-project-scope-and-priority.md) で確定） |
 | charter状態 | 初版完成（KPI目標値のみ §7 で確認待ち） |
-| 最終更新日 | 2026-06-02 |
+| 最終更新日 | 2026-06-03 |
 
 ## 2. 目的・対象（Why / Who）
 
@@ -35,10 +35,14 @@
 
 ## 5. 直近の重点（90日ロードマップ）
 
-- **①構造テンプレ PoC**：銘柄ページの固定枠（thesis/drivers/KPI/valuation view/反証条件/sources/updated_at）を確立し、キオクシアのハブPoCで実装・検証。
-- **②重点銘柄の定点運用**：Tier A 5〜8社を選定し、決算速報（T+1/T+2 の定点レビュー）を回し始める。Tier B 10〜20社は重要決算・検索需要時のみ、Tier C は既存資産の保守。
-- **③AI引用設計**：構造化データ・出典明記・llms.txt・可視クイックアンサーで「AIに引用される側」に立つ設計を実装。
-- 並行：**Astro 移行 PoC**（[#23](https://github.com/Ftomohiro0612/fic-investment-system/issues/23)）＝資産化の"器"。クリック地図ハブ（[kessan-yomu/docs/company-hub-design.md](https://github.com/Ftomohiro0612/kessan-yomu)）で構造を人とAIに引ける形に。記事制作フローの subagent 化（Phase 5）。
+> 詳細・確定版＝[docs/roadmap_90day.md](roadmap_90day.md)（v2・Codex条件付きGO反映済 2026-06-03。FICが判断をCodexに委任→条件付きGO→条件反映で確定）。以下は要約。
+> 実行優先順（Codex既GO）：**②構造 → ①判断 → ④ブランド → ③鮮度**。スプリント＝30日×3。
+
+- **Sprint 1（6/3〜7/3）②構造**：固定枠スキーマ（thesis/drivers/KPI/valuation/反証条件/sources/updated_at＋限界明記）を確定→Astro schema化→キオクシアで全枠充足→**schema凍結**→TierA最終選定。キオクシアのハブPoC仕上げを並行。ゲート①＝schema凍結＋TierAリスト確定（要FIC承認）。
+- **Sprint 2（7/4〜8/3）①判断＋③橋の試作**：TierAを固定枠で構造化（**5社必達／6〜8社ストレッチ**）。決算速報＝**橋の試作1本**（キオクシア・noindex・相互リンク・反証条件ログに限定、固定枠確定後の時限タスク、遅延時S3繰越）。編集確定原則をwriter/reviewer SOPへ恒久ルール化。ゲート②＝二層構造の運用可否（要FIC承認）。
+- **Sprint 3（8/4〜9/1）⑤AI引用＋④ブランド＋切替準備**：llms.txt・JSON-LD・可視クイックアンサーで「AIに引用される側」に。リブランド体系PoC先行。旧→新301マッピング設計（切替は次フェーズ）。資産KPI初回ベースライン計測。
+- **KPI 2系統**：(A)90日実務KPI＝固定枠実装率（TierA上位5社100%）／速報橋1本／AI被引用ベースライン。(B)charter §7事業KPI目標値は[#10](https://github.com/Ftomohiro0612/fic-investment-system/issues/10)に分離（本ロードマップでは確定しない）。ガードレール＝GSC流入/PV/広告収益の下げ止め。
+- 並行：**Astro 移行 PoC**（[#23](https://github.com/Ftomohiro0612/fic-investment-system/issues/23)）＝資産化の"器"。記事制作フローの subagent 化（Phase 5）。
 - ※すべて根幹方針（[DEC-2026-06-03-ai-era-analysis-asset-direction](https://github.com/Ftomohiro0612/ai-agent-control-center/blob/main/docs/decision-log/2026-06-03-ai-era-analysis-asset-direction.md)）に収束。
 
 ## 6. やらないこと・制約
@@ -83,3 +87,4 @@
 | 2026-06-02 | 統括PM代行（Claude Code） | フッターに「用語・フェーズ定義の在処（索引）」を追加し Phase1〜5 の定義文書をリンク（散らばり防止の共通ルール） | DEC-2026-06-02-management-fields-and-charter |
 | 2026-06-02 | 暫定PM（Claude Code） | §6 を「独自CMSは作らず既存WordPress」から「WordPress → Astro 段階移行＋リブランド」へ改訂、§5 に Astro PoC 着手を追加、フッターの直近 decision-log を差し替え | DEC-2026-06-02-astro-migration-and-rebrand |
 | 2026-06-03 | 暫定PM（Claude Code） | 根幹方針「AI時代の資産化」をオーナー承認。§2 目的に資産化方針を追記、§3 を短期収益（ガードレール）＋中期収益に再構成、§4 を資産KPI（先行＝構造テンプレ実装率／遅行＝AI被引用・ブランド指名）＋PV/収益ガードレールへ、§5 を90日ロードマップ（構造テンプレPoC→重点銘柄定点→AI引用設計）へ改訂 | DEC-2026-06-03-ai-era-analysis-asset-direction |
+| 2026-06-03 | 暫定PM（Claude Code） | 90日ロードマップを実行版（v2）に具体化＝[docs/roadmap_90day.md](roadmap_90day.md)新設（30日×3スプリント・依存順・判断ゲート・先行KPIベースライン）。§5 を参照型要約に更新。承認経路＝FICが判断をCodexに委任→Codex条件付きGO（S2-1の5社必達化・S2-2スコープ限定/時限化・ゲート①へschema凍結追加・KPI 2系統分離）反映 | DEC-2026-06-03-ai-era-analysis-asset-direction |
