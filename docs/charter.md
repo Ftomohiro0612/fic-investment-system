@@ -13,28 +13,33 @@
 
 ## 2. 目的・対象（Why / Who）
 
-`fic-investment.biz` で、企業分析・業界分析・投資の読み方を、**会計士視点の分析深度を保ちつつ初心者にも分かりやすく**届ける投資情報メディア。従来の「記事が並ぶサイト」から、読者が目的別（企業／テーマ／投資の読み方／決算予定）に入口を選べるメディアへ移行中。対象は、投資判断の材料を自分で調べたい個人投資家・投資初学者。
+日本株の決算を、**一次資料に基づくFIC独自の会計士分析**で読み解く投資情報メディア（ブランド「会計士とよむ決算」）。**会計士視点の分析深度を保ちつつ初心者にも分かりやすく**届ける。対象は、投資判断の材料を自分で調べたい個人投資家・投資初学者。
+
+**根幹方針（AI時代の資産化・2026-06-03オーナー承認）**：クリックを奪い合うメディアではなく、**信頼される・構造化された・更新され続ける"分析資産"**にする。**人が常連として戻り、AIが出典として引用する**二方向の依存を作ることで、AI時代に埋もれない資産を目指す。柱は①判断（責任ある会計士の見立て）②構造（ドライバー/KPI/反証条件/バリュエーション/出典/更新履歴の定型枠＝最優先）③鮮度（決算速報の定点運用）④信頼ブランド ＋⑤AI引用前提設計。正本＝[DEC-2026-06-03-ai-era-analysis-asset-direction](https://github.com/Ftomohiro0612/ai-agent-control-center/blob/main/docs/decision-log/2026-06-03-ai-era-analysis-asset-direction.md)。
 
 ## 3. 価値・収益方針
 
 - 区分: 収益化
-- 補足: 広告・アフィリエイト。検索流入・PVを増やし、広告／アフィリエイト経由で収益を得る。
+- **短期（燃料・最低維持ライン）**: 広告・アフィリエイト。検索流入・PVを維持し、広告／アフィ経由で収益を得る（※PVは"捨てない"が、北極星ではなく**ガードレール指標**に位置づける＝§4）。
+- **中期（資産化に伴う収益）**: 更新される銘柄台帳・決算ウォッチ・反証条件アラート等を商品化できて初めて、購読・有料が現実的。スポンサーは、**投資助言でない線引き＋利益相反開示**を前提に検討余地（未確定）。
 
 ## 4. 成功条件
 
-主要KPIは検索流入・PVの成長。具体的な目標値・期限はオーナー確認待ち（§7）。
+**北極星＝資産KPI**（資産化の進捗を測る）：①ブランド指名・常連回帰 ②AI被引用 ③決算速報の定点運用 ④判断の深さ・独自角度。AI被引用・ブランド指名は**遅行指標**のため、初期は**先行指標＝「構造化テンプレ（固定枠）の実装率」**を主に追う。具体目標値・期限はオーナー確認待ち（§7・[#10](https://github.com/Ftomohiro0612/fic-investment-system/issues/10)）。
 
-| 指標 / 状態 | 現在 | 目標 | 期限 |
-|---|---|---|---|
-| 検索流入（GSC） | 未測定値の整理中 | 未確定（オーナー判断待ち） | 未確定 |
-| 月間PV（GA4） | 未測定値の整理中 | 未確定（オーナー判断待ち） | 未確定 |
+| 区分 | 指標 | 測り方（初期） |
+|---|---|---|
+| 先行（資産） | 構造化テンプレ実装率 | 固定枠（thesis/drivers/KPI/valuation/反証条件/sources/updated_at）が揃う銘柄ページ比率 |
+| 遅行（資産） | AI被引用・ブランド指名 | 月次手動プロンプト監査（ChatGPT/Perplexity/Gemini）＋GSCブランドクエリ＋GA4 direct/returning＋AI系referrer＋外部引用・SNS言及 |
+| ガードレール | 検索流入（GSC）／月間PV（GA4）／広告・アフィ収益 | 最低維持ライン（下げ止め）。目標値はオーナー判断待ち |
 
-## 5. 直近の重点（1〜3か月）
+## 5. 直近の重点（90日ロードマップ）
 
-- トップページ・ハブ（企業／テーマ／投資の読み方／決算予定）からの回遊導線の磨き込みと、記事本文の初心者向け説明強化（H2/H3階層化の運用定着）
-- Search Console / GA4 のデータをもとにした既存記事のSEOタイトル・導入・内部リンク改善
-- 記事制作フローの subagent 化（Phase 5: writer/reviewer/researcher 系の整備、業界分析パイロット）
-- **Astro 移行 PoC の着手**（[#23](https://github.com/Ftomohiro0612/fic-investment-system/issues/23)）：新ドメイン確定 → 新ブランドで3記事＋schema/Pagefind検索/関連/GA計測 → 旧→新301設計。現行 WP は維持しつつ並行で構築（[DEC-2026-06-02-astro-migration-and-rebrand](https://github.com/Ftomohiro0612/ai-agent-control-center/blob/main/docs/decision-log/2026-06-02-astro-migration-and-rebrand.md)）。
+- **①構造テンプレ PoC**：銘柄ページの固定枠（thesis/drivers/KPI/valuation view/反証条件/sources/updated_at）を確立し、キオクシアのハブPoCで実装・検証。
+- **②重点銘柄の定点運用**：Tier A 5〜8社を選定し、決算速報（T+1/T+2 の定点レビュー）を回し始める。Tier B 10〜20社は重要決算・検索需要時のみ、Tier C は既存資産の保守。
+- **③AI引用設計**：構造化データ・出典明記・llms.txt・可視クイックアンサーで「AIに引用される側」に立つ設計を実装。
+- 並行：**Astro 移行 PoC**（[#23](https://github.com/Ftomohiro0612/fic-investment-system/issues/23)）＝資産化の"器"。クリック地図ハブ（[kessan-yomu/docs/company-hub-design.md](https://github.com/Ftomohiro0612/kessan-yomu)）で構造を人とAIに引ける形に。記事制作フローの subagent 化（Phase 5）。
+- ※すべて根幹方針（[DEC-2026-06-03-ai-era-analysis-asset-direction](https://github.com/Ftomohiro0612/ai-agent-control-center/blob/main/docs/decision-log/2026-06-03-ai-era-analysis-asset-direction.md)）に収束。
 
 ## 6. やらないこと・制約
 
@@ -57,7 +62,7 @@
 - GitHub repo: https://github.com/Ftomohiro0612/fic-investment-system
 - GitHub Project: AI Agent Control Center
 - 最新の週次報告: （未作成）
-- 直近の重要 decision-log: [DEC-2026-06-02-astro-migration-and-rebrand](https://github.com/Ftomohiro0612/ai-agent-control-center/blob/main/docs/decision-log/2026-06-02-astro-migration-and-rebrand.md)（プラットフォーム移行・リブランド）／[DEC-2026-06-02-project-scope-and-priority](https://github.com/Ftomohiro0612/ai-agent-control-center/blob/main/docs/decision-log/2026-06-02-project-scope-and-priority.md)
+- 直近の重要 decision-log: [DEC-2026-06-03-ai-era-analysis-asset-direction](https://github.com/Ftomohiro0612/ai-agent-control-center/blob/main/docs/decision-log/2026-06-03-ai-era-analysis-asset-direction.md)（**根幹方針＝AI時代の資産化**）／[DEC-2026-06-02-astro-migration-and-rebrand](https://github.com/Ftomohiro0612/ai-agent-control-center/blob/main/docs/decision-log/2026-06-02-astro-migration-and-rebrand.md)（プラットフォーム移行・リブランド）
 - 追跡アンカー: [Issue #10](https://github.com/Ftomohiro0612/fic-investment-system/issues/10)
 
 ### 用語・フェーズ定義の在処（索引）
@@ -77,3 +82,4 @@
 | 2026-06-02 | AI PM候補（Claude Code） | オーナー確認で §3 収益方針（収益化＝広告・アフィリエイト）・§4 KPI（検索流入・PV成長）・§6 投資助言の線引き（助言せず情報提供に徹する）を確定。残 §7＝KPI目標値 | DEC-2026-06-02-management-fields-and-charter |
 | 2026-06-02 | 統括PM代行（Claude Code） | フッターに「用語・フェーズ定義の在処（索引）」を追加し Phase1〜5 の定義文書をリンク（散らばり防止の共通ルール） | DEC-2026-06-02-management-fields-and-charter |
 | 2026-06-02 | 暫定PM（Claude Code） | §6 を「独自CMSは作らず既存WordPress」から「WordPress → Astro 段階移行＋リブランド」へ改訂、§5 に Astro PoC 着手を追加、フッターの直近 decision-log を差し替え | DEC-2026-06-02-astro-migration-and-rebrand |
+| 2026-06-03 | 暫定PM（Claude Code） | 根幹方針「AI時代の資産化」をオーナー承認。§2 目的に資産化方針を追記、§3 を短期収益（ガードレール）＋中期収益に再構成、§4 を資産KPI（先行＝構造テンプレ実装率／遅行＝AI被引用・ブランド指名）＋PV/収益ガードレールへ、§5 を90日ロードマップ（構造テンプレPoC→重点銘柄定点→AI引用設計）へ改訂 | DEC-2026-06-03-ai-era-analysis-asset-direction |
