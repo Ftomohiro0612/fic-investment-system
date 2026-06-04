@@ -5,6 +5,8 @@ description: よく読まれる投資記事の一般原則と、FIC独自視点�
 
 # article-design-principles（記事設計原理）
 
+> **★2026-06-04 新標準 v1 採用。** 公開標準は**新11章スリム構成**（旧「公開15章」を置換・結論先出し/重複削減/読者疲労軽減）。**正本＝`docs/new_article_standard_v1_kioxia_pilot.md`**（本Skillに優先）。要点：①新11章（投資仮説→業界の風向きの順）②**横串の可視化**（投資仮説↔反証条件の表裏マップを§2新設・①〜④を全章同一閾値）③**非AIデータ図はAstroチャートコンポーネント**（画像化しない・表より図表/マップ）④**会計士の見立てbox**でFIC独自考察を際立たせる⑤**出典一本化**（SourceList・references last）⑥**description＝結論フック**。以下の旧15章前提の記述は新11章に読み替える。
+
 **上位**: なし（設計の憲法）
 **下位**: [[writing-style]]（文体・表現で実装） / [[article-quality-checklist]]（公開前に検査）
 **参照先**: [[source-hierarchy]] / [[factual-handling-rules]] / [[expression-strength-rules]]（fact-safety 3規律。本Skillは「読まれ方・設計」、3規律は「事実の安全」を担い相補）
